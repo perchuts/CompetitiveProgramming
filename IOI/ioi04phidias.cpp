@@ -22,23 +22,13 @@ ii block[201];
 int dp[1000][1000];
 bool has[1000][1000],mark[1000][1000];
 
-int solve(int w,int h){
-    if(mark[w][h])return dp[w][h];
-    mark[w][h] = 1;
-    if(has[w][h])return dp[w][h] = 0;
-    dp[w][h] = w*h;
-    for(int i=1;i<w;i++)ckmin(dp[w][h],solve(i,h)+solve(w-i,h));
-    for(int i=1;i<h;i++)ckmin(dp[w][h],solve(w,i)+solve(w,h-i));
-    return dp[w][h];
-}
-
 int main(){_
     int n,w,h;cin>>w>>h>>n;
     for(int i=1;i<=n;i++){
         int x,y;cin>>x>>y;
         has[x][y] = 1;
     }
-    for(int i=1;i<=w;i++){ //iterative is waay faster (~7 times faster)
+    for(int i=1;i<=w;i++){
         for(int j=1;j<=h;j++){
             if(has[i][j]){
                 dp[i][j] = 0;
