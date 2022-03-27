@@ -1,11 +1,9 @@
 /*
-    OBI - Seletiva IOI 2018
+    Seletiva IOI 2018
     Conquista
     https://neps.academy/br/exercise/457
     por Gabriel Lucas
 */
-
-
 
 #include <bits/stdc++.h>
 #define maxn (int)(1e5+51)

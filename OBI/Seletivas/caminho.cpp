@@ -1,5 +1,5 @@
 /*
-    OBI - Seletiva IOI 2015
+    Seletiva IOI 2015
     Caminho
     https://neps.academy/br/exercise/344
     por Gabriel Lucas

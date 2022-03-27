@@ -1,8 +1,8 @@
 /*
-Seletiva IOI 2019
-Torneio
-https://codeforces.com/group/2k70zKp2Ci/contest/263343/problem/B
-por Gabriel Lucas
+    Seletiva IOI 2019
+    Torneio
+    https://codeforces.com/group/2k70zKp2Ci/contest/263343/problem/B
+    por Gabriel Lucas
 */
 
 #include <bits/stdc++.h>
