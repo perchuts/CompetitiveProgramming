@@ -15,7 +15,7 @@ using iii = tuple<int,int,int>;
 
 const int inf = 2e9+1;
 const int mod = 998244353;
-const int maxn = 1e6+100;
+const int maxn = 3e5+100;
 
 template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
 template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
@@ -56,24 +56,28 @@ void brute(int i, int n, int k) {
 		brute(i+1, n, k);
 	}
 }
+int fat[maxn], ifat[maxn];
+
+int C2(int a_, int b) {
+	return fat[a_] * ifat[b] % mod * ifat[a_-b] % mod;
+}
+
 void solve() {
     int n, k; cin >> n >> k;
-    // if we dont mark anyone (f(0) = 0)
-    // C(N+K, N)
-    cout << C(n+k, k) << ' ' << (n*C(n+k,k-1))%mod << " " << C(n+k, k-1) << endl;
-    int ans = (C(n+k, k) + n*C(n+k,k-1)+C(n+k,k-1))%mod;
-	brute(0, n, k);
-	cout << tot << ' ';
-    cout << ans << endl;
-    
+   	int pot = 1, ans = 0, meusaco1 = 1, meusaco2 = (k+1)%mod;
+	for (int j = 0; j <= min(n, k); ++j) {
+		int fora = pot * C2(n, j) % mod % mod;
+		int dentro = ((1 + k) % mod * meusaco1 % mod * ifat[j] % mod - (j * meusaco2 % mod * ifat[j+1] % mod)%mod + mod) % mod;
+		meusaco1 = meusaco1 * ((k - j)%mod) % mod, meusaco2 = meusaco2 * ((k-j)%mod) % mod;
+		ans = (ans + fora * dentro) % mod, pot = 2 * pot % mod;
+	}
+	cout << ans << endl;
 }
 
-mt19937 rng(time(0));
-
-int rnd(int l, int r) {
-    uniform_int_distribution<int> uid(l, r);
-    return uid(rng);
-}
 int32_t main(){
+	fat[0] = 1;
+	for (int i = 1; i < maxn; ++i) fat[i] = i * fat[i-1] % mod;
+	ifat[maxn-1] = fexp(fat[maxn-1], mod - 2);
+	for (int i = maxn-2; i >= 0; --i) ifat[i] = (i+1) * ifat[i+1] % mod;
     solve();
 }
