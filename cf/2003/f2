@@ -1,0 +1,61 @@
+	if (m == 1) {
+		int ans = 0;
+		for (auto x : c) ckmax(ans, x);
+		cout << ans << endl;
+		return;
+	}
+	if (m == 2) {
+		int ans = 0;
+		for (int i = 0; i < n; ++i) {
+			for (int j = i + 1; j < n; ++j) {
+				if (a[i] <= a[j] && b[i] != b[j]) ckmax(ans, c[i] + c[j]);
+			}
+		}
+		if (ans == 0) {
+			cout << -1 << endl;
+			return;
+		}
+		cout << ans << endl;
+		return;
+	}
+	if (m == 3) {
+		int ans = 0;
+		for (int i = 1; i < n - 1; ++i) {
+			ii l1 = {-inf, 0}, r1 = {-inf, 0}, l2 = {-inf, 0}, r2 = {-inf, 0};
+			for (int j = i + 1; j < n; ++j) {
+				if (a[j] >= a[i] && b[j] != b[i]) {
+					if (r1.second == b[j]) ckmax(r1.first, c[j]);
+					else if (r2.second == b[j]) {
+						ckmax(r2.first, c[j]);
+						if (r2.first > r1.first) swap(r1, r2);
+					} else {
+						if (r2.first < c[j]) {
+							if (r1.first <= c[j]) r2 = r1, r1 = {c[j], b[j]};
+							else r2 = {c[j], b[j]};
+						}
+					}
+				}
+			}
+			for (int j = 0; j < i; ++j) {
+				if (a[j] <= a[i] && b[j] != b[i]) {
+					if (l1.second == b[j]) ckmax(l1.first, c[j]);
+					else if (l2.second == b[j]) {
+						ckmax(l2.first, c[j]);
+						if (l2.first > l1.first) swap(l1, l2);
+					} else {
+						if (l2.first < c[j]) {
+							if (l1.first <= c[j]) l2 = l1, l1 = {c[j], b[j]};
+							else l2 = {c[j], b[j]};
+						}
+					}
+				}
+			}
+			if (l1.second != r1.second) ckmax(ans, c[i] + l1.first + r1.first);
+			if (l1.second != r2.second) ckmax(ans, c[i] + l1.first + r2.first);
+			if (l2.second != r1.second) ckmax(ans, c[i] + l2.first + r1.first);
+			if (l2.second != r2.second) ckmax(ans, c[i] + l2.first + r2.first);
+		}
+		if (ans == 0) cout << -1 << endl;
+		else cout << ans << endl;
+		return;
+	}
