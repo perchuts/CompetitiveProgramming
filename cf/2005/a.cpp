@@ -22,19 +22,13 @@ template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ?
 
 void solve(){
  	int n; cin >> n;
-	string s; cin >> s;
-	int c = 0, adj = 0;
-	for (int i = 0; i < n; ++i) {
-		c += (s[i] == '1');
-		if (i != n-1 && s[i] == s[i+1] && s[i] == '1') adj = 1;
+	vector<char> vow = {'a', 'e', 'i', 'o', 'u'};
+	int m = n % 5;
+	for (auto x : vow) {
+		for (int i = 0; i < n/5; ++i) cout << x;
+		if (m) { cout << x; m--; }
 	}
-	if (c&1) cout << -1 << endl;
-	else if (c == 2 && adj == 1) {
-		if (s == "110" or s == "011") cout << -1 << endl;
-		else if (s == "0110") cout << 3 << endl;
-		else cout << 2 << endl;
-	}
-	else cout << c/2 << endl;
+	cout << endl;
 }
 
 int32_t main(){_

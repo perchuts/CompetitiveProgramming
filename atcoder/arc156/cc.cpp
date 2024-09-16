@@ -19,13 +19,9 @@ const int maxn = 3e5+100;
 template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
 template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
 
-void solve(){
- 	int n; cin >> n;
+vector<int> solve(int n, vector<ii> edg){
 	vector<vector<int>> g(n);
-	for (int i = 0; i < n - 1; ++i) {
-		int u, v; cin >> u >> v; --u, --v;
-		g[u].pb(v), g[v].pb(u);
-	}
+	for (auto [u, v] : edg) g[u].pb(v), g[v].pb(u);
 	vector<int> subt(n);
 	auto pre = [&] (auto&& self, int u, int p) -> void {
 		subt[u] = 1;
@@ -92,11 +88,67 @@ void solve(){
 		if (s1) pq.push({s1, x1});
 		if (s2) pq.push({s2, x2});
 	}
-	for (auto x : p) cout << x + 1 << ' ';
-	cout << endl;
+	return p;
 }
 
+mt19937 rng(time(0));
+
+int rnd(int l, int r) {
+	uniform_int_distribution<int> uid(l, r);
+	return uid(rng);
+}
 int32_t main(){_
-  int t = 1; //cin >> t;
-  while(t--) solve();
+	int tt = 0;
+	while (true) {
+		int n = rnd(2, 30);
+		vector<ii> edg;
+		vector<vector<int>> g(n);
+		for (int i = 1; i < n; ++i) edg.pb({rnd(0, i-1), i});
+		vector<int> rr(n); iota(all(rr), 0);
+		shuffle(all(rr), rng);
+		for (auto& [x, y] : edg) x = rr[x], y = rr[y], g[x].pb(y), g[y].pb(x);
+		vector<vector<int>> paths;
+		auto genpath = [&] (auto&& self, int u, vector<int> path) -> void {
+			path.pb(u);
+			paths.pb(path);
+			for (auto v : g[u]) {
+				if (sz(path) > 1 && end(path)[-2] == v) continue;
+				self(self, v, path);
+			}
+		};
+		auto p = solve(n, edg);
+		for (int i = 0; i < n; ++i) genpath(genpath, i, vector<int>());
+		for (auto path : paths) {
+			vector<int> path_p;
+			for (auto x : path) path_p.pb(p[x]);
+			int m = sz(path);
+			vector<int> occ(m, -1), ans(m);
+			for (int i = 0; i < m; ++i) {
+				for (int j = 0; j < m; ++j) {
+					if (path_p[j] == path[i]) occ[i] = j;
+				}
+			}
+			int best = 0;
+			for (int i = 0; i < m; ++i) {
+				if (occ[i] == -1) continue;
+				ans[i] = 1;
+				for (int j = 0; j < i; ++j) if (occ[j] < occ[i]) ckmax(ans[i], ans[j] + 1);
+				ckmax(best, ans[i]);
+			}
+			cout << best << ' ';
+			if (best > 1) {
+				assert(m > 1);
+				cout << "Wrong answer on test " << tt << endl;
+				cout << n << endl;
+				for (auto [x, y] : edg) cout << x + 1 << ' ' << y + 1 << endl;
+				cout << "Your permutation: ";
+				for (auto x : p) cout << x + 1 << ' ';
+				cout << endl;
+				cout << "Problematic pair: " << path[0] + 1 << ' ' << path.back() + 1 << endl;
+				cout << "LCS found has size " << best << endl;
+				exit(0);
+			}
+		}		
+		cout << "Accepted on test " << ++tt << endl;
+	}
 }

@@ -21,20 +21,26 @@ template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ?
 template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
 
 void solve(){
- 	int n; cin >> n;
-	string s; cin >> s;
-	int c = 0, adj = 0;
-	for (int i = 0; i < n; ++i) {
-		c += (s[i] == '1');
-		if (i != n-1 && s[i] == s[i+1] && s[i] == '1') adj = 1;
+ 	int n, m, q; cin >> n >> m >> q;
+	set<int> pos;
+	for (int i = 0; i < m; ++i) {
+		int x; cin >> x;
+		pos.insert(x);
+	}	
+	while (q--) {
+		int x; cin >> x;
+		auto nxt = pos.lower_bound(x);
+		if (nxt == end(pos)) {
+			cout << n - (*prev(end(pos))) << endl; 
+		} else {
+			if (nxt == begin(pos)) {
+				cout << (*nxt)-1 << endl;
+			} else {
+				auto prv = prev(nxt);
+				cout << max(1ll, ((*nxt)-(*prv))/2) << endl;
+			}
+		}
 	}
-	if (c&1) cout << -1 << endl;
-	else if (c == 2 && adj == 1) {
-		if (s == "110" or s == "011") cout << -1 << endl;
-		else if (s == "0110") cout << 3 << endl;
-		else cout << 2 << endl;
-	}
-	else cout << c/2 << endl;
 }
 
 int32_t main(){_
