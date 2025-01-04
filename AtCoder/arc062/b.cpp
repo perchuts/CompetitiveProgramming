@@ -20,8 +20,28 @@ const int maxn = 3e5+100;
 template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
 template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
 
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+int rnd(int l, int r) {
+	uniform_int_distribution<int> uid(l, r);
+	return uid(rng);
+}
+
 void solve(){
-  
+	string s; cin >> s;
+	int n = sz(s);
+	// jogou pedra -> quero jogar papel dms
+	int score = 0, posso = 0;
+	for (int i = 0; i < n; ++i) {
+		if (s[i] == 'g') {
+			if (posso) posso--, score++;
+			else posso++;
+		} else {
+			if (posso) posso--;
+			else posso++, score--;
+		}
+	}
+	cout << score << endl;
 }
 
 int32_t main(){_

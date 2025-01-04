@@ -24,8 +24,15 @@ void solve(){
 	int d, n; cin >> d >> n;
 	int pot = 1;
 	for (int i = 0; i < d; ++i) pot *= 100;
-	for (int i = 1; ; ++i) {
-		if (i % pot == 0) n--;
+	if (d == 0) {
+		if (n == 100) cout << 101 << endl;
+		else cout << n << endl;
+		exit(0);
+	}
+	for (int i = pot; ; i += pot) {
+		int cur = i, times = 0;
+		while (cur % 100 == 0) cur /= 100, times++;
+		if (times == d) n--;
 		if (n == 0) {
 			cout << i << endl;
 			exit(0);

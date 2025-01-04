@@ -21,6 +21,20 @@ template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ?
 template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
 
 void solve(){
+	int n, k; cin >> n >> k;
+	vector<int> no(k);
+	for (auto& x : no) cin >> x;
+	for (int i = n; ; ++i) {
+		string s = to_string(i);
+		bool ok = 1;
+		for (auto x : no) {
+			for (auto y : s) if (y - '0' == x) ok = 0;
+		}
+		if (ok) {
+			cout << i << endl;
+			exit(0);
+		}
+	}
 }
 
 int32_t main(){_

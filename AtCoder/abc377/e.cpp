@@ -31,23 +31,26 @@ void solve(){
 	int n, k; cin >> n >> k;
 	vector<int> p(n);
 	for (auto& x : p) cin >> x, --x;
+	auto fexp = [&] (int b, int e, int m) {
+		int ans = 1;
+		while (e) {
+			if (e&1) ans = ans * b % m;
+			e /= 2, b = b * b % m;
+		}
+		return ans;
+	};
 	vector<int> vis(n), ans(n);
 	for (int i = 0; i < n; ++i) {
 		if (vis[i]) continue;
 		int cur = i;
 		vector<int> cycle;
 		while (!vis[cur]) vis[cur] = 1, cycle.pb(cur), cur = p[cur];	
-		vector<int> pp(sz(cycle)); iota(all(pp), 0);
-		map<vector<int>, int> mp;
-		mp[pp] = 0;
-		int period;
-		for (int j = 1; ; ++j) {
-			vector<int> pp2(sz(cycle));
-			for (int w = 0; w < sz(cycle); ++w) pp2[w] = pp[pp[w]];
-			swap(pp2, pp);
-			if (mp[pp]) break;	
-		}
+		// quero 2^k mod cycle
+		int andar = fexp(2, k, sz(cycle));
+		for (int j = 0; j < sz(cycle); ++j) ans[cycle[j]] = cycle[(j+andar)%sz(cycle)];
 	}
+	for (auto x : ans) cout << x + 1 << ' ';
+	cout << endl;
 }
 
 int32_t main(){_
