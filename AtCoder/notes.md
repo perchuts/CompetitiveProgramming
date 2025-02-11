@@ -7,8 +7,13 @@ Thought of a construction using the centroid of the tree. It pairs nodes from di
 </details>
 
 <details>
-<summary> [ABC366](https://atcoder.jp/contests/abc366/tasks/abc366_g) </summary>
+<summary> [ABC366G](https://atcoder.jp/contests/abc366/tasks/abc366_g) </summary>
 Interesting XOR Basis problem! Although constraints make it not too hard to come up with the solution
+</details>
+
+<details>
+<summary> [ABC346G](https://atcoder.jp/contests/abc346/tasks/abc346_g) </summary>
+Solved using Divide and Conquer + ordered set. Works in O(n log^2 n), but runs kinda fast (~600ms)
 </details>
 
 

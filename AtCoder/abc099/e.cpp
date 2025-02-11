@@ -21,7 +21,7 @@ template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ?
 template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
 
 void solve(){
-  
+    
 }
 
 int32_t main(){_

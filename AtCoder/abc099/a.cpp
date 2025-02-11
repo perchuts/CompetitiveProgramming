@@ -21,10 +21,16 @@ template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ?
 template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
 
 void solve(){
-  
+    set<int> s;
+    for (int i = 0; i < 5; ++i) {
+        int x; cin >> x;
+        s.insert(x);
+    }
+    cout << sz(s) << endl;
+    
 }
 
 int32_t main(){_
-  int t = 1; //cin >> t;
-  while(t--) solve();
+    int t = 1; //cin >> t;
+    while(t--) solve();
 }
