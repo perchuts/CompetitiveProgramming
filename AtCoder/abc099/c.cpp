@@ -20,11 +20,25 @@ const int maxn = 3e5+100;
 template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
 template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
 
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+int rnd(int l, int r) {
+    uniform_int_distribution<int> uid(l, r);
+    return uid(rng);
+}
+
 void solve(){
-  
+    int n; cin >> n;
+    vector<int> dp(n+1, 1e8);
+    dp[0] = 0;
+    for (int i = 1; i <= n; ++i) {
+        for (int pot = 1; pot <= i; pot *= 6) ckmin(dp[i], dp[i-pot]+1);
+        for (int pot = 1; pot <= i; pot *= 9) ckmin(dp[i], dp[i-pot]+1);
+    }
+    cout << dp[n] << endl;
 }
 
 int32_t main(){_
-  int t = 1; //cin >> t;
-  while(t--) solve();
+    int t = 1; //cin >> t;
+    while(t--) solve();
 }
