@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+#define all(x) x.begin(), x.end()
+#define sz(x) (int) x.size()
+#define endl '\n'
+#define pb push_back
+#define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+#define int ll
+
+using namespace std;
+
+using ll = long long;
+using ull = unsigned long long;
+using ii = pair<int,int>;
+using iii = tuple<int,int,int>;
+
+const int inf = 2e9+1;
+const int mod = 1e9+7;
+const int maxn = 3e5+100;
+
+template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
+template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
+
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+int rnd(int l, int r) {
+    uniform_int_distribution<int> uid(l, r);
+    return uid(rng);
+}
+
+void solve(){
+    int n; cin >> n;
+    vector<string> adj(n);
+    for (auto& x : adj) cin >> x;
+    vector<vector<int>> ans(n, vector<int>(n, inf));
+    queue<ii> q;
+    for (int i = 0; i < n; ++i) ans[i][i] = 0, q.push({i, i});
+    for (int i = 0; i < n; ++i) for (int j = 0; j < n; ++j) if (i != j and adj[i][j] != '-') ans[i][j] = 1, q.push({i, j});
+    while (!q.empty()) {
+        auto [i, j] = q.front(); q.pop();
+        for (int k = 0; k < n; ++k) for (int l = 0; l < n; ++l) {
+            if (ans[k][l] != inf) continue;
+            if (adj[k][i] == '-' or adj[j][l] == '-' or adj[k][i] != adj[j][l]) continue;
+            ans[k][l] = 2 + ans[i][j];
+            q.push({k, l});
+        }
+    }
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) cout << (ans[i][j] == inf ? -1 : ans[i][j]) << " \n"[j==n-1];
+    }
+}
+
+int32_t main(){_
+    int t = 1; //cin >> t;
+    while(t--) solve();
+}

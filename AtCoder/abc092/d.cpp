@@ -28,56 +28,31 @@ int rnd(int l, int r) {
 }
 
 void solve(){
-    int n; cin >> n;
-    vector<int> a(n), b(n);
-    int o1 = 0, o2 = 0;
-    for (auto& x : a) cin >> x, o1 += (x&1);
-    for (auto& x : b) cin >> x, o2 += (x&1);
-    vector<int> qnt(31);
-    qnt[0] = o1 * (n-o2) + o2 * (n-o1);
-    for (int bit = 1; bit < 30; ++bit) {
-        int m = (1LL << (bit+1)) - 1, p = (1 << bit);
-        sort(all(b), [&] (int x, int y) {
-            return (x & m) < (y & m);
-        });
-        for (auto x : a) {
-            x &= m;
-            int l = p-x, r = m-x;
-            if (l < 0) {
-                l += m+1;
-                int lx = 0, rx = n-1, p1 = -1;
-                while (lx <= rx) {
-                    int md = lx + (rx-lx+1)/2;
-                    if ((b[md]&m) <= r) p1 = md, lx = md+1;
-                    else rx = md-1;
-                }
-                lx = 0, rx = n-1; int p2 = n;
-                while (lx <= rx) {
-                    int md = lx + (rx-lx+1)/2;
-                    if (l <= (b[md]&m)) p2 = md, rx = md-1;
-                    else lx = md+1;
-                }
-                qnt[bit] += n-p2 + p1+1;
-            } else {
-                int lx = 0, rx = n-1, p1 = n;
-                while (lx <= rx) {
-                    int md = lx + (rx-lx+1)/2;
-                    if (l <= (b[md]&m)) p1 = md, rx = md-1;
-                    else lx = md+1;
-                }
-                lx = 0, rx = n-1; int p2 = -1;
-                while (lx <= rx) {
-                    int md = lx + (rx-lx+1)/2;
-                    if (r >= (b[md]&m)) p2 = md, lx = md+1;
-                    else rx = md-1;
-                }
-                qnt[bit] += max(0LL, p2-p1+1);
-            }
+    int a, b; cin >> a >> b;
+    int n = 100;
+    vector<vector<char>> grid(n, vector<char>(n, '#'));
+    for (int i = 50; i < n; ++i) for (int j = 0; j < n; ++j) grid[i][j] = '.'; 
+    int falta = a-1;
+    for (int i = 0; i < 50; i += 2) {
+        for (int j = 0; j < n; j += 2) {
+            if (falta == 0) break;
+            grid[i][j] = '.', falta--;
         }
     }
-    int ans = 0;
-    for (int i = 0; i < 30; ++i) if (qnt[i] & 1) ans += (1 << i);
-    cout << ans << endl;
+    falta = b-1;
+    for (int i = n-1; i > 50; i -= 2) {
+        for (int j = 0; j < n; j += 2) {
+            if (falta == 0) break;
+            grid[i][j] = '#', falta--;
+        }
+    }
+    cout << n << ' ' << n << endl;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            cout << grid[i][j];
+        }
+        cout << endl;
+    }   
 }
 
 int32_t main(){_
