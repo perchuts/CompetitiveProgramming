@@ -1,0 +1,8 @@
+7
+draw 1
+rotate 90
+draw 1
+rotate 90
+draw 1
+rotate 90
+draw 1
