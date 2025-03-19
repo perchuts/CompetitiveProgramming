@@ -28,10 +28,29 @@ int rnd(int l, int r) {
 }
 
 void solve(){
-
+    int n; cin >> n;
+    vector<ii> intr(n);
+    for (auto& [x, y] : intr) cin >> x >> y, --y;
+    vector<vector<int>> dp(102, vector<int>(102));
+    vector<int> freq(101);
+    for (int i = 100; i >= 1; --i) for (int j = i; j <= 100; ++j) {
+        for (auto [x, y] : intr) {
+            if (i <= x and y <= j) freq[dp[i][x-1] ^ dp[y+1][j]] = 1;
+        }
+        for (int k = 0; ; ++k) {
+            if (freq[k] == 0) {
+                dp[i][j] = k;
+                break;
+            }
+        }
+        for (auto [x, y] : intr) {
+            if (i <= x and y <= j) freq[dp[i][x-1] ^ dp[y+1][j]] = 0;
+        }
+    }
+    cout << (dp[1][100] ? "Alice" : "Bob") << endl;
 }
 
 int32_t main(){_
-    int t = 1; //cin >> t;
+    int t = 1; cin >> t;
     while(t--) solve();
 }
