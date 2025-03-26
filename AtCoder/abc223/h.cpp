@@ -37,13 +37,48 @@ void solve(){
         queries[l-1].pb({x, r-1, i});
     }
     // base inteira, quem mudou
-    deque<pair<vector<int>, int>> bases;
+    deque<vector<int>> bases;
+    deque<int> ini;
     for (int i = n-1; ~i; --i) {
-        bases.push_front({{a[i]}, i});
-        int cur = a[i];
-        for (int j = 1; j < sz(bases); ++j) {
-            int cara = a[bases[j].second];
-                
+        int l = 0, r = sz(bases)-1, use = sz(bases);
+        while (l <= r) {
+            int j = l + (r-l+1)/2, ok = 1, cur = a[i];
+            for (int k = 0; k < 60; ++k) {
+                if (cur >> k & 1) {
+                    if (bases[j][k] != 0) cur ^= bases[j][k];
+                    else { ok = 0; break; }
+                }
+            }
+            if (ok) r = j-1, use = j;
+            else l = j+1;
+        }
+        if (use != sz(bases)) bases.erase(begin(bases)+use), ini.erase(begin(ini)+use);
+        int j = 0, cur = a[i];
+        for (int k = 0; k < 60 and j < use; ++k) {
+            if (cur >> k & 1) {
+                while (j < use and bases[j][k] == 0) bases[j++][k] = cur;
+                if (j != use) cur ^= bases[j][k];
+            }
+        }
+        vector<int> base(60);
+        for (int k = 0; k < 60; ++k) {
+            if (a[i] >> k & 1) { base[k] = a[i]; break; }
+        }
+        bases.push_front(base);
+        ini.push_front(i);
+        for (auto [x, j, id] : queries[i]) {
+            int z = 0;
+            for (int k = 0; k < sz(ini); ++k) {
+                if (ini[k] <= j) z = k;
+                else break;
+            }
+            for (int k = 0; k < 60; ++k) {
+                if (x >> k & 1) {
+                    if (bases[z][k] == 0) break;
+                    x ^= bases[z][k];
+                }
+            }
+            ans[id] = (x == 0);
         }
     }
     for (auto x : ans) cout << (x ? "Yes" : "No") << endl;
