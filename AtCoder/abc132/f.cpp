@@ -26,119 +26,46 @@ int rnd(int l, int r) {
     uniform_int_distribution<int> uid(l, r);
     return uid(rng);
 }
-// Aritmetica Modular
-//
-// O mod tem q ser primo
 
-template<int p> struct mod_int {
-	ll expo(ll b, ll e) {
-		ll ret = 1;
-		while (e) {
-			if (e % 2) ret = ret * b % p;
-			e /= 2, b = b * b % p;
-		}
-		return ret;
-	}
-	ll inv(ll b) { return expo(b, p-2); }
-
-	using m = mod_int;
-	int v;
-	mod_int() : v(0) {}
-	mod_int(ll v_) {
-		if (v_ >= p or v_ <= -p) v_ %= p;
-		if (v_ < 0) v_ += p;
-		v = v_;
-	}
-	m& operator +=(const m& a) {
-		v += a.v;
-		if (v >= p) v -= p;
-		return *this;
-	}
-	m& operator -=(const m& a) {
-		v -= a.v;
-		if (v < 0) v += p;
-		return *this;
-	}
-	m& operator *=(const m& a) {
-		v = v * ll(a.v) % p;
-		return *this;
-	}
-	m& operator /=(const m& a) {
-		v = v * inv(a.v) % p;
-		return *this;
-	}
-	m operator -(){ return m(-v); }
-	m& operator ^=(ll e) {
-		if (e < 0) {
-			v = inv(v);
-			e = -e;
-		}
-		v = expo(v, e);
-		// possivel otimizacao:
-		// cuidado com 0^0
-		// v = expo(v, e%(p-1)); 
-		return *this;
-	}
-	bool operator ==(const m& a) { return v == a.v; }
-	bool operator !=(const m& a) { return v != a.v; }
-
-	friend istream& operator >>(istream& in, m& a) {
-		ll val; in >> val;
-		a = m(val);
-		return in;
-	}
-	friend ostream& operator <<(ostream& out, m a) {
-		return out << a.v;
-	}
-	friend m operator +(m a, m b) { return a += b; }
-	friend m operator -(m a, m b) { return a -= b; }
-	friend m operator *(m a, m b) { return a *= b; }
-	friend m operator /(m a, m b) { return a /= b; }
-	friend m operator ^(m a, ll e) { return a ^= e; }
-};
-
-typedef mod_int<(int)1e9+7> mint;
-mint evaluate_interpolation(int x, vector<mint> y) {
-	int n = y.size();
-	
-	vector<mint> sulf(n+1, 1), fat(n, 1), ifat(n);
-	for (int i = n-1; i >= 0; i--) sulf[i] = sulf[i+1] * (x - i);
-	for (int i = 1; i < n; i++) fat[i] = fat[i-1] * i;
-	ifat[n-1] = 1/fat[n-1];
-	for (int i = n-2; i >= 0; i--) ifat[i] = ifat[i+1] * (i + 1);
-
-	mint pref = 1, ans = 0;
-	for (int i = 0; i < n; pref *= (x - i++)) {
-		mint num = pref * sulf[i+1];
-
-		mint den = ifat[i] * ifat[n-1 - i];
-		if ((n-1 - i)%2) den *= -1;
-
-		ans += y[i] * num * den;
-	}
-	return ans;
-}
 void solve(){
     int n, k; cin >> n >> k;
-    int K = k*2+10;
-    vector<vector<vector<mint>>> dp(k+1, vector<vector<mint>>(K, vector<mint>(K)));
-    for (int i = 1; i < K; ++i) dp[0][i][1] = 1;
-    for (int i = 1; i <= k; ++i) {
-        for (int a = 1; a < K; ++a) {
-            for (int b = 1; b < K; ++b) {
-                for (int c = 1; c * b <= a; ++c) {
-                    dp[i][a][b] += dp[i-1][a][c];
-                }
-            }
+    if (n == 1) {
+        cout << 1 << endl;
+        exit(0);
+    }
+    vector<int> val;
+    for (int i = 1; i * i <= n; ++i) val.pb(i);
+    int cur = val.back()+1;
+    vector<ii> intr;
+    while (cur <= n) {
+        int l = cur, r = n, ans = cur;
+        while (l <= r) {
+            int md = l + (r-l+1)/2;
+            if (n/md == n/cur) ans = md, l = md+1;
+            else r = md-1;
         }
+        intr.pb({cur, ans});
+        cur = ans+1;
     }
-    vector<mint> vals;
-    for (int i = 0; i < K; ++i) {
-        mint s = 0;
-        for (int j = 0; j < K; ++j) s += dp[k][i][j];
-        vals.pb(s);
+    int N = sz(val), M = sz(intr);
+    vector<int> dp1(N), dp2(M), lim(N, M-1);
+    for (int i = 1; i < N; ++i) {
+        lim[i] = lim[i-1];
+        while (lim[i] >= 0 and (i+1)*intr[lim[i]].first > n) lim[i]--;
     }
-    cout << evaluate_interpolation(n, vals) << endl;
+    iota(all(dp1), 1);
+    for (int i = 0; i < M; ++i) dp2[i] = intr[i].second-intr[i].first+1+(i?dp2[i-1]:0);
+    for (int __ = 2; __ <= k; ++__) {
+        vector<int> ndp1(N, dp1.back()), ndp2(M);
+        for (int i = 0; i < N; ++i) {
+            if (lim[i] >= 0) ndp1[i] = (ndp1[i] + dp2[lim[i]]) % mod;
+        }
+        for (int i = 0; i < M; ++i) ndp2[i] = dp1[n/intr[i].first-1]*(intr[i].second-intr[i].first+1) % mod;
+        for (int i = 1; i < N; ++i) ndp1[i] = (ndp1[i] + ndp1[i-1]) % mod;
+        for (int i = 1; i < M; ++i) ndp2[i] = (ndp2[i] + ndp2[i-1]) % mod;
+        swap(dp1, ndp1), swap(dp2, ndp2);
+    }
+    cout << (dp1.back() + dp2.back()) % mod << endl;
 }
 
 int32_t main(){_

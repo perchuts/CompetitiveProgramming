@@ -28,7 +28,33 @@ int rnd(int l, int r) {
 }
 
 void solve(){
-
+    int n; cin >> n;
+    vector<vector<int>> g(maxn);
+    int shift = 1e5+10;
+    for (int i = 0; i < n; ++i) {
+        int x, y; cin >> x >> y;
+        g[x].pb(shift+y);
+        g[shift+y].pb(x);
+    }
+    vector<int> vis(maxn);
+    int ans = -n;
+    auto dfs = [&] (auto&& self, int u) -> ii {
+        vis[u] = 1;
+        int cx = 1, cy = 0;
+        for (auto v : g[u]) {
+            if (vis[v]) continue;
+            auto [aa, bb] = self(self, v);
+            swap(aa, bb);
+            cx += aa, cy += bb;
+        }
+        return make_pair(cx, cy);
+    };
+    for (int i = 0; i < maxn; ++i) {
+        if (vis[i]) continue;
+        auto [x, y] = dfs(dfs, i);
+        ans += x * y;
+    }
+    cout << ans << endl;
 }
 
 int32_t main(){_
