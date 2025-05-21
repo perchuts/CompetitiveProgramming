@@ -103,8 +103,29 @@ void solve(){
     vector<mint> a(n+1);
     for (int i = 0; i < n; ++i) {
         int x; cin >> x;
-        a[x] += 1;
+        a[x] = 2 * a[x] + 1;
     }
+    // quero calcular dp[i] = numero de subsets com o AND sendo um superconjunto (nao necessariamente proprio) de i
+    vector<vector<mint>> dp(19, vector<mint>(n+1));
+    dp[18] = a;
+    for (int j = 17; ~j; --j) {
+        for (int i = 0; i <= n; ++i) {
+            dp[j][i] = dp[j+1][i];
+            if (i >> j & 1) {} 
+            else if (i + (1 << j) <= n) dp[j][i] = (dp[j][i] + 1) * (dp[j+1][i+(1<<j)]+1) - 1;
+        }
+    }
+    vector<mint> ans(n+1);
+    dp[18] = dp[0];
+    for (int j = 17; ~j; --j) {
+        for (int i = 0; i <= n; ++i) {
+            dp[j][i] = dp[j+1][i];
+            if (i >> j & 1) {} 
+            else if (i + (1 << j) <= n) dp[j][i] -= dp[j+1][i+(1<<j)];
+        }
+    }
+    for (auto x : dp[0]) cout << x << " ";
+    cout << endl;
 }
 
 int32_t main(){_

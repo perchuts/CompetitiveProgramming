@@ -54,15 +54,11 @@ void solve(){
     vector<int> quebra(n);
     for (int i = 1; i < n; ++i) {
         int a = suf[i-1], b = suf[i], ok = 1;
-        while (min(a, b) < n) {
-            ok &= (onde[a] < onde[b]);
-            a++, b++;
-        }
+        if (max(a, b) < n-1 and onde[a+1] > onde[b+1]) ok = 0;
+        if (b == n-1) ok = 0;
         if (!ok) quebra[i] = 1;
     }
     string ans(n, 'a');
-    for (auto x : quebra) cout << x << ' ';
-    cout << endl;
     for (int i = 1; i < n; ++i) {
         ans[suf[i]] = ans[suf[i-1]];
         if (quebra[i]) ans[suf[i]]++;
@@ -72,8 +68,8 @@ void solve(){
         }
     }
     auto sa = suffix_array(ans);
-    for (auto x : sa) cout << x + 1 << ' ';
-    cout << endl;
+    //for (auto x : sa) cout << x + 1 << ' ';
+    //cout << endl;
     cout << ans << endl;
 }
 
