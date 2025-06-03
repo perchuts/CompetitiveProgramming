@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 #pragma GCC optimize("Ofast")
+#pragma GCC optimize("unroll-loops")
+// Vetorizacao
+#pragma GCC target("avx2")
 #define all(x) x.begin(), x.end()
 #define sz(x) (int) x.size()
 #define endl '\n'
@@ -17,7 +20,7 @@ using iii = tuple<int,int,int>;
 
 const int inf = 2e9+1;
 const int mod = 1e9+9;
-const int maxn = 1e5+10;
+const int maxn = 2e5+10;
 
 template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
 template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
@@ -66,7 +69,7 @@ int solve(int n, vector<vector<int>> g, string s){
             ckmax(ans, eu);
         }
         for (auto v : g[u]) self(self, v, t+1);
-        act.pop_back();
+        if (u) act.pop_back();
     };
     dfs(dfs, 0, 0);
     return ans;
@@ -140,3 +143,4 @@ int32_t main(){_
     }
 #endif
 }
+
