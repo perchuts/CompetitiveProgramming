@@ -27,11 +27,48 @@ int rnd(int l, int r) {
 	return uid(rng);
 }
 
-void solve(){
-
+void solve(int n, int p){
+    auto fexp = [&] (int b, int e) {
+        int ans = 1;
+        while (e) {
+            if (e&1) ans = ans * b % p;
+            e /= 2, b = b * b % p;
+        }
+        return ans;
+    };
+    while (true) {
+        //auto get = [&] (int a, int b, int c) {
+        //    int s1 = (a + b + c) % p;
+        //    int A = fexp(a, n), B = fexp(b, n), C = fexp(c, n);
+        //    int s2 = (A + B + C) % p;
+        //    int s3 = (A * A + B * B + C * C) % p;
+        //    int s4 = ((A * A % p * A) + (B * B % p * B) + (C * C % p * C)) % p;
+        //    cout << (s1*s2%p*s3)%p << ' ' << s4 << endl;
+        //};
+        int a = rnd(1, p-3), b = rnd(a+1, p-2), c = rnd(b+1, p-1);
+        int s1 = (a + b + c) % p;
+        int A = fexp(a, n), B = fexp(b, n), C = fexp(c, n);
+        int s2 = (A + B + C) % p;
+        int s3 = (A * A + B * B + C * C) % p;
+        int s4 = ((A * A % p * A) + (B * B % p * B) + (C * C % p * C)) % p;
+        if (s1 != 0 and s2 != 0 and s3 != 0 and s4 != 0) {
+            int f = s1 * s2 % p * s3 % p, g = s4;
+            int t = g * fexp(f, p-2) % p;
+            a = a * t % p;
+            b = b * t % p;
+            c = c * t % p;
+            vector<int> v = {a, b, c}; sort(all(v));
+            for (auto x : v) cout << x << ' ';
+            cout << endl;
+            return;
+        }
+    }
 }
 
 int32_t main(){_
-  int t = 1; //cin >> t;
-  while(t--) solve();
+    int t; cin >> t;
+    while (t--) {
+        int n, p; cin >> n >> p;
+        solve(n, p);
+    }
 }

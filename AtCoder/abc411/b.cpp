@@ -20,28 +20,28 @@ const int maxn = 3e5+100;
 template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
 template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
 
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+int rnd(int l, int r) {
+    uniform_int_distribution<int> uid(l, r);
+    return uid(rng);
+}
+
 void solve(){
-    int n, m; cin >> n >> m;
-    vector<vector<int>> a(8), b(8);
-    for (int i = 4; i <= 3*n+m; ++i) a[i%8].pb(i);
-    for (int i = 4; i <= 3*m+n; ++i) b[i%8].pb(i);
-    vector<ii> ans;
-    for (int u = 0; u < 8; ++u) {
-        int v = 3 * u % 8;
-        int i = 0, j = 0;
-        while (i < sz(a[u]) and j < sz(b[v])) {
-            int x = (3*a[u][i]-b[v][j])/8;
-            int y = (3*b[v][j]-a[u][i])/8;
-            if (x < 1 or n < x) j++;
-            else if (y < 1 or m < y) i++;
-            else ans.pb({x, y}), i++, j++;
+    int n; cin >> n;
+    vector<int> d(n-1);
+    for (int i = 0; i < n; ++i) cin >> d[i];
+    for (int i = 0; i < n; ++i) {
+        int tot = 0;
+        for (int j = i + 1; j < n; ++j) {
+            tot += d[j-1];
+            cout << tot << ' ';
         }
+        cout << endl;
     }
-    cout << sz(ans) << endl;
-    for (auto [x, y] : ans) cout << x << ' ' << y << endl;
 }
 
 int32_t main(){_
-  int t = 1; //cin >> t;
-  while(t--) solve();
+    int t = 1; //cin >> t;
+    while(t--) solve();
 }
