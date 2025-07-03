@@ -27,11 +27,30 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve() {
+void solve(){
+    int n, l, d; cin >> n >> l >> d;
+    vector<double> dp1(n+d+5), add(n+d+5);
 
+    double p = 1.0 / d;
+    dp1[0] = 1;
+    double cum = 0;
+    for (int i = 0; i <= n+d; ++i) {
+        cum += add[i], dp1[i] += cum;
+        if (i < l) add[i+1] += dp1[i] * p, add[i+1+d] -= dp1[i] * p;
+    }
+    for (int i = 1; i <= n+d; ++i) dp1[i] += dp1[i-1];
+    vector<double> ans(n+d+2);
+    double sexo = (n < l+d-1 ? dp1[l+d-1] - dp1[n] : 0);
+    for (int i = n; ~i; --i) {
+        ans[i] = (i >= l ? dp1[i-1] - dp1[l-1] : 0) + sexo;
+        ckmax(ans[i], (ans[i+1]-ans[i+d+1])*p);
+        ans[i] += ans[i+1]; 
+    }
+    ans[0] -= ans[1];
+    cout << fixed << setprecision(10) << ans[0] << endl;
 }
 
-int32_t main() {_
+int32_t main(){_
     int t = 1; //cin >> t;
     while(t--) solve();
 }

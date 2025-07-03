@@ -27,11 +27,14 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve() {
-
+void solve(){
+    int l, r, k; cin >> l >> r >> k;
+    r = r/k*k;
+    l = (l+k-1)/k*k;
+    cout << (r/k-l/k+1) << endl;
 }
 
-int32_t main() {_
+int32_t main(){_
     int t = 1; //cin >> t;
     while(t--) solve();
 }

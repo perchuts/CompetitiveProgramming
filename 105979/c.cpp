@@ -27,11 +27,33 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve() {
-
+const int P = 998244353;
+int add(int a, int b) {
+    a += b;
+    if (a >= P) a -= P;
+    return a;
 }
 
-int32_t main() {_
+void solve(){
+    int n; cin >> n;
+    vector<int> a(n);
+    for (auto &i : a) cin >> i;
+
+    vector dp(n + 1, 0ll);
+    dp[n] = 1;
+
+    const int MX = 1e5 + 10;
+    vector acc(MX, 0LL);
+
+    for (int i = n - 1; i >= 0; --i) {
+        dp[i] = add(dp[i + 1], acc[a[i]]);
+        acc[a[i]] = add(acc[a[i]], dp[i + 1]);
+    }
+    
+    cout << dp[0] << endl;
+}
+
+int32_t main(){_
     int t = 1; //cin >> t;
     while(t--) solve();
 }

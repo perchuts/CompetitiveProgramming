@@ -27,11 +27,24 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve() {
-
+void solve(){
+    int a, x; cin >> a >> x;
+    
+    if (x <= a) cout << 1 << endl;
+    else if (x <= 2*a) cout << 2 << endl;
+    else {
+        int it = 2;
+        int b = 2*a;
+        while (!(x <= b)) {
+            int nb = b + a;
+            a = b, b = nb;
+            it++;
+        }
+        cout << it << endl;
+    }
 }
 
-int32_t main() {_
-    int t = 1; //cin >> t;
+int32_t main(){_
+    int t = 1; cin >> t;
     while(t--) solve();
 }

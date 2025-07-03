@@ -27,11 +27,21 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve() {
-
+void solve(){
+    int m; cin >> m;
+    vector<int> a;
+    int i = 0;
+    while (m) {
+        for (int j = 0; j < m % 3; ++j) a.pb(i);
+        i++;
+        m /= 3;
+    }
+    cout << sz(a) << endl;
+    for (auto x : a) cout << x << ' ';
+    cout << endl;
 }
 
-int32_t main() {_
+int32_t main(){_
     int t = 1; //cin >> t;
     while(t--) solve();
 }

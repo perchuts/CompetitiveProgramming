@@ -27,11 +27,29 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve() {
-
+void solve(){
+    int n, M; cin >> n >> M;
+    auto fexp = [&] (int b, int e) {
+        int ans = 1;
+        while (e) {
+            if (e&1) ans = ans * b % M;
+            e /= 2, b = b * b % M;
+        }
+        return ans;
+    };
+    int ways = 1;
+    int ans2 = 0;
+    for (int m = 1; m < n; ++m) {
+        ways = ways * (n-m) % M;
+        int t = fexp(n, n-m-1);
+        int sexo = m * (m+1) / 2 % M;
+        ans2 = (ans2 + sexo * t % M * ways) % M;
+    }
+    ans2 = ans2 * n % M;
+    cout << ans2 << endl;
 }
 
-int32_t main() {_
+int32_t main(){_
     int t = 1; //cin >> t;
     while(t--) solve();
 }

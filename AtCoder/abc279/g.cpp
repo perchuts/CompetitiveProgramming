@@ -14,7 +14,7 @@ using ii = pair<int,int>;
 using iii = tuple<int,int,int>;
 
 const int inf = 2e9+1;
-const int mod = 1e9+7;
+const int mod = (119<<23)+1;
 const int maxn = 3e5+100;
 
 template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
@@ -27,11 +27,19 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve() {
-
+void solve(){
+    int n, k, c; cin >> n >> k >> c;
+    vector<int> dp(n+1, c);
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 1; j < i; ++j) {
+            if (i-j < k) dp[i] = (dp[i] + dp[j]) % mod;
+            else dp[i] = (dp[i] + dp[j] * (c-1)) % mod;
+        }
+    }
+    cout << dp[n] << endl;
 }
 
-int32_t main() {_
+int32_t main(){_
     int t = 1; //cin >> t;
     while(t--) solve();
 }

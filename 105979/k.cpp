@@ -27,11 +27,20 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve() {
-
+void solve(){
+    int n, k; cin >> n >> k;
+    vector<int> a(n), b(n);
+    for (auto& x : a) cin >> x;
+    for (auto& x : b) cin >> x;
+    sort(all(a)), sort(all(b));
+    int ans = 0;
+    for (int i = 0; i < n; ++i) {
+        if (k >= a[i] + b[i]) k -= a[i] + b[i], ans++;
+    }
+    cout << ans << endl;
 }
 
-int32_t main() {_
+int32_t main(){_
     int t = 1; //cin >> t;
     while(t--) solve();
 }
