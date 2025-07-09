@@ -5,6 +5,7 @@
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define int ll
+#define gato
 
 using namespace std;
 
@@ -38,9 +39,11 @@ int32_t main() {_
 #else
     int t = 1;
     while (true) {
+
         int my = solve(), ans = brute();
         if (my != ans) {
             cout << "Wrong answer on test " << t << endl;
+
             cout << "Your output: " << my << endl;
             cout << "Answer: " << ans << endl;
             exit(0);

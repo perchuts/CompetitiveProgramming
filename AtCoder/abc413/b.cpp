@@ -28,24 +28,21 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    set<string> ss;
+    int n; cin >> n;
+    vector<string> s(n);
+    for (int i = 0; i < n; ++i) cin >> s[i];
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (i == j) continue;
+            string t = s[i] + s[j];
+            ss.insert(t);
+        }
+    }
+    cout << sz(ss) << endl;
 }
 
 int32_t main() {_
-#ifndef gato
     int t = 1; //cin >> t;
     while(t--) solve();
-#else
-    int t = 1;
-    while (true) {
-        int my = solve(), ans = brute();
-        if (my != ans) {
-            cout << "Wrong answer on test " << t << endl;
-            cout << "Your output: " << my << endl;
-            cout << "Answer: " << ans << endl;
-            exit(0);
-        }
-        cout << "Accepted on test " << t++ << endl;
-    }
-#endif
 }

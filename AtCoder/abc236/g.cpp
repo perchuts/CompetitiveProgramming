@@ -28,7 +28,31 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    int n, t, l; cin >> n >> t >> l;
+    vector<vector<int>> id(n, vector<int>(n, inf));
+    for (int i = 0; i < t; ++i) {
+        int u, v; cin >> u >> v;
+        --u, --v;
+        id[u][v] = i;
+    }
+    auto mult = [&] (vector<vector<int>> a, vector<vector<int>> b) {
+        vector<vector<int>> c(n, vector<int>(n, inf));
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < n; ++j) {
+                for (int k = 0; k < n; ++k) {
+                    ckmin(c[i][j], max(a[i][k], b[k][j]));
+                }
+            }
+        }
+        return c;
+    };
+    vector<vector<int>> ans(n, vector<int>(n, inf));
+    for (int i = 0; i < n; ++i) ans[i][i] = 0;
+    while (l) {
+        if (l&1) ans = mult(ans, id);
+        id = mult(id, id), l /= 2;
+    }
+    for (int i = 0; i < n; ++i) cout << (ans[0][i] == inf ? -1 : ans[0][i]+1) << " \n"[i==n-1];
 }
 
 int32_t main() {_

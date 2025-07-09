@@ -28,12 +28,21 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    int n; cin >> n;
+    vector<int> a(n);
+    int ans = 0;
+    for (auto& x : a) cin >> x, ans += x;
+    // a[j] = 0
+    // a[0] + a[1]
+    // 2a[0]
+    ckmin(ans, a[0] + a[1]);
+    ckmin(ans, 2*a[0]);
+    cout << ans << endl;
 }
 
 int32_t main() {_
 #ifndef gato
-    int t = 1; //cin >> t;
+    int t = 1; cin >> t;
     while(t--) solve();
 #else
     int t = 1;

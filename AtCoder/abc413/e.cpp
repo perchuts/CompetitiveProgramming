@@ -28,24 +28,24 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    int n; cin >> n;
+    vector<int> p(1<<n);
+    for (auto& x : p) cin >> x, --x;
+    auto sorta = [&] (auto&& self, int l, int r) -> void {
+        if (l == r) return;
+        vector<int> nv;
+        int md = (l+r)/2;
+        self(self, l, md), self(self, md+1, r);
+        if (p[l] > p[md+1]) {
+            for (int i = l; i <= md; ++i) swap(p[i], p[md+1+i-l]);
+        }
+    };
+    sorta(sorta, 0, (1<<n)-1);
+    for (auto x : p) cout << x + 1 << ' ';
+    cout << endl;
 }
 
 int32_t main() {_
-#ifndef gato
-    int t = 1; //cin >> t;
+    int t = 1; cin >> t;
     while(t--) solve();
-#else
-    int t = 1;
-    while (true) {
-        int my = solve(), ans = brute();
-        if (my != ans) {
-            cout << "Wrong answer on test " << t << endl;
-            cout << "Your output: " << my << endl;
-            cout << "Answer: " << ans << endl;
-            exit(0);
-        }
-        cout << "Accepted on test " << t++ << endl;
-    }
-#endif
 }

@@ -28,24 +28,34 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    int q; cin >> q;
+    deque<ii> qq;
+    while (q--) {
+        int op; cin >> op;
+        if (op == 1) {
+            int c, x; cin >> c >> x;
+            qq.push_back({c, x});
+        } else {
+            int k; cin >> k;
+            int tot = 0;
+            while (k > 0) {
+                auto& [a, b] = qq.front();
+                if (k < a) {
+                    tot += k * b;
+                    a -= k;
+                    break;
+                } else {
+                    tot += b * a;
+                    k -= a;
+                    qq.pop_front();
+                }
+            }
+            cout << tot << endl;
+        }
+    }
 }
 
 int32_t main() {_
-#ifndef gato
     int t = 1; //cin >> t;
     while(t--) solve();
-#else
-    int t = 1;
-    while (true) {
-        int my = solve(), ans = brute();
-        if (my != ans) {
-            cout << "Wrong answer on test " << t << endl;
-            cout << "Your output: " << my << endl;
-            cout << "Answer: " << ans << endl;
-            exit(0);
-        }
-        cout << "Accepted on test " << t++ << endl;
-    }
-#endif
 }

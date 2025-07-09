@@ -28,7 +28,27 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    int n; cin >> n;
+    vector<int> pot(n+1, 1);
+    for (int i = 1; i <= n; ++i) pot[i] = 3 * pot[i-1];
+    vector<int> a(pot[n]), na = a;
+    for (auto& x : a) cin >> x;
+    for (int i = 0; i < n; ++i) {
+        // fixing i-th bit
+        for (int j = 0; j < pot[n]; ++j) {
+            int x = (j / pot[i]) % 3;
+            if (x == 0) {
+                na[j] = a[j+pot[i]] - a[j+2*pot[i]];
+            } else if (x == 1) {
+                na[j] = a[j+pot[i]] + a[j-pot[i]] - a[j];
+            } else {
+                na[j] = a[j-pot[i]] - a[j-2*pot[i]];
+            }
+        }
+        swap(a, na);
+    }
+    for (auto x : a) cout << x << ' ';
+    cout << endl;
 }
 
 int32_t main() {_

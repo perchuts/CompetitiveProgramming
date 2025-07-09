@@ -28,24 +28,13 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    int n, m; cin >> n >> m;
+    vector<int> a(n);
+    for (auto& x : a) cin >> x, m -= x;
+    cout << (m >= 0 ? "Yes" : "No") << endl;
 }
 
 int32_t main() {_
-#ifndef gato
     int t = 1; //cin >> t;
     while(t--) solve();
-#else
-    int t = 1;
-    while (true) {
-        int my = solve(), ans = brute();
-        if (my != ans) {
-            cout << "Wrong answer on test " << t << endl;
-            cout << "Your output: " << my << endl;
-            cout << "Answer: " << ans << endl;
-            exit(0);
-        }
-        cout << "Accepted on test " << t++ << endl;
-    }
-#endif
 }

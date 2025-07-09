@@ -29,12 +29,13 @@ int rnd(int l, int r) {
 
 void solve(){
     int n, k, c; cin >> n >> k >> c;
-    vector<int> dp(n+1, c);
-    for (int i = 1; i <= n; ++i) {
-        for (int j = 1; j < i; ++j) {
-            if (i-j < k) dp[i] = (dp[i] + dp[j]) % mod;
-            else dp[i] = (dp[i] + dp[j] * (c-1)) % mod;
-        }
+    vector<int> dp(n+1, 0);
+    dp[1] = c % mod;
+    for (int i = 2; i <= n; ++i) {
+        dp[i] = c * (c-1) % mod;
+        dp[i] = (dp[i] + dp[i-1] - dp[max(1LL, i-k+1)] + mod) % mod;
+        if (i >= k) dp[i] = (dp[i] + (c-1)*(dp[i - k + 1] - dp[1] + mod)) % mod;
+        dp[i] = (dp[i] + dp[i-1]) % mod;
     }
     cout << dp[n] << endl;
 }

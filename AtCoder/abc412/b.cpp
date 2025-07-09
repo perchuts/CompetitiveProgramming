@@ -28,7 +28,20 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    string s, t; cin >> s >> t;
+    for (int i = 1; i < sz(s); ++i) {
+        if ('A' <= s[i] and s[i] <= 'Z') {
+            bool ok = 0;
+            for (int j = 0; j < sz(t); ++j) {
+                if (t[j] == s[i-1]) ok = 1;
+            }
+            if (!ok) {
+                cout << "No" << endl;
+                exit(0);
+            }
+        }
+    }
+    cout << "Yes" << endl;
 }
 
 int32_t main() {_

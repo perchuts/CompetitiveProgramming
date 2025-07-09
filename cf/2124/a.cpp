@@ -28,12 +28,25 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    int n; cin >> n;
+    vector<int> a(n);
+    for (auto& x : a) cin >> x;
+    for (int i = 0; i < n; ++i) {
+        for (int j = i + 1; j < n; ++j) {
+            if (a[i] > a[j]) {
+                cout << "YES" << endl;
+                cout << 2 << endl;
+                cout << a[i] << ' ' << a[j] << endl;
+                return;
+            }
+        }
+    }
+    cout << "NO" << endl;
 }
 
 int32_t main() {_
 #ifndef gato
-    int t = 1; //cin >> t;
+    int t = 1; cin >> t;
     while(t--) solve();
 #else
     int t = 1;

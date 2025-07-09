@@ -28,12 +28,23 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    int n; cin >> n;
+    vector<int> b(n);
+    for (auto& x : b) cin >> x;
+    int ans = 1;
+    for (int i = 1; i < n; ++i) {
+        if (b[i] % b[i-1]) {
+            int g = gcd(b[i], b[i-1]);
+            int k = b[i-1] / g;
+            ans = lcm(ans, k);
+        }
+    }
+    cout << ans << endl;
 }
 
 int32_t main() {_
 #ifndef gato
-    int t = 1; //cin >> t;
+    int t = 1; cin >> t;
     while(t--) solve();
 #else
     int t = 1;

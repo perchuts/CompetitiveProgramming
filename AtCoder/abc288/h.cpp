@@ -14,7 +14,7 @@ using ii = pair<int,int>;
 using iii = tuple<int,int,int>;
 
 const int inf = 2e9+1;
-const int mod = 1e9+7;
+const int mod = (119<<23)+1;
 const int maxn = 3e5+100;
 
 template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
@@ -28,7 +28,8 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-
+    int n, m, x; cin >> n >> m >> x;
+    
 }
 
 int32_t main() {_
