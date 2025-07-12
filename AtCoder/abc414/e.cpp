@@ -14,7 +14,7 @@ using ii = pair<int,int>;
 using iii = tuple<int,int,int>;
 
 const int inf = 2e9+1;
-const int mod = 1e9+7;
+const int mod = (119<<23)+1;
 const int maxn = 3e5+100;
 
 template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
@@ -28,28 +28,31 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-    int n, m; cin >> n >> m;
-    vector<vector<int>> adj(n, vector<int>(n));
-    for (int i = 0; i < m; ++i) {
-        int u, v; cin >> u >> v; --u, --v;
-        adj[u][v] = adj[v][u] = 1;
+    int n; cin >> n;
+    // a % b != a
+    // fixado b, dah bom <=> a > b
+    // n - 1 + n - 2 + n - 3 + ... 1
+    // a = kb
+    int div = (mod+1)/2;
+    int aa = n % mod;
+    int ans = aa % mod * (aa-1) % mod * div % mod;
+    int lim = 0;
+    for (int b = 1; b*b <= n; ++b) {
+        int vai = n / b;
+        ans = (ans - vai + 1) % mod;
+        lim = b;
     }
-    vector<int> p(n); iota(all(p), 0);
-    int ans = n * n;
-    do {
-        vector<int> dp(n+1);
-        for (int i = 1; i <= n; ++i) {
-            dp[i] = inf;
-            for (int j = 1; j <= i-2; ++j) {
-                int cost = 0;
-                for (int a = 1; a <= i; ++a) for (int b = max(j, a+1); b <= i; ++b) {
-                    cost += (adj[p[a-1]][p[b-1]]^((j <= a and b==a+1) or (a==j and b == i)));
-                }
-                ckmin(dp[i], cost + dp[j-1]);
-            }
-        }
-        ckmin(ans, dp[n]);
-    } while (next_permutation(all(p)));
+    for (int times = 2; times*times <= n; ++times) {
+        // b * times <= n
+        // b <= n / times
+        // b * (times+1) > n
+        // b > n / (times+1)
+        int l = n / (times+1) + 1;
+        int r = n / times;
+        ckmax(l, lim+1);
+        ans = (ans - (times-1) * max(0LL, r-l+1)) % mod;
+    }
+    ans = (ans + mod) % mod;
     cout << ans << endl;
 }
 

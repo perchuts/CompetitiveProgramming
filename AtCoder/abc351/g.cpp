@@ -5,7 +5,7 @@
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define int ll
-#define gato
+//#define gato
 
 using namespace std;
 
@@ -28,7 +28,7 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-int solve(int n, int q, vector<int> a, vector<int> p, vector<ii> qu) {
+vector<int> solve(int n, int q, vector<int> a, vector<int> p, vector<ii> qu) {
     vector<vector<int>> g(n);
     for (int i = 1; i < n; ++i) g[p[i]].pb(i);
     vector<int> subt(n);
@@ -37,43 +37,56 @@ int solve(int n, int q, vector<int> a, vector<int> p, vector<ii> qu) {
         subt[u]++;
     };
     pre(pre, 0);
-    // first, adjust height (compress)
-    // then, adjust node degree (rake)
     vector<vector<int>> g2;
-    vector<int> tipo, pai, w(n, -1), quem(n);
+    vector<int> tipo, pai, w_(n, -1), quem(n), cara;
+    vector<ii> add;
     auto rake_and_compress = [&] (auto&& self, int u) -> int {
         int big = -1;
         for (auto v : g[u]) {
-            if (ckmax(big, subt[v])) w[u] = v;
+            if (ckmax(big, subt[v])) w_[u] = v;
         }
         // compress?
         if (big == -1) {
             int eu = sz(g2);
             g2.pb({}), tipo.pb(1), pai.pb(-1);
             quem[u] = eu;
-            priority_queue<ii, vector<ii>, greater<>> up;
+            vector<ii> up;
             int cur = u, tam_lst = 0;
             while (true) {
-                up.push({subt[cur]-tam_lst, quem[cur]});
+                up.pb({subt[cur]-tam_lst, quem[cur]});
                 tam_lst = subt[cur];
-                if (cur == 0 or w[p[cur]] != cur) break;
+                if (cur == 0 or w_[p[cur]] != cur) break;
                 cur = p[cur];
             }
-            if (sz(up) == 1) return eu;
-            g2.pb({}), tipo.pb(2), pai.pb(-1);
-            while (sz(up) > 1) {
-                auto [w1, x] = up.top(); up.pop();
-                auto [w2, y] = up.top(); up.pop();
-                pai[x] = pai[y] = sz(g2)-1;
-                up.push({w1+w2, sz(g2)-1});
-                g2.pb({}), tipo.pb(2), pai.pb(-1);
-            }
-            g2.pop_back(), tipo.pop_back(), pai.pop_back();
-            return sz(g2)-1;
+            auto go = [&] (auto&& self2, int l, int r) -> int {
+                if (l == r) return up[l].second;
+                if (l > r) return -1;
+                int S = 0;
+                for (int i = l; i <= r; ++i) S += up[i].first;
+                int esq = 0, dir = S;
+                for (int i = l; i <= r; ++i) {
+                    dir -= up[i].first;
+                    if (2 * max(esq, dir) <= S) {
+                        int f1 = self2(self2, l, i-1);
+                        int f2 = self2(self2, i+1, r);
+                        if (f1 != -1 and f2 != -1) {
+                            pai[up[i].second] = pai[f1] = sz(g2);
+                            g2.pb({}), tipo.pb(2), pai.pb(-1);
+                            pai.back() = pai[f2] = sz(g2);
+                        } else if (f1 != -1) pai[up[i].second] = pai[f1] = sz(g2);
+                        else pai[up[i].second] = pai[f2] = sz(g2);
+                        g2.pb({}), tipo.pb(2), pai.pb(-1);
+                        return sz(g2)-1;
+                    }
+                    esq += up[i].first;
+                }
+                assert(false);
+            };
+            return go(go, 0, sz(up)-1);
         }
         // rake
         queue<int> filhos;
-        for (auto v : g[u]) if (v != w[u]) filhos.push(self(self, v));
+        for (auto v : g[u]) if (v != w_[u]) filhos.push(self(self, v));
         while (sz(filhos) > 1) {
             int x = filhos.front(); filhos.pop();
             int y = filhos.front(); filhos.pop();
@@ -86,22 +99,102 @@ int solve(int n, int q, vector<int> a, vector<int> p, vector<ii> qu) {
         g2.pb({}), tipo.pb(1), pai.pb(-1);
         quem[u] = eu;
         assert(eu < sz(g2));
-        return self(self, w[u]);
+        return self(self, w_[u]);
     };
     int root = rake_and_compress(rake_and_compress, 0);
+    cara = vector<int>(root+1, -1);
+    vector<int> high(root+2, -1);
+    for (int i = 0; i < n; ++i) cara[quem[i]] = i;
     assert(root == sz(g2)-1);
-    //cout << w[0] << endl;
-    //for (int i = 0; i <= root; ++i) cout << pai[i] << ' ' << i << endl;
-    //for (auto x : quem) cout << x << ' ';
-    //cout << endl;
-    //for (auto x : tipo) cout << x << ' ';
-    //cout << endl;
-    //while (q--) {
-    //    int v, x; cin >> v >> x; --v;
-    //}
-    vector<int> height(root+1);
-    for (int i = root-1; ~i; --i) height[i] = 1 + height[pai[i]];
-    return *max_element(all(height));
+    vector<int> height(root+1), deg(root+1);
+    //for (int i = root-1; ~i; --i) height[i] = 1 + height[pai[i]], deg[pai[i]]++;
+    //cout << *max_element(all(height)) << endl;
+    //exit(0);
+    for (int i = 0; i < root; ++i) g2[pai[i]].pb(i);
+    //cerr << "tipo: ";
+    //for (auto x : tipo) cerr << x << ' ';
+    //cerr << endl;
+    //cerr << "quem: ";
+    //for (auto x : quem) cerr << x << ' ';
+    //cerr << endl;
+    vector<array<int, 3>> out(root+1);
+    out.pb({0, 0, 1});
+    enum sexo { RAKE, NODE, COMPRESS };
+    // {A, B} --- {C, D}
+    // f{A, B}(x) = Ax + B
+    // f{C, D}(f{A, B}(x)) = f{C, D}(Ax + B) = C*(Ax + B) + D = ACx + BC + D = {AC, BC + D}
+    // attach subtree:
+    // {A, B} --- {C, D} => {A*D, B}
+    // update value: {A, B} --- (x) => {A, x}
+    //
+    auto merge = [&] (int u, int v, int w) {
+        high[u] = max(high[v], high[w]);
+        if (tipo[u] == RAKE) out[u][2] = out[v][2] * out[w][2] % mod;
+        if (tipo[u] == COMPRESS) {
+			if (high[v] < high[w]) swap(v, w);
+            out[u][0] = out[v][0] * out[w][0] % mod;
+            out[u][1] = (out[v][0] * out[w][1] + out[v][1]) % mod;
+            out[u][2] = (out[w][2] * out[v][0] + out[v][1]) % mod;
+        }
+        if (tipo[u] == NODE) {
+            assert(cara[u] != -1);
+            ckmax(high[u], subt[cara[u]]);
+            out[u][0] = out[v][2] * out[w][2] % mod;
+            out[u][1] = a[cara[u]];
+            out[u][2] = (out[u][0] + out[u][1]) % mod;
+        }
+    };
+    //cerr << "edges: " << endl;
+    auto build = [&] (auto&& self, int u) -> void {
+        if (u > root) return;
+        if (g2[u].empty()) {
+			high[u] = subt[cara[u]];
+            out[u][0] = 1;
+            out[u][1] = out[u][2] = a[cara[u]];
+            return;
+        }
+        if (sz(g2[u]) == 1) g2[u].pb(root+1);
+        //cerr << u << " " << g2[u][0] << endl;
+        //cerr << u << " " << g2[u][1] << endl;
+        self(self, g2[u][0]), self(self, g2[u][1]);
+        merge(u, g2[u][0], g2[u][1]); 
+    };
+    build(build, root);
+    //cerr << "out: " << endl;
+    //for (int i = 0; i <= root; ++i) cerr << out[i][0] << ' ' << out[i][1] << ' ' << out[i][2] << endl;
+    //cerr << "queries: " << endl;
+    vector<int> ans;
+    for (auto [v, x] : qu) {
+        int u = quem[v];
+        out[u][1] = a[v] = x;
+        out[u][2] = (x + (g2[u].empty() ? 0 : out[u][0])) % mod;
+        //cerr << "new value of " << u << " is " << out[u][0] << ' ' << out[u][1] << ' ' << out[u][2] << endl;
+        while (u != root) {
+            u = pai[u];
+            //cerr << "updating " << u << endl;
+            merge(u, g2[u][0], g2[u][1]);
+            //cerr << "new value: " << out[u][0] << ' ' << out[u][1] << ' ' << out[u][2] << endl;
+        }
+        ans.pb(out[root][2]);
+    }
+    return ans;
+}
+
+vector<int> brute(int n, int q, vector<int> a, vector<int> p, vector<ii> qu) {
+    vector<int> ans;
+    vector<vector<int>> g(n);
+    for (int i = 1; i < n; ++i) g[p[i]].pb(i);
+    for (auto [x, y] : qu) {
+        a[x] = y;
+        auto go = [&] (auto&& self, int u) -> int {
+            if (g[u].empty()) return a[u];
+            int ret = 1;
+            for (auto v : g[u]) ret = ret * self(self, v) % mod;
+            return (ret + a[u]) % mod;
+        };
+        ans.pb(go(go, 0));
+    }
+    return ans;
 }
 
 int32_t main() {_
@@ -113,21 +206,57 @@ int32_t main() {_
     for (auto& x : a) cin >> x;
     vector<ii> qu(q);
     for (auto& [x, y] : qu) cin >> x >> y, --x;
-    while(t--) solve(n, q, a, p, qu);
+    while(t--) {
+        auto ans = solve(n, q, a, p, qu);
+        for (auto x : ans) cout << x << endl;
+    }
 #else
     int t = 1;
-    int n = 200000, q = 1;
-    vector<int> p(n), a(n);
-    
+    int n, q = 1;
+    // funny tree
+    int nn = 587;
+    vector<int> label(nn);
+    vector<int> p = {-1}, a;
+    int cur = 0;
+    for (int i = 0; i < nn; ++i) {
+        label[i] = cur++;
+        if (i) {
+            int pai = i / 2;
+            p.pb(label[pai]);
+        }
+        for (int j = 0; j < nn; ++j) p.pb(cur-1), cur++;
+    }
+    a = vector<int>(p.size(), 0);
+    n = sz(a);
+    cout << n << endl;
     vector<ii> qu(q);
     for (auto& [x, y] : qu) x = rnd(0, n-1), y = rnd(0, 10);
-    cout << solve(n, q, a, p, qu) << endl;
+    solve(n, q, a, p, qu);
+    //exit(0);
+    //int t = 1;
     //while (true) {
-    //    int my = solve(), ans = brute();
+    //    int n = rnd(3, 1000), q = 5;
+    //    vector<ii> qu(q);
+    //    vector<int> p(n), a(n);
+    //    for (auto& [x, y] : qu) x = rnd(0, n-1), y = rnd(0, 5);
+    //    for (auto& x : a) x = rnd(0, 5);
+    //    for (int i = 1; i < n; ++i) p[i] = rnd(0, i-1);
+    //    auto my = solve(n, q, a, p, qu);
+    //    auto ans = brute(n, q, a, p, qu);
     //    if (my != ans) {
     //        cout << "Wrong answer on test " << t << endl;
-    //        cout << "Your output: " << my << endl;
-    //        cout << "Answer: " << ans << endl;
+    //        cout << n << ' ' << q << endl;
+    //        for (int i = 1; i < n; ++i) cout << p[i]+1 << ' ';
+    //        cout << endl;
+    //        for (auto x : a) cout << x << ' ';
+    //        cout << endl;
+    //        for (auto [x, y] : qu) cout << x + 1 << ' ' << y << endl;
+    //        cout << "Your output: ";
+    //        for (auto x : my) cout << x << ' ';
+    //        cout << endl;
+    //        cout << "Answer: ";
+    //        for (auto x : ans) cout << x << ' ';
+    //        cout << endl;
     //        exit(0);
     //    }
     //    cout << "Accepted on test " << t++ << endl;

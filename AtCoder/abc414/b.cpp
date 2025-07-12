@@ -28,29 +28,17 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-    int n, m; cin >> n >> m;
-    vector<vector<int>> adj(n, vector<int>(n));
-    for (int i = 0; i < m; ++i) {
-        int u, v; cin >> u >> v; --u, --v;
-        adj[u][v] = adj[v][u] = 1;
-    }
-    vector<int> p(n); iota(all(p), 0);
-    int ans = n * n;
-    do {
-        vector<int> dp(n+1);
-        for (int i = 1; i <= n; ++i) {
-            dp[i] = inf;
-            for (int j = 1; j <= i-2; ++j) {
-                int cost = 0;
-                for (int a = 1; a <= i; ++a) for (int b = max(j, a+1); b <= i; ++b) {
-                    cost += (adj[p[a-1]][p[b-1]]^((j <= a and b==a+1) or (a==j and b == i)));
-                }
-                ckmin(dp[i], cost + dp[j-1]);
-            }
+    int n; cin >> n;
+    string sexo;
+    for (int i = 0; i < n; ++i) {
+        char c; int l; cin >> c >> l;
+        if (sz(sexo) + l > 100) {
+            cout << "Too Long" << endl;
+            exit(0);
         }
-        ckmin(ans, dp[n]);
-    } while (next_permutation(all(p)));
-    cout << ans << endl;
+        for (int j = 0; j < l; ++j) sexo += c;
+    }
+    cout << sexo << endl;
 }
 
 int32_t main() {_

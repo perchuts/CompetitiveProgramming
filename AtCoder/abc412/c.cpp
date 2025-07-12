@@ -28,34 +28,32 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-    int n, m; cin >> n >> m;
-    vector<vector<int>> adj(n, vector<int>(n));
-    for (int i = 0; i < m; ++i) {
-        int u, v; cin >> u >> v; --u, --v;
-        adj[u][v] = adj[v][u] = 1;
+    int n; cin >> n;
+    int cur; cin >> cur;
+    if (n == 2) {
+        int t; cin >> t;
+        cout << (t <= 2*cur ? 2 : -1) << endl;
+        return;
     }
-    vector<int> p(n); iota(all(p), 0);
-    int ans = n * n;
-    do {
-        vector<int> dp(n+1);
-        for (int i = 1; i <= n; ++i) {
-            dp[i] = inf;
-            for (int j = 1; j <= i-2; ++j) {
-                int cost = 0;
-                for (int a = 1; a <= i; ++a) for (int b = max(j, a+1); b <= i; ++b) {
-                    cost += (adj[p[a-1]][p[b-1]]^((j <= a and b==a+1) or (a==j and b == i)));
-                }
-                ckmin(dp[i], cost + dp[j-1]);
-            }
-        }
-        ckmin(ans, dp[n]);
-    } while (next_permutation(all(p)));
-    cout << ans << endl;
+    vector<int> v(n-2);
+    for (auto& x : v) cin >> x;
+    int target; cin >> target;
+    sort(all(v));
+    while (!v.empty() and v.back() > target) v.pop_back();
+    v.pb(target);
+    int tot = 1;
+    for (int l = 0, r = 0; l != sz(v); l = r) {
+        if (v[l] > 2*cur) break;
+        while (r != sz(v) and v[r] <= 2*cur) r++;
+        cur = v[r-1];
+        tot++;
+    }
+    cout << (cur == target ? tot : -1) << endl;
 }
 
 int32_t main() {_
 #ifndef gato
-    int t = 1; //cin >> t;
+    int t = 1; cin >> t;
     while(t--) solve();
 #else
     int t = 1;

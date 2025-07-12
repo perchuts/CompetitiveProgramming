@@ -28,28 +28,29 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-    int n, m; cin >> n >> m;
-    vector<vector<int>> adj(n, vector<int>(n));
-    for (int i = 0; i < m; ++i) {
-        int u, v; cin >> u >> v; --u, --v;
-        adj[u][v] = adj[v][u] = 1;
-    }
-    vector<int> p(n); iota(all(p), 0);
-    int ans = n * n;
-    do {
-        vector<int> dp(n+1);
-        for (int i = 1; i <= n; ++i) {
-            dp[i] = inf;
-            for (int j = 1; j <= i-2; ++j) {
-                int cost = 0;
-                for (int a = 1; a <= i; ++a) for (int b = max(j, a+1); b <= i; ++b) {
-                    cost += (adj[p[a-1]][p[b-1]]^((j <= a and b==a+1) or (a==j and b == i)));
-                }
-                ckmin(dp[i], cost + dp[j-1]);
-            }
+    int a, n; cin >> a >> n;
+    int ans = 0;
+    auto check = [&] (int k) {
+        if (k > n) return false;
+        vector<int> cara;
+        while (k) cara.pb(k % a), k /= a;
+        auto caraa = cara;
+        reverse(all(caraa));
+        return caraa == cara;
+    };
+    for (int i = 1; i < 1e6; ++i) {
+        string sexo = to_string(i);
+        if (i < 10) ans += check(i) * i;
+        string rev = sexo; reverse(all(rev));
+        string tt = sexo + rev;
+        ans += check(stoll(tt)) * stoll(tt);
+        string s2 = sexo + to_string(0) + rev;
+        for (int j = 0; j < 10; ++j) {
+            s2[sz(sexo)] = char('0' + j);
+            int k = stoll(s2);
+            ans += check(k) * k;
         }
-        ckmin(ans, dp[n]);
-    } while (next_permutation(all(p)));
+    }
     cout << ans << endl;
 }
 
