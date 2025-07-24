@@ -1,11 +1,10 @@
 #include <bits/stdc++.h>
 #define all(x) x.begin(), x.end()
 #define sz(x) (int) x.size()
-#define endl '\n'
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define int ll
-#define gato
+//#define gato
 
 using namespace std;
 
@@ -66,38 +65,146 @@ vector<vector<int>> brute(int n, vector<vector<int>> grid) {
     return resp;
 }
 
+// Dinitz
+//
+// O(min(m * max_flow, n^2 m))
+// Grafo com capacidades 1: O(min(m sqrt(m), m * n^(2/3)))
+// Todo vertice tem grau de entrada ou saida 1: O(m sqrt(n))
+const int INF = inf;
+struct dinitz {
+	const bool scaling = false; // com scaling -> O(nm log(MAXCAP)),
+	int lim;                    // com constante alta
+	struct edge {
+		int to, cap, rev, flow;
+		bool res;
+		edge(int to_, int cap_, int rev_, bool res_)
+			: to(to_), cap(cap_), rev(rev_), flow(0), res(res_) {}
+	};
+
+	vector<vector<edge>> g;
+	vector<int> lev, beg;
+	ll F;
+	dinitz(int n) : g(n), F(0) {}
+
+	void add(int a, int b, int c) {
+		g[a].emplace_back(b, c, g[b].size(), false);
+		g[b].emplace_back(a, 0, g[a].size()-1, true);
+	}
+	bool bfs(int s, int t) {
+		lev = vector<int>(g.size(), -1); lev[s] = 0;
+		beg = vector<int>(g.size(), 0);
+		queue<int> q; q.push(s);
+		while (q.size()) {
+			int u = q.front(); q.pop();
+			for (auto& i : g[u]) {
+				if (lev[i.to] != -1 or (i.flow == i.cap)) continue;
+				if (scaling and i.cap - i.flow < lim) continue;
+				lev[i.to] = lev[u] + 1;
+				q.push(i.to);
+			}
+		}
+		return lev[t] != -1;
+	}
+	int dfs(int v, int s, int f = INF) {
+		if (!f or v == s) return f;
+		for (int& i = beg[v]; i < g[v].size(); i++) {
+			auto& e = g[v][i];
+			if (lev[e.to] != lev[v] + 1) continue;
+			int foi = dfs(e.to, s, min(f, e.cap - e.flow));
+			if (!foi) continue;
+			e.flow += foi, g[e.to][e.rev].flow -= foi;
+			return foi;
+		}
+		return 0;
+	}
+	ll max_flow(int s, int t) {
+		for (lim = scaling ? (1<<30) : 1; lim; lim /= 2)
+			while (bfs(s, t)) while (int ff = dfs(s, t)) F += ff;
+		return F;
+	}
+};
+// Recupera as arestas do corte s-t
+vector<pair<int, int>> get_cut(dinitz& g, int s, int t) {
+	g.max_flow(s, t);
+	vector<pair<int, int>> cut;
+	vector<int> vis(g.g.size(), 0), st = {s};
+	vis[s] = 1;
+	while (st.size()) {
+		int u = st.back(); st.pop_back();
+		for (auto e : g.g[u]) if (!vis[e.to] and e.flow < e.cap)
+			vis[e.to] = 1, st.push_back(e.to);
+	}
+	for (int i = 0; i < g.g.size(); i++) for (auto e : g.g[i])
+		if (vis[i] and !vis[e.to] and !e.res) cut.emplace_back(i, e.to);
+	return cut;
+}
+
 vector<vector<int>> solve(int n, vector<vector<int>> grid) {
-    vector<vector<int>> pode(n, vector<int>(n));
-    for (int i = 0; i < n; ++i) for (int j = 0; j < n; ++j) pode[i][j] = (grid[i][j] == 0);
     int a[] = {1, -1, 0, 0, 0, 0, 1, -1};
-    while (true) {
-        bool ok = false;
-        iii pos;
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < n; ++j) {
-                if (!pode[i][j]) continue;
-                auto calc = [&] (int x) {
-                    int tot = 0;
-                    for (int k = 0; k < 4; ++k) {
-                        int x2 = i + a[k], y2 = j + a[k+4];
-                        if (min(x2, y2) < 0 or max(x2, y2) == n) continue;
-                        tot += (x-grid[x2][y2])*(x-grid[x2][y2]);
-                    }
-                    return tot;
-                };
-                int best = calc(grid[i][j]), val = grid[i][j];
-                for (int k = 0; k <= 5; ++k) {
-                    if (ckmin(best, calc(k))) val = k;
+    // vou criar 5 nodes
+    // 5 * n * n + 2 (src + root) + 2 * (n-1) * n * 5 * 5 (gadget nodes)
+    int N = 5 * n * n + 50 * (n-1) * n, src = N, sink = N+1;
+    dinitz dz(N + 2);
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            int viz = 0;
+            if (i) viz++;
+            if (i != n-1) viz++;
+            if (j) viz++;
+            if (j != n-1) viz++;
+            int lst = src;
+            for (int t = 0; t < 5; ++t) {
+                if (i == 4 and j == 1) {
+                    //cout << lst << ' ' << t * n * n + i * n + j << ' ' << ((t == 5 - grid[i][j] or grid[i][j] == 0) ? viz * (5-t) * (5-t) : inf) << endl;
                 }
-                if (val != grid[i][j]) {
-                    ok = true;
-                    pos = {i, j, val};
+                dz.add(lst, t * n * n + i * n + j, ((t == 5 - grid[i][j] or grid[i][j] == 0) ? viz * (5-t) * (5-t) : inf));
+                lst = t * n * n + i * n + j;
+            }
+            dz.add(lst, sink, inf);
+        }
+    }
+    int cur = 5 * n * n;
+    map<int, array<int, 4>> sexo;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            for (int w = 0; w < 2; ++w) {
+                int i2 = i, j2 = j;
+                if (w) i2++;
+                else j2++;
+                if (max(i2, j2) == n) continue;
+                for (int a = 0; a < 5; ++a) {
+                    for (int b = 0; b < 5; ++b) {
+                        sexo[cur] = {i2, j2, a, b};
+                        dz.add(cur, sink, 2);
+                        if (grid[i][j] == 0 or a < 5 - grid[i][j]) dz.add(a * n * n + i * n + j, cur, 2);
+                        if (grid[i2][j2] == 0 or b < 5 - grid[i2][j2]) dz.add(b * n * n + i2 * n + j2, cur, 2);
+                        cur++;
+                    }
                 }
             }
         }
-        if (!ok) break;
-        auto [i, j, val] = pos;
-        grid[i][j] = val;
+    }
+    int ans = dz.max_flow(src, sink) - 100 * n * (n-1);
+    auto e = get_cut(dz, src, sink);
+    map<ii, int> forb;
+    for (auto [x, y] : e) forb[{x, y}] = forb[{y, x}] = 1;
+    vector<int> vis(N+2);
+    auto dfs = [&] (auto&& self, int u) -> void {
+        vis[u] = 1;
+        for (auto e : dz.g[u]) {
+            if (forb[{e.to, u}] or vis[e.to]) continue;
+            self(self, e.to);
+        }
+    };
+    dfs(dfs, src);
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (grid[i][j]) continue;
+            grid[i][j] = 5;
+            for (int t = 0; t < 5; ++t) {
+                if (vis[n * n * t + n * i + j]) grid[i][j]--;
+            }
+        }
     }
     return grid;
 }
@@ -108,7 +215,6 @@ int32_t main() {_
     vector<vector<int>> grid(n, vector<int>(n));
     for (auto& x : grid) for (auto& y : x) cin >> y;
     auto ans = solve(n, grid);
-    cout << score(n, ans) << endl;
     for (auto x : ans) {
         for (auto y : x) cout << y << ' ';
         cout << endl;
@@ -117,7 +223,7 @@ int32_t main() {_
 #else
     int t = 1;
     while (true) {
-        int n = rnd(1, 2);
+        int n = rnd(1, 5);
         int lim = 8;
         vector<vector<int>> grid(n, vector<int>(n));
         for (auto& x : grid) {
@@ -129,13 +235,9 @@ int32_t main() {_
         auto my = solve(n, grid);
         auto ans = brute(n, grid);
 
-        if (score(n, my) != score(n, ans)) {
+        if (my != score(n, ans)) {
             cout << "Wrong answer on test " << t << endl;
-            cout << "Your output: " << score(n, my) << endl;
-            for (auto x : my) {
-                for (auto y : x) cout << y << ' ';
-                cout << endl;
-            }
+            cout << "Your output: " << my << endl;
             cout << "Answer: " << score(n, ans) << endl;
             for (auto x : ans) {
                 for (auto y : x) cout << y << ' ';
@@ -144,6 +246,21 @@ int32_t main() {_
             exit(0);
         }
         cout << "Accepted on test " << t++ << endl;
+        //if (score(n, my) != score(n, ans)) {
+        //    cout << "Wrong answer on test " << t << endl;
+        //    cout << "Your output: " << score(n, my) << endl;
+        //    for (auto x : my) {
+        //        for (auto y : x) cout << y << ' ';
+        //        cout << endl;
+        //    }
+        //    cout << "Answer: " << score(n, ans) << endl;
+        //    for (auto x : ans) {
+        //        for (auto y : x) cout << y << ' ';
+        //        cout << endl;
+        //    }
+        //    exit(0);
+        //}
+        //cout << "Accepted on test " << t++ << endl;
     }
 #endif
 }
