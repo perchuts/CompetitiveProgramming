@@ -5,7 +5,6 @@
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define int ll
-#define gato
 
 using namespace std;
 
@@ -15,7 +14,7 @@ using ii = pair<int,int>;
 using iii = tuple<int,int,int>;
 
 const int inf = 2e9+1;
-const int mod = 1e9+7;
+const int mod = (119<<23)+1;
 const int maxn = 3e5+100;
 
 template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
@@ -28,42 +27,37 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-int solve(int n, int m, int r) {
-    if (r > n) return 0;
-    #define int __int128_t
-    auto f = [] (auto&& self, int n, int a, int b, int c) -> int {
-        if (n < 0) return 0;
-        if (b >= c or a >= c) return self(self, n, a % c, b % c, c) + (n+1) * (b / c) + (a/c) * n * (n + 1) / 2;
-        int lim = (a*n + b) / c;
-        return n * lim - self(self, lim-1, c, c-b-1, a);
-    };
-    int ans = 0;
-    for (int bit = 0; bit < 30; ++bit) ans += f(f, (n-r)/m, m, r + (1 << bit), (2LL << bit)) - f(f, (n-r)/m, m, r, (2LL << bit));
-    #define int ll
-    return ans;
-}
-
-int brute(int n, int m, int r) {
-    int ans = 0;
-    for (int i = r; i <= n; i += m) ans += __builtin_popcount(i);
-    return ans;
+void solve() {
+    int n, k; cin >> n >> k;
+    vector<int> mark(n);
+    vector<ii> restr(k);
+    vector<int> pode(n);
+    for (auto& [x, y] : restr) {
+        char c; cin >> c >> x; --x;
+        if (c == 'L') pode[x]++;
+        else pode[0]++, pode[x]--;
+        mark[x] = true;
+    }
+    int ans = 1;
+    int tot = 0;
+    for (int i = 0; i < n; ++i) {
+        tot += pode[i];
+        if (mark[i]) continue;
+        ans = (ans * tot) % mod;
+    }
+    cout << ans << endl;
 }
 
 int32_t main() {_
 #ifndef gato
-    int t = 1; cin >> t;
-    while (t--) {
-        int n, m, r; cin >> n >> m >> r;
-        cout << solve(n, m, r) << endl;
-    }
+    int t = 1; //cin >> t;
+    while(t--) solve();
 #else
     int t = 1;
     while (true) {
-        int n = rnd(1, 10000), m = rnd(1, n), r = rnd(0, m-1);
-        int my = solve(n, m, r), ans = brute(n, m, r);
+        int my = solve(), ans = brute();
         if (my != ans) {
             cout << "Wrong answer on test " << t << endl;
-            cout << n << ' ' << m << ' ' << r << endl;
             cout << "Your output: " << my << endl;
             cout << "Answer: " << ans << endl;
             exit(0);

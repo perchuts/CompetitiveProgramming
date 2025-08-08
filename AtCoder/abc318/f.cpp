@@ -5,7 +5,6 @@
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define int ll
-#define gato
 
 using namespace std;
 
@@ -28,42 +27,42 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-int solve(int n, int m, int r) {
-    if (r > n) return 0;
-    #define int __int128_t
-    auto f = [] (auto&& self, int n, int a, int b, int c) -> int {
-        if (n < 0) return 0;
-        if (b >= c or a >= c) return self(self, n, a % c, b % c, c) + (n+1) * (b / c) + (a/c) * n * (n + 1) / 2;
-        int lim = (a*n + b) / c;
-        return n * lim - self(self, lim-1, c, c-b-1, a);
+void solve() {
+    int n; cin >> n;
+    vector<int> pos(n), l(n);
+    for (auto& x : pos) cin >> x;
+    for (auto& x : l) cin >> x;
+    for (int i = n-1; ~i; --i) pos[i] += 151852;
+    vector<int> ev;
+    int ans = 0;
+    for (int i = 0; i < n; ++i) for (int j = i; j < n; ++j) ev.pb((pos[i]+pos[j])/2+1), ev.pb((pos[i]+pos[j])/2);
+    ev.pb(-3e18);
+    ev.pb(3e18);
+    sort(all(ev));
+    ev.erase(unique(all(ev)), end(ev));
+    auto check = [&] (int p, int mx) {
+        vector<int> ord(n); iota(all(ord), 0); sort(all(ord), [&] (int a, int b) { return abs(p-pos[a]) < abs(p-pos[b]); });
+        int lx = p, rx = mx-1;
+        for (int j = 0; j < n; ++j) ckmax(lx, pos[ord[j]] - l[j]), ckmin(rx, pos[ord[j]] + l[j]);
+        return pair(lx, rx);
     };
-    int ans = 0;
-    for (int bit = 0; bit < 30; ++bit) ans += f(f, (n-r)/m, m, r + (1 << bit), (2LL << bit)) - f(f, (n-r)/m, m, r, (2LL << bit));
-    #define int ll
-    return ans;
-}
-
-int brute(int n, int m, int r) {
-    int ans = 0;
-    for (int i = r; i <= n; i += m) ans += __builtin_popcount(i);
-    return ans;
+    for (int i = 0; i < sz(ev)-1; ++i) {
+        auto [xx, yy] = check(ev[i], ev[i+1]);
+        ans += max(0LL, yy-xx+1);
+    }
+    cout << ans << endl;
 }
 
 int32_t main() {_
 #ifndef gato
-    int t = 1; cin >> t;
-    while (t--) {
-        int n, m, r; cin >> n >> m >> r;
-        cout << solve(n, m, r) << endl;
-    }
+    int t = 1; //cin >> t;
+    while(t--) solve();
 #else
     int t = 1;
     while (true) {
-        int n = rnd(1, 10000), m = rnd(1, n), r = rnd(0, m-1);
-        int my = solve(n, m, r), ans = brute(n, m, r);
+        int my = solve(), ans = brute();
         if (my != ans) {
             cout << "Wrong answer on test " << t << endl;
-            cout << n << ' ' << m << ' ' << r << endl;
             cout << "Your output: " << my << endl;
             cout << "Answer: " << ans << endl;
             exit(0);

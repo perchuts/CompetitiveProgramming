@@ -4,8 +4,6 @@
 #define endl '\n'
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
-#define int ll
-#define gato
 
 using namespace std;
 
@@ -28,42 +26,48 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-int solve(int n, int m, int r) {
-    if (r > n) return 0;
-    #define int __int128_t
-    auto f = [] (auto&& self, int n, int a, int b, int c) -> int {
-        if (n < 0) return 0;
-        if (b >= c or a >= c) return self(self, n, a % c, b % c, c) + (n+1) * (b / c) + (a/c) * n * (n + 1) / 2;
-        int lim = (a*n + b) / c;
-        return n * lim - self(self, lim-1, c, c-b-1, a);
+void solve() {
+    int n, k; cin >> n >> k; k++;
+    vector<vector<int>> g(n);
+    for (int i = 0; i < n-1; ++i) {
+        int u, v; cin >> u >> v; --u, --v;
+        g[u].pb(v), g[v].pb(u);
+    }
+    auto merge = [&] (vector<int> a, vector<int> b) {
+        vector<int> res(min(k+1, max(sz(a), sz(b)+1)), n);
+        res[0] = a[0] + b[0];
+        for (int i = 1; i < sz(a); ++i) {
+            for (int j = 0; j < min(sz(b), k + 1 - i); ++j) {
+                ckmin(res[max(i, j+1)], a[i] + b[j]);
+            }
+        }
+        return res;
     };
-    int ans = 0;
-    for (int bit = 0; bit < 30; ++bit) ans += f(f, (n-r)/m, m, r + (1 << bit), (2LL << bit)) - f(f, (n-r)/m, m, r, (2LL << bit));
-    #define int ll
-    return ans;
-}
-
-int brute(int n, int m, int r) {
-    int ans = 0;
-    for (int i = r; i <= n; i += m) ans += __builtin_popcount(i);
-    return ans;
+    vector<vector<int>> dp(n);
+    int ans = n;
+    auto dfs = [&] (auto&& self, int u, int p) -> void {
+        dp[u] = {1, 0};
+        for (auto v : g[u]) {
+            if (v == p) continue;
+            self(self, v, u);
+            dp[u] = merge(dp[u], dp[v]);
+        }
+        for (auto x : dp[u]) ckmin(ans, x + n - dp[u][0]);
+    };
+    dfs(dfs, 0, 0);
+    cout << ans << endl;
 }
 
 int32_t main() {_
 #ifndef gato
-    int t = 1; cin >> t;
-    while (t--) {
-        int n, m, r; cin >> n >> m >> r;
-        cout << solve(n, m, r) << endl;
-    }
+    int t = 1; //cin >> t;
+    while(t--) solve();
 #else
     int t = 1;
     while (true) {
-        int n = rnd(1, 10000), m = rnd(1, n), r = rnd(0, m-1);
-        int my = solve(n, m, r), ans = brute(n, m, r);
+        int my = solve(), ans = brute();
         if (my != ans) {
             cout << "Wrong answer on test " << t << endl;
-            cout << n << ' ' << m << ' ' << r << endl;
             cout << "Your output: " << my << endl;
             cout << "Answer: " << ans << endl;
             exit(0);

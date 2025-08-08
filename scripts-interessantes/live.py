@@ -61,69 +61,69 @@ def generateStandings(seconds):
 			'teamName': '[UFMG] hj tomei 5 tles por esquecer do fast_io',
 			'members': [{'handle': 'gustavocruz'}, {'handle': 'mvkaio'}, {'handle': 'perchuts'}]
 		},
-		'problemResults': [
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 5940,
-				'rejectedAttemptCount': 1
-			},
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 15960,
-				'rejectedAttemptCount': 0
-			},
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 15540,
-				'rejectedAttemptCount': 0
-			},
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 3600,
-				'rejectedAttemptCount': 0
-			},
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 13980,
-				'rejectedAttemptCount': 1
-			},
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 13260,
-				'rejectedAttemptCount': 4
-			},
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 3900,
-				'rejectedAttemptCount': 0
-			},
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 4380,
-				'rejectedAttemptCount': 0
-			},
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 1380,
-				'rejectedAttemptCount': 2
-			},
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 540,
-				'rejectedAttemptCount': 0
-			},
-			{
-				'points': 1,
-				'bestSubmissionTimeSeconds': 11880,
-				'rejectedAttemptCount': 12
-			},
-			{
-				'points': 0,
-				'bestSubmissionTimeSeconds': 0,
-				'rejectedAttemptCount': 0
-			},
-		]
-	}
+        'problemResults': [
+            {
+                'points': 1,
+                'bestSubmissionTimeSeconds': 5940,
+                'rejectedAttemptCount': 1
+                },
+            {
+                'points': 1,
+                'bestSubmissionTimeSeconds': 15960,
+                'rejectedAttemptCount': 0
+                },
+            {
+                'points': 1,
+                'bestSubmissionTimeSeconds': 15540,
+                'rejectedAttemptCount': 0
+                },
+            {
+                'points': 1,
+                'bestSubmissionTimeSeconds': 3600,
+                'rejectedAttemptCount': 0
+                },
+            {
+                'points': 1,
+                'bestSubmissionTimeSeconds': 13980,
+                'rejectedAttemptCount': 1
+                },
+            {
+                'points': 1,
+                'bestSubmissionTimeSeconds': 13260,
+                'rejectedAttemptCount': 4
+                },
+            {
+                'points': 1,
+                'bestSubmissionTimeSeconds': 3900,
+                'rejectedAttemptCount': 0
+                },
+            {
+                'points': 1,
+                'bestSubmissionTimeSeconds': 4380,
+                'rejectedAttemptCount': 0
+                },
+            {
+                'points': 1,
+                'bestSubmissionTimeSeconds': 1380,
+                'rejectedAttemptCount': 2
+                },
+            {
+                'points': 1,
+                'bestSubmissionTimeSeconds': 540,
+                'rejectedAttemptCount': 0
+                },
+            {
+                    'points': 1,
+                    'bestSubmissionTimeSeconds': 11880,
+                    'rejectedAttemptCount': 12
+                    },
+            {
+                    'points': 0,
+                    'bestSubmissionTimeSeconds': 0,
+                    'rejectedAttemptCount': 0
+                    },
+        ]
+    }
 
 	calvos = {
 		'party': {

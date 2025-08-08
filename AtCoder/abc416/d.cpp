@@ -5,7 +5,6 @@
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define int ll
-#define gato
 
 using namespace std;
 
@@ -28,42 +27,35 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-int solve(int n, int m, int r) {
-    if (r > n) return 0;
-    #define int __int128_t
-    auto f = [] (auto&& self, int n, int a, int b, int c) -> int {
-        if (n < 0) return 0;
-        if (b >= c or a >= c) return self(self, n, a % c, b % c, c) + (n+1) * (b / c) + (a/c) * n * (n + 1) / 2;
-        int lim = (a*n + b) / c;
-        return n * lim - self(self, lim-1, c, c-b-1, a);
-    };
+void solve() {
+    int n, m; cin >> n >> m;
+    vector<int> a(n), b(n);
     int ans = 0;
-    for (int bit = 0; bit < 30; ++bit) ans += f(f, (n-r)/m, m, r + (1 << bit), (2LL << bit)) - f(f, (n-r)/m, m, r, (2LL << bit));
-    #define int ll
-    return ans;
-}
-
-int brute(int n, int m, int r) {
-    int ans = 0;
-    for (int i = r; i <= n; i += m) ans += __builtin_popcount(i);
-    return ans;
+    for (auto& x : a) cin >> x, ans += x;
+    for (auto& x : b) cin >> x, ans += x;
+    int l = 1, r = n, opt = 0;
+    sort(all(b));
+    sort(all(a));
+    while (l <= r) {
+        int md = l + (r-l+1)/2;
+        int ok = 1;
+        for (int i = 0; i < md; ++i) ok &= (b[n-1-i] + a[n-md+i] >= m);
+        if (ok) opt = md, l = md+1;
+        else r = md-1;
+    }
+    cout << ans - m * opt << endl;
 }
 
 int32_t main() {_
 #ifndef gato
     int t = 1; cin >> t;
-    while (t--) {
-        int n, m, r; cin >> n >> m >> r;
-        cout << solve(n, m, r) << endl;
-    }
+    while(t--) solve();
 #else
     int t = 1;
     while (true) {
-        int n = rnd(1, 10000), m = rnd(1, n), r = rnd(0, m-1);
-        int my = solve(n, m, r), ans = brute(n, m, r);
+        int my = solve(), ans = brute();
         if (my != ans) {
             cout << "Wrong answer on test " << t << endl;
-            cout << n << ' ' << m << ' ' << r << endl;
             cout << "Your output: " << my << endl;
             cout << "Answer: " << ans << endl;
             exit(0);
