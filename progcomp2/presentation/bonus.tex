@@ -1,0 +1,83 @@
+\section{ABC315Ex} 
+\begin{frame}[t]
+     \frametitle{AtCoder ABC315Ex - Typical Convolution Problem} %%https://atcoder.jp/contests/abc387/tasks/abc387_g
+     \framesubtitle{Enunciado}
+            Temos uma sequência $A$ de $N$ inteiros não negativos. Defina a sequência $(F_0, F_1, \dots, F_N)$ pelas fórmulas
+            \begin{itemize}
+            \item $F_0 = 1$
+            \item $F_n = A_n \sum_{i+j<n}F_i F_j$ ($1 \leq n \leq N$)
+            \end{itemize} 
+            Encontre $F_1, \dots, F_N$ módulo $998244353$.
+      \only<2>{
+      \begin{block}{Restrições}
+           $2 \leq N \leq 2 \times 10^5$ \\
+           $0 \leq A_i < 998244353 $ \\
+      \end{block}
+      }
+\end{frame}
+
+\begin{frame}[t]
+     \frametitle{AtCoder ABC315Ex - Typical Convolution Problem} %%https://atcoder.jp/contests/abc387/tasks/abc387_g
+     \framesubtitle{Solução}
+            \only<1-2> {
+                  Neste problema não é possível convoluir diretamente, pois a princípio não conhecemos os termos intermediários $F_1, \dots F_{n}$. Para contornar isso, faremos uso de uma técnica chamada $\textsc{FFT Online}$.
+                  
+            }
+
+            \only<2> {
+                  A $\textsc{FFT Online}$ é capaz de resolver em $O(n \log^2 n)$ o seguinte problema:
+
+                  Compute $c_1, \dots c_n$, com
+
+                  $$
+                        c_k = \sum_{i=0}^{k-1} a_i b_{k-1-i}
+                  $$
+
+                  onde $a_1, \dots, a_n$ e $b_1, \dots, b_n$ não são conhecidos, mas $a_k$ e $b_k$ podem ser computados após computarmos $c_k$.
+                  
+            }
+
+            \only<3> {
+                  Vamos agora esboçar o funcionamento da $\textsc{FFT Online}$:
+                  \begin{itemize}
+                        \item Usaremos Divisão e Conquista.
+                        \item Para computar os termos em $[l, r]$:
+                        \item Compute recursivamente os termos em $[l, m]$ onde $m = \frac{l+r}{2}$;
+                        \item Compute a contribuição dos termos em $[l, m]$ para os termos em $[m+1, r]$;
+                        \item Recursione para os termos em $[m+1, r]$.
+                  \end{itemize}
+            }
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Pseudo-código - $\textsc{FFT Online}$}
+\begin{lstlisting}
+void solve(l, r) {
+      if (l >= r) {
+            // temos c_l, entao computamos a_l, b_l
+            if (l == r) {..} 
+            return; 
+      }
+      m = (l+r)/2
+      solve(l, m)
+      X = c[l,.., m]
+      // ambos os termos em [l, r]
+      P = convolution(X, X) 
+      Y = c[0,..,min(r-l, l-1)]
+      // exatamente um termo em [l, r]
+      Q = convolution(X, Y) 
+      // adiciona as contribuicoes em c[m+1, r]
+      for (i em [m+1, r]) c[i] += P[ind1] + Q[ind2]
+      solve(m+1, r)
+}
+
+\end{lstlisting}
+\end{frame}
+\begin{frame}
+
+     \frametitle{AtCoder ABC315Ex - Typical Convolution Problem} %%https://atcoder.jp/contests/abc387/tasks/abc387_g
+     \framesubtitle{Solução}
+      Tendo o conhecimento da tecnologia necessária, o resto da solução fica como exercício para o leitor.
+\end{frame}

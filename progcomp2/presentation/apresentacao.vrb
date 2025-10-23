@@ -1,0 +1,22 @@
+\frametitle{Pseudo-código - $\textsc{FFT Online}$}
+\begin{lstlisting}
+void solve(l, r) {
+      if (l >= r) {
+            // temos c_l, entao computamos a_l, b_l
+            if (l == r) {..}
+            return;
+      }
+      m = (l+r)/2
+      solve(l, m)
+      X = c[l,.., m]
+      // ambos os termos em [l, r]
+      P = convolution(X, X)
+      Y = c[0,..,min(r-l, l-1)]
+      // exatamente um termo em [l, r]
+      Q = convolution(X, Y)
+      // adiciona as contribuicoes em c[m+1, r]
+      for (i em [m+1, r]) c[i] += P[ind1] + Q[ind2]
+      solve(m+1, r)
+}
+
+\end{lstlisting}

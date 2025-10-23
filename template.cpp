@@ -41,8 +41,8 @@ int32_t main() {_
         int my = solve(), ans = brute();
         if (my != ans) {
             cout << "Wrong answer on test " << t << endl;
-            cout << "Your output: " << my << endl;
-            cout << "Answer: " << ans << endl;
+            cout << "Solve: " << my << endl;
+            cout << "Brute: " << ans << endl;
             exit(0);
         }
         cout << "Accepted on test " << t++ << endl;

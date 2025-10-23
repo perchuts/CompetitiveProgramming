@@ -1,0 +1,7 @@
+\babel@toc {portuguese}{}\relax 
+\beamer@sectionintoc {1}{Definições, Exemplos e Propriedades}{3}{0}{1}
+\beamer@sectionintoc {2}{Problemas}{10}{0}{2}
+\beamer@sectionintoc {3}{ARC110D}{11}{0}{3}
+\beamer@sectionintoc {4}{LOJ2409}{16}{0}{4}
+\beamer@sectionintoc {5}{ABC387G}{22}{0}{5}
+\beamer@sectionintoc {6}{Sugestões}{35}{0}{6}

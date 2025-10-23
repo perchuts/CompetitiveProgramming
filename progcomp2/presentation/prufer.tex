@@ -1,0 +1,145 @@
+% !TEX program = pdflatex
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{tikz}
+\usepackage{lmodern}
+\usetikzlibrary{fit}
+\usetikzlibrary{arrows.meta,positioning}
+\title{Da sequência de Prüfer para a árvore}
+\subtitle{Exemplo passo a passo com TikZ}
+\author{Você}
+\date{\\Sequência de Prüfer escolhida: \( (4,\,4,\,6,\,6) \) com \(n=6\)}
+
+% Cores e estilos rápidos
+\definecolor{leaf}{RGB}{0,128,0}
+\definecolor{seq}{RGB}{20,20,20}
+\tikzset{
+  vtx/.style={circle, draw, minimum size=7mm, inner sep=0pt, font=\footnotesize},
+  used/.style={opacity=.25},
+  edge/.style={Latex-Latex, thin}
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ------------------------------------------------------------
+% Layout dos vértices fixo para todas as etapas
+\newcommand{\VertexLayout}{%
+  % central
+  \node[vtx] (4) at (0,0) {4};
+  % folhas diretas de 4
+  \node[vtx] (1) at (-1.5,1.5) {1};
+  \node[vtx] (2) at (-1.5,-1.5) {2};
+  \node[vtx] (6) at (2,0) {6};
+  % folhas de 6
+  \node[vtx] (3) at (3.5,1) {3};
+  \node[vtx] (5) at (3.5,-1) {5};
+}
+
+% Macro para painel lateral com sequência restante e folhas
+\newcommand{\SidePanel}[2]{%
+  \begin{minipage}[t]{0.38\linewidth}
+    \small
+    \textbf{Sequência restante:}\\[2pt]
+    {\Large\color{seq} #1}\\[6pt]
+    \textbf{Menor folha disponível:}\\[2pt]
+    {\large\color{leaf} #2}
+  \end{minipage}%
+}
+
+\begin{frame}[t]
+  \frametitle{Algoritmo (ideia)}
+  \begin{itemize}
+    \item A sequência de Prüfer para um rótulo \(1..n\) tem tamanho \(n-2\).
+    \item Enquanto houver elementos na sequência: pegue a \alert{menor folha} (vértice de grau 1 não listado no prefixo restante) e conecte-a ao \alert{primeiro} número da sequência. Remova ambos.
+    \item Ao final, restam dois vértices: conecte-os.
+  \end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+% Etapas animadas
+\begin{frame}[t]
+  \frametitle{Exemplo passo a passo: sequência (4, 4, 6, 6)}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.62\linewidth}
+      % Área do desenho
+      \begin{tikzpicture}[scale=1]
+        \VertexLayout
+        % Etapa 0: nada ligado ainda
+        \only<1>{% estado inicial
+          % destacar folhas iniciais: {1,2,3,5}
+          \foreach \x in {1,2,3,5} {\node[draw=leaf, very thick, fit=(\x), minimum size=10mm, inner sep=0pt]{};}
+        }
+        % Etapa 1: liga 1--4
+        \only<2->{\draw[edge] (1) -- (4);}
+        % Etapa 2: liga 2--4
+        \only<3->{\draw[edge] (2) -- (4);}
+        % Etapa 3: liga 3--6
+        \only<4->{\draw[edge] (3) -- (6);}
+        % Etapa 4: liga 4--6
+        \only<5->{\draw[edge] (4) -- (6);}
+        % Etapa 5 (final): liga 5--6
+        \only<6->{\draw[edge] (5) -- (6);}
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.38\linewidth}
+      % Painel lateral com sequência/folhas por etapa
+      \only<1>{\SidePanel{$(\,\mathbf{4},\,\mathbf{4},\,\mathbf{6},\,\mathbf{6}\,)$}{1}}
+      \only<2>{\SidePanel{$(\,\mathbf{4},\,\mathbf{6},\,\mathbf{6}\,)$}{2}}
+      \only<3>{\SidePanel{$(\,\mathbf{6},\,\mathbf{6}\,)$}{3}}
+      \only<4>{\SidePanel{$(\,\mathbf{6}\,)$}{4}}
+      \only<5>{\SidePanel{$(\,)\,\text{(vazia)}$}{5}}
+      \only<6>{\begin{minipage}[t]{\linewidth}\small
+        \textbf{Fim da sequência.} Restam os vértices 5 e 6.\\[4pt]
+        Conecte-os para completar a árvore.
+      \end{minipage}}
+    \end{column}
+  \end{columns}
+
+  \vspace{6pt}
+  \begin{itemize}
+    \item<1-> Folhas iniciais: $\{1,2,3,5\}$ (os que não aparecem na sequência).
+    \item<2-> Passo 1: conecta $1$ a $4$; remove o primeiro $4$.
+    \item<3-> Passo 2: conecta $2$ a $4$; remove o próximo $4$ (agora $4$ vira folha).
+    \item<4-> Passo 3: conecta $3$ a $6$; remove o primeiro $6$.
+    \item<5-> Passo 4: conecta $4$ a $6$; remove o último $6$.
+    \item<6-> Passo 5: conecta os dois restantes $5$ e $6$.
+  \end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+% Frame final com a árvore pronta e checagens
+\begin{frame}[t]
+  \frametitle{Árvore resultante e checagens}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.62\linewidth}
+      \begin{tikzpicture}[scale=1]
+        \VertexLayout
+\draw (1) -- (4);
+\draw (2) -- (4);
+\draw (6) -- (4);
+\draw (3) -- (6);
+\draw (5) -- (6);
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.38\linewidth}
+      \small
+      \textbf{Grau esperado (contagem de Prüfer + 1):}
+      \begin{itemize}
+        \item $\deg(1)=1,\ \deg(2)=1,\ \deg(3)=1,\ \deg(5)=1$ (não aparecem)\\
+        \item $\deg(4)=1+2=3$, \ $\deg(6)=1+2=3$ (cada um aparece 2 vezes)
+      \end{itemize}
+      \vspace{4pt}
+      \textbf{Arestas}: $(1\!-\!4), (2\!-\!4), (3\!-\!6), (4\!-\!6), (5\!-\!6)$.
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ------------------------------------------------------------
+
+\end{document}

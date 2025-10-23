@@ -4,6 +4,7 @@
 #define endl '\n'
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+#define int ll
 
 using namespace std;
 
@@ -26,122 +27,51 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-struct node {
-    node *l, *r;
-    int pri, cnt;
-    ii mn, mx;
-    node (int p, int v, int i) {
-        pri = p, l = r = NULL;
-        mn = mx = {v, i};
-        cnt = 1;
-    }
-};
-
-int get_cnt(node* x) {
-    return x ? x->cnt : 0;
-}
-ii get_mn(node* x) {
-    return x ? x->mn : pair(inf, inf);
-}
-ii get_mx(node* x) {
-    return x ? x->mx : pair(-inf, inf);
-}
-
-void upd(node* x) {
-    if (x) x->cnt = get_cnt(x->l) + get_cnt(x->r) + 1, ckmax(x->mx, max(get_mx(x->l), get_mx(x->r))), ckmin(x->mn, min(get_mn(x->l), get_mn(x->r)));
-}
-
-void merge(node* &t, node *l, node *r) {
-    if (!l or !r) {
-        t = (l ? l : r);
-        return;
-    }
-    if (l->pri > r->pri) {
-        merge(l->r, l->r, r), t = l;
-    } else {
-        merge(r->l, l, r->l), t = r;
-    }
-    upd(t);
-}
-// split pseudo-code:
-// split(esq, dir, t1, V):
-// se t1->val <= V:
-// 
-// se t1->val > V:
-//
-void split(node *t, node* &l, node* &r, int key, int add = 0) {
-    if (!t) {
-        l = r = NULL;
-        return;
-    }
-    int esq = get_cnt(t->l) + add;
-    if (key <= esq) {
-        split(t->l, l, t->l, key, add), r = t;
-    } else {
-        split(t->r, t->r, r, key, esq+1), l = t;
-    }
-    upd(t);
-}
-
-void add(node* &t, int onde, int val) {
-    node* s = new node(rnd(0, 1e9), val, onde);
-    node *t1, *t2;
-    split(t, t1, t2, onde);
-    merge(t, t1, s);
-    merge(t, t, t2);
-}
-
-void kill(node* &t, int onde) {
-    node *t1, *t2, *fodas;
-    split(t, t1, t2, onde-1);
-    split(t2, fodas, t2, 1);
-    merge(t, t1, t2);
-}
-
-array<int, 4> query(node* &t, int l, int r) {
-    node *t1, *t2, *t3;
-    split(t, t1, t2, r);
-    split(t1, t3, t1, l-1);
-    ii mn = get_mn(t1), mx = get_mx(t1);
-    merge(t1, t3, t1);
-    merge(t1, t1, t2);
-    return {mn.first, mn.second, mx.first, mx.second};
-}
-
 void solve() {
     int n, k; cin >> n >> k;
-    vector<int> p(n), pos(n);
-    for (auto& x : p) cin >> x, --x;
-    for (int i = 0; i < n; ++i) cin >> p[i], pos[p[i]] = i;
-    node* root = NULL;
-    for (int i = 0; i < n; ++i) add(root, pos[i], i);
-    for (int i = 0; i < n; ++i) {
-        auto arr = query(root, 1, n);
-        int val = arr[1];
-        cout << arr[0] << ' ' << arr[1] << ' ' << arr[2] << ' ' << arr[3] << endl;
-        if (arr[0] != i) {
-            exit(0);
+    vector<int> p(n), pp(n), ord(n), novo(n), seta(n), onde(n);
+    for (int i = 0; i < n; ++i) cin >> p[i], --p[i], pp[p[i]] = i;
+    auto go = [&] (auto&& self, int l, int r) -> void {
+        if (l == r) {
+            ord[l] = l;
+            onde[pp[l]] = l;
+            return;
         }
-        assert(arr[0] == i);
-        int l = 0, r = val, opt = r;
-        while (l <= r) {
-            int md = l + (r-l+1)/2;
-            auto qu = query(root, md+1, val+1);
-            if (qu[2] < n and qu[0] >= i + k) r = md-1, opt = md;
-            else l = md+1;
+        int md = (l+r)/2;
+        self(self, l, md), self(self, md+1, r);
+        int ptr = md;
+        for (int i = r; i > md; --i) {
+            while (l <= ptr and pp[ptr] >= pp[ord[i]]+k) ptr--;
+            seta[ord[i]] = ptr;
         }
-        cout << "colocando: " << opt+1 << endl;
-        kill(root, val+1);
-        add(root, opt, inf);
-    }
+        for (int i = md+2; i <= r; ++i) ckmax(seta[i], seta[i-1]);
+        int p1 = l, p2 = md+1, turn = 0;
+        while (p1 != md+1 or p2 != r+1) {
+            if (p1 == md+1) novo[turn] = pp[p2++];
+            else if (p2 == r+1) novo[turn] = pp[p1++];
+            else {
+                if (seta[p2] < p1) novo[turn] = pp[p2++];
+                else novo[turn] = pp[p1++];
+            }
+            turn++;
+        }
+        for (int i = 0; i < r-l+1; ++i) pp[i+l] = novo[i], ord[onde[novo[i]]] = i+l;
+        p1 = l, p2 = md+1, turn = 0;
+        while (p1 != md+1 or p2 != r+1) {
+            if (p1 == md+1) novo[turn] = ord[p2++];
+            else if (p2 == r+1) novo[turn] = ord[p1++];
+            else {
+                if (pp[ord[p2]] < pp[ord[p1]]) novo[turn] = ord[p2++];
+                else novo[turn] = ord[p1++];
+            }
+            turn++;
+        }
+        for (int i = 0; i < r-l+1; ++i) ord[i+l] = novo[i], onde[pp[novo[i]]] = i+l;
+    };
+    go(go, 0, n-1);
+    for (int i = 0; i < n; ++i) p[pp[i]] = i;
+    for (auto x : p) cout << x + 1 << ' ';
     cout << endl;
-    // solucao facil com treap: mantem p^-1; extrai o minimo. faz busca binaria pra achar quem vai ficar ali no final.
-    // suponha q vc tava no R e vai parar no L. oq vc vai fazer eh shiftar p^-1[L, R] ciclicamente 1 vez pra direita.
-    // isso eh o mesmo que popar o R (2 splits 1 merge) e pushar o R atras do L (1 split 2 merges)
-    // agr seta p^-1[L] pra infinito
-    // aprender treap!!
-
-
 }
 
 int32_t main() {_

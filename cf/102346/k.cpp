@@ -22,30 +22,30 @@ template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ?
 
 void solve(){
 	int n; cin >> n;
-	if (n == 1) {
-		cout << 2 << endl;
-		exit(0);
-	}
-	if (n == 2) {
-		cout << 24 << endl;
-		exit(0);
-	}
-	vector<int> t(n+100);
-	t[0] = 1;
-	t[1] = 2, t[2] = 12;
-	vector<int> pot(n + 1000);
-	pot[0] = 1;
-	for (int i = 1; i <= n; ++i) pot[i] = 2 * pot[i-1] % mod;
-	for (int i = 3; i <= n; ++i) {
-		t[i] = (2 * (t[i-1] + 2*t[i-2]) + pot[i]) % mod;
-		if (i <= 10) cout << t[i] << endl;
-	}
-	int ans = 2*t[n] % mod;
-	for (int i = 2; i < n; ++i) {
-		ans += (pot[i+1]*t[n-i]) % mod;
-		ans %= mod;
-	}
-	cout << ans << endl;
+    if (n == 1) {
+        cout << 2 << endl;
+        exit(0);
+    }
+    auto mult = [&] (vector<vector<int>> a, vector<vector<int>> b) {
+        int m = sz(a);
+        vector<vector<int>> c(m, vector<int>(m));
+        for (int i = 0; i < m; ++i) for (int j = 0; j < m; ++j) for (int k = 0; k < m; ++k) {
+            c[i][j] = (c[i][j] + a[i][k] * b[k][j]) % mod;
+        }
+        return c;
+    };
+    vector<vector<int>> m = {{1, 1}, {1, 0}};
+    vector<vector<int>> a = {{1, 0}, {0, 1}};
+    int b = 2, pot = 4, e = n-1;
+    while (e) {
+        if (e&1) pot = pot * b % mod, a = mult(a, m); 
+        m = mult(m, m);
+        b = b * b % mod;
+        e /= 2;
+    }
+    int fn = (a[0][0] + a[0][1]) % mod;
+    int ans = (4 * fn - n - 3) % mod; ans = (ans + mod) % mod; ans = ans * pot % mod;
+    cout << ans << endl;
 }
 int32_t main(){_
   int t = 1; //cin >> t;

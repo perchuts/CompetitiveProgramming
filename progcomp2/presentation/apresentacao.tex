@@ -1,0 +1,412 @@
+\documentclass{beamer}
+% Configurações do tema
+\usetheme{Dresden}
+\usecolortheme{default}
+
+% Pacotes necessários
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+
+% Configuração para código
+\lstset{
+    language=C++,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green},
+    stringstyle=\color{red},
+    numberstyle=\tiny\color{gray},
+    numbers=left,
+    breaklines=true,
+    frame=single,
+    tabsize=2
+}
+
+% Informações da apresentação
+\title{Tópicos Avançados em Programação Competitiva}
+\subtitle{Funções Geradoras}
+\author{perchuts}
+\institute{UFMG}
+\date{\today}
+
+% Logo (opcional)
+% \logo{\includegraphics[height=0.4cm]{logo.png}}
+
+\begin{document}
+
+% Slide de título
+\frame{\titlepage}
+
+% Índice
+\begin{frame}
+\frametitle{Sumário}
+\tableofcontents
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Problemas!}
+%\begin{itemize}
+%    %\item Ex - Typical Convolution Problem (Online Convolution) % https://atcoder.jp/contests/abc315/tasks/abc315_h
+%    %\item Sum (função geradora) % https://vjudge.net/problem/LibreOJ-2409#author=GPT_en - alternativa: https://yukicoder.me/problems/no/1145
+%    %\item G - Prime Circuit (operações em Séries de Potência) % https://atcoder.jp/contests/abc387/tasks/abc387_g
+%    \item Ex - Antichain (Affine Composition) % https://atcoder.jp/contests/abc269/tasks/abc269_h
+%    \item F - Expansion Plan (operações em Séries de Potência) % https://codeforces.com/group/TFrGcBYYxs/contest/584448/problem/F
+%    \item E - Competition Graph (operações em Séries de Potência + Online Convolution) % https://codeforces.com/gym/105949/problem/E -> lista
+%    \item F - Pockets (operações em Séries de Potência) % https://codeforces.com/gym/103743/problem/F
+%    \item H - Random Kth Max (operações em Séries de Potência) % https://atcoder.jp/contests/abc226/tasks/abc226_h
+%    % \item G - Socks 3 (convolução divide and conquer) % https://atcoder.jp/contests/abc352/tasks/abc352_g -> ruim!
+%    \item F - Finding the best guess (convolução centroide) % https://codeforces.com/gym/104375/problem/F
+%    \item D - Mahjong (operações em Série de Potência) % https://atcoder.jp/contests/arc160/tasks/arc160_d -> lista
+%    %\item D - Binomial Coefficient is Fun (operações em Série de Potência) % https://atcoder.jp/contests/arc110/tasks/arc110_d
+%    \item Ex - Constrained Tree Degree (nao sei?) % https://atcoder.jp/contests/abc303/tasks/abc303_h
+%\end{itemize}
+%\end{frame}
+
+% Seção 2
+\section{Definições, Exemplos e Propriedades}
+
+\begin{frame}
+\frametitle{Séries de Potência Formais}
+      Funções geradoras são úteis para resolvermos problemas de combinatória algebricamente.
+
+
+      Dada uma sequência $(a_n)$, dizemos que sua função geradora $F(x)$ é a série 
+
+      $$
+      F(x) = \sum_{n=0}^{\infty} a_n x^n = a_0 + x a_1 + x^2 a_2 + \dots + x^n a_n + \dots
+      $$
+
+      Quase sempre estamos interessados apenas nos $\textit{coeficientes}$ da série, então não nos importa qualquer noção de convergência. Nesse contexto dizemos que as funções geradoras são Séries de Potência Formais.
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemplos}
+      A sequência $(a_n) = (1, 1, \dots, 1, \dots)$ tem como função geradora 
+      $$
+      P(x) = \sum_{n=0}^{\infty} x^n
+      $$
+      Podemos encontrar uma expressão para $P(x)$:
+
+      $$P(x) - x P(x) = 1 \iff P(x) = \frac{1}{1-x}
+      $$
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemplos}
+      $(a_n)$ com $a_n = n$ tem como função geradora
+
+      $$
+      Q(x) = \sum_{n=0}^{\infty} n x^n
+      $$
+
+      Note que $P'(x) = \sum_{n=0}^{\infty} (n+1) x^{n}$
+
+      Então
+
+      $$
+      Q(x) = x P'(x) = x (\frac{1}{1-x})' = \frac{x}{(1-x)^2}
+      $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemplos}
+      $(f_n)$ com $f_0 = 0$, $f_1 = 1$, e $f_{n+2} = f_{n+1} + f_n$. Qual é a função geradora $F(x)$? Não é fácil calcular seus coeficientes, mas podemos encontrar uma expressão para ela.
+      \begin{align*}
+      &f_{n+1} + f_n = f_{n+2} \\
+      &x^{n+2} f_{n+1} + x^{n+2} f_n = x^{n+2} f_{n+2} \\
+      &\sum_{n=0}^{\infty} (f_n + f_{n+1}) x^{n+2} = \sum_{n=0}^{\infty} f_{n+2} x^{n+2} \\
+      &x^2 F(x) + x F(x) = F(x) - x \\
+      &F(x) [x^2 +  x - 1] = -x\\
+      &F(x) = \frac{x}{1-x-x^2}
+      \end{align*}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Propriedades/definições úteis}
+      \begin{itemize}
+            \setlength\itemsep{1.2em}
+            \item Convolução: $A(x)B(x) = \sum_{n=0}^{\infty} x^n \sum_{i=0}^{n} a_i b_{n-i}$ 
+
+            \vspace{0.3em}
+
+            Seja $P(x) = \sum_{i=0}^\infty p_n x^n$
+
+            \item Definimos $[x^n] P(x) = p_n$
+
+            \item $[x^n] x^m P(x) = [x^{n-m}] P(x)$
+
+            \item $[x^n]\frac{1}{1-x} P(x) = \sum_{i=0}^n p_i$
+
+            \item $[x^n] \frac{1}{(1-x)^k} = \binom{n+k-1}{k-1}$
+            % generalizar para [x^n]P^k
+
+            \item Defina as séries $P_0(x) := P(x)$ e $P_{k+1}(x) := xP_k'(x)$. Vale que $[x^n] P_k(x) = n^k p_n$
+
+            %\item Condição para inversa: Existe $Q(x)$ tal que $P(x) Q(x) = 1$ se e somente se $p_0 \ne 0$. 
+      \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Função Geradora Exponencial}
+      Considere agora a série formal
+
+      $$
+      P(x) = \sum_{n=0}^{\infty} \frac{a_n x^n}{n!}
+      $$
+
+      $P$ é a função geradora exponencial da sequência $(a_n)$ e definimos que $[x^n] P(x) = a_n$.
+      Se $A, B$ são EGFs, temos que 
+      $$[\frac{x^n}{n!}] A(x) B(x) = \sum_{i=0}^{n} \binom{n}{i} p_i q_{n-i}$$
+
+      Esse fato torna as EGFs muito úteis.
+\end{frame}
+
+\begin{frame}
+      \frametitle{Como implementar?}
+
+      Vários dos algoritmos abaixo usam a NTT como subrotina. Por isso vamos trabalhar sobre $\mathbb{Z}_{998244353}$ na maior parte do tempo. É altamente recomendável usar uma primitiva de aritmética modular.
+
+      \begin{block}{Operações comuns}
+      Seja $P(x)$ um polinômio de grau $n$. É possível computar:
+      \begin{itemize}
+            \item $P'(x)$ e $\int P(x)$ em $O(n)$;
+            \item Primeiros $n$ termos de $P^{-1}(x)$ em $O(n \log n)$;
+            \item Primeiros $n$ termos de $e^{P(x)} = \sum_{i=0}^{\infty} \frac{P^i(x)}{i!}$ em $O(n \log n)$;
+            \item Primeiros $n$ termos de $\ln P(x)$ em $O(n \log n)$.
+      \end{itemize}
+      \end{block}
+
+      A biblioteca da UFMG implementa todas essas operações. Entender o funcionamento dos algoritmos não é necessário para a grande maioria dos problemas.
+
+
+\end{frame}
+
+\section{Problemas}
+\begin{frame}
+
+      \begin{center}
+            {\LARGE \textcolor{blue}{\textbf{Problemas!}}}
+      \end{center}
+      
+\end{frame}
+
+\section{ARC110D}
+\begin{frame}[t]
+      \frametitle{AtCoder ARC110D - Binomial Coefficient is Fun}% https://atcoder.jp/contests/arc110/tasks/arc110_d
+      \framesubtitle{Enunciado}
+      \only<1-2>{
+      Temos uma sequência $A$ de $N$ inteiros não negativos. Compute a soma de $\prod_{i=1}^{N} \binom{B_i}{A_i}$ sobre todas as sequências $B$ de $N$ inteiros não negativos cuja soma é no máximo $M$.
+      } 
+      \only<2>{
+      \begin{block}{Restrições}
+           $1 \leq N \leq 2000$ \\
+           $1 \leq M \leq 10^9$ \\
+           $0 \leq A_i \leq 2000$ 
+      \end{block}
+      }
+\end{frame}
+\begin{frame}[t]
+      \frametitle{AtCoder ARC110D - Binomial Coefficient is Fun}% https://atcoder.jp/contests/arc110/tasks/arc110_d
+      \framesubtitle{Solução}
+            \only<1-2>{
+
+            Queremos representar aquele produtório como um produto de coeficientes de polinômios. Fixado um $i$, vamos começar encontrando a função  geradora $F_i(x)$ de $(a_n)_{n \in \mathbb{N}}$ com $a_n = \binom{n}{A_i}$.
+
+            }
+            \only<2>{
+            $$
+                  F_i(x) = \frac{x^{A_i}}{(1-x)^{A_i+1}}
+            $$
+            }
+            \onslide<2->{
+
+            Seja $P(x) = \prod_{i=1}^N F_i(x)$. Note que
+            $$[x^k] P(x) = \sum_{B_1+\dots+B_N = k} \prod_{i=1}^{N} \binom{B_i}{A_i}$$
+            } 
+
+            \onslide<3->{
+                  Então a resposta será igual a $\sum_{i=0}^{M} [x^i] P(x) = [x^M] \frac{1}{1-x} P(x)$.
+                  Seja $S = \sum A_i$. Por fim,
+
+                  $$
+                        [x^M] \frac{1}{1-x} P(x) = [x^M]\frac{x^S}{(1-x)^{S+N+1}} = \binom{M+N}{S+N}
+                  $$
+                  \vspace{0.3em}
+            }
+\end{frame}
+\section{LOJ2409}
+\begin{frame}[t]
+\frametitle{LOJ 2409 - Sum} % https://vjudge.net/problem/LibreOJ-2409#author=GPT_en
+\framesubtitle{Enunciado}
+      \only<1-2>{
+      Temos uma sequência $A$ de $N$ inteiros não negativos. Defina
+
+      $$
+      f_k = \sum_{i=1}^{N} A_i^k \mod 998244353
+      $$
+
+            Compute $f_1, f_2, \dots, f_n$.
+      } 
+      \only<2>{
+      \begin{block}{Restrições}
+           $1 \leq N \leq 2 \times 10^5$ \\
+           $0 \leq A_i \leq 10^9$ 
+      \end{block}
+      }
+\end{frame}
+\begin{frame}[t]
+\frametitle{LOJ 2409 - Sum} % https://vjudge.net/problem/LibreOJ-2409#author=GPT_en
+\framesubtitle{Solução}
+            \only<1>{
+            Seja $F_i(x)$ a função geradora de $(a_n)_{n \in \mathbb{N}}$ com $a_n = A_i^n$. Veja que
+
+            $$
+            F_i(x) = \frac{1}{1-A_ix}
+            $$
+
+            Note que $P(x) = \sum_{i=1}^{N} F_i(x)$ é a função geradora de $(f_n)_{n \in \mathbb{N}}$.
+            }
+            \only<1->{
+            Como computar $P(x)$?
+            } 
+            \only<2->{
+                  Divisão e conquista!
+            }
+            \only<3->{
+                  
+                  \vspace{0.3em}
+
+                  Por indução podemos mostrar que  a soma de $m$ $F_i$'s distintos, ou seja, $\sum_{i=1}^{m} F_{j_i}(x)$, é igual a $\frac{A(x)}{B(x)}$, onde $A, B$ são polinômios de grau $m$. 
+            }
+            \only<4->{
+
+                  \vspace{0.3em}
+
+                  Então para computar $\sum_{i=l}^{r}F_i(x)$ basta computar cada metade do intervalo recursivamente, e em seguida somar as frações calculadas usando $3$ convoluções: $\frac{A_1}{B_1}+\frac{A_2}{B_2} = \frac{A_1 B_2 + A_2 B_1}{B_1 B_2}$.
+
+                  Obtendo $P(x) = \frac{C(x)}{D(x)}$ calculamos $D^{-1}(x)$ e convoluimos o resultado com $C(x)$ para obter a função geradora da resposta.
+            }
+
+\end{frame}
+
+\section{ABC387G}
+\begin{frame}[t]
+     \frametitle{AtCoder ABC387G - Prime Circuit} %https://atcoder.jp/contests/abc387/tasks/abc387_g
+     \framesubtitle{Enunciado}
+      \only<1-2>{
+                  Conte, módulo $998244353$, o número de grafos $G$ simples não direcionados e conexos de $N$ vértices satisfazendo a seguinte condição:
+                  \begin{itemize}
+                        \item O número de arestas em todo circuito$^{\dagger}$ de $G$ é um número primo.
+                  \end{itemize} 
+
+                  $\dagger$ Um circuito é uma trilha fechada (que começa e termina no mesmo vértice) que pode repetir vértices mas não arestas.
+      } 
+      \only<2>{
+      \begin{block}{Restrições}
+           $2 \leq N \leq 2.5 \times 10^5$ \\
+      \end{block}
+      }
+\end{frame}
+\begin{frame}[t]
+     \frametitle{AtCoder ABC387G - Prime Circuit} %https://atcoder.jp/contests/abc387/tasks/abc387_g
+     \framesubtitle{Solução}
+            \only<1-3> {
+            Vamos caracterizar quando $G$ cumpre a condição. Suponha que existem dois ciclos distintos $C_1, C_2 \in G$ que compartilham pelo menos um vértice, e que $C_1$ e $C_2$ têm um número primo de vértices. 
+            \only<2-3> {
+            \begin{block}{Lema:}
+                  O grafo com arestas $E(C_1) \oplus E(C_2)$ tem um ciclo de tamanho par.
+            \end{block}
+            \only<3> {
+            \begin{block}{Resumo da prova:}
+            Mostre por indução em $|V(C_1)| + |V(C_2)|$. Os casos base são quando $C_1 \oplus C_2$ consiste de apenas um ciclo e quando $E(C_1) \cap E(C_2) = \emptyset$.
+            \end{block}
+            }
+            }
+            }
+
+            \only<4> {
+            Se não há interseção em vértices para todo par de ciclos distintos de $G$, então $G$ é um cacto e as únicas trilhas fechadas possíveis são os próprios ciclos. Então basta que todo ciclo tenha tamanho primo.
+            }
+            \only<5-6> {
+
+            O problema se reduziu a contar o número de cactos com todos os ciclos tendo tamanho primo. Após comprimir todo ciclo em um "super vértice", o problema se torna uma generalização de contar árvores com $n$ vértices.            
+
+            \vspace{0.5em}
+
+            Sabemos contar quantas árvores de $n$ vértices existem?
+            \only<6> {
+                  Sim!
+                  \begin{block}{Sequências de Prüfer}
+                        Existe uma bijeção entre as sequências de $n-2$ inteiros variando de $1$ a $n$ e as árvores de $n$ vértices rotulados. Essa bijeção é construída usando as Sequências de Prüfer. 
+                        
+                  \end{block}
+            }
+            }
+            \only<7-10>{
+                  \only<7-8>{
+                  Suponha que após a compressão de ciclos o grafo tenha $m$ super vértices e que eles tenham comprimido $s_1, \dots, s_m$ vértices do grafo original.}
+                  \only<8-10> {Usando as sequências de Prüfer como inspiração, qual é o número de maneiras de conectar esses super vértices?
+                  \only<9-10>{
+            $$
+                  n^{m-2} \prod_{i=1}^{m} s_i = \frac{1}{n^2} \prod_{i=1}^{m} ns_i
+            $$
+                  }
+            
+            }
+            \only<10>{
+
+                  Logo a resposta é igual a
+                  
+                  $$
+                  \frac{1}{n^2} \sum_{\substack{s_1+\dots +s_m = n \\ s_i = 1 \text{ ou } 3 \leq s_i \in P}} \binom{n}{s_1, \dots, s_m} \prod_{i=1}^{m} ns_i C(s_i)
+                  $$
+
+                  
+
+                  Onde $C(i)$ é o número de ciclos com $i$ vértices. Como temos um multinomial na conta, é útil pensar em EGFs.
+            }
+            }
+            \only<11> {
+                  Considere a EGF representando a contribuição de um único ciclo para o somatório:
+
+                  $$
+                        F(x) = \sum_{i \text{ primo}} niC(i)\frac{x^i}{i!} = nx + \sum_{i \text{ primo} \geq 3} \frac{n}{2} x^i
+                  $$
+
+                  Iterando pelo número $m$ de ciclos, a resposta será
+
+                  $$
+                  n![x^n]\sum_{m=0}^{\infty} \frac{F^m(x)}{m!} = n![x^n] e^{F(x)}
+                  $$
+            }
+\end{frame}
+
+%\input{bonus.tex}
+
+\section{Sugestões}
+\begin{frame}
+      \frametitle{Problemas Sugeridos}
+\begin{itemize}
+\item Codar soluções para os problemas da apresentação!
+\item \href{https://atcoder.jp/contests/abc226/tasks/abc226_h}{AtCoder ABC226H - Random Kth Max}
+\item \href{https://atcoder.jp/contests/arc160/tasks/arc160_d}{AtCoder ARC160D - Mahjong}
+\item \href{https://codeforces.com/gym/103743/problem/F
+}{(CF Gym - Jiangsu 2022) F - Pockets}
+\item \href{https://codeforces.com/gym/105949/problem/E}{(CF Gym - Sichuan 2025) E - Competition Graph}
+
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
