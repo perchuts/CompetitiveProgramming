@@ -28,6 +28,69 @@ int rnd(int l, int r) {
 }
 
 void solve() {
+	int n, m, k; cin >> n >> m >> k;
+	vector<string> grid(n);
+	for (auto& x : grid) cin >> x;
+	if (k == 0) {
+		cout << 1 << endl;
+		exit(0);
+	}
+	auto fexp = [&] (int b, int e, int m) {
+		int ans = 1;
+		while (e) {
+			if (e&1) ans = ans * b % m;
+			e /= 2, b = b * b % m;
+		}
+		return ans;
+	};
+	int ones = 0;
+	for (auto x : grid) for (auto y : x) ones += (y == '#');
+	auto f = [] (vector<string> v) {
+		int n = v.size();
+		int m = v[0].size();
+		vector<string> g(n*n, string(m*m, '.'));
+		for (int i = 0; i < n; ++i) {
+			for (int j = 0; j < m; ++j) {
+				if (v[i][j] == '.') continue;
+				for (int a = 0; a < n; ++a) for (int b = 0; b < m; ++b) g[n*i+a][m*j+b] = v[a][b];
+			}
+		}
+		return g;
+	};
+	int lim = 2;
+		for (int z = 1; ; ++z) {
+			for (auto x : grid) cout << x << endl;
+				cout << endl << endl << endl;
+				if (z == lim) break;
+				grid = f(grid);
+		}
+	int tt = 0;
+	for (int i = 0; i < n; ++i) if (grid[i][0] == '#' and grid[i][m-1] == '#') tt = 1;
+	for (int i = 0; i < m; ++i) if (grid[0][i] == '#' and grid[n-1][i] == '#') tt |= 2;
+	if (tt == 0) {
+		// na vdd acho q eh ones^(2^k-1)...
+		cout << fexp(ones, fexp(2, k-1, mod-1), mod) << endl;
+		exit(0);
+	}
+	if (tt == 3) {
+		cout << 1 << endl;
+		exit(0);
+	}
+	if (tt == 2) {
+		vector<string> gg(m, string(n, '^'));;
+		for (int i = 0; i < n; ++i) {
+			for (int j = 0; j < m; ++j) {
+				gg[j][i] = grid[i][j];
+			}
+		}
+		swap(n, m);
+		swap(grid, gg);
+	}
+
+	// se tem x comps conexas na linha,
+	// na proxima iteracao vai ter
+	// x * tot(it anterior) comps conexas ali ao todo.
+	// n faco ideia de quantas comps conexas vai ter nas proximas linhas.
 
 }
 

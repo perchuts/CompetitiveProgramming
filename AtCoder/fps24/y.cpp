@@ -27,26 +27,25 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve(){
-    int n; cin >> n;
-    int l = 1, r = 1e9, ans = 0, ans2 = 0;
-	vector<int> cc(30);
-	cc[30]++;
-    while (l <= r) {
-        int md = l + (r-l+1)/2;
-        if (4*md*md <= n) ans = md, l = md+1;
-        else r = md-1;
-    }
-    l = 1, r = 1e9;
-    while (l <= r) {
-        int md = l + (r-l+1)/2;
-        if (2*md*md <= n) ans2 = md, l = md+1;
-        else r = md-1;
-    }
-    cout << ans+ans2 << endl;
+void solve() {
+
 }
 
-int32_t main(){_
+int32_t main() {_
+#ifndef gato
     int t = 1; //cin >> t;
     while(t--) solve();
+#else
+    int t = 1;
+    while (true) {
+        int my = solve(), ans = brute();
+        if (my != ans) {
+            cout << "Wrong answer on test " << t << endl;
+            cout << "Solve: " << my << endl;
+            cout << "Brute: " << ans << endl;
+            exit(0);
+        }
+        cout << "Accepted on test " << t++ << endl;
+    }
+#endif
 }
