@@ -28,13 +28,70 @@ int rnd(int l, int r) {
 }
 
 void solve() {
-    int x, k; cin >> x >> k;
+    int X, k; cin >> X >> k;
     vector<int> r(k);
     for (auto& y : r) cin >> y;
     int q; cin >> q;
-    while (q--) {
-        int t, a; cin >> t >> a;
+    vector<ii> qu(q);
+    for (auto& [x, y] : qu) cin >> x >> y;
+    vector<int> ans(q), id(q); iota(all(id), 0);
+    sort(all(id), [&] (int x, int y) { return qu[x].first < qu[y].first; });
+    int ptr = 0, prv = 0, lx = 0, rx = X, base = 0;
+    auto get = [&] (int z) { return base + max(0LL, min(rx, z)-lx); };
+    for (int i = 0; i <= k; ++i) {
+        int j = ptr;
+        while (j < q and (i == k or qu[id[j]].first < r[i])) j++;
+        for (int w = ptr; w < j; ++w) {
+            // [ptr, j)
+            int cara = id[w];
+            auto [tx, x] = qu[cara];
+            int val = get(x);
+            if (i & 1) val = min(X, val + tx - prv);
+            else val = max(0LL, val - (tx - prv));
+            ans[cara] = val;
+        }
+
+        if (i == k) break;
+        ptr = j;
+        int df = r[i] - prv;
+        prv = r[i];
+        if (i & 1) {
+            // hora do A farmar
+            // f(x) += df pra todo x
+            int mxv = base + rx - lx + df;
+            if (mxv <= X) {
+                base += df;
+                continue;
+            }
+            if (base + df >= X) {
+                base = lx = rx = X;
+                continue;
+            }
+            int sobra = mxv - X;
+            // base + (rx-sobra-lx) = X
+            // base = X - (rx-sobra-lx)
+            rx -= sobra;
+            base = X - rx + lx;
+        } else {
+            // hora do A se fuder
+            int mnv = base - df;
+            if (mnv >= 0) {
+                base -= df;
+                continue;
+            }
+            if (base + rx - lx - df <= 0) {
+                lx = rx = X;
+                base = 0;
+                continue;
+            }
+            // vou morrer ate o cara q eh igual a df
+            // df = base + p - lx
+            // p = df + lx - base
+            lx += df - base;
+            base = 0;
+        }
     }
+    for (auto x : ans) cout << x << endl;
 }
 
 int32_t main() {_
