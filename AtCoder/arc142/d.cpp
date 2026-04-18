@@ -5,7 +5,7 @@
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define int ll
-#define gato
+//#define gato
 
 using namespace std;
 
@@ -35,6 +35,7 @@ int solve(int n, vector<vector<int>> g) {
     // The argument used to prove Lemma 1 is very powerful. We can reuse it to make other claims about valid states.
     // Lemma 2: each valid state must be a dominating set.
     // proof. consider otherwise. one can easily show that the component containing such state has at least three vertices.
+    // from now on, i make some particular claims that are probably useful to gather some intuiton, but do not generalize very well.
     // Lemma 3: for a tree to have at least one valid subset, no more than two leafs can be connected to the same vertex.
     // proof. consider otherwise. Let u be such vertex, and a, b, c be leafs connected to u. by L2, a or u must be in any valid subset S. if u \in S,
     // WLOG a, b \in S, because otherwise we would be able to reach > 1 state from S. but this makes moving both a and b impossible. if u \notin S,
@@ -43,138 +44,58 @@ int solve(int n, vector<vector<int>> g) {
     // From this, we can slightly simplify the input tree: while there is a vertex u with three neighbors, two being leafs (a, b), we can remove all of them 
     // from the tree and multiply the answer by two (all valid sets must have exactly (u, a) or (u, b))
     //
+    //
+    //
     // okay, so given a dominating set D, when it forms a valid subset? one simple condition is: if i can partition my graph into many disjoint paths,
-    // with each consisting of vertices from D, and a vertex from [n] \ D in one of the borders of the path. The "construction" of the neighbor of D is trivial.
+    // with each consisting of vertices from D and one vertex from [n] \ D in one of the borders of the path. The "construction" of the neighbor of D is trivial.
     // can there be any more valid sets?
     // i have convinced myself that this is an if and only if (by both conditions of valid set, the directed graph of swaps naturally forms this partition).
+    // stronger necessity: borders of each path should neighbor borders of other paths or be leafs.
+    // to define which border of each path is empty, should respect the constraint that no neighboring borders can be of same type.
 
-    // so problem is: count number p_k of partitions of G into K paths of length >= 2, answer is sum p_k * 2^k (clearly ans is even by this formula)
-    // dp[u][0]: no path ending at here
-    // dp[u][1]: path ending at here
     vector<vector<int>> dp(n, vector<int>(5));
     auto dfs = [&] (auto&& self, int u, int p) -> void {
         // dp[u][i]: tamanho da branch que ta saindo daqui
-        vector<int> cc;
+        vector<int> c;
         for (auto v : g[u]) {
-            if (v == p) continue;
-            self(self, v, u);
-            cc.pb(v);
+            if (v != p) self(self, v, u);
         }
-        // o numero de transicoes eh bem infinito, mas da pra separar pelo mais simples: quantos caras de tamanho 1 existem
-
-        // 0 caras de tamanho 1
-        // dp[0]
-        // 2 * dp[a][2] * dp[b][2] * \prod (dp[c][0] + 2*dp[c][2] + dp[c][4])
-        {
-            vector<int> pref(sz(cc)+1, 1), suf = pref;
-            for (int i = 1; i <= sz(cc); ++i) pref[i] = pref[i-1] * (dp[cc[i-1]][0] + 2 * dp[cc[i-1]][2] + dp[cc[i-1]][4]) % mod;
-            for (int i = sz(cc)-1; i >= 0; --i) suf[i] = suf[i+1] * (dp[cc[i]][0] + 2 * dp[cc[i]][2] + dp[cc[i]][4]) % mod;
-            int add = 0, cum = 0;
-            for (int i = 0; i < sz(cc); ++i) {
-                int v = cc[i];
-                dp[u][0] = (dp[u][0] + add * dp[v][2] % mod * suf[i+1] * 2) % mod;
-                add = (add * (dp[v][0] + 2 * dp[v][2]) % mod + cum * dp[v][2]) % mod;
-                cum = (cum * (dp[v][0] + 2 * dp[v][2])) % mod;
-            }
+        for (auto v : g[u]) {
+            if (v != p) c.pb(v);
         }
-        // dp[1] -> proibido dp[4] interagir com dp[1]!!!
-        {
-            dp[u][1] = 1;
-            // nao eh *2dp[v][2] pra nao dar problema de multiplicidade! qnd o u se definir tds os caras de baixo vao se definir
-            for (auto v : cc) dp[u][1] = dp[u][1] * (dp[v][0] + dp[v][2]) % mod;
+        array<int, 4> tipos;
+        tipos[0] = 1;
+        tipos[1] = tipos[2] = tipos[3] = 0;
+        dp[u][0] = dp[u][1] = 1;
+        for (auto v : c) {
+            tipos[3] = (tipos[3] * dp[v][4] + tipos[2] * dp[v][1] + tipos[1] * dp[v][0]) % mod;
+            tipos[2] = (tipos[2] * dp[v][4] + tipos[0] * dp[v][0]) % mod;
+            tipos[1] = (tipos[1] * dp[v][4] + tipos[0] * dp[v][1]) % mod;
+            tipos[0] = tipos[0] * dp[v][4] % mod;
+            // start here!
+            dp[u][0] = dp[u][0] * dp[v][3] % mod;
+            dp[u][1] = dp[u][1] * dp[v][2] % mod;
         }
-        // dp[2] -> duas versoes: se nao tem dp[4], me comporto como um dp[2] mesmo. mas se existe PELO MENOS UM dp[4], entao sou como um dp[1] pro meu pai
-        {
-            // eh escolher alguem pra me adotar
-            // msm ideia da multiplicidade do dp[1]
-            vector<int> pref(sz(cc)+1, 1), suf = pref;
-            for (int i = 1; i <= sz(cc); ++i) pref[i] = pref[i-1] * (dp[cc[i-1]][0] + dp[cc[i-1]][2]) % mod;
-            for (int i = sz(cc)-1; i >= 0; --i) suf[i] = suf[i+1] * (dp[cc[i]][0] + dp[cc[i]][2]) % mod;
-            for (int i = 0; i < sz(cc); ++i) {
-                dp[u][2] = (dp[u][2] + pref[i] * suf[i+1] % mod * dp[cc[i]][2]) % mod;
-            }
+        dp[u][4] = tipos[3];
+        dp[u][0] = (dp[u][0] + tipos[2]) % mod;
+        dp[u][1] = (dp[u][1] + tipos[1]) % mod;
+        // not start here
+        tipos[0] = tipos[1] = tipos[2] = tipos[3] = 0;
+        tipos[0] = tipos[1] = 1;
+        for (auto v : c) {
+            tipos[2] = (tipos[2] * dp[v][3] + tipos[1] * dp[v][0]) % mod;
+            tipos[3] = (tipos[3] * dp[v][2] + tipos[0] * dp[v][1]) % mod;
+            tipos[0] = tipos[0] * dp[v][2] % mod;
+            tipos[1] = tipos[1] * dp[v][3] % mod;
         }
-		// versao com pelo menos um filho meu sendo o dp[4]. particionar pelo dp[4] mais a esquerda!!
-        {
-            // eh escolher alguem pra me adotar
-            // msm ideia da multiplicidade do dp[1]
-            vector<int> pref1(sz(cc)+1, 1), suf1 = pref1, pref2 = suf1, suf2 = pref2;
-
-            for (int i = 1; i <= sz(cc); ++i) pref1[i] = pref1[i-1] * (dp[cc[i-1]][0] + dp[cc[i-1]][2] + dp[cc[i-1]][4]) % mod;
-            for (int i = sz(cc)-1; i >= 0; --i) suf1[i] = suf1[i+1] * (dp[cc[i]][0] + dp[cc[i]][2] + dp[cc[i]][4]) % mod;
-
-            for (int i = 1; i <= sz(cc); ++i) pref2[i] = pref2[i-1] * (dp[cc[i-1]][0] + dp[cc[i-1]][2]) % mod;
-            for (int i = sz(cc)-1; i >= 0; --i) suf2[i] = suf2[i+1] * (dp[cc[i]][0] + dp[cc[i]][2]) % mod;
-
-            for (int i = 0; i < sz(cc); ++i) {
-				int ways = (pref1[i] * suf1[i+1] - pref2[i] * suf2[i+1]) % mod;
-				ways = (ways + mod) % mod;
-				dp[u][1] = (dp[u][1] + ways * dp[cc[i]][2]) % mod;
-            }
-        }
-        // agora deixo ter 1 cara de tamanho 1. automaticamente vou ter que me parear com ele!
-        // dp[0] -> proibido de transicionar com dp[4]
-        {
-            // vou escolher outro bicho pra me parear junto. o resto vai ter q ser dp[0] ou dp[2]
-            // dp[a][1] * dp[b][2] * \prod (dp[c][0] + dp[c][2])
-            vector<int> pref(sz(cc)+1, 1), suf = pref;
-            for (int i = 1; i <= sz(cc); ++i) pref[i] = pref[i-1] * (dp[cc[i-1]][0] + dp[cc[i-1]][2]) % mod;
-            for (int i = sz(cc)-1; i >= 0; --i) suf[i] = suf[i+1] * (dp[cc[i]][0] + dp[cc[i]][2]) % mod;
-            int um = 0, dois = 0;
-            for (int i = 0; i < sz(cc); ++i) {
-                dp[u][0] = (dp[u][0] + 2 * um * dp[cc[i]][2] % mod * suf[i+1]) % mod;
-                dp[u][0] = (dp[u][0] + 2 * dois * dp[cc[i]][1] % mod * suf[i+1]) % mod;
-                um = (um * (dp[cc[i]][0] + dp[cc[i]][2]) + pref[i] * dp[cc[i]][1]) % mod;
-                dois = (dois * (dp[cc[i]][0] + dp[cc[i]][2]) + pref[i] * dp[cc[i]][2]) % mod;
-            }
-        }
-        // dp[2] -> acredito q seja identico ao caso anterior
-        {
-            // escolher alguem pra me adotar; tomar cuidado com *2 dnv
-            vector<int> pref(sz(cc)+1, 1), suf = pref;
-            for (int i = 1; i <= sz(cc); ++i) pref[i] = pref[i-1] * (dp[cc[i-1]][0] + dp[cc[i-1]][2]) % mod;
-            for (int i = sz(cc)-1; i >= 0; --i) suf[i] = suf[i+1] * (dp[cc[i]][0] + dp[cc[i]][2]) % mod;
-            for (int i = 0; i < sz(cc); ++i) {
-                dp[u][2] = (dp[u][2] + pref[i] * suf[i+1] % mod * dp[cc[i]][1]) % mod;
-            }
-        }
-		// versao com pelo menos um filho meu sendo o dp[4]. particionar pelo dp[4] mais a esquerda!!
-        {
-            // eh escolher alguem pra me adotar
-            // msm ideia da multiplicidade do dp[1]
-            vector<int> pref1(sz(cc)+1, 1), suf1 = pref1, pref2 = suf1, suf2 = pref2;
-
-            for (int i = 1; i <= sz(cc); ++i) pref1[i] = pref1[i-1] * (dp[cc[i-1]][0] + dp[cc[i-1]][2] + dp[cc[i-1]][4]) % mod;
-            for (int i = sz(cc)-1; i >= 0; --i) suf1[i] = suf1[i+1] * (dp[cc[i]][0] + dp[cc[i]][2] + dp[cc[i]][4]) % mod;
-
-            for (int i = 1; i <= sz(cc); ++i) pref2[i] = pref2[i-1] * (dp[cc[i-1]][0] + dp[cc[i-1]][2]) % mod;
-            for (int i = sz(cc)-1; i >= 0; --i) suf2[i] = suf2[i+1] * (dp[cc[i]][0] + dp[cc[i]][2]) % mod;
-
-            for (int i = 0; i < sz(cc); ++i) {
-				int ways = (pref1[i] * suf1[i+1] - pref2[i] * suf2[i+1]) % mod;
-				ways = (ways + mod) % mod;
-				dp[u][1] = (dp[u][1] + ways * dp[cc[i]][1]) % mod;
-            }
-        }
-        // agora 2 caras de tamanho 1. vou ter q me parear com ambos, sem escolhas
-        // dp[0]
-        {
-            // dp[a][1] * dp[b][1] * \prod dp[0] -> tudo tem q ser zero!!
-            vector<int> pref(sz(cc)+1, 1), suf = pref;
-            for (int i = 1; i <= sz(cc); ++i) pref[i] = pref[i-1] * (dp[cc[i-1]][0]+dp[cc[i-1]][4]) % mod;
-            for (int i = sz(cc)-1; i >= 0; --i) suf[i] = suf[i+1] * (dp[cc[i]][0]+dp[cc[i]][4]) % mod;
-            int um = 0;
-            for (int i = 0; i < sz(cc); ++i) {
-                dp[u][4] = (dp[u][4] + 2 * um * dp[cc[i]][1] % mod * suf[i+1]) % mod;
-                um = (um * dp[cc[i]][0] + pref[i] * dp[cc[i]][1]) % mod;
-            }
-        }
+        dp[u][2] = tipos[2];
+        dp[u][3] = tipos[3];
     };
     dfs(dfs, 0, 0);
-	for (int i = 0; i < n; ++i) {
-		cout << dp[i][0] << ' ' << dp[i][1] << ' ' << dp[i][2] << ' ' << dp[i][4] << endl;
-	}
-    return (dp[0][0] + dp[0][2] * 2 + dp[0][4]) % mod;
+    //for (int i = 0; i < n; ++i) {
+    //    for (int j = 0; j < 5; ++j) cout << dp[i][j] << " \n"[j==4];
+    //}
+    return (dp[0][2] + dp[0][3] + dp[0][4]) % mod;
 }
 
 int brute(int n, vector<vector<int>> g) {
@@ -216,7 +137,13 @@ int brute(int n, vector<vector<int>> g) {
         }
     }
     int ans = 0;
-    for (int i = 0; i < (1 << n); ++i) if (sz(g2[i]) == 1 and sz(g2[g2[i][0]]) == 1) ans++;
+    //cout << "valid states: ";
+    for (int i = 0; i < (1 << n); ++i) {
+        if (sz(g2[i]) == 1 and sz(g2[g2[i][0]]) == 1) {
+            //cout << bitset<6>(i) << endl;
+            ans++;
+        }
+    }
     return ans;
 }
 int32_t main() {_
@@ -228,6 +155,7 @@ int32_t main() {_
         g[u].pb(v), g[v].pb(u);
     }
     cout << solve(n, g) << endl;
+    //cout << brute(n, g) << endl;
 #else
     int t = 1;
     while (true) {

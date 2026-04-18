@@ -1,0 +1,17120 @@
+76
+3000
+pick 1 1
+pick 1 2
+pick 1 3
+pick 2 4
+pick 2 5
+pick 2 6
+pick 3 7
+pick 3 8
+pick 3 9
+pick 4 10
+pick 4 11
+pick 4 12
+pick 5 13
+pick 5 14
+pick 5 15
+pick 6 16
+pick 6 17
+pick 6 18
+pick 7 19
+pick 7 20
+pick 7 21
+pick 8 22
+pick 8 23
+pick 8 24
+pick 9 25
+pick 9 26
+pick 9 27
+pick 10 28
+pick 10 29
+pick 10 30
+pick 11 31
+pick 11 32
+pick 11 33
+pick 12 34
+pick 12 35
+pick 12 36
+pick 13 37
+pick 13 38
+pick 13 39
+pick 14 40
+pick 14 41
+pick 14 42
+pick 15 43
+pick 15 44
+pick 15 45
+pick 16 46
+pick 16 47
+pick 16 48
+pick 17 49
+pick 17 50
+pick 17 51
+pick 18 52
+pick 18 53
+pick 18 54
+pick 19 55
+pick 19 56
+pick 19 57
+pick 20 58
+pick 20 59
+pick 20 60
+pick 21 61
+pick 21 62
+pick 21 63
+pick 22 64
+pick 22 65
+pick 22 66
+pick 23 67
+pick 23 68
+pick 23 69
+pick 24 70
+pick 24 71
+pick 24 72
+pick 25 73
+pick 25 74
+pick 25 75
+pick 26 76
+pick 26 77
+pick 26 78
+pick 27 79
+pick 27 80
+pick 27 81
+pick 28 82
+pick 28 83
+pick 28 84
+pick 29 85
+pick 29 86
+pick 29 87
+pick 30 88
+pick 30 89
+pick 30 90
+pick 31 91
+pick 31 92
+pick 31 93
+pick 32 94
+pick 32 95
+pick 32 96
+pick 33 97
+pick 33 98
+pick 33 99
+pick 34 100
+pick 34 101
+pick 34 102
+pick 35 103
+pick 35 104
+pick 35 105
+pick 36 106
+pick 36 107
+pick 36 108
+pick 37 109
+pick 37 110
+pick 37 111
+pick 38 112
+pick 38 113
+pick 38 114
+pick 39 115
+pick 39 116
+pick 39 117
+pick 40 118
+pick 40 119
+pick 40 120
+pick 41 121
+pick 41 122
+pick 41 123
+pick 42 124
+pick 42 125
+pick 42 126
+pick 43 127
+pick 43 128
+pick 43 129
+pick 44 130
+pick 44 131
+pick 44 132
+pick 45 133
+pick 45 134
+pick 45 135
+pick 46 136
+pick 46 137
+pick 46 138
+pick 47 139
+pick 47 140
+pick 47 141
+pick 48 142
+pick 48 143
+pick 48 144
+pick 49 145
+pick 49 146
+pick 49 147
+pick 50 148
+pick 50 149
+pick 50 150
+pick 51 151
+pick 51 152
+pick 51 153
+pick 52 154
+pick 52 155
+pick 52 156
+pick 53 157
+pick 53 158
+pick 53 159
+pick 54 160
+pick 54 161
+pick 54 162
+pick 55 163
+pick 55 164
+pick 55 165
+pick 56 166
+pick 56 167
+pick 56 168
+pick 57 169
+pick 57 170
+pick 57 171
+pick 58 172
+pick 58 173
+pick 58 174
+pick 59 175
+pick 59 176
+pick 59 177
+pick 60 178
+pick 60 179
+pick 60 180
+pick 61 181
+pick 61 182
+pick 61 183
+pick 62 184
+pick 62 185
+pick 62 186
+pick 63 187
+pick 63 188
+pick 63 189
+pick 64 190
+pick 64 191
+pick 64 192
+pick 65 193
+pick 65 194
+pick 65 195
+pick 66 196
+pick 66 197
+pick 66 198
+pick 67 199
+pick 67 200
+pick 67 201
+pick 68 202
+pick 68 203
+pick 68 204
+pick 69 205
+pick 69 206
+pick 69 207
+pick 70 208
+pick 70 209
+pick 70 210
+pick 71 211
+pick 71 212
+pick 71 213
+pick 72 214
+pick 72 215
+pick 72 216
+pick 73 217
+pick 73 218
+pick 73 219
+pick 74 220
+pick 74 221
+pick 74 222
+pick 75 223
+pick 75 224
+pick 75 225
+pick 76 226
+pick 76 227
+pick 76 228
+pick 77 229
+pick 77 230
+pick 77 231
+pick 78 232
+pick 78 233
+pick 78 234
+pick 79 235
+pick 79 236
+pick 79 237
+pick 80 238
+pick 80 239
+pick 80 240
+pick 81 241
+pick 81 242
+pick 81 243
+pick 82 244
+pick 82 245
+pick 82 246
+pick 83 247
+pick 83 248
+pick 83 249
+pick 84 250
+pick 84 251
+pick 84 252
+pick 85 253
+pick 85 254
+pick 85 255
+pick 86 256
+pick 86 257
+pick 86 258
+pick 87 259
+pick 87 260
+pick 87 261
+pick 88 262
+pick 88 263
+pick 88 264
+pick 89 265
+pick 89 266
+pick 89 267
+pick 90 268
+pick 90 269
+pick 90 270
+pick 91 271
+pick 91 272
+pick 91 273
+pick 92 274
+pick 92 275
+pick 92 276
+pick 93 277
+pick 93 278
+pick 93 279
+pick 94 280
+pick 94 281
+pick 94 282
+pick 95 283
+pick 95 284
+pick 95 285
+pick 96 286
+pick 96 287
+pick 96 288
+pick 97 289
+pick 97 290
+pick 97 291
+pick 98 292
+pick 98 293
+pick 98 294
+pick 99 295
+pick 99 296
+pick 99 297
+pick 100 298
+pick 100 299
+pick 100 300
+pick 101 301
+pick 101 302
+pick 101 303
+pick 102 304
+pick 102 305
+pick 102 306
+pick 103 307
+pick 103 308
+pick 103 309
+pick 104 310
+pick 104 311
+pick 104 312
+pick 105 313
+pick 105 314
+pick 105 315
+pick 106 316
+pick 106 317
+pick 106 318
+pick 107 319
+pick 107 320
+pick 107 321
+pick 108 322
+pick 108 323
+pick 108 324
+pick 109 325
+pick 109 326
+pick 109 327
+pick 110 328
+pick 110 329
+pick 110 330
+pick 111 331
+pick 111 332
+pick 111 333
+pick 112 334
+pick 112 335
+pick 112 336
+pick 113 337
+pick 113 338
+pick 113 339
+pick 114 340
+pick 114 341
+pick 114 342
+pick 115 343
+pick 115 344
+pick 115 345
+pick 116 346
+pick 116 347
+pick 116 348
+pick 117 349
+pick 117 350
+pick 117 351
+pick 118 352
+pick 118 353
+pick 118 354
+pick 119 355
+pick 119 356
+pick 119 357
+pick 120 358
+pick 120 359
+pick 120 360
+pick 121 361
+pick 121 362
+pick 121 363
+pick 122 364
+pick 122 365
+pick 122 366
+pick 123 367
+pick 123 368
+pick 123 369
+pick 124 370
+pick 124 371
+pick 124 372
+pick 125 373
+pick 125 374
+pick 125 375
+pick 126 376
+pick 126 377
+pick 126 378
+pick 127 379
+pick 127 380
+pick 127 381
+pick 128 382
+pick 128 383
+pick 128 384
+pick 129 385
+pick 129 386
+pick 129 387
+pick 130 388
+pick 130 389
+pick 130 390
+pick 131 391
+pick 131 392
+pick 131 393
+pick 132 394
+pick 132 395
+pick 132 396
+pick 133 397
+pick 133 398
+pick 133 399
+pick 134 400
+pick 134 401
+pick 134 402
+pick 135 403
+pick 135 404
+pick 135 405
+pick 136 406
+pick 136 407
+pick 136 408
+pick 137 409
+pick 137 410
+pick 137 411
+pick 138 412
+pick 138 413
+pick 138 414
+pick 139 415
+pick 139 416
+pick 139 417
+pick 140 418
+pick 140 419
+pick 140 420
+pick 141 421
+pick 141 422
+pick 141 423
+pick 142 424
+pick 142 425
+pick 142 426
+pick 143 427
+pick 143 428
+pick 143 429
+pick 144 430
+pick 144 431
+pick 144 432
+pick 145 433
+pick 145 434
+pick 145 435
+pick 146 436
+pick 146 437
+pick 146 438
+pick 147 439
+pick 147 440
+pick 147 441
+pick 148 442
+pick 148 443
+pick 148 444
+pick 149 445
+pick 149 446
+pick 149 447
+pick 150 448
+pick 150 449
+pick 150 450
+pick 151 451
+pick 151 452
+pick 151 453
+pick 152 454
+pick 152 455
+pick 152 456
+pick 153 457
+pick 153 458
+pick 153 459
+pick 154 460
+pick 154 461
+pick 154 462
+pick 155 463
+pick 155 464
+pick 155 465
+pick 156 466
+pick 156 467
+pick 156 468
+pick 157 469
+pick 157 470
+pick 157 471
+pick 158 472
+pick 158 473
+pick 158 474
+pick 159 475
+pick 159 476
+pick 159 477
+pick 160 478
+pick 160 479
+pick 160 480
+pick 161 481
+pick 161 482
+pick 161 483
+pick 162 484
+pick 162 485
+pick 162 486
+pick 163 487
+pick 163 488
+pick 163 489
+pick 164 490
+pick 164 491
+pick 164 492
+pick 165 493
+pick 165 494
+pick 165 495
+pick 166 496
+pick 166 497
+pick 166 498
+pick 167 499
+pick 167 500
+pick 167 501
+pick 168 502
+pick 168 503
+pick 168 504
+pick 169 505
+pick 169 506
+pick 169 507
+pick 170 508
+pick 170 509
+pick 170 510
+pick 171 511
+pick 171 512
+pick 171 513
+pick 172 514
+pick 172 515
+pick 172 516
+pick 173 517
+pick 173 518
+pick 173 519
+pick 174 520
+pick 174 521
+pick 174 522
+pick 175 523
+pick 175 524
+pick 175 525
+pick 176 526
+pick 176 527
+pick 176 528
+pick 177 529
+pick 177 530
+pick 177 531
+pick 178 532
+pick 178 533
+pick 178 534
+pick 179 535
+pick 179 536
+pick 179 537
+pick 180 538
+pick 180 539
+pick 180 540
+pick 181 541
+pick 181 542
+pick 181 543
+pick 182 544
+pick 182 545
+pick 182 546
+pick 183 547
+pick 183 548
+pick 183 549
+pick 184 550
+pick 184 551
+pick 184 552
+pick 185 553
+pick 185 554
+pick 185 555
+pick 186 556
+pick 186 557
+pick 186 558
+pick 187 559
+pick 187 560
+pick 187 561
+pick 188 562
+pick 188 563
+pick 188 564
+pick 189 565
+pick 189 566
+pick 189 567
+pick 190 568
+pick 190 569
+pick 190 570
+pick 191 571
+pick 191 572
+pick 191 573
+pick 192 574
+pick 192 575
+pick 192 576
+pick 193 577
+pick 193 578
+pick 193 579
+pick 194 580
+pick 194 581
+pick 194 582
+pick 195 583
+pick 195 584
+pick 195 585
+pick 196 586
+pick 196 587
+pick 196 588
+pick 197 589
+pick 197 590
+pick 197 591
+pick 198 592
+pick 198 593
+pick 198 594
+pick 199 595
+pick 199 596
+pick 199 597
+pick 200 598
+pick 200 599
+pick 200 600
+pick 201 601
+pick 201 602
+pick 201 603
+pick 202 604
+pick 202 605
+pick 202 606
+pick 203 607
+pick 203 608
+pick 203 609
+pick 204 610
+pick 204 611
+pick 204 612
+pick 205 613
+pick 205 614
+pick 205 615
+pick 206 616
+pick 206 617
+pick 206 618
+pick 207 619
+pick 207 620
+pick 207 621
+pick 208 622
+pick 208 623
+pick 208 624
+pick 209 625
+pick 209 626
+pick 209 627
+pick 210 628
+pick 210 629
+pick 210 630
+pick 211 631
+pick 211 632
+pick 211 633
+pick 212 634
+pick 212 635
+pick 212 636
+pick 213 637
+pick 213 638
+pick 213 639
+pick 214 640
+pick 214 641
+pick 214 642
+pick 215 643
+pick 215 644
+pick 215 645
+pick 216 646
+pick 216 647
+pick 216 648
+pick 217 649
+pick 217 650
+pick 217 651
+pick 218 652
+pick 218 653
+pick 218 654
+pick 219 655
+pick 219 656
+pick 219 657
+pick 220 658
+pick 220 659
+pick 220 660
+pick 221 661
+pick 221 662
+pick 221 663
+pick 222 664
+pick 222 665
+pick 222 666
+pick 223 667
+pick 223 668
+pick 223 669
+pick 224 670
+pick 224 671
+pick 224 672
+pick 225 673
+pick 225 674
+pick 225 675
+pick 226 676
+pick 226 677
+pick 226 678
+pick 227 679
+pick 227 680
+pick 227 681
+pick 228 682
+pick 228 683
+pick 228 684
+pick 229 685
+pick 229 686
+pick 229 687
+pick 230 688
+pick 230 689
+pick 230 690
+pick 231 691
+pick 231 692
+pick 231 693
+pick 232 694
+pick 232 695
+pick 232 696
+pick 233 697
+pick 233 698
+pick 233 699
+pick 234 700
+pick 234 701
+pick 234 702
+pick 235 703
+pick 235 704
+pick 235 705
+pick 236 706
+pick 236 707
+pick 236 708
+pick 237 709
+pick 237 710
+pick 237 711
+pick 238 712
+pick 238 713
+pick 238 714
+pick 239 715
+pick 239 716
+pick 239 717
+pick 240 718
+pick 240 719
+pick 240 720
+pick 241 721
+pick 241 722
+pick 241 723
+pick 242 724
+pick 242 725
+pick 242 726
+pick 243 727
+pick 243 728
+pick 243 729
+pick 244 730
+pick 244 731
+pick 244 732
+pick 245 733
+pick 245 734
+pick 245 735
+pick 246 736
+pick 246 737
+pick 246 738
+pick 247 739
+pick 247 740
+pick 247 741
+pick 248 742
+pick 248 743
+pick 248 744
+pick 249 745
+pick 249 746
+pick 249 747
+pick 250 748
+pick 250 749
+pick 250 750
+pick 251 751
+pick 251 752
+pick 251 753
+pick 252 754
+pick 252 755
+pick 252 756
+pick 253 757
+pick 253 758
+pick 253 759
+pick 254 760
+pick 254 761
+pick 254 762
+pick 255 763
+pick 255 764
+pick 255 765
+pick 256 766
+pick 256 767
+pick 256 768
+pick 257 769
+pick 257 770
+pick 257 771
+pick 258 772
+pick 258 773
+pick 258 774
+pick 259 775
+pick 259 776
+pick 259 777
+pick 260 778
+pick 260 779
+pick 260 780
+pick 261 781
+pick 261 782
+pick 261 783
+pick 262 784
+pick 262 785
+pick 262 786
+pick 263 787
+pick 263 788
+pick 263 789
+pick 264 790
+pick 264 791
+pick 264 792
+pick 265 793
+pick 265 794
+pick 265 795
+pick 266 796
+pick 266 797
+pick 266 798
+pick 267 799
+pick 267 800
+pick 267 801
+pick 268 802
+pick 268 803
+pick 268 804
+pick 269 805
+pick 269 806
+pick 269 807
+pick 270 808
+pick 270 809
+pick 270 810
+pick 271 811
+pick 271 812
+pick 271 813
+pick 272 814
+pick 272 815
+pick 272 816
+pick 273 817
+pick 273 818
+pick 273 819
+pick 274 820
+pick 274 821
+pick 274 822
+pick 275 823
+pick 275 824
+pick 275 825
+pick 276 826
+pick 276 827
+pick 276 828
+pick 277 829
+pick 277 830
+pick 277 831
+pick 278 832
+pick 278 833
+pick 278 834
+pick 279 835
+pick 279 836
+pick 279 837
+pick 280 838
+pick 280 839
+pick 280 840
+pick 281 841
+pick 281 842
+pick 281 843
+pick 282 844
+pick 282 845
+pick 282 846
+pick 283 847
+pick 283 848
+pick 283 849
+pick 284 850
+pick 284 851
+pick 284 852
+pick 285 853
+pick 285 854
+pick 285 855
+pick 286 856
+pick 286 857
+pick 286 858
+pick 287 859
+pick 287 860
+pick 287 861
+pick 288 862
+pick 288 863
+pick 288 864
+pick 289 865
+pick 289 866
+pick 289 867
+pick 290 868
+pick 290 869
+pick 290 870
+pick 291 871
+pick 291 872
+pick 291 873
+pick 292 874
+pick 292 875
+pick 292 876
+pick 293 877
+pick 293 878
+pick 293 879
+pick 294 880
+pick 294 881
+pick 294 882
+pick 295 883
+pick 295 884
+pick 295 885
+pick 296 886
+pick 296 887
+pick 296 888
+pick 297 889
+pick 297 890
+pick 297 891
+pick 298 892
+pick 298 893
+pick 298 894
+pick 299 895
+pick 299 896
+pick 299 897
+pick 300 898
+pick 300 899
+pick 300 900
+pick 301 901
+pick 301 902
+pick 301 903
+pick 302 904
+pick 302 905
+pick 302 906
+pick 303 907
+pick 303 908
+pick 303 909
+pick 304 910
+pick 304 911
+pick 304 912
+pick 305 913
+pick 305 914
+pick 305 915
+pick 306 916
+pick 306 917
+pick 306 918
+pick 307 919
+pick 307 920
+pick 307 921
+pick 308 922
+pick 308 923
+pick 308 924
+pick 309 925
+pick 309 926
+pick 309 927
+pick 310 928
+pick 310 929
+pick 310 930
+pick 311 931
+pick 311 932
+pick 311 933
+pick 312 934
+pick 312 935
+pick 312 936
+pick 313 937
+pick 313 938
+pick 313 939
+pick 314 940
+pick 314 941
+pick 314 942
+pick 315 943
+pick 315 944
+pick 315 945
+pick 316 946
+pick 316 947
+pick 316 948
+pick 317 949
+pick 317 950
+pick 317 951
+pick 318 952
+pick 318 953
+pick 318 954
+pick 319 955
+pick 319 956
+pick 319 957
+pick 320 958
+pick 320 959
+pick 320 960
+pick 321 961
+pick 321 962
+pick 321 963
+pick 322 964
+pick 322 965
+pick 322 966
+pick 323 967
+pick 323 968
+pick 323 969
+pick 324 970
+pick 324 971
+pick 324 972
+pick 325 973
+pick 325 974
+pick 325 975
+pick 326 976
+pick 326 977
+pick 326 978
+pick 327 979
+pick 327 980
+pick 327 981
+pick 328 982
+pick 328 983
+pick 328 984
+pick 329 985
+pick 329 986
+pick 329 987
+pick 330 988
+pick 330 989
+pick 330 990
+pick 331 991
+pick 331 992
+pick 331 993
+pick 332 994
+pick 332 995
+pick 332 996
+pick 333 997
+pick 333 998
+pick 333 999
+pick 334 1000
+pick 334 1001
+pick 334 1002
+pick 335 1003
+pick 335 1004
+pick 335 1005
+pick 336 1006
+pick 336 1007
+pick 336 1008
+pick 337 1009
+pick 337 1010
+pick 337 1011
+pick 338 1012
+pick 338 1013
+pick 338 1014
+pick 339 1015
+pick 339 1016
+pick 339 1017
+pick 340 1018
+pick 340 1019
+pick 340 1020
+pick 341 1021
+pick 341 1022
+pick 341 1023
+pick 342 1024
+pick 342 1025
+pick 342 1026
+pick 343 1027
+pick 343 1028
+pick 343 1029
+pick 344 1030
+pick 344 1031
+pick 344 1032
+pick 345 1033
+pick 345 1034
+pick 345 1035
+pick 346 1036
+pick 346 1037
+pick 346 1038
+pick 347 1039
+pick 347 1040
+pick 347 1041
+pick 348 1042
+pick 348 1043
+pick 348 1044
+pick 349 1045
+pick 349 1046
+pick 349 1047
+pick 350 1048
+pick 350 1049
+pick 350 1050
+pick 351 1051
+pick 351 1052
+pick 351 1053
+pick 352 1054
+pick 352 1055
+pick 352 1056
+pick 353 1057
+pick 353 1058
+pick 353 1059
+pick 354 1060
+pick 354 1061
+pick 354 1062
+pick 355 1063
+pick 355 1064
+pick 355 1065
+pick 356 1066
+pick 356 1067
+pick 356 1068
+pick 357 1069
+pick 357 1070
+pick 357 1071
+pick 358 1072
+pick 358 1073
+pick 358 1074
+pick 359 1075
+pick 359 1076
+pick 359 1077
+pick 360 1078
+pick 360 1079
+pick 360 1080
+pick 361 1081
+pick 361 1082
+pick 361 1083
+pick 362 1084
+pick 362 1085
+pick 362 1086
+pick 363 1087
+pick 363 1088
+pick 363 1089
+pick 364 1090
+pick 364 1091
+pick 364 1092
+pick 365 1093
+pick 365 1094
+pick 365 1095
+pick 366 1096
+pick 366 1097
+pick 366 1098
+pick 367 1099
+pick 367 1100
+pick 367 1101
+pick 368 1102
+pick 368 1103
+pick 368 1104
+pick 369 1105
+pick 369 1106
+pick 369 1107
+pick 370 1108
+pick 370 1109
+pick 370 1110
+pick 371 1111
+pick 371 1112
+pick 371 1113
+pick 372 1114
+pick 372 1115
+pick 372 1116
+pick 373 1117
+pick 373 1118
+pick 373 1119
+pick 374 1120
+pick 374 1121
+pick 374 1122
+pick 375 1123
+pick 375 1124
+pick 375 1125
+pick 376 1126
+pick 376 1127
+pick 376 1128
+pick 377 1129
+pick 377 1130
+pick 377 1131
+pick 378 1132
+pick 378 1133
+pick 378 1134
+pick 379 1135
+pick 379 1136
+pick 379 1137
+pick 380 1138
+pick 380 1139
+pick 380 1140
+pick 381 1141
+pick 381 1142
+pick 381 1143
+pick 382 1144
+pick 382 1145
+pick 382 1146
+pick 383 1147
+pick 383 1148
+pick 383 1149
+pick 384 1150
+pick 384 1151
+pick 384 1152
+pick 385 1153
+pick 385 1154
+pick 385 1155
+pick 386 1156
+pick 386 1157
+pick 386 1158
+pick 387 1159
+pick 387 1160
+pick 387 1161
+pick 388 1162
+pick 388 1163
+pick 388 1164
+pick 389 1165
+pick 389 1166
+pick 389 1167
+pick 390 1168
+pick 390 1169
+pick 390 1170
+pick 391 1171
+pick 391 1172
+pick 391 1173
+pick 392 1174
+pick 392 1175
+pick 392 1176
+pick 393 1177
+pick 393 1178
+pick 393 1179
+pick 394 1180
+pick 394 1181
+pick 394 1182
+pick 395 1183
+pick 395 1184
+pick 395 1185
+pick 396 1186
+pick 396 1187
+pick 396 1188
+pick 397 1189
+pick 397 1190
+pick 397 1191
+pick 398 1192
+pick 398 1193
+pick 398 1194
+pick 399 1195
+pick 399 1196
+pick 399 1197
+pick 400 1198
+pick 400 1199
+pick 400 1200
+pick 401 1201
+pick 401 1202
+pick 401 1203
+pick 402 1204
+pick 402 1205
+pick 402 1206
+pick 403 1207
+pick 403 1208
+pick 403 1209
+pick 404 1210
+pick 404 1211
+pick 404 1212
+pick 405 1213
+pick 405 1214
+pick 405 1215
+pick 406 1216
+pick 406 1217
+pick 406 1218
+pick 407 1219
+pick 407 1220
+pick 407 1221
+pick 408 1222
+pick 408 1223
+pick 408 1224
+pick 409 1225
+pick 409 1226
+pick 409 1227
+pick 410 1228
+pick 410 1229
+pick 410 1230
+pick 411 1231
+pick 411 1232
+pick 411 1233
+pick 412 1234
+pick 412 1235
+pick 412 1236
+pick 413 1237
+pick 413 1238
+pick 413 1239
+pick 414 1240
+pick 414 1241
+pick 414 1242
+pick 415 1243
+pick 415 1244
+pick 415 1245
+pick 416 1246
+pick 416 1247
+pick 416 1248
+pick 417 1249
+pick 417 1250
+pick 417 1251
+pick 418 1252
+pick 418 1253
+pick 418 1254
+pick 419 1255
+pick 419 1256
+pick 419 1257
+pick 420 1258
+pick 420 1259
+pick 420 1260
+pick 421 1261
+pick 421 1262
+pick 421 1263
+pick 422 1264
+pick 422 1265
+pick 422 1266
+pick 423 1267
+pick 423 1268
+pick 423 1269
+pick 424 1270
+pick 424 1271
+pick 424 1272
+pick 425 1273
+pick 425 1274
+pick 425 1275
+pick 426 1276
+pick 426 1277
+pick 426 1278
+pick 427 1279
+pick 427 1280
+pick 427 1281
+pick 428 1282
+pick 428 1283
+pick 428 1284
+pick 429 1285
+pick 429 1286
+pick 429 1287
+pick 430 1288
+pick 430 1289
+pick 430 1290
+pick 431 1291
+pick 431 1292
+pick 431 1293
+pick 432 1294
+pick 432 1295
+pick 432 1296
+pick 433 1297
+pick 433 1298
+pick 433 1299
+pick 434 1300
+pick 434 1301
+pick 434 1302
+pick 435 1303
+pick 435 1304
+pick 435 1305
+pick 436 1306
+pick 436 1307
+pick 436 1308
+pick 437 1309
+pick 437 1310
+pick 437 1311
+pick 438 1312
+pick 438 1313
+pick 438 1314
+pick 439 1315
+pick 439 1316
+pick 439 1317
+pick 440 1318
+pick 440 1319
+pick 440 1320
+pick 441 1321
+pick 441 1322
+pick 441 1323
+pick 442 1324
+pick 442 1325
+pick 442 1326
+pick 443 1327
+pick 443 1328
+pick 443 1329
+pick 444 1330
+pick 444 1331
+pick 444 1332
+pick 445 1333
+pick 445 1334
+pick 445 1335
+pick 446 1336
+pick 446 1337
+pick 446 1338
+pick 447 1339
+pick 447 1340
+pick 447 1341
+pick 448 1342
+pick 448 1343
+pick 448 1344
+pick 449 1345
+pick 449 1346
+pick 449 1347
+pick 450 1348
+pick 450 1349
+pick 450 1350
+pick 451 1351
+pick 451 1352
+pick 451 1353
+pick 452 1354
+pick 452 1355
+pick 452 1356
+pick 453 1357
+pick 453 1358
+pick 453 1359
+pick 454 1360
+pick 454 1361
+pick 454 1362
+pick 455 1363
+pick 455 1364
+pick 455 1365
+pick 456 1366
+pick 456 1367
+pick 456 1368
+pick 457 1369
+pick 457 1370
+pick 457 1371
+pick 458 1372
+pick 458 1373
+pick 458 1374
+pick 459 1375
+pick 459 1376
+pick 459 1377
+pick 460 1378
+pick 460 1379
+pick 460 1380
+pick 461 1381
+pick 461 1382
+pick 461 1383
+pick 462 1384
+pick 462 1385
+pick 462 1386
+pick 463 1387
+pick 463 1388
+pick 463 1389
+pick 464 1390
+pick 464 1391
+pick 464 1392
+pick 465 1393
+pick 465 1394
+pick 465 1395
+pick 466 1396
+pick 466 1397
+pick 466 1398
+pick 467 1399
+pick 467 1400
+pick 467 1401
+pick 468 1402
+pick 468 1403
+pick 468 1404
+pick 469 1405
+pick 469 1406
+pick 469 1407
+pick 470 1408
+pick 470 1409
+pick 470 1410
+pick 471 1411
+pick 471 1412
+pick 471 1413
+pick 472 1414
+pick 472 1415
+pick 472 1416
+pick 473 1417
+pick 473 1418
+pick 473 1419
+pick 474 1420
+pick 474 1421
+pick 474 1422
+pick 475 1423
+pick 475 1424
+pick 475 1425
+pick 476 1426
+pick 476 1427
+pick 476 1428
+pick 477 1429
+pick 477 1430
+pick 477 1431
+pick 478 1432
+pick 478 1433
+pick 478 1434
+pick 479 1435
+pick 479 1436
+pick 479 1437
+pick 480 1438
+pick 480 1439
+pick 480 1440
+pick 481 1441
+pick 481 1442
+pick 481 1443
+pick 482 1444
+pick 482 1445
+pick 482 1446
+pick 483 1447
+pick 483 1448
+pick 483 1449
+pick 484 1450
+pick 484 1451
+pick 484 1452
+pick 485 1453
+pick 485 1454
+pick 485 1455
+pick 486 1456
+pick 486 1457
+pick 486 1458
+pick 487 1459
+pick 487 1460
+pick 487 1461
+pick 488 1462
+pick 488 1463
+pick 488 1464
+pick 489 1465
+pick 489 1466
+pick 489 1467
+pick 490 1468
+pick 490 1469
+pick 490 1470
+pick 491 1471
+pick 491 1472
+pick 491 1473
+pick 492 1474
+pick 492 1475
+pick 492 1476
+pick 493 1477
+pick 493 1478
+pick 493 1479
+pick 494 1480
+pick 494 1481
+pick 494 1482
+pick 495 1483
+pick 495 1484
+pick 495 1485
+pick 496 1486
+pick 496 1487
+pick 496 1488
+pick 497 1489
+pick 497 1490
+pick 497 1491
+pick 498 1492
+pick 498 1493
+pick 498 1494
+pick 499 1495
+pick 499 1496
+pick 499 1497
+pick 500 1498
+pick 500 1499
+pick 500 1500
+pick 501 1501
+pick 501 1502
+pick 501 1503
+pick 502 1504
+pick 502 1505
+pick 502 1506
+pick 503 1507
+pick 503 1508
+pick 503 1509
+pick 504 1510
+pick 504 1511
+pick 504 1512
+pick 505 1513
+pick 505 1514
+pick 505 1515
+pick 506 1516
+pick 506 1517
+pick 506 1518
+pick 507 1519
+pick 507 1520
+pick 507 1521
+pick 508 1522
+pick 508 1523
+pick 508 1524
+pick 509 1525
+pick 509 1526
+pick 509 1527
+pick 510 1528
+pick 510 1529
+pick 510 1530
+pick 511 1531
+pick 511 1532
+pick 511 1533
+pick 512 1534
+pick 512 1535
+pick 512 1536
+pick 513 1537
+pick 513 1538
+pick 513 1539
+pick 514 1540
+pick 514 1541
+pick 514 1542
+pick 515 1543
+pick 515 1544
+pick 515 1545
+pick 516 1546
+pick 516 1547
+pick 516 1548
+pick 517 1549
+pick 517 1550
+pick 517 1551
+pick 518 1552
+pick 518 1553
+pick 518 1554
+pick 519 1555
+pick 519 1556
+pick 519 1557
+pick 520 1558
+pick 520 1559
+pick 520 1560
+pick 521 1561
+pick 521 1562
+pick 521 1563
+pick 522 1564
+pick 522 1565
+pick 522 1566
+pick 523 1567
+pick 523 1568
+pick 523 1569
+pick 524 1570
+pick 524 1571
+pick 524 1572
+pick 525 1573
+pick 525 1574
+pick 525 1575
+pick 526 1576
+pick 526 1577
+pick 526 1578
+pick 527 1579
+pick 527 1580
+pick 527 1581
+pick 528 1582
+pick 528 1583
+pick 528 1584
+pick 529 1585
+pick 529 1586
+pick 529 1587
+pick 530 1588
+pick 530 1589
+pick 530 1590
+pick 531 1591
+pick 531 1592
+pick 531 1593
+pick 532 1594
+pick 532 1595
+pick 532 1596
+pick 533 1597
+pick 533 1598
+pick 533 1599
+pick 534 1600
+pick 534 1601
+pick 534 1602
+pick 535 1603
+pick 535 1604
+pick 535 1605
+pick 536 1606
+pick 536 1607
+pick 536 1608
+pick 537 1609
+pick 537 1610
+pick 537 1611
+pick 538 1612
+pick 538 1613
+pick 538 1614
+pick 539 1615
+pick 539 1616
+pick 539 1617
+pick 540 1618
+pick 540 1619
+pick 540 1620
+pick 541 1621
+pick 541 1622
+pick 541 1623
+pick 542 1624
+pick 542 1625
+pick 542 1626
+pick 543 1627
+pick 543 1628
+pick 543 1629
+pick 544 1630
+pick 544 1631
+pick 544 1632
+pick 545 1633
+pick 545 1634
+pick 545 1635
+pick 546 1636
+pick 546 1637
+pick 546 1638
+pick 547 1639
+pick 547 1640
+pick 547 1641
+pick 548 1642
+pick 548 1643
+pick 548 1644
+pick 549 1645
+pick 549 1646
+pick 549 1647
+pick 550 1648
+pick 550 1649
+pick 550 1650
+pick 551 1651
+pick 551 1652
+pick 551 1653
+pick 552 1654
+pick 552 1655
+pick 552 1656
+pick 553 1657
+pick 553 1658
+pick 553 1659
+pick 554 1660
+pick 554 1661
+pick 554 1662
+pick 555 1663
+pick 555 1664
+pick 555 1665
+pick 556 1666
+pick 556 1667
+pick 556 1668
+pick 557 1669
+pick 557 1670
+pick 557 1671
+pick 558 1672
+pick 558 1673
+pick 558 1674
+pick 559 1675
+pick 559 1676
+pick 559 1677
+pick 560 1678
+pick 560 1679
+pick 560 1680
+pick 561 1681
+pick 561 1682
+pick 561 1683
+pick 562 1684
+pick 562 1685
+pick 562 1686
+pick 563 1687
+pick 563 1688
+pick 563 1689
+pick 564 1690
+pick 564 1691
+pick 564 1692
+pick 565 1693
+pick 565 1694
+pick 565 1695
+pick 566 1696
+pick 566 1697
+pick 566 1698
+pick 567 1699
+pick 567 1700
+pick 567 1701
+pick 568 1702
+pick 568 1703
+pick 568 1704
+pick 569 1705
+pick 569 1706
+pick 569 1707
+pick 570 1708
+pick 570 1709
+pick 570 1710
+pick 571 1711
+pick 571 1712
+pick 571 1713
+pick 572 1714
+pick 572 1715
+pick 572 1716
+pick 573 1717
+pick 573 1718
+pick 573 1719
+pick 574 1720
+pick 574 1721
+pick 574 1722
+pick 575 1723
+pick 575 1724
+pick 575 1725
+pick 576 1726
+pick 576 1727
+pick 576 1728
+pick 577 1729
+pick 577 1730
+pick 577 1731
+pick 578 1732
+pick 578 1733
+pick 578 1734
+pick 579 1735
+pick 579 1736
+pick 579 1737
+pick 580 1738
+pick 580 1739
+pick 580 1740
+pick 581 1741
+pick 581 1742
+pick 581 1743
+pick 582 1744
+pick 582 1745
+pick 582 1746
+pick 583 1747
+pick 583 1748
+pick 583 1749
+pick 584 1750
+pick 584 1751
+pick 584 1752
+pick 585 1753
+pick 585 1754
+pick 585 1755
+pick 586 1756
+pick 586 1757
+pick 586 1758
+pick 587 1759
+pick 587 1760
+pick 587 1761
+pick 588 1762
+pick 588 1763
+pick 588 1764
+pick 589 1765
+pick 589 1766
+pick 589 1767
+pick 590 1768
+pick 590 1769
+pick 590 1770
+pick 591 1771
+pick 591 1772
+pick 591 1773
+pick 592 1774
+pick 592 1775
+pick 592 1776
+pick 593 1777
+pick 593 1778
+pick 593 1779
+pick 594 1780
+pick 594 1781
+pick 594 1782
+pick 595 1783
+pick 595 1784
+pick 595 1785
+pick 596 1786
+pick 596 1787
+pick 596 1788
+pick 597 1789
+pick 597 1790
+pick 597 1791
+pick 598 1792
+pick 598 1793
+pick 598 1794
+pick 599 1795
+pick 599 1796
+pick 599 1797
+pick 600 1798
+pick 600 1799
+pick 600 1800
+pick 601 1801
+pick 601 1802
+pick 601 1803
+pick 602 1804
+pick 602 1805
+pick 602 1806
+pick 603 1807
+pick 603 1808
+pick 603 1809
+pick 604 1810
+pick 604 1811
+pick 604 1812
+pick 605 1813
+pick 605 1814
+pick 605 1815
+pick 606 1816
+pick 606 1817
+pick 606 1818
+pick 607 1819
+pick 607 1820
+pick 607 1821
+pick 608 1822
+pick 608 1823
+pick 608 1824
+pick 609 1825
+pick 609 1826
+pick 609 1827
+pick 610 1828
+pick 610 1829
+pick 610 1830
+pick 611 1831
+pick 611 1832
+pick 611 1833
+pick 612 1834
+pick 612 1835
+pick 612 1836
+pick 613 1837
+pick 613 1838
+pick 613 1839
+pick 614 1840
+pick 614 1841
+pick 614 1842
+pick 615 1843
+pick 615 1844
+pick 615 1845
+pick 616 1846
+pick 616 1847
+pick 616 1848
+pick 617 1849
+pick 617 1850
+pick 617 1851
+pick 618 1852
+pick 618 1853
+pick 618 1854
+pick 619 1855
+pick 619 1856
+pick 619 1857
+pick 620 1858
+pick 620 1859
+pick 620 1860
+pick 621 1861
+pick 621 1862
+pick 621 1863
+pick 622 1864
+pick 622 1865
+pick 622 1866
+pick 623 1867
+pick 623 1868
+pick 623 1869
+pick 624 1870
+pick 624 1871
+pick 624 1872
+pick 625 1873
+pick 625 1874
+pick 625 1875
+pick 626 1876
+pick 626 1877
+pick 626 1878
+pick 627 1879
+pick 627 1880
+pick 627 1881
+pick 628 1882
+pick 628 1883
+pick 628 1884
+pick 629 1885
+pick 629 1886
+pick 629 1887
+pick 630 1888
+pick 630 1889
+pick 630 1890
+pick 631 1891
+pick 631 1892
+pick 631 1893
+pick 632 1894
+pick 632 1895
+pick 632 1896
+pick 633 1897
+pick 633 1898
+pick 633 1899
+pick 634 1900
+pick 634 1901
+pick 634 1902
+pick 635 1903
+pick 635 1904
+pick 635 1905
+pick 636 1906
+pick 636 1907
+pick 636 1908
+pick 637 1909
+pick 637 1910
+pick 637 1911
+pick 638 1912
+pick 638 1913
+pick 638 1914
+pick 639 1915
+pick 639 1916
+pick 639 1917
+pick 640 1918
+pick 640 1919
+pick 640 1920
+pick 641 1921
+pick 641 1922
+pick 641 1923
+pick 642 1924
+pick 642 1925
+pick 642 1926
+pick 643 1927
+pick 643 1928
+pick 643 1929
+pick 644 1930
+pick 644 1931
+pick 644 1932
+pick 645 1933
+pick 645 1934
+pick 645 1935
+pick 646 1936
+pick 646 1937
+pick 646 1938
+pick 647 1939
+pick 647 1940
+pick 647 1941
+pick 648 1942
+pick 648 1943
+pick 648 1944
+pick 649 1945
+pick 649 1946
+pick 649 1947
+pick 650 1948
+pick 650 1949
+pick 650 1950
+pick 651 1951
+pick 651 1952
+pick 651 1953
+pick 652 1954
+pick 652 1955
+pick 652 1956
+pick 653 1957
+pick 653 1958
+pick 653 1959
+pick 654 1960
+pick 654 1961
+pick 654 1962
+pick 655 1963
+pick 655 1964
+pick 655 1965
+pick 656 1966
+pick 656 1967
+pick 656 1968
+pick 657 1969
+pick 657 1970
+pick 657 1971
+pick 658 1972
+pick 658 1973
+pick 658 1974
+pick 659 1975
+pick 659 1976
+pick 659 1977
+pick 660 1978
+pick 660 1979
+pick 660 1980
+pick 661 1981
+pick 661 1982
+pick 661 1983
+pick 662 1984
+pick 662 1985
+pick 662 1986
+pick 663 1987
+pick 663 1988
+pick 663 1989
+pick 664 1990
+pick 664 1991
+pick 664 1992
+pick 665 1993
+pick 665 1994
+pick 665 1995
+pick 666 1996
+pick 666 1997
+pick 666 1998
+pick 667 1999
+pick 667 2000
+pick 667 2001
+pick 668 2002
+pick 668 2003
+pick 668 2004
+pick 669 2005
+pick 669 2006
+pick 669 2007
+pick 670 2008
+pick 670 2009
+pick 670 2010
+pick 671 2011
+pick 671 2012
+pick 671 2013
+pick 672 2014
+pick 672 2015
+pick 672 2016
+pick 673 2017
+pick 673 2018
+pick 673 2019
+pick 674 2020
+pick 674 2021
+pick 674 2022
+pick 675 2023
+pick 675 2024
+pick 675 2025
+pick 676 2026
+pick 676 2027
+pick 676 2028
+pick 677 2029
+pick 677 2030
+pick 677 2031
+pick 678 2032
+pick 678 2033
+pick 678 2034
+pick 679 2035
+pick 679 2036
+pick 679 2037
+pick 680 2038
+pick 680 2039
+pick 680 2040
+pick 681 2041
+pick 681 2042
+pick 681 2043
+pick 682 2044
+pick 682 2045
+pick 682 2046
+pick 683 2047
+pick 683 2048
+pick 683 2049
+pick 684 2050
+pick 684 2051
+pick 684 2052
+pick 685 2053
+pick 685 2054
+pick 685 2055
+pick 686 2056
+pick 686 2057
+pick 686 2058
+pick 687 2059
+pick 687 2060
+pick 687 2061
+pick 688 2062
+pick 688 2063
+pick 688 2064
+pick 689 2065
+pick 689 2066
+pick 689 2067
+pick 690 2068
+pick 690 2069
+pick 690 2070
+pick 691 2071
+pick 691 2072
+pick 691 2073
+pick 692 2074
+pick 692 2075
+pick 692 2076
+pick 693 2077
+pick 693 2078
+pick 693 2079
+pick 694 2080
+pick 694 2081
+pick 694 2082
+pick 695 2083
+pick 695 2084
+pick 695 2085
+pick 696 2086
+pick 696 2087
+pick 696 2088
+pick 697 2089
+pick 697 2090
+pick 697 2091
+pick 698 2092
+pick 698 2093
+pick 698 2094
+pick 699 2095
+pick 699 2096
+pick 699 2097
+pick 700 2098
+pick 700 2099
+pick 700 2100
+pick 701 2101
+pick 701 2102
+pick 701 2103
+pick 702 2104
+pick 702 2105
+pick 702 2106
+pick 703 2107
+pick 703 2108
+pick 703 2109
+pick 704 2110
+pick 704 2111
+pick 704 2112
+pick 705 2113
+pick 705 2114
+pick 705 2115
+pick 706 2116
+pick 706 2117
+pick 706 2118
+pick 707 2119
+pick 707 2120
+pick 707 2121
+pick 708 2122
+pick 708 2123
+pick 708 2124
+pick 709 2125
+pick 709 2126
+pick 709 2127
+pick 710 2128
+pick 710 2129
+pick 710 2130
+pick 711 2131
+pick 711 2132
+pick 711 2133
+pick 712 2134
+pick 712 2135
+pick 712 2136
+pick 713 2137
+pick 713 2138
+pick 713 2139
+pick 714 2140
+pick 714 2141
+pick 714 2142
+pick 715 2143
+pick 715 2144
+pick 715 2145
+pick 716 2146
+pick 716 2147
+pick 716 2148
+pick 717 2149
+pick 717 2150
+pick 717 2151
+pick 718 2152
+pick 718 2153
+pick 718 2154
+pick 719 2155
+pick 719 2156
+pick 719 2157
+pick 720 2158
+pick 720 2159
+pick 720 2160
+pick 721 2161
+pick 721 2162
+pick 721 2163
+pick 722 2164
+pick 722 2165
+pick 722 2166
+pick 723 2167
+pick 723 2168
+pick 723 2169
+pick 724 2170
+pick 724 2171
+pick 724 2172
+pick 725 2173
+pick 725 2174
+pick 725 2175
+pick 726 2176
+pick 726 2177
+pick 726 2178
+pick 727 2179
+pick 727 2180
+pick 727 2181
+pick 728 2182
+pick 728 2183
+pick 728 2184
+pick 729 2185
+pick 729 2186
+pick 729 2187
+pick 730 2188
+pick 730 2189
+pick 730 2190
+pick 731 2191
+pick 731 2192
+pick 731 2193
+pick 732 2194
+pick 732 2195
+pick 732 2196
+pick 733 2197
+pick 733 2198
+pick 733 2199
+pick 734 2200
+pick 734 2201
+pick 734 2202
+pick 735 2203
+pick 735 2204
+pick 735 2205
+pick 736 2206
+pick 736 2207
+pick 736 2208
+pick 737 2209
+pick 737 2210
+pick 737 2211
+pick 738 2212
+pick 738 2213
+pick 738 2214
+pick 739 2215
+pick 739 2216
+pick 739 2217
+pick 740 2218
+pick 740 2219
+pick 740 2220
+pick 741 2221
+pick 741 2222
+pick 741 2223
+pick 742 2224
+pick 742 2225
+pick 742 2226
+pick 743 2227
+pick 743 2228
+pick 743 2229
+pick 744 2230
+pick 744 2231
+pick 744 2232
+pick 745 2233
+pick 745 2234
+pick 745 2235
+pick 746 2236
+pick 746 2237
+pick 746 2238
+pick 747 2239
+pick 747 2240
+pick 747 2241
+pick 748 2242
+pick 748 2243
+pick 748 2244
+pick 749 2245
+pick 749 2246
+pick 749 2247
+pick 750 2248
+pick 750 2249
+pick 750 2250
+pick 751 2251
+pick 751 2252
+pick 751 2253
+pick 752 2254
+pick 752 2255
+pick 752 2256
+pick 753 2257
+pick 753 2258
+pick 753 2259
+pick 754 2260
+pick 754 2261
+pick 754 2262
+pick 755 2263
+pick 755 2264
+pick 755 2265
+pick 756 2266
+pick 756 2267
+pick 756 2268
+pick 757 2269
+pick 757 2270
+pick 757 2271
+pick 758 2272
+pick 758 2273
+pick 758 2274
+pick 759 2275
+pick 759 2276
+pick 759 2277
+pick 760 2278
+pick 760 2279
+pick 760 2280
+pick 761 2281
+pick 761 2282
+pick 761 2283
+pick 762 2284
+pick 762 2285
+pick 762 2286
+pick 763 2287
+pick 763 2288
+pick 763 2289
+pick 764 2290
+pick 764 2291
+pick 764 2292
+pick 765 2293
+pick 765 2294
+pick 765 2295
+pick 766 2296
+pick 766 2297
+pick 766 2298
+pick 767 2299
+pick 767 2300
+pick 767 2301
+pick 768 2302
+pick 768 2303
+pick 768 2304
+pick 769 2305
+pick 769 2306
+pick 769 2307
+pick 770 2308
+pick 770 2309
+pick 770 2310
+pick 771 2311
+pick 771 2312
+pick 771 2313
+pick 772 2314
+pick 772 2315
+pick 772 2316
+pick 773 2317
+pick 773 2318
+pick 773 2319
+pick 774 2320
+pick 774 2321
+pick 774 2322
+pick 775 2323
+pick 775 2324
+pick 775 2325
+pick 776 2326
+pick 776 2327
+pick 776 2328
+pick 777 2329
+pick 777 2330
+pick 777 2331
+pick 778 2332
+pick 778 2333
+pick 778 2334
+pick 779 2335
+pick 779 2336
+pick 779 2337
+pick 780 2338
+pick 780 2339
+pick 780 2340
+pick 781 2341
+pick 781 2342
+pick 781 2343
+pick 782 2344
+pick 782 2345
+pick 782 2346
+pick 783 2347
+pick 783 2348
+pick 783 2349
+pick 784 2350
+pick 784 2351
+pick 784 2352
+pick 785 2353
+pick 785 2354
+pick 785 2355
+pick 786 2356
+pick 786 2357
+pick 786 2358
+pick 787 2359
+pick 787 2360
+pick 787 2361
+pick 788 2362
+pick 788 2363
+pick 788 2364
+pick 789 2365
+pick 789 2366
+pick 789 2367
+pick 790 2368
+pick 790 2369
+pick 790 2370
+pick 791 2371
+pick 791 2372
+pick 791 2373
+pick 792 2374
+pick 792 2375
+pick 792 2376
+pick 793 2377
+pick 793 2378
+pick 793 2379
+pick 794 2380
+pick 794 2381
+pick 794 2382
+pick 795 2383
+pick 795 2384
+pick 795 2385
+pick 796 2386
+pick 796 2387
+pick 796 2388
+pick 797 2389
+pick 797 2390
+pick 797 2391
+pick 798 2392
+pick 798 2393
+pick 798 2394
+pick 799 2395
+pick 799 2396
+pick 799 2397
+pick 800 2398
+pick 800 2399
+pick 800 2400
+pick 801 2401
+pick 801 2402
+pick 801 2403
+pick 802 2404
+pick 802 2405
+pick 802 2406
+pick 803 2407
+pick 803 2408
+pick 803 2409
+pick 804 2410
+pick 804 2411
+pick 804 2412
+pick 805 2413
+pick 805 2414
+pick 805 2415
+pick 806 2416
+pick 806 2417
+pick 806 2418
+pick 807 2419
+pick 807 2420
+pick 807 2421
+pick 808 2422
+pick 808 2423
+pick 808 2424
+pick 809 2425
+pick 809 2426
+pick 809 2427
+pick 810 2428
+pick 810 2429
+pick 810 2430
+pick 811 2431
+pick 811 2432
+pick 811 2433
+pick 812 2434
+pick 812 2435
+pick 812 2436
+pick 813 2437
+pick 813 2438
+pick 813 2439
+pick 814 2440
+pick 814 2441
+pick 814 2442
+pick 815 2443
+pick 815 2444
+pick 815 2445
+pick 816 2446
+pick 816 2447
+pick 816 2448
+pick 817 2449
+pick 817 2450
+pick 817 2451
+pick 818 2452
+pick 818 2453
+pick 818 2454
+pick 819 2455
+pick 819 2456
+pick 819 2457
+pick 820 2458
+pick 820 2459
+pick 820 2460
+pick 821 2461
+pick 821 2462
+pick 821 2463
+pick 822 2464
+pick 822 2465
+pick 822 2466
+pick 823 2467
+pick 823 2468
+pick 823 2469
+pick 824 2470
+pick 824 2471
+pick 824 2472
+pick 825 2473
+pick 825 2474
+pick 825 2475
+pick 826 2476
+pick 826 2477
+pick 826 2478
+pick 827 2479
+pick 827 2480
+pick 827 2481
+pick 828 2482
+pick 828 2483
+pick 828 2484
+pick 829 2485
+pick 829 2486
+pick 829 2487
+pick 830 2488
+pick 830 2489
+pick 830 2490
+pick 831 2491
+pick 831 2492
+pick 831 2493
+pick 832 2494
+pick 832 2495
+pick 832 2496
+pick 833 2497
+pick 833 2498
+pick 833 2499
+pick 834 2500
+pick 834 2501
+pick 834 2502
+pick 835 2503
+pick 835 2504
+pick 835 2505
+pick 836 2506
+pick 836 2507
+pick 836 2508
+pick 837 2509
+pick 837 2510
+pick 837 2511
+pick 838 2512
+pick 838 2513
+pick 838 2514
+pick 839 2515
+pick 839 2516
+pick 839 2517
+pick 840 2518
+pick 840 2519
+pick 840 2520
+pick 841 2521
+pick 841 2522
+pick 841 2523
+pick 842 2524
+pick 842 2525
+pick 842 2526
+pick 843 2527
+pick 843 2528
+pick 843 2529
+pick 844 2530
+pick 844 2531
+pick 844 2532
+pick 845 2533
+pick 845 2534
+pick 845 2535
+pick 846 2536
+pick 846 2537
+pick 846 2538
+pick 847 2539
+pick 847 2540
+pick 847 2541
+pick 848 2542
+pick 848 2543
+pick 848 2544
+pick 849 2545
+pick 849 2546
+pick 849 2547
+pick 850 2548
+pick 850 2549
+pick 850 2550
+pick 851 2551
+pick 851 2552
+pick 851 2553
+pick 852 2554
+pick 852 2555
+pick 852 2556
+pick 853 2557
+pick 853 2558
+pick 853 2559
+pick 854 2560
+pick 854 2561
+pick 854 2562
+pick 855 2563
+pick 855 2564
+pick 855 2565
+pick 856 2566
+pick 856 2567
+pick 856 2568
+pick 857 2569
+pick 857 2570
+pick 857 2571
+pick 858 2572
+pick 858 2573
+pick 858 2574
+pick 859 2575
+pick 859 2576
+pick 859 2577
+pick 860 2578
+pick 860 2579
+pick 860 2580
+pick 861 2581
+pick 861 2582
+pick 861 2583
+pick 862 2584
+pick 862 2585
+pick 862 2586
+pick 863 2587
+pick 863 2588
+pick 863 2589
+pick 864 2590
+pick 864 2591
+pick 864 2592
+pick 865 2593
+pick 865 2594
+pick 865 2595
+pick 866 2596
+pick 866 2597
+pick 866 2598
+pick 867 2599
+pick 867 2600
+pick 867 2601
+pick 868 2602
+pick 868 2603
+pick 868 2604
+pick 869 2605
+pick 869 2606
+pick 869 2607
+pick 870 2608
+pick 870 2609
+pick 870 2610
+pick 871 2611
+pick 871 2612
+pick 871 2613
+pick 872 2614
+pick 872 2615
+pick 872 2616
+pick 873 2617
+pick 873 2618
+pick 873 2619
+pick 874 2620
+pick 874 2621
+pick 874 2622
+pick 875 2623
+pick 875 2624
+pick 875 2625
+pick 876 2626
+pick 876 2627
+pick 876 2628
+pick 877 2629
+pick 877 2630
+pick 877 2631
+pick 878 2632
+pick 878 2633
+pick 878 2634
+pick 879 2635
+pick 879 2636
+pick 879 2637
+pick 880 2638
+pick 880 2639
+pick 880 2640
+pick 881 2641
+pick 881 2642
+pick 881 2643
+pick 882 2644
+pick 882 2645
+pick 882 2646
+pick 883 2647
+pick 883 2648
+pick 883 2649
+pick 884 2650
+pick 884 2651
+pick 884 2652
+pick 885 2653
+pick 885 2654
+pick 885 2655
+pick 886 2656
+pick 886 2657
+pick 886 2658
+pick 887 2659
+pick 887 2660
+pick 887 2661
+pick 888 2662
+pick 888 2663
+pick 888 2664
+pick 889 2665
+pick 889 2666
+pick 889 2667
+pick 890 2668
+pick 890 2669
+pick 890 2670
+pick 891 2671
+pick 891 2672
+pick 891 2673
+pick 892 2674
+pick 892 2675
+pick 892 2676
+pick 893 2677
+pick 893 2678
+pick 893 2679
+pick 894 2680
+pick 894 2681
+pick 894 2682
+pick 895 2683
+pick 895 2684
+pick 895 2685
+pick 896 2686
+pick 896 2687
+pick 896 2688
+pick 897 2689
+pick 897 2690
+pick 897 2691
+pick 898 2692
+pick 898 2693
+pick 898 2694
+pick 899 2695
+pick 899 2696
+pick 899 2697
+pick 900 2698
+pick 900 2699
+pick 900 2700
+pick 901 2701
+pick 901 2702
+pick 901 2703
+pick 902 2704
+pick 902 2705
+pick 902 2706
+pick 903 2707
+pick 903 2708
+pick 903 2709
+pick 904 2710
+pick 904 2711
+pick 904 2712
+pick 905 2713
+pick 905 2714
+pick 905 2715
+pick 906 2716
+pick 906 2717
+pick 906 2718
+pick 907 2719
+pick 907 2720
+pick 907 2721
+pick 908 2722
+pick 908 2723
+pick 908 2724
+pick 909 2725
+pick 909 2726
+pick 909 2727
+pick 910 2728
+pick 910 2729
+pick 910 2730
+pick 911 2731
+pick 911 2732
+pick 911 2733
+pick 912 2734
+pick 912 2735
+pick 912 2736
+pick 913 2737
+pick 913 2738
+pick 913 2739
+pick 914 2740
+pick 914 2741
+pick 914 2742
+pick 915 2743
+pick 915 2744
+pick 915 2745
+pick 916 2746
+pick 916 2747
+pick 916 2748
+pick 917 2749
+pick 917 2750
+pick 917 2751
+pick 918 2752
+pick 918 2753
+pick 918 2754
+pick 919 2755
+pick 919 2756
+pick 919 2757
+pick 920 2758
+pick 920 2759
+pick 920 2760
+pick 921 2761
+pick 921 2762
+pick 921 2763
+pick 922 2764
+pick 922 2765
+pick 922 2766
+pick 923 2767
+pick 923 2768
+pick 923 2769
+pick 924 2770
+pick 924 2771
+pick 924 2772
+pick 925 2773
+pick 925 2774
+pick 925 2775
+pick 926 2776
+pick 926 2777
+pick 926 2778
+pick 927 2779
+pick 927 2780
+pick 927 2781
+pick 928 2782
+pick 928 2783
+pick 928 2784
+pick 929 2785
+pick 929 2786
+pick 929 2787
+pick 930 2788
+pick 930 2789
+pick 930 2790
+pick 931 2791
+pick 931 2792
+pick 931 2793
+pick 932 2794
+pick 932 2795
+pick 932 2796
+pick 933 2797
+pick 933 2798
+pick 933 2799
+pick 934 2800
+pick 934 2801
+pick 934 2802
+pick 935 2803
+pick 935 2804
+pick 935 2805
+pick 936 2806
+pick 936 2807
+pick 936 2808
+pick 937 2809
+pick 937 2810
+pick 937 2811
+pick 938 2812
+pick 938 2813
+pick 938 2814
+pick 939 2815
+pick 939 2816
+pick 939 2817
+pick 940 2818
+pick 940 2819
+pick 940 2820
+pick 941 2821
+pick 941 2822
+pick 941 2823
+pick 942 2824
+pick 942 2825
+pick 942 2826
+pick 943 2827
+pick 943 2828
+pick 943 2829
+pick 944 2830
+pick 944 2831
+pick 944 2832
+pick 945 2833
+pick 945 2834
+pick 945 2835
+pick 946 2836
+pick 946 2837
+pick 946 2838
+pick 947 2839
+pick 947 2840
+pick 947 2841
+pick 948 2842
+pick 948 2843
+pick 948 2844
+pick 949 2845
+pick 949 2846
+pick 949 2847
+pick 950 2848
+pick 950 2849
+pick 950 2850
+pick 951 2851
+pick 951 2852
+pick 951 2853
+pick 952 2854
+pick 952 2855
+pick 952 2856
+pick 953 2857
+pick 953 2858
+pick 953 2859
+pick 954 2860
+pick 954 2861
+pick 954 2862
+pick 955 2863
+pick 955 2864
+pick 955 2865
+pick 956 2866
+pick 956 2867
+pick 956 2868
+pick 957 2869
+pick 957 2870
+pick 957 2871
+pick 958 2872
+pick 958 2873
+pick 958 2874
+pick 959 2875
+pick 959 2876
+pick 959 2877
+pick 960 2878
+pick 960 2879
+pick 960 2880
+pick 961 2881
+pick 961 2882
+pick 961 2883
+pick 962 2884
+pick 962 2885
+pick 962 2886
+pick 963 2887
+pick 963 2888
+pick 963 2889
+pick 964 2890
+pick 964 2891
+pick 964 2892
+pick 965 2893
+pick 965 2894
+pick 965 2895
+pick 966 2896
+pick 966 2897
+pick 966 2898
+pick 967 2899
+pick 967 2900
+pick 967 2901
+pick 968 2902
+pick 968 2903
+pick 968 2904
+pick 969 2905
+pick 969 2906
+pick 969 2907
+pick 970 2908
+pick 970 2909
+pick 970 2910
+pick 971 2911
+pick 971 2912
+pick 971 2913
+pick 972 2914
+pick 972 2915
+pick 972 2916
+pick 973 2917
+pick 973 2918
+pick 973 2919
+pick 974 2920
+pick 974 2921
+pick 974 2922
+pick 975 2923
+pick 975 2924
+pick 975 2925
+pick 976 2926
+pick 976 2927
+pick 976 2928
+pick 977 2929
+pick 977 2930
+pick 977 2931
+pick 978 2932
+pick 978 2933
+pick 978 2934
+pick 979 2935
+pick 979 2936
+pick 979 2937
+pick 980 2938
+pick 980 2939
+pick 980 2940
+pick 981 2941
+pick 981 2942
+pick 981 2943
+pick 982 2944
+pick 982 2945
+pick 982 2946
+pick 983 2947
+pick 983 2948
+pick 983 2949
+pick 984 2950
+pick 984 2951
+pick 984 2952
+pick 985 2953
+pick 985 2954
+pick 985 2955
+pick 986 2956
+pick 986 2957
+pick 986 2958
+pick 987 2959
+pick 987 2960
+pick 987 2961
+pick 988 2962
+pick 988 2963
+pick 988 2964
+pick 989 2965
+pick 989 2966
+pick 989 2967
+pick 990 2968
+pick 990 2969
+pick 990 2970
+pick 991 2971
+pick 991 2972
+pick 991 2973
+pick 992 2974
+pick 992 2975
+pick 992 2976
+pick 993 2977
+pick 993 2978
+pick 993 2979
+pick 994 2980
+pick 994 2981
+pick 994 2982
+pick 995 2983
+pick 995 2984
+pick 995 2985
+pick 996 2986
+pick 996 2987
+pick 996 2988
+pick 997 2989
+pick 997 2990
+pick 997 2991
+pick 998 2992
+pick 998 2993
+pick 998 2994
+pick 999 2995
+pick 999 2996
+pick 999 2997
+pick 1000 2998
+pick 1000 2999
+pick 1000 3000
+40
+1 26
+2 14
+3 6
+4 22
+5 38
+6 3
+7 9
+8 32
+9 29
+10 18
+11 64
+12 76
+13 41
+14 67
+15 44
+16 150
+17 239
+18 47
+19 159
+20 235
+21 119
+22 156
+23 60
+24 375
+25 139
+26 114
+27 135
+28 355
+29 259
+30 115
+31 255
+32 279
+33 52
+34 70
+35 276
+36 234
+37 354
+38 56
+39 359
+40 270
+0
+80
+1 66
+2 55
+3 46
+4 63
+5 78
+6 43
+7 51
+8 75
+9 69
+10 59
+11 65
+12 77
+13 42
+14 68
+15 45
+41 26
+42 29
+43 22
+44 9
+45 38
+46 6
+47 18
+48 14
+49 32
+50 3
+51 64
+52 44
+53 67
+54 76
+55 41
+56 279
+57 139
+58 234
+59 359
+60 150
+61 70
+62 119
+63 60
+64 159
+65 354
+66 355
+67 235
+68 135
+69 255
+70 270
+71 56
+72 259
+73 115
+74 239
+75 156
+76 47
+77 375
+78 276
+79 114
+80 52
+16 194
+17 221
+18 48
+19 181
+20 241
+21 101
+22 140
+23 61
+24 340
+25 144
+26 115
+27 100
+28 339
+29 264
+30 121
+31 220
+32 286
+33 53
+34 71
+35 282
+36 232
+37 368
+38 57
+39 341
+40 314
+0
+118
+1 2
+2 2
+3 2
+4 2
+5 2
+6 2
+7 2
+8 2
+9 2
+10 2
+11 66
+12 78
+13 43
+14 69
+15 46
+41 66
+42 69
+43 63
+44 51
+45 78
+46 46
+47 59
+48 55
+49 75
+50 43
+23 62
+33 54
+38 58
+51 65
+52 45
+53 68
+54 77
+55 42
+81 18
+82 26
+83 6
+84 22
+85 9
+86 14
+87 38
+88 29
+89 3
+90 32
+91 76
+92 64
+93 67
+94 44
+95 41
+96 159
+97 270
+98 276
+99 235
+100 375
+101 279
+102 359
+103 135
+104 355
+105 56
+106 119
+107 150
+108 156
+109 234
+110 139
+111 115
+112 70
+113 354
+114 52
+115 239
+116 255
+117 47
+118 114
+119 259
+120 60
+18 49
+26 114
+56 286
+57 144
+58 248
+59 341
+60 194
+61 71
+62 127
+63 61
+64 181
+65 368
+66 339
+67 241
+68 108
+69 220
+70 314
+71 57
+72 264
+73 121
+74 221
+75 172
+76 48
+77 340
+78 282
+79 127
+80 53
+16 189
+19 166
+20 227
+21 119
+22 156
+24 360
+25 190
+27 135
+29 296
+30 106
+31 224
+32 282
+34 72
+35 292
+36 234
+37 367
+39 328
+40 309
+30
+drop 1 1
+drop 1 2
+drop 1 3
+drop 2 4
+drop 2 5
+drop 2 6
+drop 3 7
+drop 3 8
+drop 3 9
+drop 4 10
+drop 4 11
+drop 4 12
+drop 5 13
+drop 5 14
+drop 5 15
+drop 6 16
+drop 6 17
+drop 6 18
+drop 7 19
+drop 7 20
+drop 7 21
+drop 8 22
+drop 8 23
+drop 8 24
+drop 9 25
+drop 9 26
+drop 9 27
+drop 10 28
+drop 10 29
+drop 10 30
+142
+11 2
+12 2
+13 2
+14 2
+15 2
+41 26
+42 68
+43 2
+44 2
+45 77
+46 45
+47 2
+48 2
+49 2
+50 3
+23 63
+33 55
+38 59
+51 66
+52 44
+53 67
+54 76
+55 43
+81 59
+82 27
+83 46
+84 63
+85 51
+86 55
+87 78
+88 69
+89 4
+90 75
+18 50
+63 62
+71 58
+80 54
+91 1
+92 65
+93 1
+94 1
+95 42
+121 6
+122 3
+123 29
+124 38
+125 18
+126 22
+127 26
+128 32
+129 14
+130 9
+131 64
+132 41
+133 135
+134 115
+135 255
+136 52
+137 56
+138 47
+139 355
+140 156
+141 270
+142 150
+143 70
+144 234
+145 139
+146 239
+147 259
+148 375
+149 114
+150 119
+151 276
+152 60
+153 359
+154 235
+155 159
+156 354
+157 279
+21 101
+22 172
+26 115
+27 100
+34 73
+36 248
+76 49
+96 181
+97 314
+98 282
+99 241
+100 340
+101 286
+102 341
+103 108
+104 339
+105 57
+106 127
+107 194
+108 140
+109 232
+110 144
+111 113
+112 71
+113 368
+114 53
+115 246
+116 220
+117 48
+118 127
+119 264
+120 61
+17 239
+32 286
+56 301
+57 190
+58 246
+59 328
+60 189
+61 72
+62 137
+64 166
+65 377
+67 227
+68 104
+69 224
+70 309
+72 296
+73 115
+75 142
+77 360
+78 260
+16 178
+19 157
+20 218
+24 345
+25 157
+30 121
+31 228
+35 282
+37 368
+39 321
+40 298
+30
+drop 11 31
+drop 11 32
+drop 11 33
+drop 12 34
+drop 12 35
+drop 12 36
+drop 13 37
+drop 13 38
+drop 13 39
+drop 14 40
+drop 14 41
+drop 14 42
+drop 15 43
+drop 15 44
+drop 15 45
+drop 43 127
+drop 43 128
+drop 43 129
+drop 44 130
+drop 44 131
+drop 44 132
+drop 47 139
+drop 47 140
+drop 47 141
+drop 48 142
+drop 48 143
+drop 48 144
+drop 49 145
+drop 49 146
+drop 49 147
+166
+23 2
+33 2
+38 2
+51 2
+55 2
+81 18
+83 2
+84 22
+85 2
+86 54
+87 2
+88 2
+90 2
+18 51
+41 66
+42 69
+45 78
+46 46
+50 43
+63 63
+71 59
+80 53
+82 28
+89 5
+92 66
+95 43
+121 46
+122 4
+123 69
+124 78
+125 19
+126 23
+127 27
+128 75
+129 55
+130 51
+34 74
+52 45
+53 68
+54 77
+76 50
+91 38
+93 3
+94 14
+105 58
+114 52
+120 62
+131 65
+132 42
+158 18
+159 29
+160 9
+161 6
+162 22
+163 32
+164 26
+165 67
+166 64
+167 76
+168 44
+169 41
+170 119
+171 255
+172 159
+173 375
+174 235
+175 47
+176 156
+177 135
+178 359
+179 354
+180 234
+181 355
+182 279
+183 115
+184 56
+185 276
+186 259
+187 52
+188 150
+189 139
+190 114
+191 70
+192 270
+193 60
+194 239
+17 246
+26 114
+61 73
+73 113
+117 49
+133 108
+134 121
+135 220
+137 57
+138 48
+139 346
+140 172
+141 314
+142 194
+143 71
+144 248
+145 144
+146 221
+147 264
+148 340
+149 127
+150 101
+151 282
+152 61
+153 341
+154 241
+155 181
+156 368
+157 286
+19 147
+21 92
+22 142
+24 348
+25 190
+27 135
+28 355
+30 106
+32 282
+35 260
+36 246
+37 377
+39 331
+40 290
+58 214
+79 119
+96 166
+97 309
+98 292
+99 227
+100 360
+101 301
+102 328
+103 104
+106 137
+107 189
+108 156
+109 234
+110 190
+111 111
+112 72
+113 367
+115 251
+116 224
+119 296
+31 240
+56 295
+57 184
+59 321
+60 178
+62 82
+64 157
+65 322
+67 218
+68 110
+69 228
+70 298
+75 197
+77 345
+78 307
+16 170
+30
+drop 23 67
+drop 23 68
+drop 23 69
+drop 33 97
+drop 33 98
+drop 33 99
+drop 38 112
+drop 38 113
+drop 38 114
+drop 51 151
+drop 51 152
+drop 51 153
+drop 55 163
+drop 55 164
+drop 55 165
+drop 83 247
+drop 83 248
+drop 83 249
+drop 85 253
+drop 85 254
+drop 85 255
+drop 87 259
+drop 87 260
+drop 87 261
+drop 88 262
+drop 88 263
+drop 88 264
+drop 90 268
+drop 90 269
+drop 90 270
+187
+18 2
+41 2
+42 2
+45 2
+46 2
+50 2
+63 2
+71 2
+82 2
+89 2
+92 65
+95 3
+121 45
+123 29
+124 77
+128 2
+129 2
+130 9
+34 75
+52 44
+53 69
+54 76
+76 51
+81 59
+84 63
+86 55
+91 78
+93 4
+94 55
+105 59
+120 63
+122 5
+127 28
+131 64
+132 43
+158 1
+159 30
+160 1
+161 46
+162 23
+163 75
+164 66
+61 74
+80 54
+117 50
+125 18
+126 24
+137 58
+152 62
+165 68
+166 1
+167 1
+168 1
+169 42
+195 29
+196 22
+197 38
+198 6
+199 14
+200 3
+201 32
+202 26
+203 67
+204 41
+205 234
+206 239
+207 52
+208 119
+209 115
+210 354
+211 70
+212 150
+213 270
+214 259
+215 375
+216 139
+217 156
+218 235
+219 60
+220 276
+221 279
+222 114
+223 56
+224 355
+225 359
+226 47
+227 159
+228 135
+229 255
+19 176
+24 344
+26 115
+27 108
+28 346
+39 349
+40 302
+79 127
+108 140
+109 232
+112 73
+114 53
+138 49
+170 101
+171 220
+172 181
+173 340
+174 241
+175 48
+176 172
+177 100
+178 341
+179 368
+180 248
+181 339
+182 286
+183 99
+184 57
+185 282
+186 264
+188 194
+189 144
+190 128
+191 71
+192 314
+193 61
+194 221
+17 239
+31 225
+32 286
+36 248
+56 287
+59 331
+64 147
+68 122
+70 290
+73 115
+77 348
+118 114
+133 104
+134 115
+135 224
+139 361
+140 142
+141 309
+142 189
+143 72
+144 257
+145 190
+147 296
+148 360
+149 137
+150 92
+151 260
+153 328
+154 227
+155 166
+156 377
+157 301
+21 85
+22 197
+25 157
+30 121
+35 307
+37 322
+58 246
+69 240
+96 157
+97 298
+98 282
+99 218
+100 345
+101 295
+102 321
+103 120
+106 82
+107 178
+110 184
+111 113
+113 368
+115 246
+116 228
+57 170
+60 170
+65 363
+75 187
+78 294
+16 182
+36
+drop 18 52
+drop 18 53
+drop 18 54
+drop 41 121
+drop 41 122
+drop 41 123
+drop 42 124
+drop 42 125
+drop 42 126
+drop 45 133
+drop 45 134
+drop 45 135
+drop 46 136
+drop 46 137
+drop 46 138
+drop 50 148
+drop 50 149
+drop 50 150
+drop 63 187
+drop 63 188
+drop 63 189
+drop 71 211
+drop 71 212
+drop 71 213
+drop 82 244
+drop 82 245
+drop 82 246
+drop 89 265
+drop 89 266
+drop 89 267
+drop 128 382
+drop 128 383
+drop 128 384
+drop 129 385
+drop 129 386
+drop 129 387
+198
+34 2
+53 2
+76 2
+81 2
+84 2
+86 2
+91 2
+94 54
+105 18
+120 62
+122 2
+127 2
+132 2
+161 2
+163 74
+164 2
+61 73
+80 53
+92 66
+93 5
+95 43
+117 51
+121 46
+123 69
+124 78
+125 19
+126 25
+130 51
+137 59
+152 61
+159 31
+165 69
+169 43
+195 30
+196 63
+197 78
+198 46
+199 55
+200 4
+201 75
+202 66
+19 164
+24 324
+39 378
+40 285
+52 45
+54 77
+112 72
+114 52
+131 65
+138 50
+158 32
+160 29
+162 22
+166 9
+167 14
+168 38
+184 58
+193 60
+203 68
+204 42
+230 6
+231 3
+232 22
+233 18
+234 26
+235 67
+236 44
+237 41
+238 64
+239 76
+240 159
+241 114
+242 150
+243 359
+244 279
+245 56
+246 235
+247 119
+248 156
+249 354
+250 115
+251 355
+252 135
+253 47
+254 52
+255 270
+256 60
+257 375
+258 234
+259 70
+260 255
+261 139
+262 239
+263 259
+264 276
+17 221
+26 114
+31 236
+56 278
+59 349
+64 176
+68 129
+70 302
+73 113
+77 344
+118 127
+134 121
+143 71
+175 49
+205 248
+206 246
+208 127
+209 99
+210 368
+211 71
+212 194
+213 314
+214 264
+215 340
+216 144
+217 172
+218 241
+220 282
+221 286
+222 128
+223 57
+224 346
+225 341
+226 48
+227 181
+228 100
+229 220
+25 147
+27 135
+28 361
+30 106
+32 282
+36 246
+58 251
+66 355
+69 225
+79 137
+96 190
+97 290
+98 292
+100 348
+101 287
+102 331
+103 105
+108 156
+109 234
+111 111
+113 377
+115 214
+170 119
+171 224
+172 166
+173 360
+174 227
+176 142
+178 328
+179 367
+180 257
+182 301
+185 260
+186 296
+188 189
+189 190
+190 80
+192 309
+21 94
+116 240
+133 108
+135 228
+139 363
+140 197
+141 298
+142 178
+144 219
+145 184
+148 345
+149 82
+150 101
+151 307
+153 321
+154 218
+155 163
+156 322
+157 295
+22 187
+35 294
+37 363
+75 158
+107 170
+110 170
+57 182
+78 262
+36
+drop 34 100
+drop 34 101
+drop 34 102
+drop 53 157
+drop 53 158
+drop 53 159
+drop 76 226
+drop 76 227
+drop 76 228
+drop 81 241
+drop 81 242
+drop 81 243
+drop 84 250
+drop 84 251
+drop 84 252
+drop 86 256
+drop 86 257
+drop 86 258
+drop 91 271
+drop 91 272
+drop 91 273
+drop 122 364
+drop 122 365
+drop 122 366
+drop 127 379
+drop 127 380
+drop 127 381
+drop 132 394
+drop 132 395
+drop 132 396
+drop 161 481
+drop 161 482
+drop 161 483
+drop 164 490
+drop 164 491
+drop 164 492
+211
+92 2
+93 2
+95 2
+117 2
+121 2
+123 2
+124 2
+126 2
+130 50
+137 2
+159 2
+165 68
+169 42
+196 2
+197 77
+198 45
+199 2
+201 2
+202 26
+19 168
+24 319
+39 357
+40 300
+52 44
+54 76
+94 55
+105 59
+120 63
+131 66
+138 49
+158 75
+160 69
+162 63
+163 75
+166 51
+167 55
+168 78
+184 59
+195 31
+200 5
+203 67
+204 41
+230 46
+231 43
+232 23
+233 1
+234 27
+31 207
+56 303
+59 378
+61 74
+64 164
+68 134
+70 285
+77 324
+80 54
+125 20
+152 62
+175 48
+223 58
+235 1
+236 1
+237 1
+238 65
+239 1
+265 14
+266 26
+267 9
+268 38
+269 22
+270 6
+271 3
+272 32
+273 29
+274 64
+275 56
+276 47
+277 375
+278 270
+279 359
+280 355
+281 279
+282 115
+283 156
+284 235
+285 276
+286 159
+287 139
+288 60
+289 135
+290 255
+291 70
+292 119
+293 354
+294 234
+295 150
+296 114
+297 52
+298 239
+299 259
+25 176
+26 115
+27 108
+66 339
+69 236
+97 302
+100 344
+101 278
+102 349
+103 116
+108 140
+109 248
+112 73
+114 53
+170 127
+193 61
+226 47
+240 181
+241 128
+242 194
+243 341
+244 286
+245 57
+246 241
+247 101
+248 172
+249 368
+250 99
+251 346
+252 100
+255 314
+257 340
+258 232
+259 71
+260 220
+261 144
+262 246
+263 264
+264 282
+17 239
+21 88
+32 286
+36 248
+73 115
+116 225
+118 114
+133 104
+134 115
+141 290
+143 72
+148 348
+150 92
+153 331
+155 149
+157 287
+205 257
+206 214
+208 137
+210 367
+212 189
+213 309
+214 310
+215 360
+216 190
+217 142
+218 226
+220 292
+221 301
+222 80
+224 347
+225 328
+227 166
+229 224
+28 346
+29 264
+30 121
+58 246
+75 167
+79 82
+96 157
+111 113
+113 368
+115 205
+135 240
+171 228
+172 163
+173 345
+174 241
+176 197
+178 321
+179 336
+180 202
+182 295
+185 282
+188 178
+189 184
+190 102
+192 298
+20 227
+22 158
+37 361
+65 322
+140 187
+142 170
+144 226
+145 170
+151 260
+156 377
+35 307
+60 182
+78 294
+39
+drop 92 274
+drop 92 275
+drop 92 276
+drop 93 277
+drop 93 278
+drop 93 279
+drop 95 283
+drop 95 284
+drop 95 285
+drop 117 349
+drop 117 350
+drop 117 351
+drop 121 361
+drop 121 362
+drop 121 363
+drop 123 367
+drop 123 368
+drop 123 369
+drop 124 370
+drop 124 371
+drop 124 372
+drop 126 376
+drop 126 377
+drop 126 378
+drop 137 409
+drop 137 410
+drop 137 411
+drop 159 475
+drop 159 476
+drop 159 477
+drop 196 586
+drop 196 587
+drop 196 588
+drop 199 595
+drop 199 596
+drop 199 597
+drop 201 601
+drop 201 602
+drop 201 603
+223
+19 2
+24 2
+39 2
+40 2
+94 2
+105 2
+120 2
+131 2
+158 2
+160 2
+162 22
+163 32
+166 2
+167 54
+168 2
+184 58
+195 2
+200 2
+230 2
+231 2
+31 199
+56 291
+59 357
+61 75
+64 168
+68 90
+70 300
+77 319
+80 53
+125 21
+130 51
+152 63
+165 69
+169 43
+197 78
+198 46
+202 66
+223 57
+234 28
+238 66
+265 55
+266 27
+267 51
+268 78
+269 1
+270 46
+271 43
+272 1
+273 69
+25 164
+52 45
+54 77
+69 207
+97 285
+100 324
+101 303
+102 378
+103 130
+112 74
+114 52
+138 50
+193 62
+203 68
+204 42
+232 24
+233 6
+235 38
+236 14
+237 26
+239 3
+245 56
+274 65
+300 18
+301 29
+302 9
+303 67
+304 64
+305 41
+306 44
+307 76
+308 239
+309 159
+310 139
+311 70
+312 354
+313 60
+314 375
+315 115
+316 359
+317 56
+318 276
+319 259
+320 114
+321 156
+322 119
+323 234
+324 47
+325 255
+326 355
+327 135
+328 279
+329 270
+330 235
+331 52
+332 150
+17 221
+21 129
+26 114
+73 113
+116 236
+118 128
+134 121
+141 302
+143 73
+148 344
+153 349
+155 146
+157 278
+175 49
+219 61
+226 48
+277 340
+278 314
+279 341
+280 346
+281 286
+282 99
+283 172
+284 241
+285 282
+286 181
+287 144
+289 108
+290 220
+291 71
+292 127
+293 368
+294 248
+295 194
+296 127
+298 246
+299 264
+27 104
+28 361
+29 296
+30 106
+32 282
+36 246
+58 214
+66 355
+75 151
+96 147
+108 156
+109 257
+111 111
+113 377
+135 225
+170 137
+172 149
+173 348
+174 226
+177 135
+178 331
+182 287
+185 292
+191 72
+192 290
+240 166
+241 80
+242 189
+243 328
+244 301
+246 227
+247 119
+248 142
+249 367
+251 347
+255 309
+257 360
+258 234
+260 224
+261 190
+262 251
+263 310
+264 260
+20 218
+22 167
+37 363
+133 110
+144 219
+150 101
+151 307
+156 322
+171 240
+205 219
+206 205
+208 82
+210 336
+212 178
+213 298
+214 277
+215 345
+216 157
+217 197
+221 295
+222 102
+224 338
+225 321
+227 163
+229 228
+35 294
+65 363
+115 212
+140 158
+176 187
+179 320
+180 257
+188 170
+189 190
+190 96
+78 262
+107 184
+110 182
+48
+drop 19 55
+drop 19 56
+drop 19 57
+drop 24 70
+drop 24 71
+drop 24 72
+drop 39 115
+drop 39 116
+drop 39 117
+drop 40 118
+drop 40 119
+drop 40 120
+drop 94 280
+drop 94 281
+drop 94 282
+drop 105 313
+drop 105 314
+drop 105 315
+drop 120 358
+drop 120 359
+drop 120 360
+drop 131 391
+drop 131 392
+drop 131 393
+drop 158 472
+drop 158 473
+drop 158 474
+drop 160 478
+drop 160 479
+drop 160 480
+drop 166 496
+drop 166 497
+drop 166 498
+drop 168 502
+drop 168 503
+drop 168 504
+drop 195 583
+drop 195 584
+drop 195 585
+drop 200 598
+drop 200 599
+drop 200 600
+drop 230 688
+drop 230 689
+drop 230 690
+drop 231 691
+drop 231 692
+drop 231 693
+235
+31 2
+56 2
+59 2
+61 2
+64 2
+68 2
+70 2
+77 2
+125 2
+130 2
+152 2
+165 2
+169 2
+197 2
+198 2
+202 2
+234 2
+238 26
+265 2
+267 9
+268 77
+270 6
+271 3
+273 68
+25 168
+52 46
+54 76
+69 199
+97 300
+100 319
+101 291
+102 357
+103 97
+112 75
+138 51
+162 63
+163 75
+167 55
+184 59
+193 63
+203 67
+204 43
+232 25
+233 7
+235 78
+236 55
+237 27
+239 4
+266 28
+274 66
+300 59
+301 69
+302 10
+21 134
+80 54
+116 207
+141 285
+143 74
+148 324
+153 378
+155 155
+157 303
+175 50
+219 62
+223 58
+269 18
+272 3
+303 1
+304 65
+305 42
+306 45
+307 1
+333 32
+334 29
+335 14
+336 38
+337 9
+338 6
+339 26
+340 22
+341 44
+342 64
+343 41
+344 135
+345 354
+346 276
+347 270
+348 359
+349 70
+350 52
+351 119
+352 56
+353 114
+354 239
+355 234
+356 115
+357 375
+358 235
+359 255
+360 47
+361 139
+362 60
+363 355
+364 159
+365 259
+366 150
+367 156
+368 279
+26 115
+66 346
+75 141
+96 176
+108 172
+114 53
+135 236
+172 146
+173 344
+177 100
+178 349
+182 278
+191 73
+192 302
+226 49
+245 57
+247 127
+253 48
+256 61
+258 248
+308 246
+309 181
+310 144
+311 71
+312 368
+314 340
+315 99
+316 341
+318 282
+319 264
+320 127
+321 140
+322 101
+323 232
+325 220
+326 339
+327 108
+328 286
+329 314
+330 241
+332 194
+17 239
+22 151
+32 286
+36 248
+73 115
+118 114
+133 122
+134 115
+150 92
+171 225
+211 72
+213 290
+215 348
+216 147
+221 287
+225 331
+227 149
+277 360
+278 309
+279 328
+280 347
+281 301
+283 142
+284 227
+285 260
+286 166
+287 190
+289 104
+290 224
+292 137
+293 367
+294 257
+295 189
+298 251
+299 310
+27 120
+28 346
+29 264
+30 121
+58 246
+98 282
+109 202
+111 113
+113 368
+140 167
+170 82
+174 241
+180 219
+189 157
+214 267
+218 219
+229 240
+240 157
+241 128
+242 178
+243 321
+244 295
+246 218
+248 197
+249 351
+251 338
+255 298
+257 345
+260 228
+261 184
+263 277
+264 307
+37 361
+65 322
+107 170
+144 243
+151 294
+156 377
+176 158
+206 214
+210 367
+212 170
+217 187
+222 80
+224 376
+35 262
+115 205
+142 182
+179 336
+190 102
+78 317
+54
+drop 31 91
+drop 31 92
+drop 31 93
+drop 56 166
+drop 56 167
+drop 56 168
+drop 59 175
+drop 59 176
+drop 59 177
+drop 61 181
+drop 61 182
+drop 61 183
+drop 64 190
+drop 64 191
+drop 64 192
+drop 68 202
+drop 68 203
+drop 68 204
+drop 70 208
+drop 70 209
+drop 70 210
+drop 77 229
+drop 77 230
+drop 77 231
+drop 125 373
+drop 125 374
+drop 125 375
+drop 130 388
+drop 130 389
+drop 130 390
+drop 152 454
+drop 152 455
+drop 152 456
+drop 165 493
+drop 165 494
+drop 165 495
+drop 169 505
+drop 169 506
+drop 169 507
+drop 197 589
+drop 197 590
+drop 197 591
+drop 198 592
+drop 198 593
+drop 198 594
+drop 202 604
+drop 202 605
+drop 202 606
+drop 234 700
+drop 234 701
+drop 234 702
+drop 265 793
+drop 265 794
+drop 265 795
+245
+25 2
+52 2
+69 2
+97 2
+100 2
+101 2
+102 2
+103 2
+112 2
+138 2
+162 2
+163 74
+167 2
+184 2
+193 22
+204 2
+232 2
+235 2
+236 54
+266 2
+274 2
+300 58
+301 2
+21 90
+80 53
+116 199
+141 300
+143 73
+148 319
+153 357
+155 171
+157 291
+175 51
+219 63
+223 57
+233 8
+237 28
+238 66
+239 5
+267 51
+268 78
+269 59
+270 46
+271 43
+272 4
+273 69
+304 66
+305 43
+306 46
+333 75
+334 69
+335 55
+336 78
+337 1
+338 7
+339 27
+340 1
+54 77
+75 169
+96 164
+114 52
+135 207
+172 155
+173 324
+178 378
+182 303
+191 72
+192 285
+203 68
+226 50
+245 56
+256 62
+302 9
+303 32
+307 29
+341 45
+342 65
+343 42
+369 6
+370 26
+371 3
+372 38
+373 18
+374 14
+375 41
+376 64
+377 44
+378 67
+379 76
+380 47
+381 60
+382 255
+383 355
+384 359
+385 270
+386 276
+387 156
+388 119
+389 52
+390 150
+391 375
+392 235
+393 354
+394 70
+395 239
+396 114
+397 139
+398 259
+399 56
+400 234
+401 159
+402 135
+403 279
+404 115
+17 246
+22 141
+26 114
+73 99
+118 127
+133 129
+134 113
+171 236
+211 71
+213 302
+215 344
+216 176
+221 278
+225 349
+227 146
+253 49
+276 48
+288 61
+344 108
+345 368
+346 282
+347 314
+348 341
+349 71
+351 101
+353 128
+354 221
+355 248
+356 121
+357 340
+358 241
+359 220
+361 144
+363 346
+364 181
+365 264
+366 194
+367 140
+368 286
+27 105
+28 361
+29 310
+30 106
+32 282
+36 246
+58 214
+66 347
+98 292
+104 355
+108 156
+111 111
+113 367
+140 151
+174 227
+177 135
+189 147
+214 315
+229 225
+240 166
+241 80
+243 331
+244 287
+247 119
+255 290
+257 348
+258 247
+296 137
+308 251
+309 166
+310 190
+312 377
+314 360
+316 328
+318 260
+319 296
+321 162
+322 92
+323 234
+325 224
+327 104
+328 301
+329 309
+330 226
+332 189
+37 363
+150 85
+156 322
+176 167
+206 245
+210 336
+222 102
+224 333
+260 240
+263 267
+277 345
+278 298
+279 321
+280 338
+281 295
+283 172
+284 218
+285 307
+286 163
+287 157
+289 110
+290 228
+292 82
+293 351
+294 248
+295 178
+299 277
+65 363
+109 257
+115 214
+179 320
+180 257
+190 96
+205 226
+217 158
+218 243
+242 170
+248 142
+249 353
+251 376
+261 190
+264 294
+107 184
+145 182
+151 308
+35 294
+78 262
+57
+drop 25 73
+drop 25 74
+drop 25 75
+drop 52 154
+drop 52 155
+drop 52 156
+drop 69 205
+drop 69 206
+drop 69 207
+drop 97 289
+drop 97 290
+drop 97 291
+drop 100 298
+drop 100 299
+drop 100 300
+drop 101 301
+drop 101 302
+drop 101 303
+drop 102 304
+drop 102 305
+drop 102 306
+drop 103 307
+drop 103 308
+drop 103 309
+drop 112 334
+drop 112 335
+drop 112 336
+drop 138 412
+drop 138 413
+drop 138 414
+drop 162 484
+drop 162 485
+drop 162 486
+drop 167 499
+drop 167 500
+drop 167 501
+drop 184 550
+drop 184 551
+drop 184 552
+drop 204 610
+drop 204 611
+drop 204 612
+drop 232 694
+drop 232 695
+drop 232 696
+drop 235 703
+drop 235 704
+drop 235 705
+drop 266 796
+drop 266 797
+drop 266 798
+drop 274 820
+drop 274 821
+drop 274 822
+drop 301 901
+drop 301 902
+drop 301 903
+248
+21 2
+116 2
+141 2
+148 2
+153 2
+155 2
+157 2
+175 2
+219 2
+233 2
+237 2
+238 2
+239 2
+267 9
+268 2
+269 2
+270 2
+271 2
+273 2
+304 65
+305 42
+306 45
+333 2
+334 29
+335 2
+336 77
+54 76
+75 177
+96 168
+135 199
+163 75
+172 171
+173 319
+178 357
+182 291
+192 300
+193 63
+203 69
+226 51
+236 55
+256 63
+272 5
+300 59
+302 1
+303 75
+307 30
+338 8
+339 28
+341 44
+342 64
+343 41
+369 46
+370 66
+371 43
+372 78
+373 59
+374 55
+22 169
+80 54
+133 134
+143 74
+171 207
+213 285
+215 324
+216 164
+221 303
+223 58
+225 378
+227 155
+253 50
+288 62
+337 32
+340 3
+375 1
+376 1
+377 1
+378 68
+379 1
+405 29
+406 14
+407 18
+408 22
+409 26
+410 6
+411 38
+412 67
+413 279
+414 119
+415 150
+416 139
+417 259
+418 135
+419 115
+420 276
+421 114
+422 354
+423 156
+424 359
+425 375
+426 60
+427 52
+428 355
+429 235
+430 255
+431 47
+432 70
+433 56
+434 239
+435 234
+436 270
+437 159
+26 115
+27 116
+104 339
+108 140
+114 53
+140 141
+177 100
+189 176
+191 73
+214 280
+229 236
+243 349
+244 278
+245 57
+247 127
+255 302
+257 344
+276 49
+313 61
+323 232
+324 48
+382 220
+383 346
+384 341
+385 314
+386 282
+387 172
+388 101
+390 194
+391 340
+392 241
+393 368
+394 71
+395 221
+396 128
+397 144
+398 264
+400 248
+401 181
+402 108
+403 286
+404 99
+17 239
+32 286
+36 248
+118 114
+134 115
+176 151
+211 72
+224 331
+260 225
+263 315
+277 348
+278 290
+279 331
+281 287
+283 142
+286 149
+287 147
+289 122
+294 247
+320 137
+344 104
+345 367
+346 292
+347 309
+348 328
+351 92
+353 80
+355 257
+356 115
+357 360
+358 226
+359 224
+361 190
+363 347
+364 166
+365 296
+366 189
+367 162
+368 301
+28 346
+29 264
+30 121
+58 246
+66 338
+109 202
+111 113
+113 336
+115 208
+150 94
+174 241
+180 219
+205 219
+217 167
+240 157
+241 102
+248 197
+251 333
+261 157
+262 246
+290 240
+296 82
+299 267
+309 163
+310 184
+312 368
+314 345
+316 321
+318 282
+322 85
+325 228
+327 110
+328 295
+329 298
+332 178
+20 227
+37 361
+65 322
+107 170
+156 377
+206 214
+210 320
+222 96
+280 376
+285 260
+293 367
+295 170
+35 307
+144 219
+179 352
+188 182
+190 112
+249 351
+264 262
+78 317
+151 294
+60
+drop 21 61
+drop 21 62
+drop 21 63
+drop 116 346
+drop 116 347
+drop 116 348
+drop 141 421
+drop 141 422
+drop 141 423
+drop 148 442
+drop 148 443
+drop 148 444
+drop 153 457
+drop 153 458
+drop 153 459
+drop 155 463
+drop 155 464
+drop 155 465
+drop 157 469
+drop 157 470
+drop 157 471
+drop 175 523
+drop 175 524
+drop 175 525
+drop 219 655
+drop 219 656
+drop 219 657
+drop 233 697
+drop 233 698
+drop 233 699
+drop 237 709
+drop 237 710
+drop 237 711
+drop 238 712
+drop 238 713
+drop 238 714
+drop 239 715
+drop 239 716
+drop 239 717
+drop 268 802
+drop 268 803
+drop 268 804
+drop 269 805
+drop 269 806
+drop 269 807
+drop 270 808
+drop 270 809
+drop 270 810
+drop 271 811
+drop 271 812
+drop 271 813
+drop 273 817
+drop 273 818
+drop 273 819
+drop 333 997
+drop 333 998
+drop 333 999
+drop 335 1003
+drop 335 1004
+drop 335 1005
+251
+75 2
+96 2
+135 2
+163 2
+172 2
+173 2
+178 2
+182 2
+192 2
+193 2
+203 2
+226 2
+236 2
+256 62
+272 2
+300 2
+303 32
+338 2
+339 2
+369 2
+370 2
+371 2
+372 2
+373 18
+374 54
+22 177
+80 53
+133 90
+143 75
+171 199
+213 300
+215 319
+216 168
+221 291
+223 59
+225 357
+227 171
+253 51
+267 51
+288 61
+304 66
+305 43
+306 46
+307 31
+334 69
+336 78
+337 33
+340 43
+378 69
+405 30
+406 55
+407 19
+408 63
+409 66
+410 46
+411 78
+27 130
+54 77
+114 52
+140 169
+189 164
+191 74
+214 285
+229 207
+243 378
+244 303
+245 58
+255 285
+257 324
+276 50
+302 29
+313 60
+341 45
+342 65
+343 42
+375 3
+376 22
+377 26
+379 18
+412 68
+438 14
+439 38
+440 6
+441 9
+442 32
+443 64
+444 67
+445 44
+446 41
+447 76
+448 60
+449 234
+450 235
+451 279
+452 139
+453 354
+454 156
+455 375
+456 359
+457 115
+458 56
+459 135
+460 159
+461 255
+462 119
+463 47
+464 355
+465 114
+466 270
+467 150
+468 239
+469 70
+470 276
+471 52
+472 259
+17 221
+26 114
+118 128
+134 99
+176 141
+211 73
+224 349
+260 236
+263 280
+275 57
+277 344
+278 302
+279 333
+281 278
+286 146
+287 176
+289 129
+324 49
+356 113
+360 48
+413 286
+414 101
+415 194
+416 144
+417 264
+418 100
+419 121
+420 282
+421 127
+422 368
+423 172
+424 341
+425 340
+428 339
+429 241
+430 220
+432 71
+434 246
+435 232
+436 314
+437 181
+28 355
+29 296
+30 106
+32 282
+36 234
+58 248
+108 156
+111 111
+150 88
+174 226
+217 151
+240 147
+247 119
+251 323
+259 72
+261 190
+262 214
+290 225
+299 315
+309 149
+312 367
+314 348
+316 331
+318 260
+323 200
+327 122
+328 287
+329 290
+382 224
+383 347
+384 328
+385 309
+386 292
+387 142
+388 92
+390 189
+391 360
+392 227
+393 377
+396 80
+397 190
+398 310
+400 257
+401 166
+402 135
+403 301
+20 218
+37 346
+156 322
+206 252
+258 248
+280 333
+283 197
+285 307
+293 351
+298 246
+320 127
+321 140
+322 94
+325 240
+330 219
+344 120
+345 336
+347 298
+348 321
+351 85
+353 102
+355 219
+357 345
+359 228
+361 184
+363 338
+364 163
+366 178
+368 295
+35 294
+62 137
+65 363
+66 376
+109 257
+113 320
+115 214
+139 361
+144 243
+241 96
+248 187
+249 353
+310 170
+332 170
+107 182
+151 308
+210 352
+222 112
+264 294
+78 262
+63
+drop 75 223
+drop 75 224
+drop 75 225
+drop 96 286
+drop 96 287
+drop 96 288
+drop 135 403
+drop 135 404
+drop 135 405
+drop 163 487
+drop 163 488
+drop 163 489
+drop 172 514
+drop 172 515
+drop 172 516
+drop 173 517
+drop 173 518
+drop 173 519
+drop 178 532
+drop 178 533
+drop 178 534
+drop 182 544
+drop 182 545
+drop 182 546
+drop 192 574
+drop 192 575
+drop 192 576
+drop 193 577
+drop 193 578
+drop 193 579
+drop 203 607
+drop 203 608
+drop 203 609
+drop 226 676
+drop 226 677
+drop 226 678
+drop 236 706
+drop 236 707
+drop 236 708
+drop 272 814
+drop 272 815
+drop 272 816
+drop 300 898
+drop 300 899
+drop 300 900
+drop 338 1012
+drop 338 1013
+drop 338 1014
+drop 339 1015
+drop 339 1016
+drop 339 1017
+drop 369 1105
+drop 369 1106
+drop 369 1107
+drop 370 1108
+drop 370 1109
+drop 370 1110
+drop 371 1111
+drop 371 1112
+drop 371 1113
+drop 372 1114
+drop 372 1115
+drop 372 1116
+253
+22 2
+133 2
+143 2
+171 2
+213 2
+215 2
+216 2
+221 2
+223 2
+225 2
+227 2
+253 2
+267 9
+304 2
+305 2
+306 2
+307 2
+334 2
+336 2
+340 3
+378 68
+406 2
+408 2
+409 26
+410 45
+411 38
+27 97
+54 78
+140 177
+189 168
+191 75
+214 300
+229 217
+243 357
+244 291
+245 59
+255 284
+256 63
+257 319
+276 51
+302 69
+303 75
+341 44
+342 66
+343 43
+373 59
+374 55
+375 4
+376 63
+377 27
+379 1
+405 31
+412 67
+438 55
+439 39
+440 46
+441 1
+442 33
+80 54
+176 169
+211 74
+224 378
+260 207
+263 285
+275 58
+277 324
+278 285
+281 303
+286 155
+287 164
+288 62
+289 134
+324 50
+337 34
+407 20
+443 65
+444 1
+445 1
+446 42
+447 77
+473 29
+474 14
+475 38
+476 6
+477 22
+478 26
+479 32
+480 3
+481 76
+482 41
+483 64
+484 276
+485 259
+486 375
+487 159
+488 60
+489 115
+490 70
+491 156
+492 114
+493 279
+494 270
+495 56
+496 47
+497 150
+498 359
+499 52
+500 239
+501 235
+502 255
+503 234
+504 354
+505 119
+506 355
+507 135
+508 139
+26 115
+28 339
+36 232
+108 172
+114 53
+150 129
+217 141
+240 176
+247 101
+259 73
+290 236
+299 280
+309 146
+313 61
+314 344
+316 349
+317 57
+327 129
+328 278
+329 302
+360 49
+380 48
+402 108
+449 248
+450 241
+451 286
+452 144
+453 368
+454 140
+455 340
+456 341
+457 99
+459 100
+460 181
+461 220
+462 127
+464 346
+465 128
+466 314
+467 194
+468 246
+469 71
+470 282
+472 264
+17 239
+32 286
+37 361
+58 246
+118 80
+258 257
+279 331
+280 376
+291 72
+298 214
+320 114
+321 162
+322 88
+325 225
+344 105
+347 290
+348 331
+356 115
+357 348
+364 149
+368 287
+413 301
+414 92
+415 189
+416 190
+417 296
+419 115
+420 292
+421 137
+422 367
+423 142
+424 328
+425 360
+429 226
+430 224
+434 251
+435 200
+436 309
+437 166
+30 121
+62 82
+66 338
+109 202
+111 113
+115 208
+139 363
+174 219
+251 333
+261 157
+262 252
+294 248
+312 351
+318 282
+323 222
+351 94
+359 240
+382 228
+383 346
+384 321
+385 298
+387 197
+388 85
+390 178
+391 345
+392 241
+393 368
+396 102
+397 184
+398 264
+400 219
+401 157
+403 295
+20 227
+65 322
+156 377
+180 243
+248 158
+283 187
+285 260
+293 353
+345 367
+353 96
+361 170
+363 347
+366 170
+35 307
+113 336
+212 182
+241 112
+249 343
+264 308
+78 294
+179 320
+60
+drop 22 64
+drop 22 65
+drop 22 66
+drop 133 397
+drop 133 398
+drop 133 399
+drop 143 427
+drop 143 428
+drop 143 429
+drop 171 511
+drop 171 512
+drop 171 513
+drop 213 637
+drop 213 638
+drop 213 639
+drop 215 643
+drop 215 644
+drop 215 645
+drop 216 646
+drop 216 647
+drop 216 648
+drop 221 661
+drop 221 662
+drop 221 663
+drop 223 667
+drop 223 668
+drop 223 669
+drop 225 673
+drop 225 674
+drop 225 675
+drop 227 679
+drop 227 680
+drop 227 681
+drop 253 757
+drop 253 758
+drop 253 759
+drop 304 910
+drop 304 911
+drop 304 912
+drop 305 913
+drop 305 914
+drop 305 915
+drop 306 916
+drop 306 917
+drop 306 918
+drop 307 919
+drop 307 920
+drop 307 921
+drop 334 1000
+drop 334 1001
+drop 334 1002
+drop 336 1006
+drop 336 1007
+drop 336 1008
+drop 406 1216
+drop 406 1217
+drop 406 1218
+drop 408 1222
+drop 408 1223
+drop 408 1224
+257
+27 2
+54 2
+140 2
+189 2
+191 2
+214 2
+229 2
+243 2
+244 2
+245 2
+256 2
+257 2
+276 2
+302 2
+303 32
+342 2
+343 2
+373 18
+374 2
+376 22
+405 2
+438 54
+440 2
+80 53
+176 177
+211 75
+224 357
+255 288
+260 199
+263 300
+267 51
+275 59
+277 319
+278 284
+281 291
+286 171
+287 168
+288 63
+289 90
+324 51
+340 43
+375 5
+377 28
+378 69
+407 21
+409 66
+410 46
+411 78
+439 40
+443 66
+446 43
+447 78
+473 69
+474 55
+475 39
+476 46
+477 23
+478 27
+479 33
+480 4
+114 52
+150 134
+217 169
+240 164
+259 74
+290 207
+299 285
+309 155
+313 62
+314 324
+316 378
+317 58
+327 88
+328 303
+329 285
+341 45
+360 50
+379 6
+412 68
+441 3
+442 34
+444 26
+445 32
+481 77
+482 42
+483 65
+509 9
+510 38
+511 22
+512 29
+513 18
+514 14
+515 76
+516 44
+517 41
+518 64
+519 67
+520 52
+521 159
+522 359
+523 234
+524 156
+525 56
+526 235
+527 47
+528 270
+529 276
+530 279
+531 259
+532 150
+533 114
+534 119
+535 135
+536 354
+537 239
+538 355
+539 255
+540 375
+541 115
+542 139
+543 70
+544 60
+17 221
+26 114
+279 349
+291 73
+320 128
+322 94
+325 236
+337 35
+344 116
+347 302
+348 333
+352 57
+356 121
+357 344
+362 61
+364 146
+368 278
+380 49
+419 99
+431 48
+484 282
+485 264
+486 340
+487 181
+489 113
+490 71
+491 140
+492 127
+493 286
+494 314
+497 194
+498 341
+500 246
+501 241
+502 220
+503 248
+504 368
+505 127
+506 339
+507 108
+508 144
+30 106
+32 282
+36 234
+58 248
+108 156
+111 111
+177 135
+247 119
+251 376
+261 147
+294 257
+311 72
+318 260
+323 201
+351 85
+359 225
+383 355
+384 331
+385 290
+391 348
+392 227
+393 377
+398 296
+401 166
+402 104
+403 287
+449 247
+450 226
+451 301
+452 190
+453 367
+454 162
+455 360
+456 328
+460 166
+461 224
+462 137
+464 347
+465 80
+466 309
+467 189
+468 214
+470 292
+472 310
+20 218
+37 346
+118 102
+156 322
+248 167
+258 219
+280 338
+285 307
+298 245
+308 246
+345 351
+358 219
+363 338
+382 240
+388 92
+413 295
+414 101
+415 178
+416 157
+421 82
+422 336
+423 172
+424 321
+425 345
+430 228
+435 232
+436 298
+437 163
+35 294
+65 363
+109 257
+113 320
+115 214
+139 361
+174 243
+206 214
+283 158
+312 373
+387 142
+390 170
+396 96
+397 190
+78 262
+179 352
+242 184
+293 351
+295 182
+353 112
+151 294
+249 353
+57
+drop 27 79
+drop 27 80
+drop 27 81
+drop 54 160
+drop 54 161
+drop 54 162
+drop 140 418
+drop 140 419
+drop 140 420
+drop 189 565
+drop 189 566
+drop 189 567
+drop 191 571
+drop 191 572
+drop 191 573
+drop 214 640
+drop 214 641
+drop 214 642
+drop 229 685
+drop 229 686
+drop 229 687
+drop 243 727
+drop 243 728
+drop 243 729
+drop 244 730
+drop 244 731
+drop 244 732
+drop 245 733
+drop 245 734
+drop 245 735
+drop 256 766
+drop 256 767
+drop 256 768
+drop 257 769
+drop 257 770
+drop 257 771
+drop 276 826
+drop 276 827
+drop 276 828
+drop 302 904
+drop 302 905
+drop 302 906
+drop 342 1024
+drop 342 1025
+drop 342 1026
+drop 343 1027
+drop 343 1028
+drop 343 1029
+drop 374 1120
+drop 374 1121
+drop 374 1122
+drop 405 1213
+drop 405 1214
+drop 405 1215
+drop 440 1318
+drop 440 1319
+drop 440 1320
+263
+176 2
+211 2
+224 2
+255 2
+260 2
+263 2
+267 2
+275 2
+277 2
+281 2
+286 2
+287 2
+288 2
+289 2
+324 50
+340 2
+375 2
+377 2
+378 2
+407 2
+409 2
+410 2
+411 2
+439 2
+443 26
+446 3
+447 77
+473 29
+474 2
+476 45
+150 90
+217 177
+240 168
+259 75
+278 288
+290 217
+299 300
+303 75
+309 171
+313 63
+314 319
+316 357
+317 59
+328 291
+329 284
+341 44
+360 49
+373 59
+376 63
+379 46
+412 69
+438 55
+441 4
+444 27
+445 33
+475 40
+478 28
+480 5
+481 76
+482 43
+483 66
+509 51
+510 78
+511 23
+512 30
+513 19
+514 55
+80 54
+279 378
+291 74
+325 207
+337 36
+344 130
+347 285
+352 58
+357 324
+362 62
+364 155
+368 303
+380 48
+477 24
+479 34
+515 1
+516 1
+517 42
+518 65
+519 68
+545 38
+546 14
+547 3
+548 9
+549 29
+550 26
+551 32
+552 18
+553 22
+554 6
+555 67
+556 41
+557 64
+558 259
+559 354
+560 52
+561 47
+562 375
+563 119
+564 159
+565 234
+566 56
+567 60
+568 255
+569 139
+570 70
+571 235
+572 270
+573 359
+574 156
+575 150
+576 239
+577 279
+578 355
+579 276
+580 114
+581 115
+582 135
+26 115
+36 232
+108 140
+114 53
+177 108
+247 101
+261 176
+311 73
+323 211
+327 129
+359 236
+381 61
+383 346
+384 349
+385 302
+391 344
+399 57
+403 278
+431 47
+442 35
+521 181
+522 341
+523 248
+524 172
+526 241
+528 314
+529 282
+530 286
+531 264
+532 194
+533 127
+534 127
+535 100
+536 368
+537 221
+538 339
+539 220
+540 340
+541 99
+542 144
+543 71
+32 286
+37 347
+58 246
+248 151
+308 239
+320 114
+322 88
+348 331
+349 72
+356 115
+382 225
+413 287
+414 92
+416 147
+423 142
+424 331
+425 348
+435 200
+436 290
+437 149
+484 292
+485 310
+486 360
+487 166
+489 115
+491 162
+492 137
+493 301
+494 309
+497 189
+498 328
+500 251
+501 227
+502 224
+503 257
+504 377
+507 104
+508 190
+29 264
+30 121
+109 219
+111 113
+115 246
+139 346
+206 205
+251 333
+283 167
+294 202
+318 282
+351 94
+387 197
+388 85
+392 218
+393 322
+397 157
+401 157
+402 120
+429 241
+430 240
+449 248
+450 219
+451 295
+452 184
+453 368
+455 345
+456 321
+460 163
+461 228
+462 82
+464 338
+465 128
+466 298
+467 178
+468 252
+472 277
+65 361
+66 376
+118 80
+156 363
+205 243
+242 170
+285 260
+293 367
+298 224
+345 353
+415 170
+422 367
+35 307
+113 336
+151 308
+249 343
+310 182
+312 351
+396 102
+78 294
+179 320
+190 96
+72
+drop 176 526
+drop 176 527
+drop 176 528
+drop 211 631
+drop 211 632
+drop 211 633
+drop 224 670
+drop 224 671
+drop 224 672
+drop 255 763
+drop 255 764
+drop 255 765
+drop 260 778
+drop 260 779
+drop 260 780
+drop 263 787
+drop 263 788
+drop 263 789
+drop 267 799
+drop 267 800
+drop 267 801
+drop 275 823
+drop 275 824
+drop 275 825
+drop 277 829
+drop 277 830
+drop 277 831
+drop 281 841
+drop 281 842
+drop 281 843
+drop 286 856
+drop 286 857
+drop 286 858
+drop 287 859
+drop 287 860
+drop 287 861
+drop 288 862
+drop 288 863
+drop 288 864
+drop 289 865
+drop 289 866
+drop 289 867
+drop 340 1018
+drop 340 1019
+drop 340 1020
+drop 375 1123
+drop 375 1124
+drop 375 1125
+drop 377 1129
+drop 377 1130
+drop 377 1131
+drop 378 1132
+drop 378 1133
+drop 378 1134
+drop 407 1219
+drop 407 1220
+drop 407 1221
+drop 409 1225
+drop 409 1226
+drop 409 1227
+drop 410 1228
+drop 410 1229
+drop 410 1230
+drop 411 1231
+drop 411 1232
+drop 411 1233
+drop 439 1315
+drop 439 1316
+drop 439 1317
+drop 474 1420
+drop 474 1421
+drop 474 1422
+262
+150 2
+217 2
+240 2
+259 2
+278 2
+290 2
+299 2
+303 74
+309 2
+313 2
+314 2
+316 2
+317 2
+328 2
+373 18
+376 62
+379 2
+412 2
+438 2
+475 2
+478 2
+480 2
+482 2
+483 2
+509 2
+510 2
+514 14
+80 55
+279 357
+291 73
+324 51
+325 199
+329 288
+337 37
+344 97
+347 300
+352 59
+357 319
+362 61
+364 171
+368 291
+441 5
+443 66
+444 28
+446 43
+447 78
+473 69
+476 46
+477 25
+512 31
+517 43
+518 66
+519 69
+545 78
+546 15
+547 4
+548 51
+549 30
+550 27
+551 75
+552 1
+553 63
+554 46
+114 54
+261 164
+311 72
+323 258
+327 134
+341 45
+359 207
+360 50
+381 60
+384 378
+385 285
+391 324
+399 58
+403 303
+442 36
+445 32
+481 77
+511 22
+513 20
+515 29
+516 32
+555 68
+556 42
+557 65
+583 38
+584 14
+585 22
+586 6
+587 26
+588 9
+589 3
+590 67
+591 41
+592 76
+593 64
+594 44
+595 359
+596 156
+597 355
+598 52
+599 114
+600 259
+601 115
+602 56
+603 60
+604 375
+605 234
+606 354
+607 47
+608 150
+609 139
+610 270
+611 119
+612 279
+613 239
+614 135
+615 159
+616 255
+617 276
+618 235
+619 70
+26 114
+136 53
+248 141
+308 246
+320 128
+322 129
+348 349
+349 71
+356 99
+380 49
+382 236
+413 278
+416 176
+424 321
+425 344
+431 48
+433 57
+436 302
+437 146
+479 35
+489 113
+558 264
+559 368
+562 340
+563 127
+564 181
+565 232
+568 220
+569 144
+570 71
+571 241
+572 314
+573 341
+574 172
+575 194
+576 221
+577 286
+578 339
+579 282
+580 127
+581 121
+582 100
+29 310
+30 106
+32 282
+36 200
+58 248
+108 156
+111 111
+115 251
+139 355
+177 135
+247 119
+251 331
+283 151
+318 292
+351 88
+383 361
+397 147
+401 190
+402 105
+429 226
+430 225
+449 234
+451 287
+453 367
+455 348
+456 328
+460 149
+465 80
+466 290
+505 137
+521 166
+522 328
+523 247
+524 142
+526 227
+528 309
+529 260
+530 301
+531 296
+532 189
+536 377
+539 224
+540 360
+542 190
+37 346
+65 363
+66 333
+118 102
+285 307
+293 336
+298 228
+321 140
+388 94
+414 101
+422 351
+423 197
+435 222
+461 240
+472 267
+485 277
+486 345
+487 163
+492 82
+493 295
+494 298
+497 178
+498 334
+501 218
+502 245
+503 248
+504 322
+507 110
+508 184
+35 294
+109 226
+113 320
+156 322
+206 214
+258 257
+262 214
+280 347
+294 257
+312 353
+330 243
+363 376
+387 187
+396 96
+452 170
+467 170
+78 262
+179 352
+190 112
+242 182
+345 343
+151 294
+249 329
+69
+drop 150 448
+drop 150 449
+drop 150 450
+drop 217 649
+drop 217 650
+drop 217 651
+drop 240 718
+drop 240 719
+drop 240 720
+drop 259 775
+drop 259 776
+drop 259 777
+drop 278 832
+drop 278 833
+drop 278 834
+drop 290 868
+drop 290 869
+drop 290 870
+drop 299 895
+drop 299 896
+drop 299 897
+drop 309 925
+drop 309 926
+drop 309 927
+drop 313 937
+drop 313 938
+drop 313 939
+drop 314 940
+drop 314 941
+drop 314 942
+drop 316 946
+drop 316 947
+drop 316 948
+drop 317 949
+drop 317 950
+drop 317 951
+drop 328 982
+drop 328 983
+drop 328 984
+drop 379 1135
+drop 379 1136
+drop 379 1137
+drop 412 1234
+drop 412 1235
+drop 412 1236
+drop 438 1312
+drop 438 1313
+drop 438 1314
+drop 475 1423
+drop 475 1424
+drop 475 1425
+drop 478 1432
+drop 478 1433
+drop 478 1434
+drop 480 1438
+drop 480 1439
+drop 480 1440
+drop 482 1444
+drop 482 1445
+drop 482 1446
+drop 483 1447
+drop 483 1448
+drop 483 1449
+drop 509 1525
+drop 509 1526
+drop 509 1527
+drop 510 1528
+drop 510 1529
+drop 510 1530
+263
+80 2
+279 2
+324 2
+325 2
+329 2
+337 2
+344 2
+347 2
+352 2
+357 2
+364 2
+368 2
+441 2
+443 2
+444 2
+446 2
+447 2
+473 2
+476 2
+477 2
+512 2
+517 3
+518 65
+519 29
+545 38
+548 50
+551 2
+553 2
+554 6
+114 55
+261 168
+303 75
+323 237
+327 90
+341 46
+359 199
+360 49
+373 59
+376 63
+384 357
+385 300
+391 319
+399 59
+403 291
+442 37
+445 75
+481 78
+511 63
+513 21
+514 55
+515 30
+516 1
+547 5
+549 31
+550 28
+555 69
+556 43
+557 64
+583 39
+584 1
+585 1
+586 7
+587 66
+588 51
+589 4
+136 54
+248 169
+291 74
+322 134
+348 378
+362 62
+380 48
+382 207
+413 303
+416 164
+425 324
+433 58
+436 285
+437 155
+479 36
+546 14
+552 26
+590 68
+591 42
+592 77
+593 1
+594 45
+620 29
+621 6
+622 18
+623 3
+624 9
+625 38
+626 76
+627 44
+628 41
+629 67
+630 115
+631 47
+632 60
+633 276
+634 234
+635 354
+636 139
+637 119
+638 270
+639 359
+640 259
+641 56
+642 159
+643 52
+644 255
+645 375
+646 156
+647 279
+648 355
+649 235
+650 70
+651 150
+652 239
+653 135
+654 114
+26 115
+108 172
+139 339
+177 108
+187 53
+247 101
+251 349
+283 141
+311 73
+351 129
+381 61
+397 176
+402 116
+430 236
+431 47
+449 232
+451 278
+455 344
+458 57
+460 146
+466 302
+595 341
+596 140
+597 346
+599 128
+600 264
+601 113
+604 340
+605 248
+606 368
+608 194
+609 144
+610 314
+611 127
+612 286
+613 246
+614 100
+615 181
+616 220
+617 282
+618 241
+619 71
+17 239
+32 286
+37 347
+58 246
+66 331
+73 115
+308 251
+320 80
+321 162
+349 72
+388 88
+414 92
+424 331
+435 201
+461 225
+472 315
+486 348
+487 149
+489 111
+493 287
+494 290
+503 247
+507 122
+533 114
+534 137
+558 296
+559 367
+562 360
+564 166
+565 200
+568 224
+569 190
+571 226
+572 309
+573 328
+574 142
+575 189
+577 301
+579 292
+581 115
+29 264
+30 121
+36 222
+109 219
+111 133
+206 246
+258 248
+262 205
+280 338
+294 202
+298 240
+363 333
+383 346
+401 157
+453 351
+456 321
+465 102
+485 267
+498 366
+505 82
+521 157
+522 334
+524 197
+526 241
+528 298
+529 282
+530 295
+532 178
+536 368
+539 228
+540 345
+542 184
+20 227
+65 361
+118 96
+156 377
+285 260
+293 367
+355 257
+358 243
+387 158
+393 363
+422 353
+423 187
+464 376
+468 214
+497 170
+502 214
+508 170
+35 307
+113 336
+151 262
+312 343
+332 182
+396 112
+78 317
+179 320
+264 294
+345 329
+69
+drop 80 238
+drop 80 239
+drop 80 240
+drop 279 835
+drop 279 836
+drop 279 837
+drop 324 970
+drop 324 971
+drop 324 972
+drop 325 973
+drop 325 974
+drop 325 975
+drop 329 985
+drop 329 986
+drop 329 987
+drop 337 1009
+drop 337 1010
+drop 337 1011
+drop 344 1030
+drop 344 1031
+drop 344 1032
+drop 347 1039
+drop 347 1040
+drop 347 1041
+drop 352 1054
+drop 352 1055
+drop 352 1056
+drop 357 1069
+drop 357 1070
+drop 357 1071
+drop 364 1090
+drop 364 1091
+drop 364 1092
+drop 368 1102
+drop 368 1103
+drop 368 1104
+drop 441 1321
+drop 441 1322
+drop 441 1323
+drop 443 1327
+drop 443 1328
+drop 443 1329
+drop 444 1330
+drop 444 1331
+drop 444 1332
+drop 446 1336
+drop 446 1337
+drop 446 1338
+drop 447 1339
+drop 447 1340
+drop 447 1341
+drop 473 1417
+drop 473 1418
+drop 473 1419
+drop 476 1426
+drop 476 1427
+drop 476 1428
+drop 477 1429
+drop 477 1430
+drop 477 1431
+drop 512 1534
+drop 512 1535
+drop 512 1536
+drop 551 1651
+drop 551 1652
+drop 551 1653
+drop 553 1657
+drop 553 1658
+drop 553 1659
+262
+114 2
+261 2
+303 2
+323 2
+327 2
+341 2
+359 2
+373 2
+376 2
+384 2
+385 2
+391 2
+399 18
+403 2
+442 2
+445 74
+481 2
+511 62
+513 2
+514 14
+547 2
+549 2
+550 2
+555 2
+556 2
+587 2
+588 2
+136 55
+248 177
+291 73
+322 90
+348 357
+362 61
+382 199
+413 291
+416 168
+425 319
+433 59
+436 300
+437 171
+479 37
+515 31
+517 43
+518 66
+519 69
+545 78
+546 1
+548 51
+552 66
+554 46
+583 40
+586 8
+589 5
+590 69
+591 43
+592 78
+594 46
+620 30
+621 7
+622 1
+623 4
+624 51
+625 39
+187 54
+251 378
+283 169
+311 72
+351 134
+360 50
+381 60
+397 164
+402 130
+430 207
+451 303
+455 324
+458 58
+460 155
+466 285
+516 32
+557 65
+584 6
+585 26
+593 9
+626 77
+627 45
+628 42
+629 68
+655 22
+656 3
+657 29
+658 38
+659 76
+660 41
+661 67
+662 44
+663 64
+664 270
+665 355
+666 235
+667 279
+668 47
+669 150
+670 115
+671 156
+672 119
+673 255
+674 259
+675 70
+676 354
+677 359
+678 139
+679 234
+680 60
+681 276
+682 52
+683 135
+684 56
+685 114
+686 375
+687 159
+688 239
+17 246
+26 114
+66 349
+73 113
+207 53
+349 71
+380 49
+388 129
+424 321
+431 48
+435 211
+461 236
+472 280
+486 344
+487 146
+493 278
+494 302
+495 57
+507 129
+533 127
+581 99
+630 121
+633 282
+634 232
+635 368
+636 144
+637 101
+638 314
+639 341
+640 264
+642 181
+644 220
+645 340
+646 172
+647 286
+648 339
+649 241
+650 71
+651 194
+652 221
+653 100
+654 128
+29 296
+30 106
+32 282
+36 201
+58 248
+108 142
+177 135
+206 214
+247 92
+258 234
+298 225
+363 331
+383 355
+401 147
+449 200
+456 328
+485 315
+498 371
+521 190
+526 227
+528 290
+529 260
+530 287
+536 377
+540 348
+563 119
+580 137
+595 328
+596 156
+597 347
+599 80
+600 310
+601 111
+604 360
+605 247
+606 367
+608 189
+609 190
+610 309
+612 301
+613 251
+615 166
+616 224
+617 292
+618 226
+20 218
+37 338
+65 346
+111 86
+156 322
+285 307
+293 336
+320 102
+321 140
+355 248
+387 167
+414 85
+429 219
+464 333
+468 208
+489 133
+502 252
+522 366
+534 82
+539 240
+559 351
+562 345
+564 157
+565 222
+568 228
+569 184
+572 298
+573 334
+574 197
+575 178
+577 295
+35 294
+109 257
+113 320
+262 214
+280 376
+294 257
+393 361
+400 243
+423 158
+453 373
+465 96
+504 363
+524 187
+532 170
+542 170
+118 112
+179 352
+264 262
+361 182
+422 351
+151 317
+312 353
+249 343
+69
+drop 114 340
+drop 114 341
+drop 114 342
+drop 261 781
+drop 261 782
+drop 261 783
+drop 303 907
+drop 303 908
+drop 303 909
+drop 323 967
+drop 323 968
+drop 323 969
+drop 327 979
+drop 327 980
+drop 327 981
+drop 341 1021
+drop 341 1022
+drop 341 1023
+drop 359 1075
+drop 359 1076
+drop 359 1077
+drop 373 1117
+drop 373 1118
+drop 373 1119
+drop 376 1126
+drop 376 1127
+drop 376 1128
+drop 384 1150
+drop 384 1151
+drop 384 1152
+drop 385 1153
+drop 385 1154
+drop 385 1155
+drop 391 1171
+drop 391 1172
+drop 391 1173
+drop 403 1207
+drop 403 1208
+drop 403 1209
+drop 442 1324
+drop 442 1325
+drop 442 1326
+drop 481 1441
+drop 481 1442
+drop 481 1443
+drop 513 1537
+drop 513 1538
+drop 513 1539
+drop 547 1639
+drop 547 1640
+drop 547 1641
+drop 549 1645
+drop 549 1646
+drop 549 1647
+drop 550 1648
+drop 550 1649
+drop 550 1650
+drop 555 1663
+drop 555 1664
+drop 555 1665
+drop 556 1666
+drop 556 1667
+drop 556 1668
+drop 587 1759
+drop 587 1760
+drop 587 1761
+drop 588 1762
+drop 588 1763
+drop 588 1764
+263
+136 2
+248 2
+322 2
+348 2
+382 2
+413 2
+416 2
+425 2
+433 2
+436 2
+437 2
+479 2
+515 2
+517 2
+518 2
+519 2
+545 2
+548 2
+552 26
+554 2
+583 2
+586 2
+589 2
+590 29
+591 42
+592 77
+594 6
+624 50
+187 55
+251 357
+283 177
+351 90
+360 49
+397 168
+399 59
+402 97
+430 199
+445 75
+451 291
+455 319
+458 59
+460 171
+466 300
+511 63
+514 55
+516 75
+557 66
+584 7
+585 27
+593 51
+620 31
+621 8
+623 5
+625 40
+626 76
+627 46
+628 41
+629 69
+655 63
+656 43
+657 30
+658 78
+66 378
+207 54
+291 74
+362 62
+380 48
+388 134
+435 258
+461 207
+472 285
+486 324
+487 155
+493 303
+494 285
+495 58
+507 88
+546 22
+622 26
+659 1
+660 1
+661 68
+662 45
+663 65
+689 32
+690 3
+691 38
+692 9
+693 29
+694 6
+695 14
+696 18
+697 67
+698 64
+699 44
+700 47
+701 139
+702 255
+703 279
+704 60
+705 156
+706 52
+707 135
+708 150
+709 276
+710 119
+711 270
+712 115
+713 239
+714 235
+715 375
+716 259
+717 355
+718 114
+719 234
+720 159
+721 354
+722 359
+723 70
+724 56
+26 115
+36 211
+177 100
+254 53
+258 248
+298 236
+311 73
+363 349
+381 61
+383 339
+401 176
+431 47
+485 280
+498 369
+525 57
+528 302
+530 278
+540 344
+563 127
+596 140
+664 314
+665 346
+666 241
+667 286
+669 194
+670 113
+671 172
+672 101
+673 220
+674 264
+675 71
+676 368
+677 341
+678 144
+679 232
+681 282
+683 108
+685 128
+686 340
+687 181
+688 221
+17 239
+32 286
+58 246
+65 347
+73 111
+111 103
+134 115
+321 162
+349 72
+355 247
+387 151
+424 331
+464 331
+522 371
+533 114
+539 225
+562 348
+564 147
+565 201
+572 290
+577 287
+611 137
+630 115
+633 292
+634 200
+635 367
+636 190
+637 92
+638 309
+639 328
+640 296
+642 166
+644 224
+645 360
+646 142
+647 301
+649 227
+651 189
+654 80
+30 121
+108 197
+109 248
+115 246
+206 246
+247 85
+262 252
+280 333
+294 202
+393 346
+414 94
+423 167
+449 222
+456 321
+489 86
+521 157
+526 218
+529 282
+536 368
+568 240
+571 241
+573 366
+580 82
+595 334
+597 338
+599 102
+600 264
+601 133
+604 345
+606 336
+608 178
+609 184
+610 298
+612 295
+615 163
+616 228
+618 219
+37 376
+156 377
+285 260
+293 320
+320 96
+422 367
+429 257
+450 243
+468 214
+504 361
+524 158
+559 373
+569 170
+574 187
+575 170
+35 307
+113 342
+312 351
+366 182
+453 326
+465 112
+179 320
+249 353
+264 294
+78 262
+345 343
+66
+drop 136 406
+drop 136 407
+drop 136 408
+drop 248 742
+drop 248 743
+drop 248 744
+drop 322 964
+drop 322 965
+drop 322 966
+drop 348 1042
+drop 348 1043
+drop 348 1044
+drop 382 1144
+drop 382 1145
+drop 382 1146
+drop 413 1237
+drop 413 1238
+drop 413 1239
+drop 416 1246
+drop 416 1247
+drop 416 1248
+drop 425 1273
+drop 425 1274
+drop 425 1275
+drop 433 1297
+drop 433 1298
+drop 433 1299
+drop 436 1306
+drop 436 1307
+drop 436 1308
+drop 437 1309
+drop 437 1310
+drop 437 1311
+drop 479 1435
+drop 479 1436
+drop 479 1437
+drop 515 1543
+drop 515 1544
+drop 515 1545
+drop 517 1549
+drop 517 1550
+drop 517 1551
+drop 518 1552
+drop 518 1553
+drop 518 1554
+drop 519 1555
+drop 519 1556
+drop 519 1557
+drop 545 1633
+drop 545 1634
+drop 545 1635
+drop 548 1642
+drop 548 1643
+drop 548 1644
+drop 554 1660
+drop 554 1661
+drop 554 1662
+drop 583 1747
+drop 583 1748
+drop 583 1749
+drop 586 1756
+drop 586 1757
+drop 586 1758
+drop 589 1765
+drop 589 1766
+drop 589 1767
+266
+187 2
+251 2
+283 2
+351 2
+397 2
+399 2
+402 2
+430 2
+445 2
+451 2
+455 2
+458 18
+460 2
+466 2
+511 2
+514 54
+516 74
+557 2
+593 2
+620 2
+621 2
+623 2
+625 2
+627 2
+629 2
+655 62
+656 2
+658 2
+66 357
+207 53
+291 73
+362 61
+388 90
+435 237
+461 199
+472 300
+486 319
+487 171
+493 291
+494 284
+495 59
+546 63
+552 66
+584 8
+585 28
+590 69
+591 43
+592 78
+594 46
+622 27
+624 51
+657 31
+661 69
+662 46
+663 66
+689 75
+690 43
+691 78
+692 51
+693 30
+694 7
+695 55
+696 19
+36 258
+254 52
+298 207
+311 72
+360 50
+363 378
+381 60
+401 164
+485 285
+498 374
+525 58
+528 285
+530 303
+540 324
+626 77
+628 42
+659 9
+660 6
+697 68
+698 65
+699 45
+725 18
+726 22
+727 29
+728 38
+729 3
+730 26
+731 14
+732 32
+733 76
+734 41
+735 67
+736 64
+737 44
+738 235
+739 375
+740 139
+741 279
+742 270
+743 354
+744 359
+745 47
+746 60
+747 56
+748 156
+749 259
+750 114
+751 234
+752 119
+753 70
+754 150
+755 115
+756 52
+757 255
+758 159
+759 355
+760 276
+761 239
+762 135
+17 246
+26 114
+111 89
+134 99
+349 71
+380 49
+387 141
+424 349
+431 48
+464 333
+507 129
+522 369
+533 127
+539 236
+562 344
+564 176
+565 211
+566 57
+572 302
+577 278
+630 121
+701 144
+702 220
+703 286
+705 172
+707 100
+708 194
+709 282
+710 101
+711 314
+712 113
+713 221
+714 241
+715 340
+716 264
+717 346
+718 128
+719 232
+720 181
+721 368
+722 341
+723 71
+28 355
+30 106
+32 282
+58 248
+109 234
+115 214
+206 251
+258 257
+280 376
+393 361
+414 88
+423 151
+449 201
+456 331
+489 103
+521 147
+529 260
+536 377
+563 119
+568 225
+571 226
+573 371
+596 156
+600 310
+604 348
+610 290
+612 287
+615 149
+664 309
+665 347
+666 227
+667 301
+669 189
+670 111
+671 142
+672 92
+673 224
+674 296
+676 367
+677 328
+678 190
+679 200
+681 292
+683 135
+685 80
+686 360
+687 166
+37 338
+65 338
+73 133
+156 322
+247 94
+285 307
+321 140
+355 248
+422 351
+429 219
+468 205
+504 363
+524 167
+595 366
+601 86
+611 127
+616 240
+634 222
+635 336
+636 157
+637 85
+638 298
+639 321
+642 163
+644 228
+645 345
+646 197
+647 295
+649 218
+651 178
+654 102
+35 294
+62 137
+108 187
+262 214
+294 257
+312 353
+574 158
+599 96
+606 320
+608 170
+609 190
+618 226
+144 219
+179 342
+249 343
+264 262
+293 352
+320 112
+390 184
+415 182
+559 351
+78 317
+345 329
+453 373
+72
+drop 187 559
+drop 187 560
+drop 187 561
+drop 251 751
+drop 251 752
+drop 251 753
+drop 283 847
+drop 283 848
+drop 283 849
+drop 351 1051
+drop 351 1052
+drop 351 1053
+drop 397 1189
+drop 397 1190
+drop 397 1191
+drop 399 1195
+drop 399 1196
+drop 399 1197
+drop 402 1204
+drop 402 1205
+drop 402 1206
+drop 430 1288
+drop 430 1289
+drop 430 1290
+drop 445 1333
+drop 445 1334
+drop 445 1335
+drop 451 1351
+drop 451 1352
+drop 451 1353
+drop 455 1363
+drop 455 1364
+drop 455 1365
+drop 460 1378
+drop 460 1379
+drop 460 1380
+drop 466 1396
+drop 466 1397
+drop 466 1398
+drop 511 1531
+drop 511 1532
+drop 511 1533
+drop 557 1669
+drop 557 1670
+drop 557 1671
+drop 593 1777
+drop 593 1778
+drop 593 1779
+drop 620 1858
+drop 620 1859
+drop 620 1860
+drop 621 1861
+drop 621 1862
+drop 621 1863
+drop 623 1867
+drop 623 1868
+drop 623 1869
+drop 625 1873
+drop 625 1874
+drop 625 1875
+drop 627 1879
+drop 627 1880
+drop 627 1881
+drop 629 1885
+drop 629 1886
+drop 629 1887
+drop 656 1966
+drop 656 1967
+drop 656 1968
+drop 658 1972
+drop 658 1973
+drop 658 1974
+268
+66 2
+388 2
+435 2
+461 2
+472 2
+486 2
+487 2
+493 2
+495 2
+546 2
+552 2
+584 2
+585 2
+590 2
+591 2
+592 2
+594 2
+624 2
+657 2
+661 29
+662 6
+663 65
+689 2
+690 3
+691 77
+692 50
+695 2
+36 237
+298 217
+360 49
+363 357
+401 168
+458 59
+485 300
+494 288
+498 330
+514 55
+516 75
+525 59
+528 284
+530 291
+540 319
+622 28
+626 76
+628 43
+655 63
+659 51
+660 7
+693 31
+694 8
+697 69
+698 64
+699 46
+725 1
+726 63
+727 30
+728 78
+729 4
+730 66
+731 55
+732 75
+111 109
+207 54
+291 74
+362 62
+380 48
+387 169
+424 378
+507 134
+522 374
+539 207
+562 324
+564 164
+565 258
+566 58
+572 285
+577 303
+696 20
+733 1
+734 42
+735 68
+736 1
+737 45
+763 3
+764 14
+765 9
+766 22
+767 38
+768 26
+769 29
+770 6
+771 32
+772 67
+773 44
+774 41
+775 115
+776 60
+777 135
+778 255
+779 47
+780 276
+781 359
+782 56
+783 235
+784 139
+785 355
+786 119
+787 234
+788 70
+789 279
+790 156
+791 150
+792 239
+793 270
+794 375
+795 354
+796 52
+797 259
+798 114
+799 159
+26 115
+28 339
+109 232
+254 53
+311 73
+381 61
+414 129
+423 141
+431 47
+449 211
+456 349
+489 89
+521 176
+563 127
+568 236
+573 369
+596 172
+602 57
+604 344
+610 302
+612 278
+615 146
+683 100
+738 241
+739 340
+740 144
+741 286
+742 314
+743 368
+744 341
+748 140
+749 264
+750 128
+751 248
+752 101
+753 71
+754 194
+755 121
+757 220
+758 181
+759 346
+760 282
+761 246
+762 108
+17 248
+32 286
+58 257
+74 239
+134 115
+247 88
+321 162
+349 72
+355 247
+464 331
+524 151
+533 114
+595 371
+601 103
+611 137
+616 225
+630 106
+634 201
+636 147
+638 290
+639 331
+642 149
+645 348
+647 287
+701 190
+702 224
+703 301
+705 142
+708 189
+709 292
+710 92
+711 309
+712 115
+714 227
+715 360
+716 310
+717 361
+718 80
+719 200
+720 166
+721 377
+722 328
+29 264
+30 98
+62 82
+73 86
+115 246
+206 246
+258 219
+262 208
+280 333
+294 202
+393 363
+529 282
+536 322
+571 241
+574 167
+600 277
+609 157
+618 219
+637 94
+644 240
+664 298
+665 346
+666 218
+667 295
+669 178
+670 113
+671 197
+672 85
+673 228
+676 368
+677 321
+678 184
+679 222
+685 102
+686 345
+687 163
+37 347
+65 376
+108 158
+144 243
+156 363
+285 260
+390 170
+422 367
+468 214
+502 214
+559 353
+635 367
+646 187
+651 170
+654 96
+35 307
+312 343
+452 182
+453 351
+599 112
+606 336
+113 320
+210 320
+249 329
+264 294
+78 262
+63
+drop 66 196
+drop 66 197
+drop 66 198
+drop 388 1162
+drop 388 1163
+drop 388 1164
+drop 435 1303
+drop 435 1304
+drop 435 1305
+drop 461 1381
+drop 461 1382
+drop 461 1383
+drop 472 1414
+drop 472 1415
+drop 472 1416
+drop 486 1456
+drop 486 1457
+drop 486 1458
+drop 487 1459
+drop 487 1460
+drop 487 1461
+drop 493 1477
+drop 493 1478
+drop 493 1479
+drop 495 1483
+drop 495 1484
+drop 495 1485
+drop 546 1636
+drop 546 1637
+drop 546 1638
+drop 552 1654
+drop 552 1655
+drop 552 1656
+drop 584 1750
+drop 584 1751
+drop 584 1752
+drop 585 1753
+drop 585 1754
+drop 585 1755
+drop 590 1768
+drop 590 1769
+drop 590 1770
+drop 591 1771
+drop 591 1772
+drop 591 1773
+drop 592 1774
+drop 592 1775
+drop 592 1776
+drop 594 1780
+drop 594 1781
+drop 594 1782
+drop 624 1870
+drop 624 1871
+drop 624 1872
+drop 657 1969
+drop 657 1970
+drop 657 1971
+drop 689 2065
+drop 689 2066
+drop 689 2067
+drop 695 2083
+drop 695 2084
+drop 695 2085
+270
+36 2
+298 2
+363 2
+401 2
+458 2
+485 2
+494 2
+498 2
+514 2
+516 2
+525 58
+530 2
+540 2
+622 2
+628 2
+655 2
+659 2
+693 2
+694 2
+697 2
+699 2
+726 62
+728 2
+730 2
+731 54
+732 74
+111 117
+207 53
+291 73
+362 61
+387 177
+424 357
+507 90
+522 330
+528 288
+539 199
+562 319
+564 168
+565 237
+566 57
+572 300
+577 291
+660 8
+661 69
+662 46
+663 66
+690 43
+691 78
+692 51
+696 21
+727 31
+729 5
+734 43
+735 69
+737 46
+763 4
+764 55
+765 51
+766 63
+767 78
+768 66
+769 30
+770 7
+771 75
+254 52
+311 72
+360 50
+381 60
+414 134
+423 169
+449 258
+456 378
+489 109
+521 164
+568 207
+573 374
+602 56
+604 324
+610 285
+612 303
+615 155
+626 77
+698 65
+725 26
+733 32
+736 14
+772 68
+773 45
+774 42
+800 29
+801 22
+802 18
+803 3
+804 9
+805 6
+806 38
+807 67
+808 64
+809 44
+810 76
+811 41
+812 156
+813 60
+814 159
+815 270
+816 70
+817 139
+818 115
+819 56
+820 279
+821 135
+822 52
+823 119
+824 255
+825 355
+826 239
+827 354
+828 359
+829 114
+830 235
+831 276
+832 375
+833 150
+834 259
+835 47
+836 234
+26 114
+74 246
+134 113
+247 129
+349 71
+380 49
+431 48
+464 349
+524 141
+533 127
+595 369
+601 89
+616 236
+634 211
+636 176
+638 302
+639 321
+642 146
+645 344
+647 278
+712 99
+775 121
+777 108
+778 220
+780 282
+781 341
+783 241
+784 144
+785 339
+786 127
+787 232
+788 71
+789 286
+790 140
+791 194
+792 221
+793 314
+794 340
+795 368
+797 264
+798 128
+799 181
+17 234
+29 296
+32 282
+73 103
+109 200
+115 248
+177 135
+206 251
+280 331
+529 292
+563 137
+571 227
+574 151
+596 156
+609 147
+637 88
+644 225
+664 290
+665 355
+667 287
+670 111
+676 367
+677 328
+679 201
+686 348
+687 149
+738 226
+739 360
+740 190
+741 301
+742 309
+743 377
+744 328
+748 162
+749 310
+750 80
+751 257
+752 119
+754 189
+755 106
+757 224
+758 166
+759 347
+760 260
+761 214
+762 104
+37 338
+58 202
+65 333
+108 167
+285 307
+355 248
+422 351
+468 208
+502 252
+600 267
+611 82
+630 98
+635 336
+672 94
+673 240
+701 157
+702 228
+703 295
+705 172
+708 178
+710 101
+711 298
+714 218
+715 345
+716 277
+717 346
+718 102
+719 222
+720 163
+721 322
+722 334
+30 107
+35 294
+156 361
+258 257
+393 322
+429 226
+453 353
+597 376
+606 320
+618 243
+646 158
+669 170
+671 142
+678 190
+685 96
+113 352
+210 342
+264 308
+390 184
+467 182
+559 343
+654 112
+78 294
+312 329
+151 262
+66
+drop 36 106
+drop 36 107
+drop 36 108
+drop 298 892
+drop 298 893
+drop 298 894
+drop 363 1087
+drop 363 1088
+drop 363 1089
+drop 401 1201
+drop 401 1202
+drop 401 1203
+drop 458 1372
+drop 458 1373
+drop 458 1374
+drop 485 1453
+drop 485 1454
+drop 485 1455
+drop 494 1480
+drop 494 1481
+drop 494 1482
+drop 498 1492
+drop 498 1493
+drop 498 1494
+drop 514 1540
+drop 514 1541
+drop 514 1542
+drop 516 1546
+drop 516 1547
+drop 516 1548
+drop 530 1588
+drop 530 1589
+drop 530 1590
+drop 540 1618
+drop 540 1619
+drop 540 1620
+drop 622 1864
+drop 622 1865
+drop 622 1866
+drop 628 1882
+drop 628 1883
+drop 628 1884
+drop 655 1963
+drop 655 1964
+drop 655 1965
+drop 659 1975
+drop 659 1976
+drop 659 1977
+drop 693 2077
+drop 693 2078
+drop 693 2079
+drop 694 2080
+drop 694 2081
+drop 694 2082
+drop 697 2089
+drop 697 2090
+drop 697 2091
+drop 699 2095
+drop 699 2096
+drop 699 2097
+drop 728 2182
+drop 728 2183
+drop 728 2184
+drop 730 2188
+drop 730 2189
+drop 730 2190
+269
+111 2
+387 2
+424 2
+507 2
+522 2
+528 2
+539 2
+562 2
+564 2
+565 2
+572 2
+577 2
+660 2
+661 2
+662 2
+663 2
+690 2
+691 2
+692 2
+696 2
+727 2
+729 2
+734 42
+735 68
+737 45
+764 2
+765 50
+766 2
+767 38
+768 65
+771 2
+360 49
+414 90
+423 177
+449 237
+456 357
+489 117
+521 168
+525 59
+568 199
+573 330
+604 319
+610 300
+612 291
+615 171
+626 78
+698 64
+725 66
+726 63
+731 55
+732 75
+733 75
+736 55
+763 5
+769 31
+770 8
+772 67
+773 44
+774 41
+800 69
+801 63
+802 59
+803 43
+804 51
+805 46
+806 39
+207 54
+247 134
+291 74
+362 62
+380 48
+464 378
+524 169
+566 58
+595 374
+601 109
+616 207
+634 258
+636 164
+638 285
+642 155
+645 324
+647 303
+807 1
+808 1
+809 1
+810 77
+811 1
+837 26
+838 3
+839 38
+840 32
+841 29
+842 18
+843 22
+844 6
+845 9
+846 14
+847 76
+848 276
+849 159
+850 114
+851 56
+852 52
+853 279
+854 259
+855 255
+856 234
+857 354
+858 375
+859 359
+860 139
+861 47
+862 239
+863 119
+864 150
+865 70
+866 60
+867 270
+868 115
+869 156
+870 135
+871 355
+872 235
+17 232
+26 115
+73 89
+177 108
+254 53
+280 349
+311 73
+381 61
+431 47
+574 141
+596 140
+602 57
+609 176
+637 129
+644 236
+664 302
+665 346
+667 278
+679 211
+686 344
+687 146
+752 127
+812 172
+814 181
+815 314
+816 71
+817 144
+818 113
+820 286
+821 100
+823 101
+824 220
+825 339
+826 221
+827 368
+828 341
+829 128
+830 241
+831 282
+832 340
+833 194
+834 264
+836 248
+32 286
+65 331
+74 239
+108 151
+115 246
+134 111
+183 115
+349 72
+355 257
+533 114
+600 315
+639 331
+672 88
+673 225
+701 147
+703 287
+705 142
+710 92
+711 290
+715 348
+717 361
+719 201
+720 149
+775 115
+777 104
+778 224
+780 292
+781 328
+783 226
+784 190
+786 137
+787 200
+789 301
+790 162
+791 189
+793 309
+794 360
+795 377
+797 310
+798 80
+799 166
+29 264
+109 222
+156 363
+206 246
+258 219
+429 219
+503 248
+563 82
+571 241
+597 333
+646 167
+670 133
+671 197
+676 368
+677 321
+678 157
+702 240
+716 267
+722 366
+739 345
+740 184
+741 295
+742 298
+743 322
+744 334
+749 277
+750 102
+751 202
+754 178
+755 121
+757 228
+758 157
+759 346
+760 282
+761 246
+762 120
+20 227
+37 347
+262 214
+285 260
+390 170
+393 363
+422 367
+502 214
+630 106
+635 367
+708 170
+718 96
+30 98
+35 307
+78 308
+144 219
+453 351
+497 182
+606 336
+685 112
+113 320
+151 294
+179 320
+559 353
+249 343
+75
+drop 111 331
+drop 111 332
+drop 111 333
+drop 387 1159
+drop 387 1160
+drop 387 1161
+drop 424 1270
+drop 424 1271
+drop 424 1272
+drop 507 1519
+drop 507 1520
+drop 507 1521
+drop 522 1564
+drop 522 1565
+drop 522 1566
+drop 528 1582
+drop 528 1583
+drop 528 1584
+drop 539 1615
+drop 539 1616
+drop 539 1617
+drop 562 1684
+drop 562 1685
+drop 562 1686
+drop 564 1690
+drop 564 1691
+drop 564 1692
+drop 565 1693
+drop 565 1694
+drop 565 1695
+drop 572 1714
+drop 572 1715
+drop 572 1716
+drop 577 1729
+drop 577 1730
+drop 577 1731
+drop 660 1978
+drop 660 1979
+drop 660 1980
+drop 661 1981
+drop 661 1982
+drop 661 1983
+drop 662 1984
+drop 662 1985
+drop 662 1986
+drop 663 1987
+drop 663 1988
+drop 663 1989
+drop 690 2068
+drop 690 2069
+drop 690 2070
+drop 691 2071
+drop 691 2072
+drop 691 2073
+drop 692 2074
+drop 692 2075
+drop 692 2076
+drop 696 2086
+drop 696 2087
+drop 696 2088
+drop 727 2179
+drop 727 2180
+drop 727 2181
+drop 729 2185
+drop 729 2186
+drop 729 2187
+drop 764 2290
+drop 764 2291
+drop 764 2292
+drop 766 2296
+drop 766 2297
+drop 766 2298
+drop 771 2311
+drop 771 2312
+drop 771 2313
+266
+414 2
+423 2
+449 2
+456 2
+489 2
+521 2
+525 2
+568 2
+573 2
+604 2
+610 2
+612 2
+615 2
+626 2
+725 2
+726 2
+731 2
+732 2
+733 74
+736 54
+763 2
+769 2
+770 2
+800 2
+801 62
+802 18
+803 2
+804 2
+805 2
+207 53
+247 90
+291 73
+362 61
+464 357
+524 177
+566 59
+595 330
+601 117
+616 217
+634 237
+636 168
+638 300
+642 171
+645 319
+647 291
+734 43
+735 69
+737 46
+765 51
+767 78
+768 66
+806 40
+810 78
+837 66
+838 43
+839 39
+840 75
+841 69
+842 19
+843 63
+844 46
+845 51
+846 55
+73 109
+254 52
+280 378
+311 72
+360 50
+381 60
+574 169
+602 58
+609 164
+637 134
+644 207
+664 285
+667 303
+679 258
+686 324
+687 155
+698 65
+772 68
+773 45
+774 42
+807 26
+808 22
+809 3
+811 9
+847 77
+873 18
+874 6
+875 38
+876 32
+877 14
+878 29
+879 76
+880 41
+881 64
+882 44
+883 67
+884 119
+885 359
+886 279
+887 276
+888 135
+889 114
+890 139
+891 235
+892 115
+893 355
+894 270
+895 255
+896 159
+897 150
+898 52
+899 60
+900 70
+901 259
+902 375
+903 56
+904 234
+905 47
+906 156
+907 239
+908 354
+26 114
+65 349
+74 246
+108 141
+183 99
+349 71
+380 49
+431 48
+533 128
+600 280
+639 333
+641 57
+672 129
+673 236
+701 176
+703 278
+711 302
+715 344
+719 211
+720 146
+775 121
+848 282
+849 181
+850 127
+853 286
+854 264
+855 220
+856 232
+857 368
+858 340
+859 341
+860 144
+862 221
+863 101
+864 194
+865 71
+867 314
+868 113
+869 140
+870 100
+871 346
+872 241
+17 200
+28 355
+29 296
+32 282
+109 201
+115 248
+177 135
+206 214
+503 234
+571 226
+596 162
+597 323
+646 151
+665 347
+676 377
+677 331
+678 147
+702 225
+716 315
+722 371
+739 348
+741 287
+742 290
+752 119
+755 106
+758 190
+759 361
+760 292
+761 251
+762 105
+812 156
+814 166
+815 309
+817 190
+818 111
+820 301
+823 92
+824 224
+827 367
+828 328
+829 80
+830 227
+831 260
+832 360
+833 189
+834 310
+836 247
+20 218
+37 338
+134 133
+262 208
+285 307
+355 248
+422 351
+502 205
+630 98
+635 336
+670 86
+705 172
+710 85
+717 363
+738 219
+744 366
+749 267
+757 240
+777 108
+778 228
+781 321
+784 184
+786 127
+787 222
+789 295
+791 178
+793 298
+794 345
+795 322
+797 277
+798 102
+799 163
+30 107
+35 294
+58 257
+62 137
+144 257
+156 322
+258 243
+453 353
+606 320
+671 142
+740 170
+750 96
+754 170
+113 352
+151 262
+179 342
+390 182
+559 343
+718 112
+78 294
+249 329
+75
+drop 414 1240
+drop 414 1241
+drop 414 1242
+drop 423 1267
+drop 423 1268
+drop 423 1269
+drop 449 1345
+drop 449 1346
+drop 449 1347
+drop 456 1366
+drop 456 1367
+drop 456 1368
+drop 489 1465
+drop 489 1466
+drop 489 1467
+drop 521 1561
+drop 521 1562
+drop 521 1563
+drop 525 1573
+drop 525 1574
+drop 525 1575
+drop 568 1702
+drop 568 1703
+drop 568 1704
+drop 573 1717
+drop 573 1718
+drop 573 1719
+drop 604 1810
+drop 604 1811
+drop 604 1812
+drop 610 1828
+drop 610 1829
+drop 610 1830
+drop 612 1834
+drop 612 1835
+drop 612 1836
+drop 615 1843
+drop 615 1844
+drop 615 1845
+drop 626 1876
+drop 626 1877
+drop 626 1878
+drop 725 2173
+drop 725 2174
+drop 725 2175
+drop 726 2176
+drop 726 2177
+drop 726 2178
+drop 731 2191
+drop 731 2192
+drop 731 2193
+drop 732 2194
+drop 732 2195
+drop 732 2196
+drop 763 2287
+drop 763 2288
+drop 763 2289
+drop 769 2305
+drop 769 2306
+drop 769 2307
+drop 770 2308
+drop 770 2309
+drop 770 2310
+drop 800 2398
+drop 800 2399
+drop 800 2400
+drop 803 2407
+drop 803 2408
+drop 803 2409
+drop 804 2410
+drop 804 2411
+drop 804 2412
+drop 805 2413
+drop 805 2414
+drop 805 2415
+265
+247 2
+464 2
+524 2
+566 2
+595 2
+601 2
+616 2
+634 2
+636 2
+638 2
+642 2
+645 2
+647 2
+734 2
+735 2
+737 2
+765 2
+767 2
+768 2
+806 2
+810 77
+837 65
+838 42
+840 2
+841 29
+843 2
+844 6
+845 9
+846 2
+73 117
+280 357
+360 51
+574 177
+602 59
+609 168
+637 90
+644 199
+664 300
+667 291
+679 237
+686 319
+687 171
+698 64
+733 75
+736 55
+772 69
+773 46
+774 41
+801 63
+802 59
+807 66
+808 63
+809 43
+811 10
+839 40
+847 76
+873 1
+874 7
+875 78
+876 75
+877 55
+878 30
+65 378
+108 169
+207 54
+291 74
+362 62
+380 50
+600 285
+641 58
+672 134
+673 207
+701 164
+703 303
+711 285
+715 324
+719 258
+720 155
+842 18
+879 1
+880 1
+881 1
+882 45
+883 68
+909 14
+910 32
+911 9
+912 38
+913 26
+914 6
+915 29
+916 3
+917 22
+918 67
+919 44
+920 60
+921 234
+922 159
+923 270
+924 235
+925 70
+926 135
+927 47
+928 115
+929 355
+930 139
+931 119
+932 276
+933 56
+934 359
+935 354
+936 375
+937 150
+938 114
+939 52
+940 239
+941 156
+942 255
+943 279
+944 259
+26 115
+28 346
+109 211
+177 100
+254 53
+311 73
+381 61
+431 49
+463 48
+503 232
+646 141
+677 349
+678 176
+684 57
+702 236
+716 280
+722 369
+739 344
+741 278
+742 302
+752 101
+762 116
+812 140
+884 127
+885 341
+886 286
+887 282
+888 108
+889 128
+890 144
+891 241
+892 121
+893 339
+894 314
+895 220
+896 181
+897 194
+900 71
+901 264
+902 340
+904 248
+906 172
+907 246
+908 368
+32 286
+74 248
+115 257
+146 239
+183 115
+349 72
+355 247
+533 80
+639 331
+670 103
+705 142
+744 371
+749 315
+757 225
+775 106
+777 104
+781 331
+786 114
+787 201
+789 287
+793 290
+794 348
+799 149
+848 292
+849 166
+850 137
+853 301
+854 310
+855 224
+856 200
+857 377
+858 360
+859 328
+860 190
+863 92
+864 189
+867 309
+868 115
+869 162
+871 361
+872 227
+17 222
+29 264
+58 202
+62 82
+134 86
+144 219
+206 246
+308 246
+571 241
+597 333
+665 346
+671 197
+676 322
+710 94
+755 98
+758 157
+759 363
+778 240
+783 219
+797 267
+814 157
+815 298
+817 184
+818 113
+820 295
+823 85
+824 228
+827 368
+828 321
+829 102
+830 218
+831 282
+832 345
+833 178
+834 277
+37 376
+156 363
+262 214
+285 260
+422 367
+429 243
+502 214
+630 123
+635 367
+784 170
+791 170
+798 96
+30 98
+35 307
+78 262
+453 351
+508 182
+606 336
+750 112
+113 320
+151 317
+179 320
+264 294
+559 353
+249 343
+69
+drop 247 739
+drop 247 740
+drop 247 741
+drop 464 1390
+drop 464 1391
+drop 464 1392
+drop 524 1570
+drop 524 1571
+drop 524 1572
+drop 566 1696
+drop 566 1697
+drop 566 1698
+drop 595 1783
+drop 595 1784
+drop 595 1785
+drop 601 1801
+drop 601 1802
+drop 601 1803
+drop 616 1846
+drop 616 1847
+drop 616 1848
+drop 634 1900
+drop 634 1901
+drop 634 1902
+drop 636 1906
+drop 636 1907
+drop 636 1908
+drop 638 1912
+drop 638 1913
+drop 638 1914
+drop 642 1924
+drop 642 1925
+drop 642 1926
+drop 645 1933
+drop 645 1934
+drop 645 1935
+drop 647 1939
+drop 647 1940
+drop 647 1941
+drop 734 2200
+drop 734 2201
+drop 734 2202
+drop 735 2203
+drop 735 2204
+drop 735 2205
+drop 737 2209
+drop 737 2210
+drop 737 2211
+drop 765 2293
+drop 765 2294
+drop 765 2295
+drop 767 2299
+drop 767 2300
+drop 767 2301
+drop 768 2302
+drop 768 2303
+drop 768 2304
+drop 806 2416
+drop 806 2417
+drop 806 2418
+drop 840 2518
+drop 840 2519
+drop 840 2520
+drop 843 2527
+drop 843 2528
+drop 843 2529
+drop 846 2536
+drop 846 2537
+drop 846 2538
+265
+73 2
+280 2
+360 2
+574 2
+602 2
+609 2
+637 2
+644 2
+664 2
+667 2
+679 2
+686 2
+687 2
+733 2
+736 2
+772 2
+773 2
+801 2
+802 58
+807 2
+808 62
+809 2
+839 2
+875 2
+876 32
+877 14
+65 357
+108 177
+207 55
+291 75
+362 61
+380 51
+600 300
+641 57
+672 90
+673 199
+701 168
+703 291
+711 284
+715 319
+719 237
+720 171
+810 78
+837 66
+838 43
+841 69
+842 59
+844 46
+845 51
+874 8
+878 31
+882 46
+883 69
+909 15
+910 1
+911 10
+912 78
+913 66
+914 7
+915 30
+916 43
+917 63
+109 258
+254 54
+311 74
+381 60
+431 50
+646 169
+677 378
+678 164
+684 56
+698 65
+702 207
+716 285
+722 374
+739 324
+741 303
+742 285
+762 130
+774 42
+811 11
+847 77
+873 22
+879 29
+880 6
+881 3
+918 68
+919 45
+945 38
+946 18
+947 14
+948 26
+949 9
+950 67
+951 64
+952 76
+953 44
+954 41
+955 119
+956 234
+957 354
+958 139
+959 276
+960 47
+961 255
+962 235
+963 150
+964 60
+965 115
+966 359
+967 135
+968 259
+969 56
+970 156
+971 159
+972 239
+973 355
+974 114
+975 52
+976 270
+977 70
+978 375
+979 279
+26 114
+146 221
+183 113
+297 53
+349 73
+463 49
+496 48
+639 349
+670 89
+744 369
+749 280
+757 236
+781 321
+786 128
+787 211
+789 278
+793 302
+794 344
+799 146
+868 121
+921 232
+922 181
+923 314
+924 241
+925 71
+926 100
+928 99
+929 346
+930 144
+931 127
+932 282
+934 341
+935 368
+936 340
+937 194
+938 127
+940 246
+941 172
+942 220
+943 286
+944 264
+17 201
+28 361
+29 296
+32 282
+74 234
+104 355
+134 103
+206 248
+308 214
+394 72
+503 200
+571 227
+597 331
+665 347
+710 88
+752 119
+758 147
+778 225
+797 315
+812 156
+814 190
+815 290
+818 111
+820 287
+827 377
+828 328
+831 260
+832 348
+884 137
+885 328
+886 301
+887 292
+888 135
+889 80
+890 190
+891 226
+892 106
+894 309
+895 224
+896 166
+897 189
+901 310
+902 360
+904 257
+906 142
+907 251
+908 367
+37 333
+115 202
+262 208
+285 307
+321 140
+355 248
+422 351
+502 205
+533 102
+635 336
+705 197
+775 98
+777 110
+823 94
+824 240
+834 267
+849 163
+850 82
+853 295
+854 277
+855 228
+856 222
+857 322
+858 345
+859 334
+860 184
+863 101
+864 178
+867 298
+871 363
+872 218
+30 107
+35 294
+144 257
+156 322
+453 373
+606 320
+671 187
+738 226
+755 123
+783 243
+817 170
+829 96
+833 170
+113 342
+179 352
+264 308
+532 182
+559 351
+798 112
+78 294
+249 353
+151 262
+312 343
+66
+drop 73 217
+drop 73 218
+drop 73 219
+drop 280 838
+drop 280 839
+drop 280 840
+drop 360 1078
+drop 360 1079
+drop 360 1080
+drop 574 1720
+drop 574 1721
+drop 574 1722
+drop 602 1804
+drop 602 1805
+drop 602 1806
+drop 609 1825
+drop 609 1826
+drop 609 1827
+drop 637 1909
+drop 637 1910
+drop 637 1911
+drop 644 1930
+drop 644 1931
+drop 644 1932
+drop 664 1990
+drop 664 1991
+drop 664 1992
+drop 667 1999
+drop 667 2000
+drop 667 2001
+drop 679 2035
+drop 679 2036
+drop 679 2037
+drop 686 2056
+drop 686 2057
+drop 686 2058
+drop 687 2059
+drop 687 2060
+drop 687 2061
+drop 733 2197
+drop 733 2198
+drop 733 2199
+drop 736 2206
+drop 736 2207
+drop 736 2208
+drop 772 2314
+drop 772 2315
+drop 772 2316
+drop 773 2317
+drop 773 2318
+drop 773 2319
+drop 801 2401
+drop 801 2402
+drop 801 2403
+drop 807 2419
+drop 807 2420
+drop 807 2421
+drop 809 2425
+drop 809 2426
+drop 809 2427
+drop 839 2515
+drop 839 2516
+drop 839 2517
+drop 875 2623
+drop 875 2624
+drop 875 2625
+259
+65 2
+108 2
+207 2
+291 2
+380 2
+600 2
+672 2
+673 2
+701 2
+703 2
+715 2
+719 2
+720 2
+810 2
+837 2
+838 2
+841 2
+842 2
+844 2
+845 9
+874 2
+878 2
+882 6
+883 68
+912 38
+913 65
+916 42
+917 2
+109 237
+254 55
+311 75
+431 51
+646 177
+677 357
+678 168
+698 64
+702 217
+711 288
+716 300
+722 330
+739 319
+741 291
+742 284
+762 97
+774 41
+802 59
+808 63
+847 78
+873 63
+876 75
+877 55
+879 69
+880 7
+881 43
+914 8
+915 31
+918 67
+919 46
+945 39
+946 59
+947 1
+948 66
+949 10
+297 54
+349 74
+362 62
+463 50
+639 378
+641 58
+670 109
+744 374
+749 285
+757 207
+787 258
+789 303
+793 285
+794 324
+799 155
+811 12
+909 14
+910 22
+911 11
+950 1
+951 1
+952 77
+953 45
+954 1
+980 32
+981 38
+982 6
+983 18
+984 26
+985 9
+986 29
+987 3
+988 76
+989 44
+990 56
+991 150
+992 234
+993 239
+994 354
+995 114
+996 70
+997 52
+998 355
+999 47
+1000 270
+17 211
+26 115
+74 248
+104 339
+134 89
+331 53
+381 1
+394 73
+426 61
+496 49
+527 48
+597 349
+684 57
+710 129
+752 1
+758 176
+778 236
+797 280
+812 1
+815 302
+820 278
+832 344
+888 1
+955 101
+956 232
+957 368
+958 1
+959 1
+961 1
+962 1
+963 194
+965 1
+966 1
+967 100
+968 1
+970 140
+971 1
+972 246
+973 346
+974 128
+976 314
+977 71
+978 1
+979 1
+32 276
+37 331
+146 239
+183 115
+206 246
+209 115
+321 162
+355 257
+432 72
+777 122
+781 331
+786 80
+823 88
+824 225
+834 315
+849 149
+853 287
+856 201
+858 348
+863 92
+867 290
+868 115
+921 200
+922 159
+923 309
+924 235
+929 361
+930 139
+931 119
+932 286
+934 359
+935 367
+936 375
+937 189
+938 114
+940 214
+941 156
+942 255
+943 279
+944 259
+28 363
+29 264
+98 282
+144 219
+308 252
+434 246
+503 222
+523 248
+571 241
+665 346
+738 241
+814 144
+818 113
+827 368
+828 341
+831 282
+854 267
+855 240
+859 366
+884 127
+885 321
+886 295
+889 102
+890 157
+891 219
+892 121
+894 298
+895 220
+896 163
+897 178
+901 264
+902 345
+904 202
+906 172
+908 336
+20 227
+62 137
+156 377
+262 214
+285 260
+393 322
+422 367
+502 214
+533 96
+559 373
+635 320
+671 158
+705 142
+775 106
+860 190
+864 170
+30 98
+35 307
+78 262
+174 219
+249 351
+453 326
+542 184
+569 182
+606 342
+630 98
+829 112
+151 317
+179 320
+264 294
+312 353
+345 343
+66
+drop 65 193
+drop 65 194
+drop 65 195
+drop 108 322
+drop 108 323
+drop 108 324
+drop 207 619
+drop 207 620
+drop 207 621
+drop 291 871
+drop 291 872
+drop 291 873
+drop 380 1138
+drop 380 1139
+drop 380 1140
+drop 600 1798
+drop 600 1799
+drop 600 1800
+drop 672 2014
+drop 672 2015
+drop 672 2016
+drop 673 2017
+drop 673 2018
+drop 673 2019
+drop 701 2101
+drop 701 2102
+drop 701 2103
+drop 703 2107
+drop 703 2108
+drop 703 2109
+drop 715 2143
+drop 715 2144
+drop 715 2145
+drop 719 2155
+drop 719 2156
+drop 719 2157
+drop 720 2158
+drop 720 2159
+drop 720 2160
+drop 810 2428
+drop 810 2429
+drop 810 2430
+drop 837 2509
+drop 837 2510
+drop 837 2511
+drop 838 2512
+drop 838 2513
+drop 838 2514
+drop 841 2521
+drop 841 2522
+drop 841 2523
+drop 842 2524
+drop 842 2525
+drop 842 2526
+drop 844 2530
+drop 844 2531
+drop 844 2532
+drop 874 2620
+drop 874 2621
+drop 874 2622
+drop 878 2632
+drop 878 2633
+drop 878 2634
+drop 917 2749
+drop 917 2750
+drop 917 2751
+242
+109 2
+254 2
+311 2
+431 2
+646 2
+677 2
+678 2
+702 2
+711 2
+716 2
+722 2
+739 2
+741 2
+762 2
+802 2
+808 2
+847 2
+873 22
+876 32
+877 14
+879 2
+881 2
+914 2
+915 2
+919 2
+946 18
+948 2
+297 55
+349 75
+362 63
+463 51
+639 357
+641 59
+670 117
+742 288
+744 330
+749 300
+757 217
+787 237
+789 291
+793 284
+794 319
+799 171
+811 13
+845 51
+880 8
+882 46
+883 69
+909 1
+910 1
+912 78
+913 66
+916 43
+945 40
+952 78
+953 46
+980 33
+981 39
+982 7
+983 1
+984 66
+985 1
+986 69
+987 43
+17 258
+134 109
+331 54
+381 3
+394 74
+426 62
+496 50
+597 378
+684 58
+698 65
+710 134
+752 38
+758 164
+774 42
+778 207
+797 285
+812 29
+815 285
+820 303
+832 324
+888 32
+911 12
+918 68
+947 26
+949 9
+950 6
+951 76
+954 67
+958 44
+959 64
+961 41
+962 159
+965 150
+966 56
+968 47
+971 119
+978 355
+979 70
+988 77
+989 45
+26 1
+32 1
+37 349
+146 1
+183 114
+209 99
+350 1
+389 53
+432 73
+448 1
+488 61
+527 49
+561 48
+724 57
+777 129
+781 333
+823 129
+824 236
+834 280
+849 146
+853 278
+856 211
+858 344
+867 302
+868 121
+922 181
+924 1
+930 1
+931 127
+934 1
+936 1
+938 1
+941 1
+942 1
+943 1
+944 1
+991 194
+992 1
+993 246
+994 1
+995 127
+996 71
+998 346
+1000 1
+29 259
+74 234
+98 276
+104 355
+177 135
+194 239
+206 248
+434 251
+469 72
+503 201
+523 247
+571 235
+665 347
+738 226
+814 139
+818 115
+827 354
+828 359
+831 286
+854 315
+855 225
+859 371
+884 137
+885 331
+886 287
+890 147
+892 106
+894 290
+895 255
+896 149
+901 310
+902 348
+906 156
+932 279
+955 119
+956 234
+957 367
+963 189
+970 156
+972 214
+973 361
+974 114
+976 270
+20 241
+62 82
+72 264
+156 368
+185 282
+262 208
+285 282
+321 140
+355 248
+422 336
+502 252
+671 167
+705 172
+775 98
+786 128
+860 144
+863 101
+921 232
+923 298
+929 363
+935 351
+937 178
+940 205
+28 322
+30 107
+35 260
+58 257
+67 227
+144 257
+174 226
+249 373
+393 377
+542 190
+630 123
+889 80
+891 243
+897 170
+908 320
+179 342
+264 307
+312 351
+533 102
+559 326
+575 184
+608 182
+635 352
+78 294
+118 96
+345 353
+453 335
+151 262
+69
+drop 109 325
+drop 109 326
+drop 109 327
+drop 254 760
+drop 254 761
+drop 254 762
+drop 311 931
+drop 311 932
+drop 311 933
+drop 431 1291
+drop 431 1292
+drop 431 1293
+drop 646 1936
+drop 646 1937
+drop 646 1938
+drop 677 2029
+drop 677 2030
+drop 677 2031
+drop 678 2032
+drop 678 2033
+drop 678 2034
+drop 702 2104
+drop 702 2105
+drop 702 2106
+drop 711 2131
+drop 711 2132
+drop 711 2133
+drop 716 2146
+drop 716 2147
+drop 716 2148
+drop 722 2164
+drop 722 2165
+drop 722 2166
+drop 739 2215
+drop 739 2216
+drop 739 2217
+drop 741 2221
+drop 741 2222
+drop 741 2223
+drop 762 2284
+drop 762 2285
+drop 762 2286
+drop 802 2404
+drop 802 2405
+drop 802 2406
+drop 808 2422
+drop 808 2423
+drop 808 2424
+drop 847 2539
+drop 847 2540
+drop 847 2541
+drop 879 2635
+drop 879 2636
+drop 879 2637
+drop 881 2641
+drop 881 2642
+drop 881 2643
+drop 914 2740
+drop 914 2741
+drop 914 2742
+drop 915 2743
+drop 915 2744
+drop 915 2745
+drop 919 2755
+drop 919 2756
+drop 919 2757
+drop 948 2842
+drop 948 2843
+drop 948 2844
+228
+297 2
+349 2
+362 2
+463 2
+639 2
+641 2
+670 2
+742 2
+744 2
+749 2
+757 2
+787 2
+789 2
+794 2
+799 2
+811 2
+845 9
+880 2
+882 2
+883 2
+912 2
+913 2
+916 2
+945 2
+952 38
+953 45
+984 26
+986 68
+987 42
+17 237
+134 117
+331 55
+381 43
+394 75
+426 63
+496 51
+597 357
+684 59
+698 66
+710 90
+752 39
+758 168
+774 41
+778 199
+793 288
+797 300
+812 69
+815 284
+820 291
+832 319
+873 63
+876 75
+877 55
+888 33
+911 13
+918 67
+946 59
+947 27
+949 1
+950 46
+981 40
+982 8
+988 78
+989 44
+26 26
+32 38
+37 378
+146 6
+350 3
+389 54
+432 74
+448 29
+488 62
+527 50
+724 58
+777 134
+823 88
+824 207
+834 285
+849 155
+853 303
+856 258
+858 324
+867 285
+909 32
+910 18
+924 14
+930 22
+934 76
+936 41
+938 64
+941 67
+942 44
+943 52
+944 115
+951 77
+959 65
+980 34
+983 259
+985 359
+992 119
+994 234
+1000 270
+29 264
+74 232
+98 1
+104 1
+177 1
+183 1
+194 1
+427 53
+469 73
+503 211
+544 61
+561 49
+567 1
+571 1
+607 1
+631 48
+747 1
+782 57
+814 1
+818 114
+827 1
+828 341
+854 280
+855 236
+859 369
+885 349
+886 278
+890 176
+894 302
+895 1
+896 146
+902 344
+906 1
+932 1
+955 101
+956 248
+962 1
+965 1
+970 140
+971 127
+974 128
+976 314
+978 339
+979 1
+20 235
+72 310
+156 354
+185 276
+206 246
+209 115
+228 135
+285 286
+321 162
+354 239
+355 257
+490 70
+543 72
+671 151
+705 156
+781 331
+786 80
+831 279
+860 139
+863 92
+868 115
+921 200
+922 159
+923 290
+931 114
+991 150
+993 239
+995 137
+998 355
+35 282
+58 202
+67 241
+119 264
+144 219
+174 241
+220 282
+393 368
+434 246
+523 248
+542 144
+665 346
+738 219
+884 82
+889 102
+892 121
+901 277
+957 368
+963 194
+972 246
+973 346
+28 377
+99 227
+262 214
+264 260
+308 214
+312 367
+422 367
+504 361
+533 96
+536 363
+575 190
+775 106
+935 353
+937 189
+940 214
+30 98
+78 307
+118 112
+180 219
+249 351
+345 343
+630 98
+651 178
+669 184
+708 182
+908 336
+113 320
+151 294
+293 320
+559 373
+453 326
+69
+drop 297 889
+drop 297 890
+drop 297 891
+drop 349 1045
+drop 349 1046
+drop 349 1047
+drop 362 1084
+drop 362 1085
+drop 362 1086
+drop 463 1387
+drop 463 1388
+drop 463 1389
+drop 639 1915
+drop 639 1916
+drop 639 1917
+drop 641 1921
+drop 641 1922
+drop 641 1923
+drop 670 2008
+drop 670 2009
+drop 670 2010
+drop 742 2224
+drop 742 2225
+drop 742 2226
+drop 744 2230
+drop 744 2231
+drop 744 2232
+drop 749 2245
+drop 749 2246
+drop 749 2247
+drop 757 2269
+drop 757 2270
+drop 757 2271
+drop 787 2359
+drop 787 2360
+drop 787 2361
+drop 789 2365
+drop 789 2366
+drop 789 2367
+drop 794 2380
+drop 794 2381
+drop 794 2382
+drop 799 2395
+drop 799 2396
+drop 799 2397
+drop 811 2431
+drop 811 2432
+drop 811 2433
+drop 880 2638
+drop 880 2639
+drop 880 2640
+drop 882 2644
+drop 882 2645
+drop 882 2646
+drop 883 2647
+drop 883 2648
+drop 883 2649
+drop 912 2734
+drop 912 2735
+drop 912 2736
+drop 913 2737
+drop 913 2738
+drop 913 2739
+drop 916 2746
+drop 916 2747
+drop 916 2748
+drop 945 2833
+drop 945 2834
+drop 945 2835
+211
+17 2
+134 2
+331 2
+381 2
+394 2
+426 2
+496 2
+597 2
+684 2
+698 2
+710 2
+758 2
+778 2
+793 2
+797 2
+812 2
+820 2
+832 2
+873 22
+876 74
+877 54
+911 2
+946 58
+950 2
+981 2
+982 2
+988 2
+26 66
+32 78
+37 357
+146 46
+350 43
+389 53
+432 73
+448 69
+488 63
+527 51
+724 57
+752 40
+777 90
+815 288
+824 199
+834 300
+845 51
+849 171
+853 291
+856 237
+858 319
+867 284
+909 75
+910 59
+924 55
+930 1
+947 28
+951 78
+952 39
+953 46
+959 66
+984 27
+986 69
+987 43
+98 14
+104 26
+177 3
+183 6
+194 38
+427 52
+469 72
+503 258
+544 62
+561 50
+567 29
+571 9
+607 32
+747 18
+774 42
+782 56
+814 67
+827 64
+854 285
+855 207
+859 374
+885 378
+886 303
+888 32
+890 164
+894 285
+895 41
+896 155
+902 324
+906 76
+918 68
+932 44
+934 77
+938 65
+942 45
+949 60
+962 159
+965 235
+979 56
+20 241
+156 1
+185 1
+209 1
+228 1
+354 1
+471 1
+490 1
+543 71
+603 61
+631 49
+668 1
+671 141
+700 48
+705 1
+781 349
+818 1
+823 129
+831 1
+860 1
+868 114
+922 181
+923 302
+931 128
+944 113
+980 33
+983 1
+985 1
+991 1
+992 1
+993 221
+994 1
+998 1
+1000 1
+29 259
+35 276
+67 227
+74 234
+119 296
+139 355
+174 226
+206 239
+220 286
+250 115
+252 135
+285 279
+393 354
+434 248
+523 234
+542 139
+570 70
+665 355
+828 359
+892 115
+955 119
+956 247
+957 377
+963 150
+970 156
+971 119
+972 214
+973 361
+974 80
+976 270
+28 322
+72 264
+99 218
+262 205
+264 282
+308 252
+312 368
+318 282
+321 140
+355 248
+422 336
+500 246
+504 363
+575 144
+775 121
+786 102
+863 101
+901 267
+921 222
+937 194
+940 208
+995 127
+30 106
+58 257
+62 137
+78 260
+144 226
+180 257
+249 367
+536 322
+630 123
+651 189
+669 190
+738 243
+889 96
+908 320
+113 352
+151 307
+293 342
+533 112
+559 351
+740 184
+754 178
+784 182
+935 351
+345 353
+453 373
+69
+drop 17 49
+drop 17 50
+drop 17 51
+drop 134 400
+drop 134 401
+drop 134 402
+drop 331 991
+drop 331 992
+drop 331 993
+drop 381 1141
+drop 381 1142
+drop 381 1143
+drop 394 1180
+drop 394 1181
+drop 394 1182
+drop 426 1276
+drop 426 1277
+drop 426 1278
+drop 496 1486
+drop 496 1487
+drop 496 1488
+drop 597 1789
+drop 597 1790
+drop 597 1791
+drop 684 2050
+drop 684 2051
+drop 684 2052
+drop 698 2092
+drop 698 2093
+drop 698 2094
+drop 710 2128
+drop 710 2129
+drop 710 2130
+drop 758 2272
+drop 758 2273
+drop 758 2274
+drop 778 2332
+drop 778 2333
+drop 778 2334
+drop 793 2377
+drop 793 2378
+drop 793 2379
+drop 797 2389
+drop 797 2390
+drop 797 2391
+drop 812 2434
+drop 812 2435
+drop 812 2436
+drop 820 2458
+drop 820 2459
+drop 820 2460
+drop 832 2494
+drop 832 2495
+drop 832 2496
+drop 911 2731
+drop 911 2732
+drop 911 2733
+drop 950 2848
+drop 950 2849
+drop 950 2850
+drop 981 2941
+drop 981 2942
+drop 981 2943
+drop 982 2944
+drop 982 2945
+drop 982 2946
+drop 988 2962
+drop 988 2963
+drop 988 2964
+198
+26 2
+32 2
+37 2
+146 2
+350 2
+448 2
+488 2
+527 2
+752 2
+777 2
+815 2
+824 2
+834 2
+845 9
+849 2
+853 2
+856 2
+858 2
+909 2
+910 2
+924 2
+947 2
+951 38
+953 6
+959 65
+986 68
+987 3
+98 55
+104 66
+177 4
+183 7
+194 39
+503 237
+544 63
+561 51
+567 69
+571 1
+607 75
+747 59
+774 43
+854 300
+855 217
+859 330
+867 288
+873 63
+876 75
+877 55
+885 357
+886 291
+888 1
+890 168
+894 284
+896 171
+902 319
+918 67
+934 78
+938 64
+942 46
+946 59
+952 40
+984 28
+156 29
+185 26
+209 22
+228 18
+354 14
+389 54
+432 74
+471 3
+490 6
+603 62
+631 50
+668 38
+671 169
+705 64
+724 58
+781 378
+814 1
+818 44
+823 134
+831 76
+860 41
+895 42
+906 77
+923 285
+930 156
+932 45
+980 32
+983 52
+985 355
+991 255
+992 235
+994 139
+998 115
+1000 259
+29 264
+35 1
+74 1
+139 339
+206 1
+250 114
+252 1
+285 1
+393 1
+427 53
+469 73
+523 232
+542 144
+570 1
+632 1
+665 346
+680 61
+700 49
+745 1
+779 48
+782 57
+819 1
+828 1
+868 1
+892 113
+955 1
+962 1
+963 1
+965 241
+970 172
+971 101
+976 1
+20 226
+72 296
+220 279
+264 276
+282 115
+312 354
+318 286
+321 156
+355 234
+395 239
+418 135
+434 246
+500 239
+543 72
+575 190
+619 70
+775 115
+863 92
+901 315
+921 201
+922 159
+931 114
+937 150
+944 111
+995 114
+30 121
+58 248
+62 127
+67 241
+78 282
+144 219
+180 219
+249 368
+346 282
+367 140
+605 248
+613 246
+651 194
+669 157
+957 368
+972 246
+973 346
+974 128
+28 377
+79 137
+99 227
+115 257
+151 260
+262 214
+308 214
+422 367
+468 214
+504 361
+536 363
+559 367
+740 190
+754 189
+786 80
+935 353
+205 219
+345 343
+453 351
+630 98
+791 184
+817 178
+833 182
+889 102
+908 336
+113 320
+118 96
+179 320
+63
+drop 26 76
+drop 26 77
+drop 26 78
+drop 32 94
+drop 32 95
+drop 32 96
+drop 37 109
+drop 37 110
+drop 37 111
+drop 146 436
+drop 146 437
+drop 146 438
+drop 350 1048
+drop 350 1049
+drop 350 1050
+drop 448 1342
+drop 448 1343
+drop 448 1344
+drop 488 1462
+drop 488 1463
+drop 488 1464
+drop 527 1579
+drop 527 1580
+drop 527 1581
+drop 752 2254
+drop 752 2255
+drop 752 2256
+drop 777 2329
+drop 777 2330
+drop 777 2331
+drop 815 2443
+drop 815 2444
+drop 815 2445
+drop 824 2470
+drop 824 2471
+drop 824 2472
+drop 834 2500
+drop 834 2501
+drop 834 2502
+drop 849 2545
+drop 849 2546
+drop 849 2547
+drop 853 2557
+drop 853 2558
+drop 853 2559
+drop 856 2566
+drop 856 2567
+drop 856 2568
+drop 858 2572
+drop 858 2573
+drop 858 2574
+drop 909 2725
+drop 909 2726
+drop 909 2727
+drop 910 2728
+drop 910 2729
+drop 910 2730
+drop 924 2770
+drop 924 2771
+drop 924 2772
+drop 947 2839
+drop 947 2840
+drop 947 2841
+193
+98 2
+104 2
+503 2
+544 2
+561 2
+567 2
+607 2
+747 2
+774 2
+854 2
+855 2
+859 2
+867 2
+873 62
+876 74
+877 54
+885 2
+886 2
+890 2
+896 2
+902 2
+934 2
+942 2
+946 18
+952 2
+984 2
+156 69
+177 5
+183 8
+185 66
+194 40
+209 63
+228 19
+354 55
+389 53
+432 73
+471 43
+490 46
+603 61
+631 51
+668 78
+671 177
+724 59
+781 357
+823 90
+845 51
+894 288
+895 43
+906 78
+923 300
+932 46
+951 39
+953 7
+959 66
+980 75
+986 69
+987 4
+35 3
+74 18
+206 26
+252 14
+285 22
+393 32
+427 52
+469 72
+570 38
+571 29
+632 6
+680 60
+700 50
+705 65
+745 9
+782 58
+814 41
+818 45
+819 76
+827 1
+828 67
+831 77
+860 42
+868 44
+888 279
+918 68
+955 255
+962 70
+963 259
+976 235
+220 286
+250 1
+264 1
+282 1
+312 1
+321 1
+355 1
+395 1
+418 1
+499 1
+500 246
+543 71
+619 71
+704 1
+775 114
+779 49
+835 1
+851 57
+861 48
+901 280
+903 1
+921 211
+922 1
+930 172
+931 127
+937 1
+985 1
+991 220
+992 241
+994 1
+995 128
+998 113
+1000 264
+29 310
+30 115
+58 234
+62 119
+67 226
+78 276
+139 355
+249 354
+315 115
+318 282
+346 260
+367 156
+434 248
+459 135
+523 234
+537 239
+542 139
+605 257
+613 214
+651 150
+665 355
+669 147
+892 111
+957 367
+965 227
+970 142
+971 119
+972 251
+973 347
+974 80
+20 219
+28 368
+72 264
+79 127
+99 218
+115 202
+151 307
+262 252
+308 208
+386 282
+422 351
+454 140
+468 205
+504 346
+559 336
+575 144
+740 157
+754 194
+786 102
+836 248
+863 101
+944 133
+106 137
+144 257
+180 243
+453 373
+536 361
+630 106
+676 377
+717 322
+791 190
+817 189
+889 96
+908 320
+113 352
+118 112
+179 342
+755 98
+864 184
+897 178
+935 351
+16 170
+345 353
+66
+drop 98 292
+drop 98 293
+drop 98 294
+drop 104 310
+drop 104 311
+drop 104 312
+drop 503 1507
+drop 503 1508
+drop 503 1509
+drop 544 1630
+drop 544 1631
+drop 544 1632
+drop 561 1681
+drop 561 1682
+drop 561 1683
+drop 567 1699
+drop 567 1700
+drop 567 1701
+drop 607 1819
+drop 607 1820
+drop 607 1821
+drop 747 2239
+drop 747 2240
+drop 747 2241
+drop 774 2320
+drop 774 2321
+drop 774 2322
+drop 854 2560
+drop 854 2561
+drop 854 2562
+drop 855 2563
+drop 855 2564
+drop 855 2565
+drop 859 2575
+drop 859 2576
+drop 859 2577
+drop 867 2599
+drop 867 2600
+drop 867 2601
+drop 885 2653
+drop 885 2654
+drop 885 2655
+drop 886 2656
+drop 886 2657
+drop 886 2658
+drop 890 2668
+drop 890 2669
+drop 890 2670
+drop 896 2686
+drop 896 2687
+drop 896 2688
+drop 902 2704
+drop 902 2705
+drop 902 2706
+drop 934 2800
+drop 934 2801
+drop 934 2802
+drop 942 2824
+drop 942 2825
+drop 942 2826
+drop 952 2854
+drop 952 2855
+drop 952 2856
+drop 984 2950
+drop 984 2951
+drop 984 2952
+183
+156 2
+177 2
+183 2
+185 2
+194 2
+209 2
+354 2
+471 2
+490 2
+631 2
+668 2
+671 2
+724 2
+781 2
+823 2
+845 9
+894 2
+895 42
+906 77
+923 2
+932 45
+959 65
+980 2
+986 68
+35 43
+74 59
+206 66
+252 55
+285 63
+393 75
+570 78
+571 69
+632 46
+700 51
+705 64
+745 10
+782 59
+818 44
+831 76
+860 41
+873 63
+876 75
+877 55
+918 67
+946 19
+951 40
+953 8
+987 5
+228 20
+250 26
+264 14
+282 32
+312 3
+321 6
+355 22
+389 54
+395 38
+418 29
+432 74
+499 9
+603 62
+704 18
+779 50
+814 1
+819 1
+827 64
+828 1
+835 44
+851 58
+901 285
+903 355
+921 258
+922 234
+937 235
+985 139
+994 135
+30 1
+58 248
+62 1
+78 1
+139 346
+249 1
+315 114
+367 1
+427 53
+459 100
+469 73
+520 1
+523 232
+537 1
+542 144
+651 1
+665 339
+669 176
+680 61
+746 1
+775 1
+861 49
+888 1
+905 1
+927 48
+933 1
+955 1
+962 1
+963 1
+966 57
+971 101
+976 241
+28 354
+72 259
+79 114
+220 279
+318 276
+356 115
+386 286
+434 246
+454 156
+500 239
+504 347
+543 72
+575 190
+576 239
+619 70
+740 147
+754 150
+836 247
+863 92
+930 156
+931 119
+991 255
+992 226
+995 114
+998 115
+1000 296
+29 264
+67 219
+106 127
+144 248
+346 282
+420 282
+491 140
+536 346
+605 202
+613 246
+630 121
+676 368
+761 246
+791 157
+817 194
+892 113
+944 86
+957 368
+965 241
+970 172
+973 338
+974 128
+20 257
+99 227
+149 137
+151 260
+205 243
+262 214
+308 214
+422 367
+468 214
+559 367
+717 377
+721 363
+755 106
+759 361
+786 80
+864 190
+897 189
+935 353
+16 178
+345 343
+453 351
+889 102
+908 336
+57 170
+113 320
+118 96
+179 320
+54
+drop 156 466
+drop 156 467
+drop 156 468
+drop 177 529
+drop 177 530
+drop 177 531
+drop 183 547
+drop 183 548
+drop 183 549
+drop 185 553
+drop 185 554
+drop 185 555
+drop 194 580
+drop 194 581
+drop 194 582
+drop 209 625
+drop 209 626
+drop 209 627
+drop 354 1060
+drop 354 1061
+drop 354 1062
+drop 471 1411
+drop 471 1412
+drop 471 1413
+drop 490 1468
+drop 490 1469
+drop 490 1470
+drop 631 1891
+drop 631 1892
+drop 631 1893
+drop 668 2002
+drop 668 2003
+drop 668 2004
+drop 671 2011
+drop 671 2012
+drop 671 2013
+drop 724 2170
+drop 724 2171
+drop 724 2172
+drop 781 2341
+drop 781 2342
+drop 781 2343
+drop 823 2467
+drop 823 2468
+drop 823 2469
+drop 894 2680
+drop 894 2681
+drop 894 2682
+drop 923 2767
+drop 923 2768
+drop 923 2769
+drop 980 2938
+drop 980 2939
+drop 980 2940
+178
+35 2
+74 2
+206 2
+252 2
+285 2
+393 2
+570 2
+571 2
+632 2
+700 2
+782 18
+873 22
+876 32
+877 54
+951 2
+953 2
+987 2
+228 21
+250 66
+264 55
+282 33
+312 43
+321 46
+355 23
+389 53
+395 78
+418 69
+432 75
+499 51
+603 63
+704 19
+779 51
+845 10
+851 59
+895 43
+901 300
+906 78
+921 237
+932 46
+959 66
+986 69
+30 26
+62 18
+78 32
+249 29
+367 22
+427 52
+469 74
+520 38
+537 3
+651 9
+669 164
+680 62
+705 65
+745 11
+746 14
+775 6
+814 41
+818 45
+819 44
+827 1
+828 76
+831 77
+860 42
+861 50
+888 67
+905 52
+918 68
+933 255
+946 20
+955 114
+962 47
+963 375
+966 58
+28 1
+72 1
+79 115
+220 1
+315 128
+318 1
+356 1
+454 1
+500 1
+543 73
+576 246
+619 1
+740 176
+754 1
+776 61
+813 1
+903 1
+922 1
+927 49
+930 140
+931 1
+937 1
+960 48
+969 57
+979 1
+985 1
+991 220
+994 1
+995 127
+998 113
+29 259
+58 234
+106 119
+139 355
+144 246
+181 355
+346 276
+386 279
+404 115
+420 286
+434 251
+459 135
+491 162
+523 234
+536 347
+542 139
+613 214
+630 115
+650 72
+652 239
+675 70
+676 354
+791 147
+817 150
+892 111
+944 103
+957 377
+965 235
+970 156
+971 119
+974 80
+976 226
+20 248
+99 241
+119 264
+149 127
+151 282
+174 219
+262 252
+308 208
+422 368
+468 245
+470 282
+504 338
+559 351
+575 157
+717 322
+755 121
+759 346
+786 102
+836 248
+863 101
+864 144
+897 194
+16 189
+67 257
+115 257
+154 227
+170 137
+453 353
+721 361
+743 363
+889 96
+908 367
+973 376
+57 178
+113 336
+118 112
+179 342
+180 219
+935 343
+60 170
+345 329
+635 320
+39
+drop 35 103
+drop 35 104
+drop 35 105
+drop 74 220
+drop 74 221
+drop 74 222
+drop 206 616
+drop 206 617
+drop 206 618
+drop 252 754
+drop 252 755
+drop 252 756
+drop 285 853
+drop 285 854
+drop 285 855
+drop 393 1177
+drop 393 1178
+drop 393 1179
+drop 570 1708
+drop 570 1709
+drop 570 1710
+drop 571 1711
+drop 571 1712
+drop 571 1713
+drop 632 1894
+drop 632 1895
+drop 632 1896
+drop 700 2098
+drop 700 2099
+drop 700 2100
+drop 951 2851
+drop 951 2852
+drop 951 2853
+drop 953 2857
+drop 953 2858
+drop 953 2859
+drop 987 2959
+drop 987 2960
+drop 987 2961
+175
+228 2
+250 2
+264 2
+312 2
+321 2
+395 2
+418 2
+432 2
+499 2
+603 2
+779 9
+851 2
+895 42
+901 2
+906 38
+921 2
+932 45
+959 65
+986 68
+30 66
+62 59
+78 75
+249 69
+367 63
+469 75
+520 39
+537 43
+651 10
+669 168
+680 63
+705 64
+746 55
+775 46
+782 19
+818 44
+831 78
+860 41
+861 51
+873 1
+876 33
+877 55
+918 67
+946 21
+966 59
+28 18
+72 38
+220 26
+282 34
+318 9
+355 22
+356 32
+389 54
+454 14
+500 3
+543 74
+619 29
+704 20
+740 164
+745 12
+754 6
+776 62
+813 44
+814 1
+827 64
+828 77
+845 11
+888 1
+903 76
+922 375
+927 50
+931 70
+937 279
+969 58
+979 119
+985 114
+994 354
+29 1
+58 1
+79 1
+106 127
+139 1
+181 339
+346 1
+386 286
+404 114
+427 1
+459 1
+523 248
+542 1
+560 53
+630 113
+650 73
+652 1
+675 71
+676 368
+791 176
+817 1
+866 1
+899 61
+933 1
+944 89
+955 128
+960 49
+962 1
+963 340
+965 1
+968 48
+970 1
+971 101
+990 57
+20 246
+99 235
+119 259
+144 239
+149 114
+151 276
+315 80
+419 115
+420 282
+422 377
+470 260
+535 135
+575 147
+576 214
+688 239
+723 72
+755 115
+759 355
+761 251
+836 257
+863 92
+864 139
+897 150
+930 156
+991 255
+995 137
+998 111
+16 194
+67 202
+115 219
+147 264
+154 241
+170 82
+484 282
+491 140
+536 346
+613 208
+721 346
+892 133
+908 368
+956 248
+957 322
+973 333
+974 102
+976 241
+992 219
+57 189
+113 367
+174 243
+246 227
+262 214
+468 214
+504 376
+559 367
+717 363
+743 361
+786 96
+60 184
+453 351
+635 336
+889 112
+107 170
+179 320
+935 353
+345 343
+39
+drop 228 682
+drop 228 683
+drop 228 684
+drop 250 748
+drop 250 749
+drop 250 750
+drop 264 790
+drop 264 791
+drop 264 792
+drop 312 934
+drop 312 935
+drop 312 936
+drop 321 961
+drop 321 962
+drop 321 963
+drop 395 1183
+drop 395 1184
+drop 395 1185
+drop 418 1252
+drop 418 1253
+drop 418 1254
+drop 432 1294
+drop 432 1295
+drop 432 1296
+drop 499 1495
+drop 499 1496
+drop 499 1497
+drop 603 1807
+drop 603 1808
+drop 603 1809
+drop 851 2551
+drop 851 2552
+drop 851 2553
+drop 901 2701
+drop 901 2702
+drop 901 2703
+drop 921 2761
+drop 921 2762
+drop 921 2763
+169
+30 2
+62 2
+78 2
+249 2
+367 2
+469 74
+537 2
+669 2
+680 62
+746 2
+775 2
+831 2
+861 2
+877 54
+946 2
+966 18
+28 19
+72 78
+220 66
+318 51
+355 63
+356 75
+389 53
+454 55
+500 43
+520 40
+543 73
+619 69
+704 21
+740 168
+745 13
+754 46
+776 61
+779 1
+828 78
+895 43
+906 39
+927 51
+932 46
+959 66
+969 59
+986 69
+29 26
+58 3
+79 29
+139 14
+346 18
+427 22
+459 38
+542 6
+560 52
+650 72
+651 9
+652 32
+705 65
+782 20
+791 164
+813 45
+814 67
+817 41
+818 1
+827 1
+845 12
+860 42
+866 76
+873 276
+876 32
+888 255
+899 60
+903 77
+918 68
+933 115
+944 109
+960 50
+962 359
+965 52
+970 56
+990 58
+99 1
+119 1
+144 1
+149 1
+151 282
+282 35
+404 115
+419 99
+535 1
+575 176
+688 246
+723 71
+755 113
+759 1
+864 1
+897 1
+920 1
+922 1
+930 1
+931 1
+937 1
+968 49
+979 1
+985 128
+991 220
+994 1
+999 1
+16 150
+20 248
+106 119
+147 259
+154 235
+181 355
+386 279
+420 286
+484 292
+491 156
+523 234
+536 355
+582 135
+630 111
+675 70
+676 354
+713 239
+721 361
+908 367
+955 80
+956 247
+963 375
+971 119
+973 331
+976 227
+57 194
+113 336
+186 264
+246 218
+262 246
+315 102
+422 368
+434 246
+468 245
+470 282
+504 333
+559 351
+576 252
+596 140
+743 363
+836 248
+863 101
+892 86
+995 127
+998 133
+60 190
+67 257
+115 226
+170 137
+180 257
+308 214
+453 373
+635 320
+717 322
+795 377
+974 96
+992 243
+107 178
+179 352
+786 112
+935 351
+110 170
+210 320
+345 353
+36
+drop 30 88
+drop 30 89
+drop 30 90
+drop 62 184
+drop 62 185
+drop 62 186
+drop 78 232
+drop 78 233
+drop 78 234
+drop 249 745
+drop 249 746
+drop 249 747
+drop 367 1099
+drop 367 1100
+drop 367 1101
+drop 537 1609
+drop 537 1610
+drop 537 1611
+drop 669 2005
+drop 669 2006
+drop 669 2007
+drop 746 2236
+drop 746 2237
+drop 746 2238
+drop 775 2323
+drop 775 2324
+drop 775 2325
+drop 831 2491
+drop 831 2492
+drop 831 2493
+drop 861 2581
+drop 861 2582
+drop 861 2583
+drop 946 2836
+drop 946 2837
+drop 946 2838
+165
+72 2
+220 2
+318 2
+355 2
+356 2
+454 2
+500 2
+520 2
+619 2
+704 2
+740 2
+745 2
+754 2
+828 77
+895 3
+927 50
+932 45
+959 65
+969 2
+986 68
+29 66
+58 4
+79 69
+139 55
+346 59
+427 63
+459 78
+469 75
+542 46
+651 51
+652 75
+680 63
+705 64
+782 21
+791 168
+813 44
+845 13
+860 43
+876 33
+877 55
+903 76
+906 40
+918 67
+944 117
+960 49
+966 1
+990 59
+28 20
+99 29
+119 22
+144 38
+149 14
+282 36
+389 54
+535 3
+543 74
+575 164
+759 26
+776 62
+779 6
+814 1
+817 42
+818 32
+819 1
+827 9
+864 41
+866 1
+897 64
+920 159
+922 52
+930 60
+931 70
+937 114
+968 48
+979 139
+994 279
+999 375
+16 1
+106 1
+147 1
+154 1
+181 1
+386 286
+404 1
+491 1
+523 1
+536 346
+560 53
+582 1
+650 73
+675 71
+676 1
+713 1
+873 1
+888 1
+899 61
+933 114
+962 1
+963 340
+970 1
+971 127
+973 349
+20 234
+57 150
+151 276
+186 259
+262 239
+326 355
+419 115
+420 282
+422 354
+434 248
+470 260
+504 331
+596 156
+614 135
+688 214
+723 72
+755 115
+792 239
+836 247
+863 119
+892 103
+985 114
+991 255
+995 114
+60 157
+67 248
+115 241
+170 127
+180 202
+308 252
+319 264
+484 282
+630 113
+721 346
+748 140
+761 246
+795 368
+908 368
+955 128
+976 241
+998 86
+107 189
+113 367
+208 137
+246 227
+315 80
+468 214
+559 367
+613 214
+717 377
+743 361
+857 363
+935 373
+110 184
+174 219
+210 336
+345 351
+453 326
+635 352
+974 102
+118 96
+142 170
+293 320
+42
+drop 72 214
+drop 72 215
+drop 72 216
+drop 220 658
+drop 220 659
+drop 220 660
+drop 318 952
+drop 318 953
+drop 318 954
+drop 355 1063
+drop 355 1064
+drop 355 1065
+drop 356 1066
+drop 356 1067
+drop 356 1068
+drop 454 1360
+drop 454 1361
+drop 454 1362
+drop 500 1498
+drop 500 1499
+drop 500 1500
+drop 520 1558
+drop 520 1559
+drop 520 1560
+drop 619 1855
+drop 619 1856
+drop 619 1857
+drop 704 2110
+drop 704 2111
+drop 704 2112
+drop 740 2218
+drop 740 2219
+drop 740 2220
+drop 745 2233
+drop 745 2234
+drop 745 2235
+drop 754 2260
+drop 754 2261
+drop 754 2262
+drop 969 2905
+drop 969 2906
+drop 969 2907
+157
+29 2
+79 2
+139 2
+346 2
+427 2
+459 2
+469 2
+542 2
+651 2
+652 74
+680 62
+782 2
+791 2
+845 2
+860 2
+877 54
+906 2
+944 2
+990 58
+28 21
+58 5
+99 69
+119 63
+144 78
+149 55
+282 37
+389 53
+535 43
+543 73
+575 168
+759 66
+776 61
+779 46
+817 43
+818 75
+827 51
+828 78
+895 4
+927 51
+932 46
+959 66
+986 69
+16 3
+106 26
+147 6
+154 14
+181 22
+404 38
+491 32
+523 29
+560 52
+582 9
+650 72
+676 18
+705 65
+713 41
+813 45
+814 67
+819 44
+864 42
+866 64
+873 76
+876 32
+888 70
+899 60
+903 77
+918 68
+960 50
+962 239
+966 47
+970 255
+973 378
+20 1
+57 1
+151 1
+186 1
+262 221
+326 1
+419 1
+422 1
+504 349
+596 1
+598 1
+614 1
+723 71
+755 114
+792 246
+863 1
+892 89
+920 1
+930 1
+931 71
+933 1
+937 128
+968 49
+979 1
+985 127
+991 220
+994 1
+999 1
+60 147
+67 234
+115 235
+170 119
+319 259
+383 355
+386 279
+420 276
+434 246
+457 115
+484 286
+536 355
+630 115
+653 135
+721 361
+748 156
+761 214
+795 354
+908 377
+955 80
+963 375
+971 137
+976 227
+998 103
+107 194
+113 368
+208 82
+246 218
+315 102
+365 264
+468 252
+470 282
+529 282
+559 336
+613 245
+688 205
+717 322
+743 363
+790 140
+836 248
+907 246
+110 190
+174 257
+180 257
+210 320
+345 367
+857 322
+940 214
+974 96
+118 112
+142 184
+205 219
+293 352
+935 351
+145 170
+453 373
+606 320
+45
+drop 29 85
+drop 29 86
+drop 29 87
+drop 79 235
+drop 79 236
+drop 79 237
+drop 139 415
+drop 139 416
+drop 139 417
+drop 346 1036
+drop 346 1037
+drop 346 1038
+drop 427 1279
+drop 427 1280
+drop 427 1281
+drop 459 1375
+drop 459 1376
+drop 459 1377
+drop 469 1405
+drop 469 1406
+drop 469 1407
+drop 542 1624
+drop 542 1625
+drop 542 1626
+drop 651 1951
+drop 651 1952
+drop 651 1953
+drop 782 2344
+drop 782 2345
+drop 782 2346
+drop 791 2371
+drop 791 2372
+drop 791 2373
+drop 845 2533
+drop 845 2534
+drop 845 2535
+drop 860 2578
+drop 860 2579
+drop 860 2580
+drop 906 2716
+drop 906 2717
+drop 906 2718
+drop 944 2830
+drop 944 2831
+drop 944 2832
+146
+28 2
+58 2
+99 2
+119 2
+144 2
+149 2
+282 2
+535 2
+575 2
+759 2
+779 2
+817 3
+818 2
+827 2
+828 77
+927 9
+932 45
+959 65
+986 68
+16 4
+106 66
+147 46
+154 55
+181 63
+404 78
+491 75
+523 69
+582 10
+652 75
+676 59
+680 63
+705 64
+813 44
+864 43
+876 1
+877 55
+895 5
+903 76
+918 67
+960 51
+973 357
+990 59
+20 14
+57 18
+151 6
+186 26
+326 3
+389 54
+419 29
+422 38
+504 378
+543 74
+596 22
+598 9
+614 67
+713 42
+776 62
+819 1
+863 76
+866 1
+892 109
+920 41
+930 354
+933 234
+968 50
+979 276
+994 235
+999 135
+60 176
+67 248
+115 241
+170 1
+319 1
+383 1
+386 1
+420 282
+457 1
+536 339
+560 1
+630 114
+643 53
+650 73
+653 108
+748 1
+755 1
+795 368
+888 1
+899 61
+949 1
+962 1
+963 1
+966 1
+970 1
+995 128
+998 89
+107 150
+113 377
+262 239
+365 259
+434 239
+470 286
+484 279
+529 292
+541 115
+675 72
+683 135
+723 70
+790 156
+792 248
+836 247
+907 214
+937 80
+985 114
+991 255
+110 144
+174 248
+180 202
+345 368
+398 264
+721 346
+761 208
+869 140
+908 322
+940 252
+955 102
+971 127
+972 246
+976 241
+142 190
+205 226
+208 137
+246 227
+315 96
+559 367
+613 224
+688 214
+717 363
+743 361
+935 367
+145 184
+210 336
+218 219
+453 351
+606 352
+974 112
+188 170
+39
+drop 28 82
+drop 28 83
+drop 28 84
+drop 58 172
+drop 58 173
+drop 58 174
+drop 99 295
+drop 99 296
+drop 99 297
+drop 119 355
+drop 119 356
+drop 119 357
+drop 144 430
+drop 144 431
+drop 144 432
+drop 149 445
+drop 149 446
+drop 149 447
+drop 282 844
+drop 282 845
+drop 282 846
+drop 535 1603
+drop 535 1604
+drop 535 1605
+drop 575 1723
+drop 575 1724
+drop 575 1725
+drop 759 2275
+drop 759 2276
+drop 759 2277
+drop 779 2335
+drop 779 2336
+drop 779 2337
+drop 818 2452
+drop 818 2453
+drop 818 2454
+drop 827 2479
+drop 827 2480
+drop 827 2481
+141
+106 2
+147 2
+154 2
+181 2
+404 2
+491 2
+523 2
+652 32
+676 2
+680 62
+864 2
+877 14
+895 2
+960 2
+973 2
+990 58
+16 5
+20 1
+57 59
+151 46
+186 66
+326 43
+389 55
+419 69
+422 78
+504 357
+543 75
+596 63
+598 51
+713 43
+776 61
+817 4
+828 78
+892 117
+927 1
+932 46
+959 66
+968 51
+986 69
+60 164
+170 38
+319 3
+383 18
+386 29
+457 6
+560 26
+582 9
+614 68
+643 54
+650 74
+705 65
+748 22
+755 32
+813 45
+814 1
+819 76
+835 1
+863 77
+866 41
+876 64
+888 114
+899 60
+920 42
+949 119
+962 234
+963 279
+966 239
+970 56
+998 109
+107 1
+262 246
+365 1
+434 221
+484 286
+541 1
+630 115
+675 73
+682 53
+683 1
+706 1
+723 1
+790 1
+930 1
+933 232
+964 1
+979 1
+985 128
+991 1
+994 1
+999 100
+67 234
+110 139
+115 235
+174 246
+345 354
+398 259
+420 276
+428 355
+470 282
+581 115
+653 135
+721 355
+753 72
+788 70
+792 247
+795 367
+869 156
+971 114
+972 214
+976 226
+995 80
+113 368
+142 157
+205 219
+208 127
+246 241
+417 264
+529 282
+559 351
+613 220
+688 208
+743 346
+907 252
+935 336
+937 102
+145 190
+180 257
+210 320
+218 257
+284 227
+292 137
+453 373
+717 361
+857 377
+871 322
+955 96
+188 184
+258 219
+315 112
+179 320
+212 170
+36
+drop 106 316
+drop 106 317
+drop 106 318
+drop 147 439
+drop 147 440
+drop 147 441
+drop 154 460
+drop 154 461
+drop 154 462
+drop 181 541
+drop 181 542
+drop 181 543
+drop 404 1210
+drop 404 1211
+drop 404 1212
+drop 491 1471
+drop 491 1472
+drop 491 1473
+drop 523 1567
+drop 523 1568
+drop 523 1569
+drop 676 2026
+drop 676 2027
+drop 676 2028
+drop 864 2590
+drop 864 2591
+drop 864 2592
+drop 895 2683
+drop 895 2684
+drop 895 2685
+drop 960 2878
+drop 960 2879
+drop 960 2880
+drop 973 2917
+drop 973 2918
+drop 973 2919
+141
+16 2
+57 2
+151 2
+186 2
+326 2
+389 2
+419 2
+422 2
+504 2
+543 2
+596 2
+598 2
+713 42
+828 38
+892 2
+932 6
+959 65
+968 9
+986 68
+60 168
+170 39
+319 43
+383 59
+386 69
+457 7
+560 66
+582 1
+614 67
+643 55
+650 75
+652 75
+680 63
+705 64
+748 63
+755 1
+813 46
+817 5
+863 78
+877 55
+920 41
+990 59
+998 117
+20 3
+107 26
+365 29
+541 22
+675 74
+682 54
+683 6
+706 14
+723 38
+776 62
+790 18
+814 64
+819 77
+835 41
+868 45
+873 1
+918 1
+927 44
+930 375
+964 270
+979 355
+991 70
+994 56
+67 1
+110 1
+115 1
+345 1
+398 1
+420 1
+428 346
+581 1
+630 114
+653 1
+721 339
+753 73
+756 53
+788 71
+796 1
+869 1
+888 1
+899 61
+949 1
+962 248
+963 1
+966 1
+970 57
+971 128
+113 354
+142 147
+174 239
+208 114
+246 235
+262 248
+417 259
+434 239
+470 276
+484 279
+529 286
+613 255
+707 135
+712 115
+743 347
+816 72
+933 234
+985 80
+145 144
+180 248
+218 219
+284 241
+292 127
+531 264
+579 282
+717 346
+792 248
+795 368
+857 368
+972 246
+976 241
+995 102
+188 190
+205 226
+258 243
+294 257
+296 137
+308 214
+392 227
+559 367
+688 214
+871 377
+908 363
+929 361
+935 367
+937 96
+179 336
+210 352
+212 178
+453 351
+955 112
+242 170
+39
+drop 16 46
+drop 16 47
+drop 16 48
+drop 57 169
+drop 57 170
+drop 57 171
+drop 151 451
+drop 151 452
+drop 151 453
+drop 186 556
+drop 186 557
+drop 186 558
+drop 326 976
+drop 326 977
+drop 326 978
+drop 389 1165
+drop 389 1166
+drop 389 1167
+drop 419 1255
+drop 419 1256
+drop 419 1257
+drop 422 1264
+drop 422 1265
+drop 422 1266
+drop 504 1510
+drop 504 1511
+drop 504 1512
+drop 543 1627
+drop 543 1628
+drop 543 1629
+drop 596 1786
+drop 596 1787
+drop 596 1788
+drop 598 1792
+drop 598 1793
+drop 598 1794
+drop 892 2674
+drop 892 2675
+drop 892 2676
+138
+60 2
+319 2
+383 2
+386 2
+560 2
+643 2
+650 2
+652 74
+680 2
+748 22
+813 2
+817 2
+863 2
+877 14
+990 18
+998 2
+20 43
+107 66
+170 40
+365 69
+457 8
+541 23
+675 73
+682 55
+683 46
+706 1
+713 43
+723 78
+776 63
+790 1
+819 78
+828 39
+868 46
+932 7
+959 66
+968 51
+986 69
+67 32
+110 9
+115 38
+345 22
+398 6
+420 3
+581 26
+582 29
+614 68
+653 76
+705 65
+753 72
+755 64
+756 54
+796 44
+835 42
+866 1
+869 67
+873 135
+888 156
+899 62
+903 77
+918 270
+927 45
+949 276
+963 279
+966 115
+970 58
+113 1
+142 176
+174 1
+208 1
+246 1
+417 1
+434 246
+470 282
+484 286
+613 1
+630 115
+707 100
+712 113
+816 71
+822 53
+852 1
+930 1
+933 1
+964 314
+979 1
+991 1
+994 57
+145 139
+180 234
+262 246
+284 235
+292 119
+428 355
+506 355
+529 282
+531 259
+579 292
+717 361
+788 70
+792 257
+795 354
+826 239
+857 367
+928 115
+962 247
+971 114
+972 214
+976 227
+188 157
+205 241
+294 219
+296 127
+308 205
+392 218
+558 264
+559 351
+688 208
+743 346
+871 368
+929 363
+935 336
+985 128
+179 320
+212 189
+218 226
+421 137
+453 353
+468 214
+605 257
+908 322
+957 377
+995 80
+242 178
+258 219
+937 102
+118 96
+210 320
+295 170
+36
+drop 60 178
+drop 60 179
+drop 60 180
+drop 319 955
+drop 319 956
+drop 319 957
+drop 383 1147
+drop 383 1148
+drop 383 1149
+drop 386 1156
+drop 386 1157
+drop 386 1158
+drop 560 1678
+drop 560 1679
+drop 560 1680
+drop 643 1927
+drop 643 1928
+drop 643 1929
+drop 650 1948
+drop 650 1949
+drop 650 1950
+drop 680 2038
+drop 680 2039
+drop 680 2040
+drop 813 2437
+drop 813 2438
+drop 813 2439
+drop 817 2449
+drop 817 2450
+drop 817 2451
+drop 863 2587
+drop 863 2588
+drop 863 2589
+drop 998 2992
+drop 998 2993
+drop 998 2994
+139
+20 2
+107 2
+170 2
+365 2
+457 2
+682 2
+683 2
+713 42
+723 2
+776 2
+819 77
+868 6
+959 26
+968 2
+986 68
+67 75
+110 51
+115 78
+345 63
+398 7
+420 43
+581 27
+582 69
+614 67
+652 75
+705 66
+748 23
+756 55
+828 40
+835 41
+877 55
+899 63
+903 76
+927 46
+932 8
+970 59
+990 59
+113 6
+142 164
+174 3
+208 29
+246 14
+417 9
+541 24
+613 22
+653 1
+675 74
+706 26
+755 65
+790 18
+796 45
+814 1
+822 54
+852 38
+866 32
+869 1
+920 1
+930 44
+933 359
+979 135
+991 114
+994 58
+145 1
+180 1
+284 1
+292 1
+428 1
+506 346
+531 1
+630 1
+753 73
+788 1
+795 1
+826 1
+873 108
+888 1
+898 53
+905 1
+918 1
+928 114
+949 1
+963 1
+966 99
+971 127
+188 147
+205 235
+262 239
+296 119
+434 248
+470 276
+484 279
+529 286
+536 355
+558 259
+707 135
+712 115
+743 347
+816 72
+862 239
+865 70
+871 354
+964 270
+985 114
+212 194
+218 241
+421 127
+468 246
+579 282
+605 248
+640 264
+717 346
+792 202
+836 248
+857 368
+957 368
+972 208
+976 241
+995 128
+242 189
+258 226
+294 257
+308 214
+392 227
+462 137
+502 214
+559 367
+908 377
+929 361
+935 367
+937 80
+118 102
+179 336
+210 342
+295 184
+330 219
+453 351
+190 96
+293 320
+310 170
+30
+drop 20 58
+drop 20 59
+drop 20 60
+drop 107 319
+drop 107 320
+drop 107 321
+drop 170 508
+drop 170 509
+drop 170 510
+drop 365 1093
+drop 365 1094
+drop 365 1095
+drop 457 1369
+drop 457 1370
+drop 457 1371
+drop 682 2044
+drop 682 2045
+drop 682 2046
+drop 683 2047
+drop 683 2048
+drop 683 2049
+drop 723 2167
+drop 723 2168
+drop 723 2169
+drop 776 2326
+drop 776 2327
+drop 776 2328
+drop 968 2902
+drop 968 2903
+drop 968 2904
+139
+67 2
+110 2
+115 2
+345 2
+420 2
+582 2
+652 32
+705 2
+756 2
+828 2
+877 54
+899 22
+927 2
+932 2
+970 2
+990 58
+113 46
+142 168
+174 43
+208 69
+246 55
+398 8
+417 51
+541 25
+581 28
+613 1
+675 75
+706 66
+713 43
+755 66
+790 59
+796 46
+819 78
+822 53
+852 78
+866 1
+868 7
+959 27
+986 69
+994 57
+145 26
+180 9
+284 38
+292 29
+428 18
+531 14
+614 68
+630 6
+653 3
+748 22
+753 74
+788 44
+795 67
+814 76
+826 41
+835 42
+869 64
+876 65
+888 56
+898 52
+903 77
+905 259
+918 119
+920 359
+930 45
+949 135
+963 375
+188 176
+205 1
+262 1
+296 127
+470 1
+484 1
+536 1
+558 264
+707 108
+712 1
+816 73
+862 246
+865 1
+871 1
+922 1
+928 1
+933 341
+964 1
+979 100
+985 115
+991 128
+212 150
+218 235
+421 114
+434 234
+468 248
+506 355
+529 279
+538 355
+579 276
+605 257
+640 310
+717 361
+836 247
+857 354
+873 104
+900 72
+925 70
+957 367
+966 115
+971 137
+976 226
+993 239
+995 80
+242 194
+258 219
+294 202
+308 246
+392 241
+462 82
+502 252
+559 336
+617 282
+674 264
+743 346
+908 368
+929 363
+935 351
+937 102
+118 96
+179 320
+295 190
+330 257
+453 353
+501 227
+688 214
+190 112
+293 352
+310 184
+358 219
+210 320
+332 170
+36
+drop 67 199
+drop 67 200
+drop 67 201
+drop 110 328
+drop 110 329
+drop 110 330
+drop 115 343
+drop 115 344
+drop 115 345
+drop 345 1033
+drop 345 1034
+drop 345 1035
+drop 420 1258
+drop 420 1259
+drop 420 1260
+drop 582 1744
+drop 582 1745
+drop 582 1746
+drop 705 2113
+drop 705 2114
+drop 705 2115
+drop 756 2266
+drop 756 2267
+drop 756 2268
+drop 828 2482
+drop 828 2483
+drop 828 2484
+drop 927 2779
+drop 927 2780
+drop 927 2781
+drop 932 2794
+drop 932 2795
+drop 932 2796
+drop 970 2908
+drop 970 2909
+drop 970 2910
+134
+113 2
+142 2
+174 2
+208 2
+246 2
+398 2
+417 2
+541 2
+581 2
+675 2
+706 2
+713 3
+755 65
+790 2
+796 6
+819 2
+852 77
+986 68
+145 66
+180 51
+284 78
+292 69
+428 59
+531 55
+614 67
+630 7
+652 75
+653 4
+748 63
+753 75
+835 43
+868 8
+876 64
+877 55
+899 1
+903 76
+930 46
+959 28
+990 59
+188 164
+205 26
+262 6
+470 3
+484 32
+536 18
+613 29
+712 9
+788 45
+795 1
+814 1
+816 74
+822 54
+826 42
+865 38
+866 14
+869 1
+871 44
+922 41
+928 355
+964 375
+994 58
+212 1
+218 1
+421 1
+434 1
+506 339
+529 1
+538 346
+579 1
+857 1
+888 57
+898 53
+900 73
+905 1
+918 1
+920 1
+925 1
+939 1
+949 1
+963 340
+966 1
+985 114
+993 1
+242 150
+296 119
+308 239
+392 235
+468 234
+558 259
+617 276
+674 310
+707 135
+743 361
+821 135
+862 248
+908 354
+931 72
+933 359
+977 70
+991 114
+295 157
+330 248
+501 241
+605 219
+633 282
+640 277
+688 246
+717 363
+836 248
+873 108
+957 368
+971 127
+976 241
+995 128
+1000 264
+258 226
+294 257
+310 190
+358 243
+462 137
+502 214
+526 227
+559 367
+761 214
+929 322
+935 367
+937 80
+118 102
+179 336
+210 352
+332 184
+453 351
+190 96
+361 170
+39
+drop 113 337
+drop 113 338
+drop 113 339
+drop 142 424
+drop 142 425
+drop 142 426
+drop 174 520
+drop 174 521
+drop 174 522
+drop 208 622
+drop 208 623
+drop 208 624
+drop 246 736
+drop 246 737
+drop 246 738
+drop 398 1192
+drop 398 1193
+drop 398 1194
+drop 417 1249
+drop 417 1250
+drop 417 1251
+drop 541 1621
+drop 541 1622
+drop 541 1623
+drop 581 1741
+drop 581 1742
+drop 581 1743
+drop 675 2023
+drop 675 2024
+drop 675 2025
+drop 706 2116
+drop 706 2117
+drop 706 2118
+drop 790 2368
+drop 790 2369
+drop 790 2370
+drop 819 2455
+drop 819 2456
+drop 819 2457
+131
+145 2
+180 2
+284 2
+292 2
+428 2
+531 2
+652 2
+748 2
+753 74
+835 2
+868 2
+877 54
+930 2
+959 2
+990 58
+188 168
+205 66
+262 46
+470 43
+484 75
+536 59
+613 69
+630 8
+653 5
+712 51
+713 4
+755 66
+788 46
+796 7
+816 73
+822 53
+826 43
+852 78
+865 78
+866 55
+986 69
+994 57
+212 9
+218 38
+421 29
+434 6
+529 22
+579 32
+614 68
+795 3
+814 14
+857 18
+869 26
+871 45
+876 65
+888 56
+897 1
+898 52
+899 41
+900 72
+903 77
+905 76
+918 44
+920 67
+922 42
+925 47
+939 270
+949 119
+966 255
+993 115
+242 1
+296 101
+308 1
+392 1
+468 1
+558 1
+617 1
+707 1
+821 100
+908 1
+928 1
+931 71
+933 1
+943 1
+964 1
+977 1
+985 1
+991 115
+295 147
+330 234
+501 235
+506 355
+538 355
+633 276
+688 239
+836 246
+862 257
+873 135
+957 354
+963 375
+971 114
+976 226
+995 114
+996 70
+1000 259
+258 219
+294 219
+310 144
+462 127
+502 246
+526 241
+559 368
+640 267
+674 264
+681 282
+743 346
+761 252
+935 351
+937 128
+956 248
+118 80
+179 367
+332 190
+453 353
+492 137
+605 243
+649 227
+717 361
+751 257
+929 377
+972 214
+190 102
+361 178
+210 320
+222 96
+366 170
+36
+drop 145 433
+drop 145 434
+drop 145 435
+drop 180 538
+drop 180 539
+drop 180 540
+drop 284 850
+drop 284 851
+drop 284 852
+drop 292 874
+drop 292 875
+drop 292 876
+drop 428 1282
+drop 428 1283
+drop 428 1284
+drop 531 1591
+drop 531 1592
+drop 531 1593
+drop 652 1954
+drop 652 1955
+drop 652 1956
+drop 748 2242
+drop 748 2243
+drop 748 2244
+drop 835 2503
+drop 835 2504
+drop 835 2505
+drop 868 2602
+drop 868 2603
+drop 868 2604
+drop 930 2788
+drop 930 2789
+drop 930 2790
+drop 959 2875
+drop 959 2876
+drop 959 2877
+130
+188 2
+205 2
+262 2
+470 2
+484 2
+536 2
+613 2
+630 2
+653 2
+712 2
+755 26
+788 45
+826 42
+852 2
+865 77
+866 2
+986 29
+212 51
+218 78
+421 30
+434 46
+529 63
+579 75
+614 69
+713 5
+753 75
+795 43
+796 8
+814 55
+857 59
+869 27
+871 44
+876 66
+877 55
+903 76
+922 41
+990 59
+242 14
+308 6
+392 3
+468 22
+558 29
+617 26
+707 18
+816 74
+822 54
+897 9
+899 1
+905 1
+908 32
+918 1
+920 68
+928 38
+933 64
+938 65
+941 1
+943 359
+964 276
+977 375
+985 150
+994 58
+295 176
+330 1
+501 1
+506 1
+538 346
+633 282
+688 1
+873 1
+888 1
+898 53
+900 73
+925 1
+939 1
+949 1
+957 1
+963 340
+965 1
+966 1
+971 1
+991 1
+993 114
+995 127
+996 1
+1000 1
+296 119
+310 139
+462 119
+502 239
+526 235
+559 354
+578 355
+640 315
+674 259
+681 286
+743 361
+821 135
+836 248
+931 72
+937 114
+956 234
+118 128
+179 368
+332 144
+492 127
+649 241
+709 282
+717 363
+751 248
+862 202
+929 368
+962 248
+972 246
+976 241
+190 80
+258 257
+294 226
+361 189
+505 137
+576 214
+666 227
+935 367
+210 336
+222 102
+358 219
+366 178
+453 351
+241 96
+293 320
+390 170
+36
+drop 188 562
+drop 188 563
+drop 188 564
+drop 205 613
+drop 205 614
+drop 205 615
+drop 262 784
+drop 262 785
+drop 262 786
+drop 470 1408
+drop 470 1409
+drop 470 1410
+drop 484 1450
+drop 484 1451
+drop 484 1452
+drop 536 1606
+drop 536 1607
+drop 536 1608
+drop 613 1837
+drop 613 1838
+drop 613 1839
+drop 630 1888
+drop 630 1889
+drop 630 1890
+drop 653 1957
+drop 653 1958
+drop 653 1959
+drop 712 2134
+drop 712 2135
+drop 712 2136
+drop 852 2554
+drop 852 2555
+drop 852 2556
+drop 866 2596
+drop 866 2597
+drop 866 2598
+125
+212 2
+218 2
+434 2
+529 2
+579 2
+614 2
+713 2
+753 32
+795 2
+796 2
+814 2
+857 2
+876 2
+877 54
+990 58
+242 55
+308 46
+392 43
+421 31
+468 63
+558 69
+617 66
+707 59
+755 27
+788 46
+816 75
+822 53
+826 43
+865 78
+869 28
+897 51
+908 33
+920 69
+928 78
+938 66
+986 30
+994 57
+295 164
+330 22
+501 6
+506 38
+688 29
+871 45
+873 18
+888 9
+898 52
+899 3
+900 74
+903 77
+905 14
+918 32
+922 42
+925 26
+933 65
+936 1
+939 44
+941 76
+949 67
+954 68
+957 64
+965 276
+966 52
+971 56
+991 234
+996 70
+1000 114
+296 1
+310 1
+462 127
+502 1
+526 1
+559 1
+578 1
+640 280
+674 1
+821 1
+931 73
+937 115
+943 1
+956 232
+964 282
+977 1
+985 1
+993 128
+118 80
+179 354
+332 139
+492 114
+538 355
+633 286
+648 355
+649 235
+681 279
+709 292
+751 234
+836 246
+870 135
+929 367
+962 257
+963 375
+972 239
+976 227
+995 137
+190 102
+258 202
+294 241
+361 194
+505 82
+576 246
+666 218
+743 346
+935 351
+210 367
+222 96
+358 226
+366 189
+453 373
+717 361
+761 214
+241 112
+293 336
+390 184
+400 219
+415 170
+606 320
+36
+drop 212 634
+drop 212 635
+drop 212 636
+drop 218 652
+drop 218 653
+drop 218 654
+drop 434 1300
+drop 434 1301
+drop 434 1302
+drop 529 1585
+drop 529 1586
+drop 529 1587
+drop 579 1735
+drop 579 1736
+drop 579 1737
+drop 614 1840
+drop 614 1841
+drop 614 1842
+drop 713 2137
+drop 713 2138
+drop 713 2139
+drop 795 2383
+drop 795 2384
+drop 795 2385
+drop 796 2386
+drop 796 2387
+drop 796 2388
+drop 814 2440
+drop 814 2441
+drop 814 2442
+drop 857 2569
+drop 857 2570
+drop 857 2571
+drop 876 2626
+drop 876 2627
+drop 876 2628
+119
+242 2
+308 2
+392 2
+421 2
+468 2
+558 2
+617 2
+707 2
+788 45
+816 2
+826 3
+865 2
+869 2
+897 2
+920 29
+928 77
+938 26
+295 168
+330 63
+501 46
+506 78
+688 30
+753 75
+755 28
+871 44
+873 59
+877 55
+888 51
+899 4
+900 75
+903 76
+905 55
+918 1
+922 43
+925 27
+933 66
+954 69
+986 31
+990 59
+296 3
+310 9
+502 6
+526 38
+559 18
+578 26
+640 285
+674 22
+821 29
+822 54
+908 32
+931 74
+936 14
+939 1
+941 1
+943 64
+949 68
+957 65
+961 42
+977 67
+985 41
+994 58
+179 1
+332 1
+492 1
+538 1
+648 346
+649 1
+681 1
+751 1
+870 1
+898 1
+937 1
+963 1
+965 1
+966 53
+971 1
+972 1
+991 248
+996 1
+1000 115
+294 235
+361 150
+462 119
+576 239
+633 279
+665 355
+743 361
+836 248
+926 135
+956 234
+964 276
+993 114
+118 128
+210 368
+358 241
+366 194
+709 282
+717 363
+761 246
+929 336
+962 248
+976 241
+995 127
+190 80
+258 257
+293 320
+390 190
+400 226
+505 137
+666 227
+907 214
+935 367
+222 102
+415 184
+429 219
+453 351
+606 352
+241 96
+452 170
+36
+drop 242 724
+drop 242 725
+drop 242 726
+drop 308 922
+drop 308 923
+drop 308 924
+drop 392 1174
+drop 392 1175
+drop 392 1176
+drop 421 1261
+drop 421 1262
+drop 421 1263
+drop 468 1402
+drop 468 1403
+drop 468 1404
+drop 558 1672
+drop 558 1673
+drop 558 1674
+drop 617 1849
+drop 617 1850
+drop 617 1851
+drop 707 2119
+drop 707 2120
+drop 707 2121
+drop 816 2446
+drop 816 2447
+drop 816 2448
+drop 865 2593
+drop 865 2594
+drop 865 2595
+drop 869 2605
+drop 869 2606
+drop 869 2607
+drop 897 2689
+drop 897 2690
+drop 897 2691
+117
+295 2
+330 2
+501 2
+506 2
+753 2
+755 2
+873 2
+877 2
+888 2
+900 74
+905 54
+922 2
+933 2
+954 2
+986 2
+990 58
+296 43
+310 51
+502 46
+526 78
+559 59
+578 66
+640 300
+674 63
+688 31
+788 46
+821 69
+822 53
+826 4
+899 5
+908 75
+920 30
+925 28
+928 78
+931 73
+936 55
+938 27
+949 69
+957 66
+961 43
+994 57
+179 18
+332 3
+492 6
+538 32
+649 29
+681 22
+751 14
+870 9
+871 45
+898 38
+903 77
+918 26
+937 67
+939 44
+941 64
+943 65
+963 76
+965 41
+966 52
+971 270
+972 259
+977 68
+985 42
+996 150
+294 1
+361 194
+462 1
+576 1
+633 1
+665 1
+926 1
+956 1
+964 1
+975 1
+993 1
+1000 1
+118 114
+210 354
+358 235
+366 189
+648 355
+709 276
+721 355
+761 239
+836 234
+962 246
+967 135
+976 227
+991 247
+995 119
+190 128
+258 248
+390 157
+400 241
+505 127
+666 218
+743 346
+760 282
+907 246
+935 368
+222 80
+415 190
+429 226
+453 367
+534 137
+717 361
+792 257
+929 367
+940 214
+241 102
+293 336
+450 219
+452 178
+315 96
+467 170
+606 320
+39
+drop 295 883
+drop 295 884
+drop 295 885
+drop 330 988
+drop 330 989
+drop 330 990
+drop 501 1501
+drop 501 1502
+drop 501 1503
+drop 506 1516
+drop 506 1517
+drop 506 1518
+drop 753 2257
+drop 753 2258
+drop 753 2259
+drop 755 2263
+drop 755 2264
+drop 755 2265
+drop 873 2617
+drop 873 2618
+drop 873 2619
+drop 877 2629
+drop 877 2630
+drop 877 2631
+drop 888 2662
+drop 888 2663
+drop 888 2664
+drop 922 2764
+drop 922 2765
+drop 922 2766
+drop 933 2797
+drop 933 2798
+drop 933 2799
+drop 954 2860
+drop 954 2861
+drop 954 2862
+drop 986 2956
+drop 986 2957
+drop 986 2958
+114
+296 2
+310 2
+502 2
+526 2
+559 2
+578 2
+640 2
+674 2
+688 2
+788 45
+821 2
+899 2
+908 2
+925 2
+928 38
+936 2
+949 29
+957 65
+961 42
+179 59
+332 43
+492 46
+538 75
+649 30
+681 63
+751 55
+826 5
+870 51
+871 44
+898 39
+900 75
+903 78
+905 55
+918 66
+920 31
+938 28
+943 64
+977 69
+985 41
+990 59
+294 29
+462 22
+576 38
+633 3
+665 18
+822 54
+926 32
+931 74
+937 68
+939 1
+941 1
+956 9
+963 77
+964 6
+965 1
+975 14
+993 26
+994 58
+1000 67
+118 1
+210 1
+358 1
+648 1
+709 1
+721 346
+761 1
+836 1
+966 53
+967 1
+971 1
+972 1
+983 1
+995 1
+996 1
+190 114
+258 234
+361 150
+390 147
+400 235
+505 114
+743 347
+760 276
+785 355
+907 239
+935 354
+962 248
+979 135
+222 128
+366 194
+415 157
+429 241
+453 368
+534 127
+717 346
+780 282
+792 248
+929 336
+940 246
+976 241
+991 248
+241 80
+293 320
+450 257
+452 189
+563 137
+666 227
+862 257
+315 102
+467 178
+605 219
+606 342
+320 96
+497 170
+635 320
+42
+drop 296 886
+drop 296 887
+drop 296 888
+drop 310 928
+drop 310 929
+drop 310 930
+drop 502 1504
+drop 502 1505
+drop 502 1506
+drop 526 1576
+drop 526 1577
+drop 526 1578
+drop 559 1675
+drop 559 1676
+drop 559 1677
+drop 578 1732
+drop 578 1733
+drop 578 1734
+drop 640 1918
+drop 640 1919
+drop 640 1920
+drop 674 2020
+drop 674 2021
+drop 674 2022
+drop 688 2062
+drop 688 2063
+drop 688 2064
+drop 821 2461
+drop 821 2462
+drop 821 2463
+drop 899 2695
+drop 899 2696
+drop 899 2697
+drop 908 2722
+drop 908 2723
+drop 908 2724
+drop 925 2773
+drop 925 2774
+drop 925 2775
+drop 936 2806
+drop 936 2807
+drop 936 2808
+109
+179 2
+332 2
+492 2
+538 2
+681 2
+751 2
+826 2
+870 2
+900 74
+903 2
+905 14
+918 2
+920 2
+938 2
+977 2
+990 58
+294 69
+462 63
+576 78
+633 43
+649 31
+665 59
+788 46
+822 55
+898 40
+926 75
+928 39
+931 73
+937 69
+949 30
+956 51
+957 66
+961 43
+963 78
+964 46
+975 15
+993 66
+994 57
+118 22
+210 18
+358 3
+648 38
+709 32
+761 14
+836 29
+871 45
+939 9
+941 26
+943 65
+958 1
+965 6
+966 54
+967 76
+971 67
+972 64
+983 41
+985 42
+995 375
+996 276
+1000 68
+190 1
+258 1
+361 1
+390 176
+400 1
+505 115
+760 282
+785 1
+907 1
+935 1
+979 1
+997 1
+222 114
+366 150
+415 147
+429 235
+453 354
+534 114
+717 355
+721 361
+780 286
+792 234
+825 355
+940 239
+962 246
+976 227
+991 247
+999 135
+241 128
+450 248
+452 194
+563 127
+666 218
+743 346
+848 282
+862 202
+315 80
+467 189
+580 137
+605 257
+929 367
+293 336
+320 102
+497 178
+618 219
+635 352
+353 96
+508 170
+606 320
+39
+drop 179 535
+drop 179 536
+drop 179 537
+drop 332 994
+drop 332 995
+drop 332 996
+drop 492 1474
+drop 492 1475
+drop 492 1476
+drop 538 1612
+drop 538 1613
+drop 538 1614
+drop 681 2041
+drop 681 2042
+drop 681 2043
+drop 751 2251
+drop 751 2252
+drop 751 2253
+drop 826 2476
+drop 826 2477
+drop 826 2478
+drop 870 2608
+drop 870 2609
+drop 870 2610
+drop 903 2707
+drop 903 2708
+drop 903 2709
+drop 918 2752
+drop 918 2753
+drop 918 2754
+drop 920 2758
+drop 920 2759
+drop 920 2760
+drop 938 2812
+drop 938 2813
+drop 938 2814
+drop 977 2929
+drop 977 2930
+drop 977 2931
+103
+294 2
+462 2
+576 2
+633 2
+649 2
+665 2
+788 2
+822 2
+898 2
+926 2
+937 68
+956 2
+957 2
+961 3
+963 38
+964 45
+993 26
+118 63
+210 59
+358 4
+648 39
+709 75
+761 55
+836 69
+871 44
+900 75
+905 1
+928 40
+939 51
+941 27
+943 66
+949 31
+965 46
+966 55
+985 43
+990 59
+1000 67
+190 29
+258 22
+361 38
+390 164
+400 32
+785 6
+907 3
+931 74
+935 18
+958 26
+967 77
+971 1
+972 65
+975 14
+979 9
+983 42
+989 1
+994 58
+997 41
+222 1
+366 1
+415 176
+429 1
+453 1
+505 1
+534 115
+717 1
+792 1
+825 346
+940 1
+995 1
+996 1
+999 1
+241 114
+450 234
+452 150
+563 114
+743 361
+760 276
+780 279
+848 286
+893 355
+962 239
+315 128
+467 194
+580 127
+605 248
+721 363
+887 282
+929 368
+976 241
+991 248
+293 367
+320 80
+497 189
+611 137
+618 257
+666 227
+862 257
+353 102
+508 178
+606 336
+738 219
+396 96
+532 170
+635 320
+36
+drop 294 880
+drop 294 881
+drop 294 882
+drop 462 1384
+drop 462 1385
+drop 462 1386
+drop 576 1726
+drop 576 1727
+drop 576 1728
+drop 633 1897
+drop 633 1898
+drop 633 1899
+drop 649 1945
+drop 649 1946
+drop 649 1947
+drop 665 1993
+drop 665 1994
+drop 665 1995
+drop 788 2362
+drop 788 2363
+drop 788 2364
+drop 822 2464
+drop 822 2465
+drop 822 2466
+drop 898 2692
+drop 898 2693
+drop 898 2694
+drop 926 2776
+drop 926 2777
+drop 926 2778
+drop 956 2866
+drop 956 2867
+drop 956 2868
+drop 957 2869
+drop 957 2870
+drop 957 2871
+98
+118 2
+210 2
+709 2
+761 2
+836 2
+900 32
+928 2
+939 2
+943 2
+949 2
+965 2
+966 54
+985 2
+990 58
+190 69
+258 63
+358 5
+361 78
+390 168
+400 1
+648 40
+785 46
+907 43
+931 75
+935 59
+937 69
+941 28
+958 66
+961 4
+963 39
+964 46
+967 78
+972 66
+975 55
+979 51
+983 43
+993 27
+994 57
+222 22
+366 26
+415 164
+429 18
+453 14
+505 6
+717 3
+792 9
+871 45
+905 38
+940 29
+971 41
+989 64
+995 67
+996 44
+997 42
+999 76
+1000 68
+241 1
+450 1
+452 1
+534 1
+563 115
+760 1
+780 1
+893 1
+962 1
+315 114
+467 150
+580 114
+605 234
+825 355
+848 279
+887 276
+929 354
+976 235
+978 355
+991 246
+293 368
+320 128
+497 194
+611 127
+618 248
+666 241
+743 346
+862 219
+353 80
+508 189
+606 367
+714 227
+721 361
+738 226
+850 137
+904 257
+396 102
+532 178
+635 336
+783 219
+465 96
+569 170
+33
+drop 118 352
+drop 118 353
+drop 118 354
+drop 210 628
+drop 210 629
+drop 210 630
+drop 709 2125
+drop 709 2126
+drop 709 2127
+drop 761 2281
+drop 761 2282
+drop 761 2283
+drop 836 2506
+drop 836 2507
+drop 836 2508
+drop 928 2782
+drop 928 2783
+drop 928 2784
+drop 939 2815
+drop 939 2816
+drop 939 2817
+drop 943 2827
+drop 943 2828
+drop 943 2829
+drop 949 2845
+drop 949 2846
+drop 949 2847
+drop 965 2893
+drop 965 2894
+drop 965 2895
+drop 985 2953
+drop 985 2954
+drop 985 2955
+92
+190 2
+258 2
+358 2
+361 2
+390 2
+648 2
+785 2
+907 2
+931 2
+935 2
+937 68
+941 2
+958 2
+964 45
+967 38
+972 65
+975 2
+979 2
+983 3
+222 63
+366 66
+415 168
+429 59
+453 55
+505 46
+717 4
+792 51
+871 44
+900 75
+905 39
+940 69
+961 5
+963 40
+966 55
+990 59
+993 28
+997 43
+1000 67
+241 32
+400 18
+450 6
+452 22
+534 14
+760 9
+780 3
+893 26
+962 29
+971 42
+989 65
+994 58
+995 1
+996 1
+999 77
+315 1
+467 1
+563 1
+580 115
+605 1
+825 1
+848 1
+887 1
+929 1
+976 1
+978 346
+293 354
+320 114
+497 150
+611 119
+618 234
+666 235
+743 361
+991 239
+353 128
+508 194
+606 368
+714 241
+721 363
+738 241
+850 127
+904 248
+396 80
+532 189
+635 367
+783 257
+830 227
+862 226
+884 137
+465 102
+569 178
+891 219
+533 96
+608 170
+42
+drop 190 568
+drop 190 569
+drop 190 570
+drop 258 772
+drop 258 773
+drop 258 774
+drop 358 1072
+drop 358 1073
+drop 358 1074
+drop 361 1081
+drop 361 1082
+drop 361 1083
+drop 390 1168
+drop 390 1169
+drop 390 1170
+drop 648 1942
+drop 648 1943
+drop 648 1944
+drop 785 2353
+drop 785 2354
+drop 785 2355
+drop 907 2719
+drop 907 2720
+drop 907 2721
+drop 931 2791
+drop 931 2792
+drop 931 2793
+drop 935 2803
+drop 935 2804
+drop 935 2805
+drop 941 2821
+drop 941 2822
+drop 941 2823
+drop 958 2872
+drop 958 2873
+drop 958 2874
+drop 975 2923
+drop 975 2924
+drop 975 2925
+drop 979 2935
+drop 979 2936
+drop 979 2937
+81
+222 2
+366 2
+415 2
+429 2
+453 2
+505 2
+792 2
+900 2
+940 2
+961 2
+963 2
+966 14
+990 18
+993 2
+997 2
+241 75
+400 19
+450 46
+452 63
+534 1
+717 5
+760 51
+780 43
+893 66
+905 40
+937 69
+962 69
+964 46
+967 78
+971 43
+972 66
+983 4
+989 64
+994 59
+999 78
+315 18
+467 26
+563 38
+605 6
+825 29
+848 32
+871 45
+887 22
+929 3
+976 9
+995 64
+996 44
+1000 68
+293 1
+320 1
+497 1
+580 1
+611 1
+618 1
+666 1
+991 1
+353 114
+508 150
+606 354
+714 235
+738 227
+850 119
+904 234
+978 355
+396 128
+532 194
+635 368
+743 346
+783 248
+830 218
+862 241
+884 127
+465 80
+569 189
+721 361
+891 257
+533 102
+608 184
+992 219
+599 96
+708 170
+39
+drop 222 664
+drop 222 665
+drop 222 666
+drop 366 1096
+drop 366 1097
+drop 366 1098
+drop 415 1243
+drop 415 1244
+drop 415 1245
+drop 429 1285
+drop 429 1286
+drop 429 1287
+drop 453 1357
+drop 453 1358
+drop 453 1359
+drop 505 1513
+drop 505 1514
+drop 505 1515
+drop 792 2374
+drop 792 2375
+drop 792 2376
+drop 900 2698
+drop 900 2699
+drop 900 2700
+drop 940 2818
+drop 940 2819
+drop 940 2820
+drop 961 2881
+drop 961 2882
+drop 961 2883
+drop 963 2887
+drop 963 2888
+drop 963 2889
+drop 993 2977
+drop 993 2978
+drop 993 2979
+drop 997 2989
+drop 997 2990
+drop 997 2991
+70
+241 2
+450 2
+452 2
+717 2
+760 2
+780 2
+893 2
+905 2
+937 2
+962 29
+964 45
+967 2
+971 3
+972 65
+994 2
+999 38
+315 59
+467 66
+563 39
+605 46
+825 30
+848 75
+871 44
+887 63
+929 4
+966 55
+976 51
+983 5
+990 1
+1000 69
+293 14
+320 3
+400 20
+497 38
+534 32
+580 26
+611 6
+618 29
+666 22
+989 65
+991 9
+995 1
+996 1
+353 1
+508 1
+606 1
+714 1
+850 1
+904 1
+978 1
+396 114
+532 150
+635 354
+743 355
+783 234
+862 235
+884 114
+465 128
+569 194
+721 346
+738 241
+891 248
+533 80
+608 190
+830 227
+992 226
+599 102
+708 178
+654 96
+784 170
+33
+drop 241 721
+drop 241 722
+drop 241 723
+drop 450 1348
+drop 450 1349
+drop 450 1350
+drop 452 1354
+drop 452 1355
+drop 452 1356
+drop 717 2149
+drop 717 2150
+drop 717 2151
+drop 760 2278
+drop 760 2279
+drop 760 2280
+drop 780 2338
+drop 780 2339
+drop 780 2340
+drop 893 2677
+drop 893 2678
+drop 893 2679
+drop 905 2713
+drop 905 2714
+drop 905 2715
+drop 937 2809
+drop 937 2810
+drop 937 2811
+drop 967 2899
+drop 967 2900
+drop 967 2901
+drop 994 2980
+drop 994 2981
+drop 994 2982
+62
+315 2
+467 2
+605 2
+848 2
+887 2
+966 2
+976 2
+983 2
+1000 2
+293 55
+320 43
+400 21
+497 78
+534 75
+563 40
+580 66
+611 46
+618 69
+666 63
+825 31
+929 5
+962 30
+964 46
+971 4
+972 66
+989 64
+991 51
+999 39
+353 14
+508 6
+606 26
+714 3
+850 22
+871 45
+904 18
+978 38
+990 9
+995 29
+996 32
+396 1
+532 1
+635 1
+743 1
+783 1
+862 1
+884 115
+465 114
+569 150
+721 355
+738 235
+891 234
+533 128
+608 157
+830 241
+992 241
+599 80
+708 189
+872 227
+654 102
+784 184
+685 96
+833 170
+27
+drop 315 943
+drop 315 944
+drop 315 945
+drop 467 1399
+drop 467 1400
+drop 467 1401
+drop 605 1813
+drop 605 1814
+drop 605 1815
+drop 848 2542
+drop 848 2543
+drop 848 2544
+drop 887 2659
+drop 887 2660
+drop 887 2661
+drop 966 2896
+drop 966 2897
+drop 966 2898
+drop 976 2926
+drop 976 2927
+drop 976 2928
+drop 983 2947
+drop 983 2948
+drop 983 2949
+drop 1000 2998
+drop 1000 2999
+drop 1000 3000
+54
+293 2
+320 2
+400 2
+497 2
+534 2
+563 2
+580 2
+611 2
+618 2
+666 2
+825 2
+929 2
+964 45
+972 26
+991 2
+353 55
+508 46
+606 27
+714 43
+850 63
+871 44
+904 59
+962 31
+971 5
+978 78
+990 51
+995 69
+996 75
+999 40
+396 22
+532 9
+635 38
+743 26
+783 6
+862 3
+989 65
+465 1
+569 1
+721 1
+738 1
+884 1
+891 1
+533 114
+608 147
+830 235
+992 226
+599 128
+708 194
+872 241
+654 80
+784 190
+685 102
+833 178
+718 96
+39
+drop 293 877
+drop 293 878
+drop 293 879
+drop 320 958
+drop 320 959
+drop 320 960
+drop 400 1198
+drop 400 1199
+drop 400 1200
+drop 497 1489
+drop 497 1490
+drop 497 1491
+drop 534 1600
+drop 534 1601
+drop 534 1602
+drop 563 1687
+drop 563 1688
+drop 563 1689
+drop 580 1738
+drop 580 1739
+drop 580 1740
+drop 611 1831
+drop 611 1832
+drop 611 1833
+drop 618 1852
+drop 618 1853
+drop 618 1854
+drop 666 1996
+drop 666 1997
+drop 666 1998
+drop 825 2473
+drop 825 2474
+drop 825 2475
+drop 929 2785
+drop 929 2786
+drop 929 2787
+drop 991 2971
+drop 991 2972
+drop 991 2973
+42
+353 2
+508 2
+714 2
+850 2
+904 2
+962 2
+971 2
+978 2
+990 2
+995 2
+996 2
+999 2
+396 63
+532 51
+606 28
+635 78
+743 66
+783 46
+862 43
+964 46
+972 27
+989 66
+465 14
+569 26
+721 3
+738 9
+871 45
+884 18
+891 6
+533 1
+608 176
+830 1
+599 114
+708 150
+872 235
+654 128
+784 144
+992 241
+685 80
+833 189
+718 102
+750 96
+36
+drop 353 1057
+drop 353 1058
+drop 353 1059
+drop 508 1522
+drop 508 1523
+drop 508 1524
+drop 714 2140
+drop 714 2141
+drop 714 2142
+drop 850 2548
+drop 850 2549
+drop 850 2550
+drop 904 2710
+drop 904 2711
+drop 904 2712
+drop 962 2884
+drop 962 2885
+drop 962 2886
+drop 971 2911
+drop 971 2912
+drop 971 2913
+drop 978 2932
+drop 978 2933
+drop 978 2934
+drop 990 2968
+drop 990 2969
+drop 990 2970
+drop 995 2983
+drop 995 2984
+drop 995 2985
+drop 996 2986
+drop 996 2987
+drop 996 2988
+drop 999 2995
+drop 999 2996
+drop 999 2997
+31
+396 2
+532 2
+606 2
+635 2
+743 2
+783 2
+862 2
+964 45
+989 65
+465 55
+569 66
+721 43
+738 51
+871 44
+884 59
+891 46
+972 28
+533 9
+608 164
+830 32
+599 1
+708 1
+872 1
+654 114
+784 139
+992 235
+685 128
+833 194
+718 80
+750 102
+786 96
+21
+drop 396 1186
+drop 396 1187
+drop 396 1188
+drop 532 1594
+drop 532 1595
+drop 532 1596
+drop 606 1816
+drop 606 1817
+drop 606 1818
+drop 635 1903
+drop 635 1904
+drop 635 1905
+drop 743 2227
+drop 743 2228
+drop 743 2229
+drop 783 2347
+drop 783 2348
+drop 783 2349
+drop 862 2584
+drop 862 2585
+drop 862 2586
+25
+465 2
+569 2
+721 2
+738 2
+884 2
+891 2
+972 2
+533 51
+608 168
+830 75
+964 46
+989 66
+599 29
+708 9
+871 45
+872 3
+654 1
+784 1
+992 1
+685 114
+833 150
+718 128
+750 80
+786 102
+798 96
+21
+drop 465 1393
+drop 465 1394
+drop 465 1395
+drop 569 1705
+drop 569 1706
+drop 569 1707
+drop 721 2161
+drop 721 2162
+drop 721 2163
+drop 738 2212
+drop 738 2213
+drop 738 2214
+drop 884 2650
+drop 884 2651
+drop 884 2652
+drop 891 2671
+drop 891 2672
+drop 891 2673
+drop 972 2914
+drop 972 2915
+drop 972 2916
+19
+533 2
+608 2
+830 2
+964 2
+989 2
+599 69
+708 51
+871 46
+872 43
+654 38
+784 32
+992 22
+685 1
+833 1
+718 114
+750 128
+786 80
+798 102
+829 96
+15
+drop 533 1597
+drop 533 1598
+drop 533 1599
+drop 608 1822
+drop 608 1823
+drop 608 1824
+drop 830 2488
+drop 830 2489
+drop 830 2490
+drop 964 2890
+drop 964 2891
+drop 964 2892
+drop 989 2965
+drop 989 2966
+drop 989 2967
+15
+599 2
+708 2
+871 2
+872 2
+654 78
+784 75
+992 63
+685 26
+833 6
+718 1
+750 114
+786 128
+798 80
+829 102
+889 96
+12
+drop 599 1795
+drop 599 1796
+drop 599 1797
+drop 708 2122
+drop 708 2123
+drop 708 2124
+drop 871 2611
+drop 871 2612
+drop 871 2613
+drop 872 2614
+drop 872 2615
+drop 872 2616
+12
+654 2
+784 2
+992 2
+685 66
+833 46
+718 18
+750 1
+786 114
+798 128
+829 80
+889 102
+955 96
+9
+drop 654 1960
+drop 654 1961
+drop 654 1962
+drop 784 2350
+drop 784 2351
+drop 784 2352
+drop 992 2974
+drop 992 2975
+drop 992 2976
+10
+685 2
+833 2
+718 59
+750 38
+786 1
+798 114
+829 128
+889 80
+955 102
+974 96
+6
+drop 685 2053
+drop 685 2054
+drop 685 2055
+drop 833 2497
+drop 833 2498
+drop 833 2499
+8
+718 2
+750 78
+786 22
+798 1
+829 114
+889 128
+955 80
+974 102
+3
+drop 718 2152
+drop 718 2153
+drop 718 2154
+7
+750 2
+786 63
+798 14
+829 1
+889 114
+955 128
+974 80
+3
+drop 750 2248
+drop 750 2249
+drop 750 2250
+6
+786 2
+798 55
+829 38
+889 1
+955 114
+974 128
+3
+drop 786 2356
+drop 786 2357
+drop 786 2358
+5
+798 2
+829 78
+889 32
+955 1
+974 114
+3
+drop 798 2392
+drop 798 2393
+drop 798 2394
+4
+829 2
+889 75
+955 14
+974 1
+3
+drop 829 2485
+drop 829 2486
+drop 829 2487
+3
+889 2
+955 55
+974 9
+3
+drop 889 2665
+drop 889 2666
+drop 889 2667
+2
+955 2
+974 51
+3
+drop 955 2863
+drop 955 2864
+drop 955 2865
+1
+974 2
+3
+drop 974 2920
+drop 974 2921
+drop 974 2922
+0

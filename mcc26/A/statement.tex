@@ -1,0 +1,142 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\title{Beutsche Dahn Optimization Problem}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+This is an optimization problem. The optimal solution for each test is not known to the jury, and your score for each test will be determined as described below.
+
+The Beutsche Dahn (BD) railway network has always been praised for its \emph{unique} approach to punctuality. Specifically, every passenger who has ever managed to board a train has eventually reached their destination. But now the future is upon us --- the year is 1879, and Beutsche Dahn has just been acquired by White Tree Capital (WTC). They intend to use the railroads to relocate their tradesmen to strike urgent deals, so efficiency is extremely important.
+
+As the newly appointed Efficiency Manager for BD at WTC, your job is to manage the entire train fleet according to exact demand. Since you have the complete list of tradesmen and their appearance times at stations in advance, you can precompute a master routing plan to get every tradesman to their destination as fast as possible, while avoiding train collisions (see below).
+
+Formally, you must minimize
+\[
+\sum_{i=1}^{N} \left(T_{\text{arrival},i} - T_{\text{appearance},i}\right)\cdot P_i
+\]
+
+where:
+\begin{itemize}
+    \item $N$ is the total number of tradesmen;
+    \item $T_{\text{appearance},i}$ is the time tick at which the $i$-th tradesman appears on the platform (provided in the input);
+    \item $T_{\text{arrival},i}$ is the time tick at which the $i$-th tradesman is dropped off at their destination city $v_i$;
+    \item $P_i$ is the penalty for additional train rides (see below).
+\end{itemize}
+
+Now, we explain how the entire process is simulated and how arrival times are calculated.
+
+Time is split into ticks, starting from tick $1$. Each tick is processed in the following sequence:
+
+\begin{enumerate}
+    \item \textbf{Tradesmen Appearance:} At tick $t$, all tradesmen with $t_i = t$ appear at their starting city $u_i$.
+    
+    \item \textbf{Loading/Unloading:} The trains perform pick and drop actions in the order provided in the output. A train and a tradesman must be in the same city for an action to be valid. Each train cannot exceed its maximum capacity $C$. If a tradesman arrives at their destination city, they disappear.
+    
+    \item \textbf{Movement:} Each train $j$ moves from its current city $\mathrm{pos}_j$ to the destination city $\mathrm{dest}_j$ specified in the output. This is only valid if a rail track $(\mathrm{pos}_j,\mathrm{dest}_j)$ exists. At the beginning of the next tick, the train is considered to be in $\mathrm{dest}_j$.
+    
+    To avoid train collisions, two trains cannot use the same rail track during the same movement phase, regardless of whether they are moving in the same or in different directions.
+\end{enumerate}
+
+\paragraph{Note on transfers.}
+A tradesman does not have to reach their destination in a single ride. They may be dropped off at an intermediate city and picked up by another train. This can even happen within the same tick, provided that the commands are ordered correctly: the drop action must appear before the corresponding pick action in your output.
+
+However, due to travel fatigue, a penalty is incurred when multiple train rides are involved. More specifically:
+\begin{itemize}
+    \item If a tradesman reaches their destination in one train ride, $P_i = 1$.
+    \item If a tradesman reaches their destination in two train rides, $P_i = 1.05$.
+    \item If a tradesman reaches their destination in three train rides, $P_i = 1.2$.
+    \item If a tradesman reaches their destination in four train rides, $P_i = 1.5$.
+\end{itemize}
+
+No tradesman will accept a plan involving more than four train rides.
+
+\section*{Input}
+
+You are given a zip archive \texttt{problem-a-inputs.zip} with $8$ tests: \texttt{01}, \texttt{02}, \ldots, \texttt{08}.
+
+Each test describes the rail network, the train fleet, and the information about tradesmen. All indices are $1$-based.
+
+The first line contains two integers $V$ and $E$ --- the number of cities and undirected rail tracks. Each of the next $E$ lines contains two integers $u$ and $v$ ($1 \le u,v \le V$, $u \ne v$) --- an undirected rail track between cities numbered $u$ and $v$. It is guaranteed that all rail tracks are unique; there is no rail track that goes from a city to itself, and any city is reachable from any other city by following a sequence of rail tracks.
+
+The next line contains an integer $T$ --- the number of trains at your disposal.
+
+The next line contains $T$ integers between $1$ and $V$ --- the initial city of each train.
+
+The next line contains an integer $C$ --- the maximum capacity of each train.
+
+The next line contains an integer $N$ --- the total number of tradesmen for the scenario.
+
+Each of the next $N$ lines contains three integers $u_i, v_i, t_i$ ($1 \le u_i,v_i \le V$, $u_i \ne v_i$, $1 \le t_i \le 10^5$) --- the starting city, the destination city, and appearance time for the $i$-th tradesman. Additionally, the tradesmen are ordered by their appearance times: for every $i < N$, it is guaranteed that $t_i \le t_{i+1}$.
+
+\section*{Output}
+
+Submit a zip archive with files \texttt{01.out}, \texttt{02.out}, \ldots, \texttt{08.out}. Some of the files may be missing.
+
+Each file should be formatted as follows.
+
+The first line should contain an integer $S$ --- the total number of ticks in your plan. This number should not exceed $10^6$.
+
+For each tick $s = 1,2,\ldots,S$, the output should contain the following:
+\begin{itemize}
+    \item An integer $K_s$ --- the number of pick-up and drop-off actions performed at the start of this tick.
+    \item $K_s$ lines, each containing one of the following commands:
+    \begin{itemize}
+        \item \texttt{pick <train\_id> <tradesman\_id>}
+        \item \texttt{drop <train\_id> <tradesman\_id>}
+    \end{itemize}
+    \item An integer $M_s$ --- the number of trains performing a move action at the end of this tick.
+    \item $M_s$ lines, each containing two integers \texttt{train\_id} and \texttt{city\_id} --- the moving train and its next city. All identifiers of the moving trains during one tick must be distinct, and for each of them, the city it is going to must be reachable via a single rail track.
+\end{itemize}
+
+All indices are $1$-based:
+\[
+1 \le \texttt{train\_id} \le T,\qquad
+1 \le \texttt{tradesman\_id} \le N,\qquad
+1 \le \texttt{city\_id} \le V.
+\]
+
+Additionally, to maintain manageable output sizes, the total number of move operations performed,
+\[
+\sum_{s=1}^{S} M_s,
+\]
+must not exceed $2 \cdot 10^6$. We expect that most solutions would satisfy this restriction without additional optimization.
+
+\section*{Scoring}
+
+Your number of points is calculated using the formula
+\[
+\sum_{i=1}^{N} \left(T_{\text{arrival},i} - T_{\text{appearance},i}\right)\cdot P_i,
+\]
+where $T_{\text{arrival},i}$ and $P_i$ are calculated using the process described in the statement.
+
+Your final score for the test is calculated as follows:
+\begin{itemize}
+    \item If the output is not properly formatted or is inconsistent, for example:
+    \begin{itemize}
+        \item a tradesman does not reach their target destination,
+        \item a train tries to pick up a tradesman who has already reached their destination, or who is not present in that city,
+        \item a train uses a rail track that is already in use during the current tick,
+        \item a train moves to a city that is not accessible from its current city,
+    \end{itemize}
+    then your score for the test is $0$, and a comment describing the problematic tick and the reason will be provided.
+    
+    \item Otherwise, it will be
+    \[
+    100 \cdot \frac{\texttt{best\_points}}{\texttt{your\_points}},
+    \]
+    where \texttt{best\_points} is the lowest number of points among all participants for this test.
+\end{itemize}
+
+Note that the scoreboard will consider your best score for each test among all your submissions.
+
+\end{document}
