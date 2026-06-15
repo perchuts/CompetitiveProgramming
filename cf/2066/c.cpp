@@ -29,19 +29,45 @@ int rnd(int l, int r) {
 
 void solve(){
     int n; cin >> n;
-    vector<int> v(n);
-    for (auto& x : v) cin >> x;
-    vector<int> suf(n+1), pref(n+1), dp(n+1);
-    for (int i = 1; i <= n; ++i) pref[i] = pref[i-1] ^ v[i-1];
-    dp[n] = 3;
-    for (int i = n-1; i >= 1; --i) {
-        for (int j = i+1; j <= n; ++j) {
-            if (pref[i] == pref[j]) {
-                dp[i] += (3*dp[j]);
+    vector<int> a(n);
+    for (auto& x : a) cin >> x;
+    // notice the following: 
+    // for each transition, we must have
+    // 1. f(i, x, x, x), where x = a[0]^a[1]^...^a[i]
+    // 2. f(i, y, y, x), where y \ne x is arbitrary.
+    // case 1: anything is possible, but this only gives 1 transition.
+    // case 2.1: a[i] = x^y. this case gives (i+1, y, x, x), (i+1, y, y, y)
+    // case 2.1: a[i] != x^y. forced transition: (i+1, y, y, x^a[i])
+    // so we can "ignore" all states in which y != x^a[i], and only worry about (i, x, x, x) and (i, x^a[i], x^a[i], x)
+    // dp1(pos, y)
+    // dp2(x) -> soh tem uma opcao por node
+    map<ii, int> dp1;
+    int dp2 = 1, xx = 0;
+    for (auto ai : a) {
+        int y = xx ^ ai;
+        int ndp2 = (dp1[{0, y}] + dp1[{1, y}] + dp1[{2, y}]) % mod;
+        for (int i = 0; i < 3; ++i) {
+            int val = dp2;
+            for (int j = 0; j < 3; ++j) {
+                if (i == j) continue;
+                val += dp1[{j, y}];
             }
+            dp1[{i, xx}] = val % mod;
         }
+        dp1[{0, y}] = 0;
+        dp1[{1, y}] = 0;
+        dp1[{2, y}] = 0;
+        xx = y;
+        dp2 = ndp2;
     }
-    cout << dp[1] << endl;
+    int ans = dp2;
+    for (auto [x, y] : dp1) ans = (ans + y) % mod;
+    cout << ans << endl;
+    // for all y != x^a[i], dp1_{i+1}(pos, y) = dp1_i(pos, y)
+    //         y  = x^a[i]: dp1_{i+1}(pos, y) = 0, dp1_{i+1}(pos, x) = dp2_i + dp1_i(y, nao_eh_pos)
+    //
+    //         dp2 -> soh tem um estado possivel! que eh xor de tudo....
+    //         y = x^a[i]: dp2_{i+1} = dp1_i(0, y) + dp1_i(1, y) + dp1_i(2, y)
 }
 
 int32_t main(){_

@@ -27,11 +27,33 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve(){
+int ncr[500][500];
 
+void solve(){
+    int n, c, m; cin >> n >> c >> m;
+    vector<int> a(m);
+    for (auto& x : a) cin >> x, --x;
+    vector<int> dp(m+1);
+    dp[c] = 1;
+    for (int t = 1; t < n; ++t) {
+        vector<int> ndp(m+1);
+        for (int i = c; i <= m; ++i) {
+            for (int j = 0; j <= min(c, m-i); ++j) {
+                ndp[i+j] = (ndp[i+j] + dp[i] * ncr[c][j]) % mod;
+            }
+        }
+        swap(dp, ndp);
+    }
+    cout << dp[m] << endl;
 }
 
 int32_t main(){_
+    for (int i = 0; i < 500; ++i) {
+        for (int j = 0; j <= i; ++j) {
+            if (i == 0 or j == i) ncr[i][j] = 1;
+            else ncr[i][j] = (ncr[i-1][j] + ncr[i-1][j-1]) % mod;
+        }
+    }
     int t = 1; cin >> t;
     while(t--) solve();
 }
