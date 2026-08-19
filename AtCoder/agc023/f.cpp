@@ -5,6 +5,7 @@
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define int ll
+//#define gato
 
 using namespace std;
 
@@ -26,83 +27,107 @@ int rnd(int l, int r) {
     uniform_int_distribution<int> uid(l, r);
     return uid(rng);
 }
-
-void solve() {
-    int n; cin >> n;
-    vector<vector<int>> g(n);
-    vector<int> par(n), v(n), pp(n);
-    for (int i = 1; i < n; ++i) {
-        int x; cin >> x; --x;
-        pp[i] = x;
-        g[x].pb(i), g[i].pb(x);
+struct Cmp {
+    bool operator ()(const array<int, 4>& a, const array<int, 4>& b) const {
+        int lhs = a[0] * b[1], rhs = a[1] * b[0];
+        if (lhs != rhs) return lhs < rhs;
+        return pair(a[2], a[3]) < pair(b[2], b[3]);
     }
-    for (auto& x : v) cin >> x;
+};
+
+int solve(int n, vector<int> pp, vector<int> v) {
+    vector<vector<int>> g(n), g2(n);
+    vector<int> par(n, -1), tam(n);
+    for (int i = 1; i < n; ++i) g[pp[i]].pb(i);
     auto dfs = [&] (auto&& self, int u, int p) -> void {
-        par[u] = u;
-        if (u != p and v[u] == 0 and v[p] == 0) par[u] = par[p];
-        for (auto v : g[u]) {
-            if (v == p) continue;
-            self(self, v, u);
-        }
+        par[u] = (v[u] ? u : par[p]);
+        if (v[u] == 0 and par[u] != -1) tam[par[u]]++;
+        if (v[u] == 1 and par[p] != -1 and u != p) g2[par[p]].pb(u);
+        for (auto w : g[u]) self(self, w, u);
     };
     dfs(dfs, 0, 0);
-    vector<vector<int>> g2(n);
-    vector<int> tam(n);
+    int m = accumulate(all(v), 0);
+    using T = multiset<array<int, 4>, Cmp>;
+    vector<T> perm(n);
+    auto merge = [&] (T &s1, T &s2) { assert(sz(s1) >= sz(s2)); for (auto x : s2) s1.insert(x); };
+    auto calc = [&] (auto&& self, int u) -> void {
+        for (auto w : g2[u]) {
+            self(self, w);
+            if (sz(perm[w]) > sz(perm[u])) swap(perm[u], perm[w]);
+            merge(perm[u], perm[w]);
+        }
+        int s1 = tam[u], qt1 = 1, tot = m * tam[u];
+        while (!perm[u].empty()) {
+            auto [s2, qt2, tot2, fds] = *rbegin(perm[u]);
+            if (s2 * qt1 < s1 * qt2) break;
+            perm[u].erase({s2, qt2, tot2, fds});
+            tot = tot2 + tot - s1 * qt2;
+            s1 += s2;
+            qt1 += qt2;
+        }
+        perm[u].insert({s1, qt1, tot, rnd(0, 1e18)});
+    };
+    T S;
     for (int i = 0; i < n; ++i) {
-        tam[par[i]]++;
-        for (auto v : g[i]) {
-            g2[par[i]].pb(par[v]);
+        if (v[i] == 1 and (i == 0 or par[pp[i]] == -1)) {
+            calc(calc, i);
+            if (sz(S) < sz(perm[i])) swap(S, perm[i]);
+            merge(S, perm[i]);
         }
     }
-    vector<int> ans;
-    priority_queue<ii, vector<ii>, greater<>> pq;
-    vector<int> deg(n);
-    for (int i = 0; i < n; ++i) {
-        if (par[i] != i) continue;
-        sort(all(g2[i]));
-        g2[i].erase(unique(all(g2[i])), end(g2[i]));
-        deg[i] = sz(g2[i]);
-        if (sz(g2[i]) == 1) {
-            deg[i] = 0;
-            if (v[i] == 1) pq.push({-inf, i});
-            else pq.push({tam[i], i});
-        }
+    int ans = 0, foi = 0;
+    for (auto [s, q, t, fds] : S) {
+        t -= s * foi;
+        ans += t;
+        foi += q;
     }
-    while (!pq.empty()) {
-        auto [w, u] = pq.top(); pq.pop();
-        if (v[u] == 1) {
-            ans.pb(1);
-        } else {
-            for (int j = 0; j < w; ++j) ans.pb(0);
+    return ans;
+}
+
+int brute(int n, vector<int> pp, vector<int> a) {
+    vector<int> dp(1<<n, 1e18);
+    int qt0 = n - accumulate(all(a), 0);
+    dp[1] = a[0] * qt0;
+    for (int i = 2; i < (1 << n); ++i) {
+        int tem = 0;
+        for (int j = 0; j < n; ++j) {
+            if (i >> j & 1) {}
+            else tem += (a[j] == 0);
         }
-        if (pp[u] != u) {
-            deg[pp[u]]--;
-            if (deg[pp[u]] == 1 and pp[u]) {
-                if (v[pp[u]] == -1) pq.push({-inf, pp[u]});
-                else pq.push({tam[pp[u]], pp[u]});
+        for (int j = 1; j < n; ++j) {
+            if ((i >> j & 1) and (i >> pp[j] & 1)) {
+                ckmin(dp[i], dp[i-(1<<j)] + tem * a[j]);
             }
         }
     }
-    ans.pb(v[0]);
-    reverse(all(ans));
-    int cnt1 = 0, inv = 0;
-    for (int i = 0; i < n; ++i) {
-        if (ans[i]) cnt1++;
-        else inv += cnt1;
-    }
-    cout << inv << endl;
+    return dp.back();
 }
+
 
 int32_t main() {_
 #ifndef gato
-    int t = 1; //cin >> t;
-    while(t--) solve();
+    int n; cin >> n;
+    vector<int> pp(n);
+    for (int i = 1; i < n; ++i) cin >> pp[i], --pp[i];
+    vector<int> a(n);
+    for (auto& x : a) cin >> x;
+    cout << solve(n, pp, a) << endl;
 #else
     int t = 1;
     while (true) {
-        int my = solve(), ans = brute();
+        int n = rnd(1, 12);
+        vector<int> pp(n);
+        for (int i = 1; i < n; ++i) pp[i] = rnd(0, i-1);
+        vector<int> a(n);
+        for (auto& x : a) x = rnd(0, 1);
+        int my = solve(n, pp, a), ans = brute(n, pp, a);
         if (my != ans) {
             cout << "Wrong answer on test " << t << endl;
+            cout << n << endl;
+            for (int i = 1; i < n; ++i) cout << pp[i]+1 << " ";
+            cout << endl;
+            for (auto x : a) cout << x << " ";
+            cout << endl;
             cout << "Solve: " << my << endl;
             cout << "Brute: " << ans << endl;
             exit(0);
