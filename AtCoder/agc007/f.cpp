@@ -4,7 +4,7 @@
 #define endl '\n'
 #define pb push_back
 #define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
-#define gato
+//#define gato
 
 using namespace std;
 
@@ -28,35 +28,34 @@ int rnd(int l, int r) {
 }
 
 int solve(string s, string t) {
-    int n = s.size();
     if (s == t) return 0;
-
-    s = " " + s;
-    t = " " + t;
-
-    queue<int> q;
-    int ans = 0;
-    int pos = n;
-
-    for (int i = n; i >= 1; --i) {
-        if (i > 1 && t[i - 1] == t[i]) continue; // only run starts
-
-        pos = min(pos, i);
-        while (pos >= 1 && s[pos] != t[i]) --pos;
-        if (pos == 0) return -1;
-
-        while (!q.empty() && q.front() - (int)q.size() + 1 > i)
-            q.pop();
-
-        if (pos != i) q.push(pos);
-
-        ans = max(ans, (int)q.size());
-        --pos;
+    int n = sz(s);
+    swap(s, t);
+    vector<int> rx = {0};
+    for (int i = 1; i < n; ++i) if (s[i] != s[i-1]) rx.pb(i);
+    auto possible = [&] (int x) {
+        deque<array<int, 3>> pts;
+        int pos = 0;
+        for (int i = 0; i < sz(rx); ++i) {
+            while (pos <= rx[i] and s[rx[i]] != t[pos]) pos++;
+            if (pos > rx[i]) return false;
+            while (!pts.empty() and pts.front()[1] + i-pts.front()[2]+1 <= pos) pts.pop_front();
+            if (!pts.empty()) pts.front()[0] = pos+1;
+            if (i != sz(rx)-1 and rx[i+1] != rx[i]+1) pts.push_back({rx[i]+(i!=0), rx[i+1]-1, i});
+            while (!pts.empty() and i-pts.front()[2]+1 == x) pos = pts.front()[1]+x, pts.pop_front();
+        }
+        return true;
+    };
+    int l = 1, r = sz(rx), ans = -1;
+    while (l <= r) {
+        int md = l + (r-l+1)/2;
+        if (possible(md)) ans = md, r = md-1;
+        else l = md+1;
     }
-
-    return ans + 1;
+    return ans;
 }
 
+// wrong brute lol
 int brute(int n, string s, string t) {
 
     vector<vector<int>> prox(n, vector<int>(26, n));
@@ -94,9 +93,9 @@ int32_t main() {_
 #else
     int T = 1;
 	using ld = long double;
-    string penis = "ab";
+    string penis = "abcde";
     while (true) {
-        int n = rnd(2, 6);
+        int n = rnd(2, 10);
         string s(n, 'a'), t(n, 'a');
         int lim = 1;
         s[0] = t[0] = penis[rnd(0, sz(penis)-1)];
@@ -106,7 +105,7 @@ int32_t main() {_
         }
         int my = solve(s, t), ans = brute(n, s, t);
 		//cout << "n = " << n << ", nodes visited = " << my << endl;
-        if (my != ans) {
+        if (my > ans) {
             cout << "Wrong answer on test " << T << endl;
             cout << n << endl << s << endl << t << endl;
             cout << "Solve: " << my << endl;
