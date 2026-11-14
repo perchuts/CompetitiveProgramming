@@ -27,9 +27,23 @@ int rnd(int l, int r) {
     return uid(rng);
 }
 
-void solve() {
-
+vector<ii> solve(string s, string t) {
+    if (s == t) return {};
+    int n = sz(s);
+    {
+        auto s2 = s; auto t2 = t;
+        sort(all(s2)), sort(all(t2));
+        if (s2 != t2) return {{-1, -1}};
+    }
+    if (s > t) return {{-1, -1}};
+    reverse(all(s)), reverse(all(t));
+    if (s < t) return {{-1, -1}};
+    reverse(all(s)), reverse(all(t));
+    vector<ii> ans;
+    
+    return ans;
 }
+
 bool brute(string s, string t) {
     map<string, int> ss;
     int n = t.size();
@@ -93,39 +107,70 @@ int32_t main() {_
     while(t--) {
         int n; cin >> n;
         string a, b; cin >> a >> b;
-        cout << (brute(a, b) ? "Yes" : "No") << endl;
+        auto ans = solve(a, b);
+        if (sz(ans) == 1 and ans[0].first == -1) {
+            cout << "No" << endl;
+            continue;
+        }
+        cout << "Yes" << endl;
+        cout << sz(ans) << endl;
+        for (auto [x, y] : ans) cout << x+1 << " " << y+1 << endl;
     }
 #else
     int T = 1;
     while (true) {
-        int n = rnd(2, 7);
+        int n = rnd(2, 12);
         string s(n, 'A');
         vector<int> p(n); iota(all(p), 0); shuffle(all(p), rng);
         for (auto& x : s) if (rnd(0, 1)) x = 'B';
         string t = s;
         for (int i = 0; i < n; ++i) t[i] = s[p[i]];
         bool possible = brute(s, t);
-        auto ans = cubic(s, t);
+        cout << n << endl << s << endl << t << endl;
+        cout << flush;
+        auto ans = solve(s, t);
         if (possible) {
             if ((!ans.empty() and ans[0].first == -1)) {
                 cout << "Wrong answer on test " << T << endl;
                 cout << "False negative!" << endl;
+                cout << n << endl;
                 cout << s << endl << t << endl;
                 exit(0);
             }
             if (2 * sz(ans) > n) {
-                cout << "Big ans!" << endl;
-                //cout << "Wrong answer on test " << T << endl;
-                //cout << "Big answer!" << endl;
-                //cout << s << endl << t << endl;
-                //cout << "Answer: " << endl;
-                //for (auto [x, y] : ans) cout << x + 1 << " " << y + 1 << endl;
-                //exit(0);
+                cout << "Wrong answer on test " << T << endl;
+                cout << "Big answer!" << endl;
+                cout << s << endl << t << endl;
+                cout << n << endl;
+                cout << "Answer: " << endl;
+                for (auto [x, y] : ans) cout << x + 1 << " " << y + 1 << endl;
+                exit(0);
+            }
+            auto ss = s;
+            bool ok = 1;
+            for (auto [x, y] : ans) {
+                ok &= (ss[x] == 'A' and ss[y] == 'B');
+                reverse(begin(ss)+x, begin(ss)+y+1);
+            }
+            if (!ok) {
+                cout << "Wrong answer on test " << T << endl;
+                cout << "Swapped other thing" << endl;
+                cout << n << endl;
+                cout << s << endl << t << endl;
+                exit(0);
+            }
+            if (ss != t) {
+                cout << "Wrong answer on test " << T << endl;
+                cout << "Wrong construction" << endl;
+                cout << n << endl;
+                cout << s << endl << t << endl;
+                exit(0);
             }
         } else {
             if (sz(ans) != 1 or ans[0].first != -1) {
                 cout << "Wrong answer on test " << T << endl;
                 cout << "false positive!" << endl;
+                cout << n << endl;
                 cout << s << endl << t << endl;
                 exit(0);
             }

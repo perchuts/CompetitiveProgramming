@@ -1,0 +1,76 @@
+#include <bits/stdc++.h>
+#define all(x) x.begin(), x.end()
+#define sz(x) (int) x.size()
+#define endl '\n'
+#define pb push_back
+#define _ ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+
+using namespace std;
+
+using ll = long long;
+using ull = unsigned long long;
+using ii = pair<int,int>;
+using iii = tuple<int,int,int>;
+
+const int inf = 2e9+1;
+const int mod = 1e9+7;
+const int maxn = 2e5+100;
+
+template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
+template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
+
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+int rnd(int l, int r) {
+    uniform_int_distribution<int> uid(l, r);
+    return uid(rng);
+}
+
+
+void solve() {
+    int n; cin >> n;
+    vector<int> a(n);
+    for (auto& x : a) cin >> x;
+    int mx = *max_element(all(a)), ans = mx;
+    vector<int> ps(n+1);
+    for (int i = 1; i <= n; ++i) ps[i] = ps[i-1] ^ a[i-1];
+    int help = 1;
+    auto add = [&] (int x, int src) {
+        int cur =src;
+        for (int i = 0; i < 18; ++i) {
+            if (trie[cur][x>>i&1] == 0) trie[cur][x>>i&1] = help++;
+            cur = trie[cur][x>>i&1];
+        }
+    };
+    auto maximize = [&] (int x, int src) {
+        int cur = src, resp = 0;
+        for (int i = 0; i < 18; ++i) {
+            int want = (x >> i & 1) ^ 1;
+            if (trie[cur][want]) resp += (1 << i), cur = trie[cur][want];
+            else cur = trie[cur][want^1];
+        }
+        return resp;
+    };
+    int pt = 0;
+}
+
+int32_t main() {_
+    cout << sizeof(trie)/1024576.0 << endl;
+    exit(0);
+#ifndef gato
+    int t = 1; cin >> t;
+    while(t--) solve();
+#else
+    int t = 1;
+    while (true) {
+        int my = solve(), ans = brute();
+        if (my != ans) {
+            cout << "Wrong answer on test " << t << endl;
+            cout << "Solve: " << my << endl;
+            cout << "Brute: " << ans << endl;
+            exit(0);
+        }
+        cout << "Accepted on test " << t++ << endl;
+    }
+#endif
+}

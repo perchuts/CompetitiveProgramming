@@ -17,19 +17,18 @@ int32_t main() {_
 	for (int i = 0; i < n; ++i) cin >> a[i];
 	for (int i = n-2; i >= 0; --i) a[i] = min(a[i], a[i+1]);
 
-
-	vector<int> dp(n); 
-
-	//vectir<int> vec(lim);
-	//int ans = 0;
-	//for (int i = 1; i <= as.back(); ++i){
-	//	int id = lower_bound(as.begin(), as.end(), i) - as.begin();
-	//	if (id == 0){
-	//		vec[i]++;
-	//	}
-	//	for (auto d : divs[i]){
-	//		
-	//	}
-	//	ans += vec[i];
-	//}
+    const int max = 200000;
+	vector<int> dp(max+1); 
+    dp[1] = 1;
+    int s = 1;
+    for (int i = 2; i <= 100000; ++i) {
+        for (int j = 1; j * j <= i; ++j) {
+            if (i % j) continue;
+            dp[i] += dp[j];
+            if (j * j != i) dp[i] += dp[i/j];
+        }
+        s += dp[i];
+    }
+    cout << fixed << setprecision(2);
+    cout << s/1e8 << endl;
 }
